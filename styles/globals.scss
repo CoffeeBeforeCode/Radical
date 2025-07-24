@@ -1,0 +1,1197 @@
+/**
+ * Phillip Collins Global Leadership Coach - Design System
+ * globals.scss
+ * 
+ * PURPOSE: Foundational CSS design system for breakthrough leadership coaching website
+ * that breaks consultant template conventions through grid-first, color-driven architecture.
+ * 
+ * APPROACH: Grid-based block components with strategic dopamine color implementation,
+ * authentic typography hierarchy, and UK leadership executive-focused user experience.
+ * 
+ * DESIGN PHILOSOPHY:
+ * - Color-driven sections create visual impact and emotional engagement
+ * - Grid-first responsive design optimized for executive multi-device usage
+ * - Authentic brand voice through strategic typography and spacing
+ * - Break template conventions while maintaining sophisticated professionalism
+ * 
+ * RESPONSIVE STRATEGY:
+ * - Mobile-first approach with touch-friendly interactions
+ * - Executive-oriented desktop optimization including portrait monitor support
+ * - Progressive enhancement for sophisticated viewing environments
+ */
+
+// Keep existing Tailwind imports for utility integration
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+//============================================================================
+// DESIGN TOKENS - Phillip Collins Brand System
+//============================================================================
+
+:root {
+  // Core Brand Colors - Strategic palette for executive leadership coaching
+  --pc-navy: #1A365D;           // Authority, trust, serious content blocks
+  --pc-burgundy: #7E2D40;       // Emotional intelligence, warm authority, testimonials
+  --pc-tangerine: #F96E1E;      // HIGH-IMPACT CTAs, key concept emphasis
+  --pc-cream: #F8F5EB;          // Breathing space, warmth, background sections
+  --pc-white: #FFFFFF;          // Clean contrast, main background
+  --pc-charcoal: #2C3033;       // Strong text contrast when needed
+  
+  // Secondary Brand Colors - Supporting palette for nuanced expression
+  --pc-sage: #7A9A7F;           // Growth, nurturing, secondary elements
+  --pc-gold: #D4B86A;           // Wisdom, premium highlights, testimonials
+  --pc-stone-blue: #6B89A8;     // Lighter navy complement, backgrounds
+  --pc-terracotta: #C26A4E;     // Secondary CTAs, warm accents
+  --pc-warm-grey: #4A4A4A;      // Main readable text color
+
+  // Typography Scale - Mobile-first with clamp for executive multi-device usage
+  --pc-text-xs: clamp(0.75rem, 2vw, 0.875rem);      // Small annotations
+  --pc-text-sm: clamp(0.875rem, 2.5vw, 1rem);       // Secondary text
+  --pc-text-base: clamp(1rem, 3vw, 1.125rem);        // Primary body text
+  --pc-text-lg: clamp(1.125rem, 3.5vw, 1.25rem);     // Emphasized content
+  --pc-text-xl: clamp(1.25rem, 4vw, 1.5rem);         // Subheadings
+  --pc-text-2xl: clamp(1.5rem, 5vw, 2rem);           // Section headers
+  --pc-text-3xl: clamp(2rem, 6vw, 2.5rem);           // Major headers
+  --pc-text-4xl: clamp(2.5rem, 8vw, 3.5rem);         // Page headers
+  --pc-text-5xl: clamp(3.5rem, 10vw, 5rem);          // Hero headlines
+  --pc-text-6xl: clamp(4rem, 12vw, 6rem);            // Impact headlines
+
+  // Spacing Scale - Executive-optimized reading and interaction
+  --pc-space-xs: clamp(0.5rem, 2vw, 0.75rem);        // Tight spacing
+  --pc-space-sm: clamp(0.75rem, 3vw, 1rem);          // Close elements
+  --pc-space-md: clamp(1rem, 4vw, 1.5rem);           // Standard spacing
+  --pc-space-lg: clamp(1.5rem, 5vw, 2rem);           // Section separation
+  --pc-space-xl: clamp(2rem, 6vw, 3rem);             // Major spacing
+  --pc-space-2xl: clamp(3rem, 8vw, 4rem);            // Section blocks
+  --pc-space-3xl: clamp(4rem, 10vw, 6rem);           // Hero spacing
+
+  // Container and Layout - Executive reading and scanning patterns
+  --pc-container-max: 1200px;                         // Optimal reading width
+  --pc-container-padding: clamp(1rem, 5vw, 2rem);     // Responsive padding
+  --pc-grid-gap: clamp(1rem, 3vw, 2rem);             // Grid spacing
+
+  // Transitions - Sophisticated interaction feedback
+  --pc-transition-fast: 0.15s ease;                   // Quick feedback
+  --pc-transition-smooth: 0.3s ease;                  // Standard transitions
+  --pc-transition-slow: 0.5s ease;                    // Deliberate changes
+}
+
+//============================================================================
+// BASE STYLES - Foundation for authentic brand expression
+//============================================================================
+
+html {
+  scroll-behavior: smooth;
+  // Optimize for executive reading patterns
+  font-size: 16px; // Base size for scaling
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.6; // Executive-friendly reading line height
+  color: var(--pc-warm-grey);
+  background: var(--pc-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  // Optimize text rendering for professional displays
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+// Focus states for accessibility and executive keyboard navigation
+*:focus {
+  outline: 2px solid var(--pc-tangerine);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+//============================================================================
+// TYPOGRAPHY SYSTEM - Authentic brand voice through strategic font usage
+//============================================================================
+
+// Strategic font family utilities
+.pc-font-sunrise {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-weight: 400;
+  // IMPORTANT: Use sparingly - only for key concept emphasis
+  // Maximum 2-3 words per page for authentic impact
+}
+
+.pc-font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.pc-font-serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+// Typography Hierarchy - Executive-optimized for scanning and depth
+.pc-text-hero {
+  font-size: var(--pc-text-6xl);
+  font-family: Georgia, 'Times New Roman', serif; // Authoritative serif for headlines
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--pc-navy);
+  
+  @media (max-width: 768px) {
+    font-size: var(--pc-text-4xl);
+    line-height: 1.2;
+  }
+}
+
+.pc-text-headline {
+  font-size: var(--pc-text-4xl);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--pc-navy);
+}
+
+.pc-text-subhead {
+  font-size: var(--pc-text-2xl);
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--pc-charcoal);
+}
+
+.pc-text-body-lg {
+  font-size: var(--pc-text-lg);
+  line-height: 1.6;
+  color: var(--pc-warm-grey);
+}
+
+.pc-text-body {
+  font-size: var(--pc-text-base);
+  line-height: 1.6;
+  color: var(--pc-warm-grey);
+}
+
+.pc-text-small {
+  font-size: var(--pc-text-sm);
+  line-height: 1.5;
+  color: var(--pc-warm-grey);
+  opacity: 0.8;
+}
+
+// Strategic emphasis typography - for "Waiting for the Sunrise" selective usage
+.pc-text-emphasis {
+  font-family: 'Waiting for the Sunrise', cursive;
+  color: var(--pc-tangerine);
+  font-size: 1.2em; // Slightly larger than surrounding text
+  font-weight: 400;
+  
+  // Use for key concepts: "practice", "interference", "authentic", etc.
+  &.concept-highlight {
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      height: 2px;
+      background: var(--pc-tangerine);
+      opacity: 0.3;
+    }
+  }
+}
+
+//============================================================================
+// CONTAINER & LAYOUT SYSTEM - Grid-first architecture
+//============================================================================
+
+// Primary container for content sections
+.pc-container {
+  max-width: var(--pc-container-max);
+  margin: 0 auto;
+  padding: 0 var(--pc-container-padding);
+  width: 100%;
+}
+
+// Full-width sections for color-driven design
+.pc-container-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Block Architecture - Core building blocks for grid-based design
+.pc-block {
+  padding: var(--pc-space-2xl) 0;
+  
+  @media (max-width: 768px) {
+    padding: var(--pc-space-xl) 0;
+  }
+}
+
+.pc-block-compact {
+  padding: var(--pc-space-xl) 0;
+  
+  @media (max-width: 768px) {
+    padding: var(--pc-space-lg) 0;
+  }
+}
+
+.pc-block-spacious {
+  padding: var(--pc-space-3xl) 0;
+  
+  @media (max-width: 768px) {
+    padding: var(--pc-space-2xl) 0;
+  }
+}
+
+//============================================================================
+// GRID SYSTEM - Flexible layouts for authentic content presentation
+//============================================================================
+
+// Base grid system with executive-optimized spacing
+.pc-grid {
+  display: grid;
+  gap: var(--pc-grid-gap);
+  
+  @media (max-width: 768px) {
+    gap: var(--pc-space-md);
+  }
+}
+
+// Grid variations for different content layouts
+.pc-grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.pc-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pc-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pc-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Asymmetric Grid - For emphasis and visual interest (2/3 - 1/3)
+.pc-grid-asymmetric {
+  grid-template-columns: 2fr 1fr;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Portrait Desktop Grid Optimization - For executive multi-monitor setups
+@media (min-width: 1025px) and (orientation: portrait) {
+  .pc-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--pc-space-xl);
+  }
+  
+  .pc-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .pc-grid-asymmetric {
+    grid-template-columns: 3fr 2fr; // Better proportion for portrait
+  }
+}
+
+//============================================================================
+// COLOR BLOCKS & BACKGROUNDS - Strategic dopamine color implementation
+//============================================================================
+
+// Primary color section backgrounds
+.pc-bg-navy {
+  background-color: var(--pc-navy);
+  color: var(--pc-white);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--pc-white);
+  }
+  
+  a {
+    color: var(--pc-gold);
+    
+    &:hover {
+      color: var(--pc-tangerine);
+    }
+  }
+}
+
+.pc-bg-burgundy {
+  background-color: var(--pc-burgundy);
+  color: var(--pc-white);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--pc-white);
+  }
+  
+  a {
+    color: var(--pc-cream);
+    
+    &:hover {
+      color: var(--pc-gold);
+    }
+  }
+}
+
+.pc-bg-cream {
+  background-color: var(--pc-cream);
+  color: var(--pc-charcoal);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--pc-navy);
+  }
+}
+
+.pc-bg-white {
+  background-color: var(--pc-white);
+  color: var(--pc-warm-grey);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--pc-navy);
+  }
+}
+
+// Dopamine accent backgrounds for high-impact sections
+.pc-bg-tangerine {
+  background-color: var(--pc-tangerine);
+  color: var(--pc-white);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--pc-white);
+  }
+}
+
+// Color utilities for strategic text emphasis
+.pc-text-navy { color: var(--pc-navy) !important; }
+.pc-text-burgundy { color: var(--pc-burgundy) !important; }
+.pc-text-tangerine { color: var(--pc-tangerine) !important; }
+.pc-text-sage { color: var(--pc-sage) !important; }
+.pc-text-gold { color: var(--pc-gold) !important; }
+.pc-text-white { color: var(--pc-white) !important; }
+.pc-text-charcoal { color: var(--pc-charcoal) !important; }
+
+//============================================================================
+// BUTTON & INTERACTIVE ELEMENTS - Executive-optimized touch targets
+//============================================================================
+
+// Base button foundation
+.pc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pc-space-md) var(--pc-space-xl);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: var(--pc-text-base);
+  text-decoration: none;
+  transition: all var(--pc-transition-smooth);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  min-height: 44px; // Executive touch target optimization
+  
+  &:focus {
+    outline: 2px solid var(--pc-tangerine);
+    outline-offset: 2px;
+  }
+}
+
+// Primary CTA - High-impact tangerine for key actions
+.pc-btn-primary {
+  background-color: var(--pc-tangerine);
+  color: var(--pc-white);
+  
+  &:hover {
+    background-color: #E55A1A; // Darker tangerine on hover
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(249, 110, 30, 0.3);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Secondary CTA - Professional outline style
+.pc-btn-secondary {
+  background-color: transparent;
+  color: var(--pc-navy);
+  border: 2px solid var(--pc-navy);
+  
+  &:hover {
+    background-color: var(--pc-navy);
+    color: var(--pc-white);
+  }
+}
+
+// Ghost button - Subtle emphasis
+.pc-btn-ghost {
+  background-color: transparent;
+  color: var(--pc-charcoal);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--pc-tangerine);
+    transition: width var(--pc-transition-smooth);
+  }
+  
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+//============================================================================
+// HAND-DRAWN ELEMENTS - Authentic brand personality
+//============================================================================
+
+// Hand-drawn underline system for navigation and emphasis
+.pc-underline-hand {
+  position: relative;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -2px;
+    right: -2px;
+    height: 3px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3c8-1 16 1 25 0s17-2 25-1 16 1 24 1 16-1 24-1' stroke='%23F96E1E' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-size: 100px 6px;
+    background-repeat: repeat-x;
+    opacity: 0;
+    transition: opacity var(--pc-transition-smooth);
+  }
+  
+  &:hover::after,
+  &.active::after {
+    opacity: 1;
+  }
+}
+
+// Navigation-specific hand-drawn underline
+.pc-nav-underline {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2c6-1 12 1 18 0s12-1 18 0 12 1 18 0' stroke='%23F96E1E' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-size: 60px 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: width var(--pc-transition-smooth);
+  }
+  
+  &:hover::after,
+  &.active::after {
+    width: calc(100% + 8px);
+  }
+}
+
+//============================================================================
+// TESTIMONIAL & CONTENT BLOCKS - Authentic social proof presentation
+//============================================================================
+
+// Testimonial styling for genuine client feedback
+.pc-testimonial {
+  position: relative;
+  padding: var(--pc-space-lg);
+  background: var(--pc-cream);
+  border-radius: 8px;
+  font-style: italic;
+  
+  &::before {
+    content: '"';
+    font-size: var(--pc-text-4xl);
+    color: var(--pc-burgundy);
+    position: absolute;
+    top: var(--pc-space-sm);
+    left: var(--pc-space-sm);
+    font-family: 'Waiting for the Sunrise', cursive;
+    line-height: 1;
+  }
+  
+  .pc-testimonial-text {
+    font-size: var(--pc-text-lg);
+    line-height: 1.6;
+    margin-bottom: var(--pc-space-md);
+    padding-left: var(--pc-space-lg);
+    color: var(--pc-charcoal);
+  }
+  
+  .pc-testimonial-author {
+    font-size: var(--pc-text-sm);
+    font-weight: 600;
+    text-align: right;
+    font-style: normal;
+    color: var(--pc-burgundy);
+  }
+}
+
+// Quote callout for philosophy and key concepts
+.pc-quote-callout {
+  border-left: 4px solid var(--pc-tangerine);
+  padding: var(--pc-space-lg);
+  margin: var(--pc-space-xl) 0;
+  background: var(--pc-cream);
+  font-size: var(--pc-text-lg);
+  font-style: italic;
+  color: var(--pc-charcoal);
+}
+
+//============================================================================
+// EQ-i QUESTION BUBBLES - Visual engagement elements
+//============================================================================
+
+// EQ-i question bubbles for scattered visual interest
+.pc-eq-bubble {
+  position: relative;
+  background: var(--pc-sage);
+  color: var(--pc-white);
+  padding: var(--pc-space-md) var(--pc-space-lg);
+  border-radius: 20px;
+  font-size: var(--pc-text-sm);
+  font-style: italic;
+  max-width: 300px;
+  
+  // Speech bubble tail
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--pc-sage);
+  }
+  
+  // Tangerine variant for emphasis
+  &.tangerine {
+    background: var(--pc-tangerine);
+    
+    &::after {
+      border-top-color: var(--pc-tangerine);
+    }
+  }
+  
+  // Thought bubble variant
+  &.thought {
+    border-radius: 50px;
+    
+    &::after {
+      display: none;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 25px;
+      width: 8px;
+      height: 8px;
+      background: var(--pc-sage);
+      border-radius: 50%;
+      box-shadow: -12px 5px 0 -2px var(--pc-sage), -20px 8px 0 -4px var(--pc-sage);
+    }
+  }
+}
+
+//============================================================================
+// HEADER & NAVIGATION STYLES - Executive leadership presence
+//============================================================================
+
+.pc-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+  padding: var(--pc-space-md) 0;
+}
+
+.pc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px; // Consistent header height
+}
+
+.pc-nav-menu {
+  display: flex;
+  gap: var(--pc-space-xl);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  @media (max-width: 768px) {
+    gap: var(--pc-space-lg);
+    flex-wrap: wrap;
+  }
+}
+
+.pc-nav-item {
+  font-weight: 500;
+  color: var(--pc-charcoal);
+  text-decoration: none;
+  transition: color var(--pc-transition-smooth);
+  min-height: 44px; // Touch target optimization
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    color: var(--pc-navy);
+  }
+  
+  &.active {
+    color: var(--pc-navy);
+    font-weight: 600;
+  }
+}
+
+//============================================================================
+// FOOTER STYLES - Signature brand statement
+//============================================================================
+
+.pc-footer {
+  background: var(--pc-navy);
+  color: var(--pc-white);
+  padding: var(--pc-space-2xl) 0 var(--pc-space-lg) 0;
+  
+  .pc-footer-signature {
+    font-size: var(--pc-text-xl);
+    font-family: 'Waiting for the Sunrise', cursive;
+    text-align: center;
+    margin-bottom: var(--pc-space-lg);
+    color: var(--pc-gold);
+    line-height: 1.3;
+  }
+  
+  .pc-footer-content {
+    font-size: var(--pc-text-sm);
+    text-align: center;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  
+  .pc-footer-social {
+    display: flex;
+    justify-content: center;
+    gap: var(--pc-space-lg);
+    margin: var(--pc-space-lg) 0;
+    
+    a {
+      color: var(--pc-gold);
+      transition: color var(--pc-transition-smooth);
+      min-height: 44px; // Touch target
+      display: flex;
+      align-items: center;
+      
+      &:hover {
+        color: var(--pc-tangerine);
+      }
+    }
+  }
+}
+
+//============================================================================
+// SPACING UTILITIES - Systematic spacing for visual hierarchy
+//============================================================================
+
+.pc-spacing {
+  &-xs { margin: var(--pc-space-xs) 0; }
+  &-sm { margin: var(--pc-space-sm) 0; }
+  &-md { margin: var(--pc-space-md) 0; }
+  &-lg { margin: var(--pc-space-lg) 0; }
+  &-xl { margin: var(--pc-space-xl) 0; }
+  &-2xl { margin: var(--pc-space-2xl) 0; }
+  &-3xl { margin: var(--pc-space-3xl) 0; }
+}
+
+.pc-mb {
+  &-xs { margin-bottom: var(--pc-space-xs); }
+  &-sm { margin-bottom: var(--pc-space-sm); }
+  &-md { margin-bottom: var(--pc-space-md); }
+  &-lg { margin-bottom: var(--pc-space-lg); }
+  &-xl { margin-bottom: var(--pc-space-xl); }
+  &-2xl { margin-bottom: var(--pc-space-2xl); }
+  &-3xl { margin-bottom: var(--pc-space-3xl); }
+}
+
+.pc-mt {
+  &-xs { margin-top: var(--pc-space-xs); }
+  &-sm { margin-top: var(--pc-space-sm); }
+  &-md { margin-top: var(--pc-space-md); }
+  &-lg { margin-top: var(--pc-space-lg); }
+  &-xl { margin-top: var(--pc-space-xl); }
+  &-2xl { margin-top: var(--pc-space-2xl); }
+  &-3xl { margin-top: var(--pc-space-3xl); }
+}
+
+//============================================================================
+// RESPONSIVE UTILITIES - Executive multi-device optimization
+//============================================================================
+
+.pc-hide-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.pc-hide-desktop {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.pc-center-mobile {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+// Portrait desktop specific utilities
+.pc-portrait-desktop-only {
+  display: none;
+  
+  @media (min-width: 1025px) and (orientation: portrait) {
+    display: block;
+  }
+}
+
+//============================================================================
+// ANIMATION & INTERACTION UTILITIES - Sophisticated feedback
+//============================================================================
+
+.pc-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.pc-slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Hover effects for interactive blocks
+.pc-block-hover {
+  transition: all var(--pc-transition-smooth);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(26, 54, 93, 0.15);
+  }
+}
+
+//============================================================================
+// CONTENT-SPECIFIC UTILITIES - Leadership coaching focused elements
+//============================================================================
+
+// Framework cards for coaching methodologies
+.pc-framework-card {
+  background: var(--pc-white);
+  border: 1px solid rgba(26, 54, 93, 0.1);
+  border-radius: 8px;
+  padding: var(--pc-space-lg);
+  transition: all var(--pc-transition-smooth);
+  
+  &:hover {
+    border-color: var(--pc-tangerine);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 110, 30, 0.1);
+  }
+  
+  .pc-framework-title {
+    font-size: var(--pc-text-xl);
+    font-weight: 600;
+    margin-bottom: var(--pc-space-sm);
+    color: var(--pc-navy);
+  }
+  
+  .pc-framework-description {
+    color: var(--pc-warm-grey);
+    line-height: 1.6;
+  }
+}
+
+// Leadership Equation display styling
+.pc-equation {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: var(--pc-text-3xl);
+  text-align: center;
+  color: var(--pc-burgundy);
+  margin: var(--pc-space-xl) 0;
+  line-height: 1.2;
+  
+  .pc-equation-emphasis {
+    color: var(--pc-tangerine);
+    font-size: 1.2em;
+    position: relative;
+    
+    // Subtle emphasis effect
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--pc-tangerine);
+      opacity: 0.3;
+    }
+  }
+}
+
+// Values constellation visualization
+.pc-values-constellation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--pc-space-md);
+  padding: var(--pc-space-xl);
+  
+  .pc-value-node {
+    background: var(--pc-sage);
+    color: var(--pc-white);
+    padding: var(--pc-space-sm) var(--pc-space-md);
+    border-radius: 50px;
+    font-size: var(--pc-text-sm);
+    font-weight: 500;
+    transition: all var(--pc-transition-smooth);
+    cursor: pointer;
+    
+    &:hover {
+      background: var(--pc-tangerine);
+      transform: scale(1.05);
+    }
+    
+    &.primary {
+      background: var(--pc-navy);
+      font-size: var(--pc-text-base);
+      padding: var(--pc-space-md) var(--pc-space-lg);
+    }
+    
+    &.emphasis {
+      background: var(--pc-burgundy);
+      transform: scale(1.1);
+    }
+  }
+}
+
+//============================================================================
+// ACCESSIBILITY ENHANCEMENTS - Executive-grade inclusivity
+//============================================================================
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .pc-testimonial {
+    border: 2px solid var(--pc-charcoal);
+  }
+  
+  .pc-btn-ghost::after {
+    background-color: var(--pc-navy);
+  }
+  
+  .pc-eq-bubble {
+    border: 2px solid var(--pc-white);
+  }
+}
+
+// Reduced motion support for accessibility
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .pc-block-hover:hover {
+    transform: none;
+  }
+}
+
+// Print styles for executive document sharing
+@media print {
+  .pc-header,
+  .pc-footer,
+  .pc-btn,
+  .pc-eq-bubble {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .pc-testimonial {
+    background: transparent;
+    border: 1px solid #333;
+    break-inside: avoid;
+  }
+  
+  h1, h2, h3 {
+    color: black;
+    break-after: avoid;
+  }
+}
+
+//============================================================================
+// EXECUTIVE-SPECIFIC OPTIMIZATIONS - Professional environment considerations
+//============================================================================
+
+// Large screen optimizations for executive viewing environments
+@media (min-width: 1440px) {
+  :root {
+    --pc-container-max: 1400px; // Expanded for large displays
+  }
+  
+  .pc-grid-5 {
+    grid-template-columns: repeat(5, 1fr); // Full 5-column on large screens
+  }
+  
+  .pc-text-hero {
+    font-size: clamp(4rem, 8vw, 7rem); // Larger impact on big screens
+  }
+}
+
+// Ultra-wide screen considerations (common in executive environments)
+@media (min-width: 1920px) {
+  .pc-container {
+    max-width: 1600px; // Prevent over-stretching on ultra-wide
+  }
+  
+  .pc-grid-asymmetric {
+    grid-template-columns: 3fr 2fr; // Better proportion for ultra-wide
+    gap: var(--pc-space-2xl);
+  }
+}
+
+// Touch device optimizations for executive tablets
+@media (hover: none) and (pointer: coarse) {
+  .pc-btn {
+    min-height: 48px; // Larger touch targets for tablets
+    font-size: var(--pc-text-lg);
+  }
+  
+  .pc-nav-item {
+    min-height: 48px;
+    padding: var(--pc-space-sm) var(--pc-space-md);
+  }
+  
+  // Remove hover effects on touch devices
+  .pc-block-hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .pc-underline-hand::after,
+  .pc-nav-underline::after {
+    opacity: 1; // Always show underlines on touch devices
+  }
+}
+
+//============================================================================
+// PERFORMANCE OPTIMIZATIONS - Executive expectation of speed
+//============================================================================
+
+// GPU acceleration for smooth animations
+.pc-btn,
+.pc-block-hover,
+.pc-framework-card {
+  will-change: transform;
+  
+  &:hover {
+    will-change: auto; // Remove after animation
+  }
+}
+
+// Optimize rendering for complex layouts
+.pc-grid {
+  contain: layout style;
+}
+
+// Critical path optimization
+.pc-text-hero,
+.pc-text-headline {
+  font-display: swap; // Ensure text visibility during font load
+}
+
+//============================================================================
+// DEBUG UTILITIES - Development and quality assurance
+//============================================================================
+
+// Debug grid system (only visible in development)
+.debug-grid {
+  .pc-grid {
+    outline: 2px dashed rgba(255, 0, 0, 0.3);
+    
+    > * {
+      outline: 1px dashed rgba(0, 255, 0, 0.3);
+      position: relative;
+      
+      &::before {
+        content: attr(class);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 10px;
+        padding: 2px 4px;
+        z-index: 1000;
+      }
+    }
+  }
+}
+
+// Debug typography hierarchy
+.debug-typography {
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    
+    &::after {
+      content: attr(tagName);
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: var(--pc-tangerine);
+      color: white;
+      font-size: 10px;
+      padding: 2px 4px;
+    }
+  }
+}
+
+//============================================================================
+// COMPONENT INTEGRATION HOOKS - For React component styling
+//============================================================================
+
+// React component wrapper classes
+.component-wrapper {
+  // Ensures proper spacing and layout for React components
+  contain: layout;
+  
+  &.full-width {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  &.section-component {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Tailwind integration points
+.pc-tailwind-reset {
+  // Specific resets where Tailwind and custom system interact
+  @apply m-0 p-0 box-border;
+}
+
+//============================================================================
+// FINAL NOTES & USAGE GUIDELINES
+//============================================================================
+
+/*
+USAGE GUIDELINES FOR DEVELOPMENT TEAM:
+
+1. COLOR STRATEGY:
+   - Use dopamine colors (tangerine, terracotta) sparingly for maximum impact
+   - Navy and burgundy are primary authority colors
+   - Cream provides necessary breathing space
+   - Never use more than 3 colors per section
+
+2. TYPOGRAPHY EMPHASIS:
+   - "Waiting for the Sunrise" font ONLY for 2-3 key concepts per page
+   - Target words: "practice", "interference", "authentic", "embodied"
+   - Serif fonts for authority, Inter for readability
+
+3. GRID USAGE:
+   - Start with content, then choose appropriate grid
+   - Asymmetric grids for emphasis and visual interest
+   - Always consider mobile-first stacking
+
+4. EXECUTIVE CONSIDERATIONS:
+   - All interactive elements minimum 44px touch target
+   - Fast loading and smooth animations expected
+   - Multi-device consistency critical
+   - Print styles for document sharing
+
+5. AUTHENTICITY MARKERS:
+   - Hand-drawn underlines for navigation
+   - EQ-i bubbles for visual engagement
+   - Genuine testimonials only
+   - UK English spelling throughout
+
+6. PERFORMANCE PRIORITIES:
+   - GPU acceleration for animations
+   - Layout containment for complex grids
+   - Font display optimization
+   - Touch device considerations
+
+Remember: This is not a template - it's a design system for creating 
+breakthrough leadership coaching presence that breaks consultant conventions
+while maintaining sophisticated professionalism.
+*/
