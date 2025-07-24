@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import 'tailwindcss/tailwind.css'
-import '../styles/globals.scss'
+
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
