@@ -109,7 +109,7 @@ export default function Home() {
       {/* The Leadership Equation - Featured Framework */}
       <Block background="white" spacing="spacious">
         <PageLayout>
-          <div className="text-center mb-16">
+          <div className="mb-16 text-center">
             <h2 className="mb-6 text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               The Leadership Equation
             </h2>
@@ -164,7 +164,7 @@ export default function Home() {
       {/* Approach Overview - Navy Background for Authority */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <div className="text-center mb-16">
+          <div className="mb-16 text-center">
             <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl leading-tight text-white md:text-4xl">
               How I see it
             </h2>
@@ -230,7 +230,7 @@ export default function Home() {
       {/* Authentic Testimonials - Cream Background */}
       <Block background="cream" spacing="default">
         <PageLayout>
-          <div className="text-center mb-16">
+          <div className="mb-16 text-center">
             <h2 className="mb-6 text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               Reflections from leaders
             </h2>
@@ -395,7 +395,7 @@ export default function Home() {
       {/* Closing CTA Block - White Background for Clean Finish */}
       <Block background="white" spacing="spacious">
         <PageLayout>
-          <div className="text-center space-y-8">
+          <div className="space-y-8 text-center">
             <h2 className="text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               This is your leadership.
             </h2>
