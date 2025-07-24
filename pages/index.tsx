@@ -52,13 +52,13 @@ export default function Home() {
 
             <div className="mx-auto max-w-4xl space-y-6 pt-8">
               <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
-                The strongest leaders I know don't arrive — they return.<br />
+                The strongest leaders I know don&apos;t arrive — they return.<br />
                 Again and again. To their values. Their vision. Their self.
               </p>
               
               <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 I create the space for that return —<br />
-                to what matters, what's emerging, and what's getting in the way.
+                to what matters, what&apos;s emerging, and what&apos;s getting in the way.
               </p>
               
               <p className="text-xl font-semibold text-[#7E2D40] md:text-2xl">
