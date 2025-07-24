@@ -23,11 +23,9 @@
  * - Secondary colors (30%): Sage (#7A9A7F), Gold (#D4B86A), Stone Blue (#6B89A8)
  * - Dopamine accents (10%): Tangerine (#F96E1E), Terracotta (#C26A4E), Cream (#F8F5EB)
  */
-
 import { ReactNode } from 'react'
 import Head from 'next/head'
 import Header from './Header'
-import Footer from './Footer'
 
 interface LayoutProps {
   children: ReactNode
@@ -37,7 +35,6 @@ interface LayoutProps {
   noIndex?: boolean
   ogImage?: string
   className?: string
-  pageType?: 'homepage' | 'about' | 'services' | 'contact' | 'insights'
 }
 
 const Layout: React.FC<LayoutProps> = ({
@@ -47,8 +44,7 @@ const Layout: React.FC<LayoutProps> = ({
   canonical,
   noIndex = false,
   ogImage,
-  className = '',
-  pageType = 'homepage'
+  className = ''
 }) => {
   // Default meta values with UK English and leadership coaching focus
   const defaultTitle = 'Phillip Collins | Global Leadership Coach'
@@ -219,10 +215,19 @@ const Layout: React.FC<LayoutProps> = ({
         </main>
         
         {/* 
-          Footer: Signature statement and social prominence
-          Reinforces brand positioning and global reach
+          Footer placeholder: Can be added later when Footer component is ready
+          For now, simple footer content inline
         */}
-        <Footer />
+        <footer className="bg-[#1A365D] text-white">
+          <div className="mx-auto max-w-7xl px-4 py-8 text-center">
+            <p className="font-['Waiting_for_the_Sunrise'] text-xl text-[#D4B86A]">
+              Leadership is a <strong>practice</strong>, not a destination
+            </p>
+            <p className="mt-4 text-sm text-white/60">
+              © {new Date().getFullYear()} Phillip Collins. Reducing interference since 2011.
+            </p>
+          </div>
+        </footer>
       </div>
     </>
   )
@@ -359,114 +364,6 @@ export const PageLayout: React.FC<{
   return (
     <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${className}`}>
       {children}
-    </div>
-  )
-}
-
-/**
- * TestimonialBlock Component - Authentic Client Testimonials
- * 
- * Purpose: Styled presentation of genuine client testimonials that reinforces
- * credibility without appearing manufactured. Uses only approved testimonials
- * from the brand foundation document.
- * 
- * Visual Features:
- * - Cream background for warmth and distinction
- * - Large opening quotation mark in brand burgundy
- * - Italic text to distinguish quoted content
- * - Right-aligned attribution with role and industry
- * - Rounded corners for approachable feel
- * 
- * Content Requirements:
- * - Only use testimonials from approved foundation list
- * - Maintain authentic language without editing
- * - Include specific role and industry for credibility
- */
-export const TestimonialBlock: React.FC<{
-  quote: string
-  author: string
-  role: string
-  industry: string
-  className?: string
-}> = ({
-  quote,
-  author,
-  role,
-  industry,
-  className = ''
-}) => {
-  return (
-    <div className={`relative rounded-lg bg-[#F8F5EB] p-6 italic ${className}`}>
-      {/* Large opening quotation mark - brand burgundy for emotional connection */}
-      <div className="absolute left-2 top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">
-        "
-      </div>
-      
-      {/* Testimonial content with appropriate spacing */}
-      <div className="mb-4 pl-6 text-lg leading-relaxed">
-        {quote}
-      </div>
-      
-      {/* Attribution - right-aligned for visual hierarchy */}
-      <div className="text-right text-sm font-medium text-[#7E2D40] not-italic">
-        {author && <div>{author}</div>}
-        <div>{role}</div>
-        {industry && <div className="text-[#7E2D40]/80">{industry}</div>}
-      </div>
-    </div>
-  )
-}
-
-/**
- * EQBubble Component - EQ-i Question Bubbles
- * 
- * Purpose: Visual interest elements using emotional intelligence questions
- * scattered throughout pages. Creates engaging content while maintaining
- * professional credibility for executive audiences.
- * 
- * Design Features:
- * - Bubble/thought balloon appearance with hand-drawn feel
- * - Tangerine or sage green backgrounds for dopamine effect
- * - White text for high contrast and readability
- * - SVG-based for scalability across devices
- * - Authentic positioning that feels natural, not forced
- * 
- * Content Source: EQ-i 2.0 questions relanguaged for reflection
- */
-export const EQBubble: React.FC<{
-  question: string
-  color?: 'tangerine' | 'sage'
-  size?: 'small' | 'medium' | 'large'
-  className?: string
-}> = ({
-  question,
-  color = 'tangerine',
-  size = 'medium',
-  className = ''
-}) => {
-  const colorClasses = {
-    tangerine: 'bg-[#F96E1E] text-white',
-    sage: 'bg-[#7A9A7F] text-white'
-  }
-
-  const sizeClasses = {
-    small: 'p-3 text-sm max-w-xs',
-    medium: 'p-4 text-base max-w-sm',
-    large: 'p-6 text-lg max-w-md'
-  }
-
-  return (
-    <div className={`
-      relative rounded-2xl ${colorClasses[color]} ${sizeClasses[size]} 
-      shadow-sm italic leading-relaxed ${className}
-    `}>
-      {/* Bubble tail for thought balloon effect */}
-      <div className={`
-        absolute -bottom-2 left-6 h-4 w-4 rotate-45 transform 
-        ${color === 'tangerine' ? 'bg-[#F96E1E]' : 'bg-[#7A9A7F]'}
-      `} />
-      
-      {question}
     </div>
   )
 }
