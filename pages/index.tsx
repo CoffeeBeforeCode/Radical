@@ -271,7 +271,7 @@ export default function Home() {
                 fontWeight: 700,
                 margin: '0 0 1.5rem 0'
               }}>
-                Ready to explore what's getting in your way?
+                Ready to explore what&apos;s getting in your way?
               </h2>
               
               <p style={{ 
