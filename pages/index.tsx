@@ -70,7 +70,7 @@ export default function Home() {
             <div className="pt-12">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 focus:outline-none focus:ring-3 focus:ring-[#F96E1E] focus:ring-opacity-50 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
               >
                 Begin here
               </Link>
@@ -88,8 +88,8 @@ export default function Home() {
                 You already know what leadership demands.
               </h2>
               <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
-                You're not here for more noise. Or another five-step model.<br />
-                You're here because something deeper is asking to be seen.
+                You&apos;re not here for more noise. Or another five-step model.<br />
+                You&apos;re here because something deeper is asking to be seen.
               </p>
             </div>
             
@@ -123,9 +123,9 @@ export default function Home() {
             </p>
             <p className="mx-auto max-w-2xl text-lg text-[#4A4A4A] leading-relaxed">
               Most leaders already possess remarkable potential. What limits their performance 
-              isn't a lack of capability, but the presence of{' '}
+              isn&apos;t a lack of capability, but the presence of{' '}
               <span className="font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">interference</span> — 
-              or as I often call it, their 'stuff.'
+              or as I often call it, their &apos;stuff.&apos;
             </p>
           </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/90 leading-relaxed">
               I work in frameworks — but never formulas.<br />
-              What you'll see here are tools I return to often with leaders:<br />
+              What you&apos;ll see here are tools I return to often with leaders:<br />
               not as answers, but as invitations.
             </p>
           </div>
@@ -193,7 +193,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-white/80">
                 You lead with your head, heart, and gut. 
-                We'll work with all three.
+                We&apos;ll work with all three.
               </p>
             </div>
             
@@ -210,8 +210,8 @@ export default function Home() {
               <div className="text-3xl text-[#D4B86A]">⚖️</div>
               <h3 className="text-lg font-semibold text-white">Sitting with Tension</h3>
               <p className="text-sm text-white/80">
-                Some tensions aren't meant to be solved. 
-                They're meant to be understood.
+                Some tensions aren&apos;t meant to be solved. 
+                They&apos;re meant to be understood.
               </p>
             </div>
             
@@ -235,8 +235,8 @@ export default function Home() {
               Reflections from leaders
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-[#4A4A4A] leading-relaxed">
-              This work isn't loud. It doesn't need to be.<br />
-              It resonates when you're ready to hear yourself more clearly.
+              This work isn&apos;t loud. It doesn&apos;t need to be.<br />
+              It resonates when you&apos;re ready to hear yourself more clearly.
             </p>
           </div>
 
@@ -316,35 +316,35 @@ export default function Home() {
         <PageLayout>
           <div className="relative">
             {/* Scattered EQ-i question bubbles for visual engagement */}
-            <div className="absolute top-0 left-1/4 transform -translate-x-1/2">
-              <div className="bg-[#7A9A7F] text-white p-4 rounded-2xl max-w-xs shadow-lg">
-                <p className="text-sm italic">
-                  "What's the story I tell myself about who I am; is it still true?"
-                </p>
+              <div className="absolute top-0 left-1/4 -translate-x-1/2">
+                <div className="bg-[#7A9A7F] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+                  <p className="text-sm italic">
+                    &quot;What&apos;s the story I tell myself about who I am; is it still true?&quot;
+                  </p>
+                </div>
               </div>
-            </div>
-            
-            <div className="absolute top-20 right-1/4 transform translate-x-1/2">
-              <div className="bg-[#F96E1E] text-white p-4 rounded-2xl max-w-xs shadow-lg">
-                <p className="text-sm italic">
-                  "What helps me choose well, especially when it's hard?"
-                </p>
+              
+              <div className="absolute top-20 right-1/4 translate-x-1/2">
+                <div className="bg-[#F96E1E] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+                  <p className="text-sm italic">
+                    &quot;What helps me choose well, especially when it&apos;s hard?&quot;
+                  </p>
+                </div>
               </div>
-            </div>
-            
-            <div className="absolute top-40 left-1/3">
-              <div className="bg-[#D4B86A] text-white p-4 rounded-2xl max-w-xs shadow-lg">
-                <p className="text-sm italic">
-                  "Where do I feel most connected; what helps make that happen?"
-                </p>
+              
+              <div className="absolute top-40 left-1/3">
+                <div className="bg-[#D4B86A] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+                  <p className="text-sm italic">
+                    &quot;Where do I feel most connected; what helps make that happen?&quot;
+                  </p>
+                </div>
               </div>
-            </div>
 
             {/* Central content with adequate spacing for bubbles */}
             <div className="text-center py-32">
               <p className="text-xl md:text-2xl text-[#4A4A4A] font-light max-w-2xl mx-auto">
-                The questions that matter aren't about what you should do.<br />
-                They're about who you're becoming.
+                The questions that matter aren&apos;t about what you should do.<br />
+                They&apos;re about who you&apos;re becoming.
               </p>
             </div>
           </div>
@@ -402,13 +402,13 @@ export default function Home() {
             
             <div className="mx-auto max-w-2xl space-y-6">
               <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
-                You don't need a louder voice.<br />
+                You don&apos;t need a louder voice.<br />
                 You need a clearer signal.<br />
                 And a safe enough space to hear it.
               </p>
               
               <p className="text-lg text-[#4A4A4A] leading-relaxed">
-                If something here resonates, let's explore what's possible.
+                If something here resonates, let&apos;s explore what&apos;s possible.
               </p>
             </div>
 
@@ -416,9 +416,9 @@ export default function Home() {
             <div className="pt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 focus:outline-none focus:ring-3 focus:ring-[#F96E1E] focus:ring-opacity-50 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
               >
-                Let's explore together
+                Let&apos;s explore together
               </Link>
               <p className="mt-4 text-sm text-[#4A4A4A]">
                 No funnel. No pressure.<br />
