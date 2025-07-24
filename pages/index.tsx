@@ -177,7 +177,7 @@ export default function Home() {
 
           {/* Five Key Approaches - 5 Column Grid */}
           <Grid columns={5}>
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <div className="text-3xl text-[#D4B86A]">👁️</div>
               <h3 className="text-lg font-semibold text-white">Observation before Intervention</h3>
               <p className="text-sm text-white/80">
@@ -186,7 +186,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <div className="text-3xl text-[#D4B86A]">🎯</div>
               <h3 className="text-lg font-semibold text-white">
                 <span className="font-['Waiting_for_the_Sunrise']">Embodied</span> Perception
@@ -197,7 +197,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <div className="text-3xl text-[#D4B86A]">🔄</div>
               <h3 className="text-lg font-semibold text-white">Values in Motion</h3>
               <p className="text-sm text-white/80">
@@ -206,7 +206,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <div className="text-3xl text-[#D4B86A]">⚖️</div>
               <h3 className="text-lg font-semibold text-white">Sitting with Tension</h3>
               <p className="text-sm text-white/80">
@@ -215,7 +215,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <div className="text-3xl text-[#D4B86A]">✨</div>
               <h3 className="text-lg font-semibold text-white">Reducing Interference</h3>
               <p className="text-sm text-white/80">
