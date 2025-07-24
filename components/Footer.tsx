@@ -49,22 +49,22 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold text-[#D4B86A]">Navigate</h4>
             <div className="mt-4 space-y-2">
-              <Link href="/this-is-personal" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/this-is-personal" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 This is Personal
               </Link>
-              <Link href="/at-home" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/at-home" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 At Home
               </Link>
-              <Link href="/the-work" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/the-work" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 The Work
               </Link>
-              <Link href="/social-impact" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/social-impact" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 Social Impact
               </Link>
-              <Link href="/insights" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/insights" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 Insights
               </Link>
-              <Link href="/contact" className="block text-white/70 hover:text-[#D4B86A]">
+              <Link href="/contact" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                 Contact
               </Link>
             </div>
@@ -74,9 +74,14 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold text-[#D4B86A]">Connect</h4>
             <div className="mt-4">
-              <p className="text-white/70">
+              <a 
+                href="https://linkedin.com/in/GlobalLeadershipCoach" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#D4B86A] transition-colors duration-200"
+              >
                 LinkedIn: GlobalLeadershipCoach
-              </p>
+              </a>
             </div>
           </div>
         </div>
@@ -89,11 +94,11 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Geographic credibility and copyright */}
-        <div className="mt-4 border-t border-white/10 pt-4 text-center">
+        <div className="mt-4 border-t border-white/10 pt-4 text-center space-y-2">
           <p className="text-sm text-white/60">
             Based in the UK, working globally across Europe, Middle East, Americas, and Asia Pacific
           </p>
-          <p className="mt-2 text-sm text-white/60">
+          <p className="text-sm text-white/60">
             © {currentYear} Phillip Collins. Reducing interference since 2011.
           </p>
         </div>
