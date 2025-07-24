@@ -293,7 +293,7 @@ export default function Home() {
                 borderRadius: '4px',
                 cursor: 'pointer'
               }}>
-                Let's talk
+                Let&apos;s talk
               </button>
             </div>
           </section>
