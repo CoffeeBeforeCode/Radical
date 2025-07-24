@@ -245,7 +245,7 @@ export default function Home() {
             {/* Testimonial 1 */}
             <div className="relative rounded-lg bg-white p-8 shadow-sm">
               <div className="absolute left-4 top-4 text-5xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">
-                "
+                &quot;
               </div>
               <div className="mb-6 pl-8 text-lg leading-relaxed italic">
                 My team and I have never had such honest conversations with each other, 
@@ -262,7 +262,7 @@ export default function Home() {
             {/* Testimonial 2 */}
             <div className="relative rounded-lg bg-white p-8 shadow-sm">
               <div className="absolute left-4 top-4 text-5xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">
-                "
+                &quot;
               </div>
               <div className="mb-6 pl-8 text-lg leading-relaxed italic">
                 I have been surprised at how comfortable it has felt being stretched 
@@ -279,7 +279,7 @@ export default function Home() {
             {/* Testimonial 3 */}
             <div className="relative rounded-lg bg-white p-8 shadow-sm">
               <div className="absolute left-4 top-4 text-5xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">
-                "
+                &quot;
               </div>
               <div className="mb-6 pl-8 text-lg leading-relaxed italic">
                 Phillip is one of the most talented and experienced professionals I have ever met. 
@@ -295,7 +295,7 @@ export default function Home() {
             {/* Testimonial 4 */}
             <div className="relative rounded-lg bg-white p-8 shadow-sm">
               <div className="absolute left-4 top-4 text-5xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">
-                "
+                &quot;
               </div>
               <div className="mb-6 pl-8 text-lg leading-relaxed italic">
                 Phillip is a brilliant coach. He has the ability to uncover challenges 
@@ -316,24 +316,24 @@ export default function Home() {
         <PageLayout>
           <div className="relative">
             {/* Scattered EQ-i question bubbles for visual engagement */}
-              <div className="absolute top-0 left-1/4 -translate-x-1/2">
-                <div className="bg-[#7A9A7F] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+              <div className="absolute left-1/4 top-0 -translate-x-1/2">
+                <div className="max-w-xs rounded-2xl bg-[#7A9A7F] p-4 text-white shadow-lg">
                   <p className="text-sm italic">
                     &quot;What&apos;s the story I tell myself about who I am; is it still true?&quot;
                   </p>
                 </div>
               </div>
               
-              <div className="absolute top-20 right-1/4 translate-x-1/2">
-                <div className="bg-[#F96E1E] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+              <div className="absolute right-1/4 top-20 translate-x-1/2">
+                <div className="max-w-xs rounded-2xl bg-[#F96E1E] p-4 text-white shadow-lg">
                   <p className="text-sm italic">
                     &quot;What helps me choose well, especially when it&apos;s hard?&quot;
                   </p>
                 </div>
               </div>
               
-              <div className="absolute top-40 left-1/3">
-                <div className="bg-[#D4B86A] text-white p-4 rounded-2xl max-w-xs shadow-lg">
+              <div className="absolute left-1/3 top-40">
+                <div className="max-w-xs rounded-2xl bg-[#D4B86A] p-4 text-white shadow-lg">
                   <p className="text-sm italic">
                     &quot;Where do I feel most connected; what helps make that happen?&quot;
                   </p>
@@ -341,7 +341,7 @@ export default function Home() {
               </div>
 
             {/* Central content with adequate spacing for bubbles */}
-            <div className="text-center py-32">
+            <div className="py-32 text-center">
               <p className="mx-auto max-w-2xl text-xl font-light text-[#4A4A4A] md:text-2xl">
                 The questions that matter aren&apos;t about what you should do.<br />
                 They&apos;re about who you&apos;re becoming.
