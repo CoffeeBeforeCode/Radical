@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
-import * as gtag from '../lib/gtag'
+
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.scss'
 
