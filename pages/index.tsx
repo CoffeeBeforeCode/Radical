@@ -39,29 +39,29 @@ export default function Home() {
         <PageLayout>
           <div className="text-center">
             {/* Main headline using serif font for authority, not Waiting for the Sunrise */}
-            <h1 className="text-5xl md:text-7xl font-bold text-[#1A365D] leading-tight mb-6">
+            <h1 className="mb-6 text-5xl font-bold leading-tight text-[#1A365D] md:text-7xl">
               Not a title. Not a goal.{' '}
               <span className="font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">
                 A practice.
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-[#4A4A4A] font-light mb-8 max-w-3xl mx-auto">
+            <p className="mx-auto mb-8 max-w-3xl text-xl font-light text-[#4A4A4A] md:text-2xl">
               (Leadership, redefined.)
             </p>
 
             <div className="mx-auto max-w-4xl space-y-6 pt-8">
-              <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 The strongest leaders I know don't arrive — they return.<br />
                 Again and again. To their values. Their vision. Their self.
               </p>
               
-              <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 I create the space for that return —<br />
                 to what matters, what's emerging, and what's getting in the way.
               </p>
               
-              <p className="text-xl md:text-2xl text-[#7E2D40] font-semibold">
+              <p className="text-xl font-semibold text-[#7E2D40] md:text-2xl">
                 Not louder. Just wiser.
               </p>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="pt-12">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
+                className="inline-flex items-center justify-center rounded-lg bg-[#F96E1E] px-10 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#E55A1A] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
               >
                 Begin here
               </Link>
@@ -84,20 +84,20 @@ export default function Home() {
         <PageLayout>
           <Grid columns={2} className="items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] leading-tight">
+              <h2 className="text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
                 You already know what leadership demands.
               </h2>
-              <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 You&apos;re not here for more noise. Or another five-step model.<br />
                 You&apos;re here because something deeper is asking to be seen.
               </p>
             </div>
             
             <div className="space-y-6">
-              <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 I coach global leaders at the intersection of strategic clarity and emotional wisdom.
               </p>
-              <p className="text-lg text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A]">
                 Together, we look beneath performance to the patterns that shape it — 
                 the unseen dynamics, unspoken tensions, and quiet truths that make or break leadership.
               </p>
@@ -110,18 +110,18 @@ export default function Home() {
       <Block background="white" spacing="spacious">
         <PageLayout>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] leading-tight mb-6">
+            <h2 className="mb-6 text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               The Leadership Equation
             </h2>
-            <div className="font-['Waiting_for_the_Sunrise'] text-6xl md:text-8xl text-[#7E2D40] mb-8">
+            <div className="mb-8 font-['Waiting_for_the_Sunrise'] text-6xl text-[#7E2D40] md:text-8xl">
               PE = PO - I
             </div>
-            <p className="mx-auto max-w-3xl text-lg md:text-xl text-[#4A4A4A] leading-relaxed mb-8">
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
               <strong className="text-[#1A365D]">Performance</strong> equals{' '}
               <strong className="text-[#1A365D]">Potential</strong> minus{' '}
               <strong className="text-[#7E2D40]">Interference</strong>.
             </p>
-            <p className="mx-auto max-w-2xl text-lg text-[#4A4A4A] leading-relaxed">
+            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-[#4A4A4A]">
               Most leaders already possess remarkable potential. What limits their performance 
               isn&apos;t a lack of capability, but the presence of{' '}
               <span className="font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">interference</span> — 
@@ -131,28 +131,28 @@ export default function Home() {
 
           {/* Framework Examples - 3 Column Grid */}
           <Grid columns={3}>
-            <div className="bg-[#F8F5EB] rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <div className="text-4xl mb-4">🧠</div>
-              <h3 className="text-xl font-semibold text-[#1A365D] mb-4">Inner Dialogue</h3>
-              <p className="text-[#4A4A4A] text-sm leading-relaxed">
+            <div className="rounded-lg bg-[#F8F5EB] p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-4 text-4xl">🧠</div>
+              <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Inner Dialogue</h3>
+              <p className="text-sm leading-relaxed text-[#4A4A4A]">
                 The voice of imposter syndrome, perfectionism, or comparison thinking 
                 that creates mental interference.
               </p>
             </div>
             
-            <div className="bg-[#F8F5EB] rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <div className="text-4xl mb-4">⚖️</div>
-              <h3 className="text-xl font-semibold text-[#1A365D] mb-4">Competing Values</h3>
-              <p className="text-[#4A4A4A] text-sm leading-relaxed">
+            <div className="rounded-lg bg-[#F8F5EB] p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-4 text-4xl">⚖️</div>
+              <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Competing Values</h3>
+              <p className="text-sm leading-relaxed text-[#4A4A4A]">
                 Deeply held values that pull in different directions, creating decision paralysis 
                 or internal conflict.
               </p>
             </div>
             
-            <div className="bg-[#F8F5EB] rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <div className="text-4xl mb-4">🌪️</div>
-              <h3 className="text-xl font-semibold text-[#1A365D] mb-4">Environmental Blockers</h3>
-              <p className="text-[#4A4A4A] text-sm leading-relaxed">
+            <div className="rounded-lg bg-[#F8F5EB] p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-4 text-4xl">🌪️</div>
+              <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Environmental Blockers</h3>
+              <p className="text-sm leading-relaxed text-[#4A4A4A]">
                 Toxic team dynamics, organisational silos, or excessive administrative burdens 
                 that drain energy.
               </p>
@@ -165,10 +165,10 @@ export default function Home() {
       <Block background="navy" spacing="default">
         <PageLayout>
           <div className="text-center mb-16">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight mb-6">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl leading-tight text-white md:text-4xl">
               How I see it
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-white/90 leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
               I work in frameworks — but never formulas.<br />
               What you&apos;ll see here are tools I return to often with leaders:<br />
               not as answers, but as invitations.
@@ -231,10 +231,10 @@ export default function Home() {
       <Block background="cream" spacing="default">
         <PageLayout>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] leading-tight mb-6">
+            <h2 className="mb-6 text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               Reflections from leaders
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-[#4A4A4A] leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#4A4A4A]">
               This work isn&apos;t loud. It doesn&apos;t need to be.<br />
               It resonates when you&apos;re ready to hear yourself more clearly.
             </p>
@@ -342,7 +342,7 @@ export default function Home() {
 
             {/* Central content with adequate spacing for bubbles */}
             <div className="text-center py-32">
-              <p className="text-xl md:text-2xl text-[#4A4A4A] font-light max-w-2xl mx-auto">
+              <p className="mx-auto max-w-2xl text-xl font-light text-[#4A4A4A] md:text-2xl">
                 The questions that matter aren&apos;t about what you should do.<br />
                 They&apos;re about who you&apos;re becoming.
               </p>
@@ -356,31 +356,31 @@ export default function Home() {
         <PageLayout>
           <Grid columns={2} className="items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
                 A <span className="font-['Waiting_for_the_Sunrise'] text-[#D4B86A]">global</span> perspective
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-lg leading-relaxed text-white/90">
                 My coaching partnerships span diverse contexts and cultures, 
                 working with senior leaders across continents and industries.
               </p>
-              <p className="text-white/80 leading-relaxed">
+              <p className="leading-relaxed text-white/80">
                 This global experience deepens my understanding of leadership challenges 
                 across different cultural contexts, enriching each partnership while 
                 maintaining focus on your unique journey.
               </p>
             </div>
             
-            <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-semibold text-[#D4B86A] mb-4">Core Regions</h3>
-              <ul className="space-y-2 text-white/90 text-sm mb-6">
+            <div className="rounded-lg bg-white/10 p-8 backdrop-blur-sm">
+              <h3 className="mb-4 text-xl font-semibold text-[#D4B86A]">Core Regions</h3>
+              <ul className="mb-6 space-y-2 text-sm text-white/90">
                 <li>• Europe (UK, Ireland, France, Belgium, Netherlands)</li>
                 <li>• Middle East (UAE, Saudi Arabia, Israel)</li>
                 <li>• Americas (USA, Argentina, Brazil)</li>
                 <li>• Asia & Pacific (India, Singapore)</li>
               </ul>
               
-              <h3 className="text-xl font-semibold text-[#D4B86A] mb-4">Primary Industries</h3>
-              <ul className="space-y-2 text-white/90 text-sm">
+              <h3 className="mb-4 text-xl font-semibold text-[#D4B86A]">Primary Industries</h3>
+              <ul className="space-y-2 text-sm text-white/90">
                 <li>• Technology & Digital Innovation</li>
                 <li>• Healthcare & Life Sciences</li>
                 <li>• Financial Services & Banking</li>
@@ -396,18 +396,18 @@ export default function Home() {
       <Block background="white" spacing="spacious">
         <PageLayout>
           <div className="text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] leading-tight">
+            <h2 className="text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
               This is your leadership.
             </h2>
             
             <div className="mx-auto max-w-2xl space-y-6">
-              <p className="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A] md:text-xl">
                 You don&apos;t need a louder voice.<br />
                 You need a clearer signal.<br />
                 And a safe enough space to hear it.
               </p>
               
-              <p className="text-lg text-[#4A4A4A] leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#4A4A4A]">
                 If something here resonates, let&apos;s explore what&apos;s possible.
               </p>
             </div>
@@ -416,7 +416,7 @@ export default function Home() {
             <div className="pt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-10 py-4 bg-[#F96E1E] text-white text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
+                className="inline-flex items-center justify-center rounded-lg bg-[#F96E1E] px-10 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#E55A1A] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/50"
               >
                 Let&apos;s explore together
               </Link>
