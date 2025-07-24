@@ -110,7 +110,7 @@ export default function Home() {
                   color: '#4A4A4A',
                   margin: '0 0 1.5rem 0'
                 }}>
-                  The strongest leaders I know don't arrive — they return.<br />
+                  The strongest leaders I know don&apos;t arrive — they return.<br />
                   Again and again. To their values. Their vision. Their self.
                 </p>
                 
@@ -120,7 +120,7 @@ export default function Home() {
                   margin: '0 0 1.5rem 0'
                 }}>
                   I create the space for that return —<br />
-                  to what matters, what's emerging, and what's getting in the way.
+                  to what matters, what&apos;s emerging, and what&apos;s getting in the way.
                 </p>
                 
                 <p style={{ 
@@ -226,7 +226,7 @@ export default function Home() {
                   color: '#7E2D40',
                   fontFamily: "'Waiting for the Sunrise', cursive"
                 }}>
-                  "
+                  &ldquo;
                 </div>
                 
                 <p style={{ 
