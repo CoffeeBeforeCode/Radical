@@ -16,7 +16,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       url: string,
       { shallow }: { shallow?: boolean }
     ) => {
-      if (!shallow) gtag.pageview(url)
+   
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
