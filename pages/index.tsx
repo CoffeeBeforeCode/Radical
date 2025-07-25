@@ -65,22 +65,22 @@ export default function Home() {
             </div>
 
             {/* EQ-i Square Blocks Sidebar - 1/3 */}
-            <div className="space-y-4 lg:col-span-1">
+                          <div className="space-y-4 lg:col-span-1">
               <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  "What's the story I tell myself about who I am; is it still true?"
+                  &quot;What&apos;s the story I tell myself about who I am; is it still true?&quot;
                 </p>
               </div>
               
               <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  "What helps me choose well, especially when it's hard?"
+                  &quot;What helps me choose well, especially when it&apos;s hard?&quot;
                 </p>
               </div>
               
               <div className="aspect-square rounded-lg bg-[#7E2D40] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  "What do I reach for when things feel too much?"
+                  &quot;What do I reach for when things feel too much?&quot;
                 </p>
               </div>
             </div>
@@ -161,13 +161,13 @@ export default function Home() {
                 <div className="mb-4 text-4xl">🧠</div>
                 <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
                 <div className="space-y-3">
-                  <p className="text-white text-opacity-90">
-                    The voice of imposter syndrome: "I don&apos;t really belong at this level."
+                  <p className="text-white/90">
+                    The voice of imposter syndrome: &quot;I don&apos;t really belong at this level.&quot;
                   </p>
-                  <p className="text-white text-opacity-90">
-                    Perfectionism: "Anything less than flawless is failure."
+                  <p className="text-white/90">
+                    Perfectionism: &quot;Anything less than flawless is failure.&quot;
                   </p>
-                  <p className="text-sm text-white text-opacity-80">
+                  <p className="text-sm text-white/80">
                     That internal commentary creating doubt where there should be confidence.
                   </p>
                 </div>
@@ -195,7 +195,7 @@ export default function Home() {
                   <div className="mb-2 text-2xl">📖</div>
                   <h3 className="mb-2 font-semibold text-[#1A365D]">Unhelpful Narratives</h3>
                   <p className="text-sm text-gray-600">
-                    "I must always have the answer." "If I slow down, I'll fall behind."
+                    &quot;I must always have the answer.&quot; &quot;If I slow down, I&apos;ll fall behind.&quot;
                   </p>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
               <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#7A9A7F] text-xl text-white">👁️</div>
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7A9A7F] text-xl text-white">👁️</div>
                 <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Observation First</h3>
                 <p className="text-xs text-gray-600">
                   We start by noticing patterns, dynamics, friction before we move.
@@ -228,7 +228,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">🎯</div>
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">🎯</div>
                 <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
                 <p className="text-xs text-gray-600">
                   You lead with head, heart, and gut. We work with all three.
@@ -236,7 +236,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#7E2D40] text-xl text-white">🔄</div>
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7E2D40] text-xl text-white">🔄</div>
                 <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
                 <p className="text-xs text-gray-600">
                   We surface what really matters — not just what sounds good.
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#D4B86A] text-xl text-white">⚖️</div>
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#D4B86A] text-xl text-white">⚖️</div>
                 <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Sitting with Tension</h3>
                 <p className="text-xs text-gray-600">
                   Some tensions aren&apos;t meant to be solved, but understood.
@@ -252,7 +252,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">✨</div>
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">✨</div>
                 <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Reducing Interference</h3>
                 <p className="text-xs text-gray-600">
                   When interference clears, performance meets potential.
@@ -275,7 +275,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {/* Large Testimonial - 2/3 */}
               <div className="rounded-xl bg-white p-6 shadow-lg lg:col-span-2">
-                <div className="absolute -ml-1 -mt-2 text-5xl text-[#7E2D40]">"</div>
+                <div className="absolute -ml-1 -mt-2 text-5xl text-[#7E2D40]">&quot;</div>
                 <p className="mb-4 pl-6 text-lg font-medium italic leading-relaxed text-[#1A365D]">
                   My team and I have never had such honest conversations with each other, 
                   until I started working with Phillip. His ability to create a safe space 
@@ -283,7 +283,7 @@ export default function Home() {
                   as a leadership team.
                 </p>
                 <div className="flex items-center pl-6">
-                  <div className="mr-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#7E2D40] text-sm font-bold text-white">
+                  <div className="mr-3 flex size-10 items-center justify-center rounded-full bg-[#7E2D40] text-sm font-bold text-white">
                     CH
                   </div>
                   <div>
@@ -295,30 +295,30 @@ export default function Home() {
 
               {/* Stacked Smaller Testimonials - 1/3 */}
               <div className="space-y-4">
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    "I have been surprised at how comfortable it has felt being stretched. 
-                    The stretch has become an additional approach rather than replacing who I am."
+                    &quot;I have been surprised at how comfortable it has felt being stretched. 
+                    The stretch has become an additional approach rather than replacing who I am.&quot;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     CFO, Housing & Community
                   </div>
                 </div>
 
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    "He is completely trustworthy and has an extremely high level of integrity, 
-                    acute business insight and many years of diverse experience to draw upon."
+                    &quot;He is completely trustworthy and has an extremely high level of integrity, 
+                    acute business insight and many years of diverse experience to draw upon.&quot;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     Senior Civil-Servant, Government
                   </div>
                 </div>
 
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    "I have got my confidence back and my self-belief which had waned 
-                    back when we first met."
+                    &quot;I have got my confidence back and my self-belief which had waned 
+                    back when we first met.&quot;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     Country Head, Manufacturing
@@ -338,7 +338,7 @@ export default function Home() {
               <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
                 A <span className="text-[#F96E1E]">global</span> perspective
               </h2>
-              <p className="mb-6 text-lg text-white text-opacity-90">
+              <p className="mb-6 text-lg text-white/90">
                 My coaching partnerships span diverse contexts and cultures, working with 
                 senior leaders across continents and industries.
               </p>
@@ -442,7 +442,7 @@ export default function Home() {
             <div className="rounded-xl bg-[#1A365D] p-6 text-center text-white">
               <div className="mb-4 text-4xl text-[#D4B86A]">💭</div>
               <h3 className="mb-4 text-lg font-bold text-white">Ready to begin?</h3>
-              <p className="mb-6 text-sm text-white text-opacity-90">
+              <p className="mb-6 text-sm text-white/90">
                 Every transformation begins with a single, honest conversation.
               </p>
               <div className="rounded-lg bg-[#F96E1E] p-4">
