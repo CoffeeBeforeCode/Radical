@@ -22,7 +22,7 @@
  * Target Audience: Sophisticated executives who dismiss template mediocrity instantly
  */
 
-import Layout, { Block, Grid, PageLayout } from '../components/Layout'
+import Layout, { Block, PageLayout } from '../components/Layout'
 import Link from 'next/link'
 
 export default function Home() {
@@ -35,8 +35,8 @@ export default function Home() {
       {/* HERO REVOLUTION - Typography-First, No Template Safety */}
       <Block background="white" spacing="default">
         <PageLayout>
-          <div className="min-h-screen grid items-center">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-16">
+          <div className="grid min-h-screen items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
               <div className="space-y-8 lg:col-span-2">
                 <h1 className="text-6xl font-bold leading-none tracking-tight text-[#1A365D] md:text-8xl lg:text-9xl">
                   Not a title.<br />
@@ -68,18 +68,21 @@ export default function Home() {
               </div>
 
               <div className="relative lg:col-span-1">
-                <div className="mb-6 rotate-2 rounded-3xl bg-[#7E2D40] p-8 text-white shadow-2xl">
-                  <p className="text-lg font-medium italic">
-                    &quot;I create the space for that return — to what matters, what&apos;s emerging, and what&apos;s getting in the way.&quot;
-                  </p>
-                </div>
-                
-                <div className="absolute -right-8 -top-4 max-w-xs -rotate-12 rounded-2xl bg-[#7A9A7F] p-4 text-white shadow-lg">
-                  <p className="text-sm italic">&quot;What&apos;s the story I tell myself about who I am?&quot;</p>
-                </div>
-                
-                <div className="absolute -bottom-6 -left-4 max-w-xs rotate-6 rounded-2xl bg-[#F96E1E] p-4 text-white shadow-lg">
-                  <p className="text-sm italic">&quot;What helps me choose well when it&apos;s hard?&quot;</p>
+                {/* EQ-i Question Boxes - Square containers */}
+                <div className="grid grid-cols-1 gap-6">
+                  <div className="rounded-2xl bg-[#7E2D40] p-6 text-white shadow-2xl">
+                    <p className="text-lg font-medium italic">
+                      &quot;I create the space for that return — to what matters, what&apos;s emerging, and what&apos;s getting in the way.&quot;
+                    </p>
+                  </div>
+                  
+                  <div className="rounded-2xl bg-[#7A9A7F] p-4 text-white shadow-lg">
+                    <p className="text-sm italic">&quot;What&apos;s the story I tell myself about who I am?&quot;</p>
+                  </div>
+                  
+                  <div className="rounded-2xl bg-[#F96E1E] p-4 text-white shadow-lg">
+                    <p className="text-sm italic">&quot;What helps me choose well when it&apos;s hard?&quot;</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -90,7 +93,7 @@ export default function Home() {
       {/* LEADERSHIP EQUATION - Bold Feature Box */}
       <Block background="navy" spacing="spacious">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-12 items-center lg:grid-cols-5">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="text-center lg:col-span-2 lg:text-left">
               <div className="rounded-2xl bg-white/10 p-12 backdrop-blur">
                 <div className="mb-4 text-8xl font-bold font-mono tracking-wider text-[#D4B86A] md:text-9xl">
