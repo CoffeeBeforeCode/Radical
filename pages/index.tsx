@@ -14,7 +14,7 @@
  * - TANGERINE STRIPE: Bold CTA finish
  */
 
-import Layout, { Block, PageLayout } from '../components/Layout'
+import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
 
 export default function Home() {
