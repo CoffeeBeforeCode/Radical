@@ -1,22 +1,17 @@
 /**
- * AGGRESSIVE Homepage - Phillip Collins Global Leadership Coach
+ * AGA-INSPIRED HOMEPAGE - Phillip Collins Global Leadership Coach
  * 
- * BREAKTHROUGH DESIGN that DESTROYS consultant template conventions
- * through DENSE layout architecture, bold asymmetric grids, and strategic color blocking
+ * BREAKTHROUGH DESIGN with FULL-WIDTH COLOR STRIPES that DESTROYS consultant templates
+ * Dense, confident layout inspired by Aga Szostek's bold approach
  * 
- * Design Revolution:
- * - COMPRESSED Aga-inspired density vs. safe white space
- * - BOXY grid architecture with minimal padding  
- * - AGGRESSIVE asymmetric layouts (2/3 + 1/3, not centered)
- * - EQ-i square blocks as visual placeholders for future SVG bubbles
- * - BOLD color blocking that screams confidence over template safety
- * - REAL testimonials in styled asymmetric blocks
- * - PACKED content - more per screen than any consultant template
- * 
- * ALL BUILD ERRORS FIXED:
- * - React unescaped entities properly escaped
- * - Tailwind v3 opacity syntax (bg-white/10 instead of bg-opacity-10)
- * - Proper Tailwind class ordering throughout
+ * STRUCTURE:
+ * - FULL-PAGE HERO: Screen-filling impact
+ * - NAVY STRIPE: Leadership Equation showcase  
+ * - CREAM STRIPE: Interference examples in boxy grid
+ * - WHITE STRIPE: Approach frameworks with EQ squares
+ * - BURGUNDY STRIPE: Real testimonials mixed layout
+ * - NAVY STRIPE: Global reach regional blocks
+ * - TANGERINE STRIPE: Bold CTA finish
  */
 
 import Layout, { Block, PageLayout } from '../components/Layout'
@@ -29,12 +24,12 @@ export default function Home() {
       description="Creating space for leaders to see what gets in their way, reduce interference, and unlock their natural potential. Working with executives across Europe, Middle East, Americas, and Asia Pacific."
       canonical="/"
     >
-      {/* HERO REVOLUTION - Dense Typography + EQ-i Squares */}
-      <Block background="white" spacing="compact">
+      {/* FULL-PAGE HERO - Screen Impact */}
+      <section className="w-full min-h-screen bg-white flex items-center">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-6 py-8 lg:grid-cols-3">
-            {/* Main Content - 2/3 Aggressive Asymmetric */}
-            <div className="space-y-6 lg:col-span-2">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
+            {/* Main Hero Content - 3/5 Asymmetric */}
+            <div className="space-y-6 lg:col-span-3">
               <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
                 Not a title.<br />
                 Not a goal.<br />
@@ -64,13 +59,13 @@ export default function Home() {
                   href="/the-work"
                   className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
                 >
-                  Explore the Work
+                  The Work
                 </Link>
               </div>
             </div>
 
-            {/* EQ-i Square Blocks Sidebar - 1/3 */}
-            <div className="space-y-4 lg:col-span-1">
+            {/* EQ Square Sidebar - 2/5 */}
+            <div className="space-y-4 lg:col-span-2">
               <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
                 <p className="text-sm font-medium italic">
                   &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
@@ -88,54 +83,60 @@ export default function Home() {
                   &ldquo;What do I reach for when things feel too much?&rdquo;
                 </p>
               </div>
+
+              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+                <p className="text-sm font-medium italic">
+                  &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
+                </p>
+              </div>
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* LEADERSHIP EQUATION - Bold Dense Feature */}
-      <Block background="navy" spacing="compact">
+      {/* NAVY STRIPE - Leadership Equation */}
+      <section className="w-full bg-[#1A365D] py-8 md:py-12">
         <PageLayout>
-          <div className="grid grid-cols-1 items-center gap-6 py-8 lg:grid-cols-5">
-            {/* Equation Display - 2/5 */}
-            <div className="text-center lg:col-span-2">
-              <div className="rounded-xl bg-white/10 p-8 backdrop-blur">
-                <div className="mb-4 font-mono text-6xl font-bold text-[#D4B86A] md:text-7xl">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
+            {/* Equation Display - 1/3 */}
+            <div className="text-center">
+              <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
+                <div className="mb-4 font-mono text-5xl font-bold text-[#D4B86A] md:text-6xl">
                   PE = PO - I
                 </div>
-                <p className="text-xl font-semibold text-[#D4B86A]">
+                <p className="text-lg font-semibold text-[#D4B86A]">
                   The Leadership Equation
                 </p>
               </div>
             </div>
 
-            {/* Explanation - 3/5 Asymmetric */}
-            <div className="space-y-6 lg:col-span-3">
+            {/* Explanation - 2/3 Asymmetric */}
+            <div className="space-y-6 lg:col-span-2">
               <h2 className="text-3xl font-bold text-white md:text-4xl">
                 Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
               </h2>
               
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-2xl text-[#F96E1E]">PE</div>
+                  <div className="mb-2 text-xl text-[#F96E1E]">PE</div>
                   <h3 className="mb-2 font-semibold text-white">Performance</h3>
                   <p className="text-sm text-white/80">Observable results and impact</p>
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-2xl text-[#D4B86A]">PO</div>
+                  <div className="mb-2 text-xl text-[#D4B86A]">PO</div>
                   <h3 className="mb-2 font-semibold text-white">Potential</h3>
                   <p className="text-sm text-white/80">Innate capabilities within you</p>
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-2xl text-[#F96E1E]">I</div>
+                  <div className="mb-2 text-xl text-[#F96E1E]">I</div>
                   <h3 className="mb-2 font-semibold text-white">Interference</h3>
                   <p className="text-sm text-white/80">The &ldquo;stuff&rdquo; getting in your way</p>
                 </div>
               </div>
 
-              <div className="rounded-lg bg-[#F96E1E] p-6">
+              <div className="rounded-lg bg-[#F96E1E] p-4">
                 <p className="font-medium text-white">
                   When we reduce what&apos;s in the way, performance naturally rises to meet potential.
                 </p>
@@ -143,203 +144,240 @@ export default function Home() {
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* INTERFERENCE EXAMPLES - Dense Varied-Size Cards */}
-      <Block background="cream" spacing="compact">
+      {/* CREAM STRIPE - Interference Examples in Boxy Grid */}
+      <section className="w-full bg-[#F8F5EB] py-8 md:py-12">
         <PageLayout>
-          <div className="py-8">
-            <div className="mb-8">
-              <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-                What gets in your way?
-              </h2>
-              <p className="max-w-3xl text-lg text-gray-600">
-                Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
-                is the best use of your energy.
-              </p>
-            </div>
-
-            {/* Asymmetric Dense Grid */}
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {/* Large Card - Inner Dialogue */}
-              <div className="rounded-xl bg-[#7E2D40] p-6 text-white shadow-lg md:col-span-2">
-                <div className="mb-4 text-4xl">🧠</div>
-                <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
-                <div className="space-y-3">
-                  <p className="text-white/90">
-                    The voice of imposter syndrome: &ldquo;I don&apos;t really belong at this level.&rdquo;
-                  </p>
-                  <p className="text-white/90">
-                    Perfectionism: &ldquo;Anything less than flawless is failure.&rdquo;
-                  </p>
-                  <p className="text-sm text-white/80">
-                    That internal commentary creating doubt where there should be confidence.
-                  </p>
-                </div>
-              </div>
-
-              {/* Stacked Smaller Cards */}
-              <div className="space-y-4">
-                <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
-                  <div className="mb-2 text-2xl">⚖️</div>
-                  <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
-                  <p className="text-sm text-gray-600">
-                    Autonomy vs belonging. Care vs performance. Values pulling different directions.
-                  </p>
-                </div>
-
-                <div className="rounded-lg border-l-4 border-[#7A9A7F] bg-white p-4 shadow">
-                  <div className="mb-2 text-2xl">🌪️</div>
-                  <h3 className="mb-2 font-semibold text-[#1A365D]">Environmental Blockers</h3>
-                  <p className="text-sm text-gray-600">
-                    Toxic team dynamics, silos, excessive admin that drains energy.
-                  </p>
-                </div>
-
-                <div className="rounded-lg border-l-4 border-[#D4B86A] bg-white p-4 shadow">
-                  <div className="mb-2 text-2xl">📖</div>
-                  <h3 className="mb-2 font-semibold text-[#1A365D]">Unhelpful Narratives</h3>
-                  <p className="text-sm text-gray-600">
-                    &ldquo;I must always have the answer.&rdquo; &ldquo;If I slow down, I&apos;ll fall behind.&rdquo;
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </Block>
-
-      {/* APPROACH SHOWCASE - Compressed 5-Column Grid */}
-      <Block background="white" spacing="compact">
-        <PageLayout>
-          <div className="py-8">
-            <div className="mb-8 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-                How I see it
-              </h2>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                I work in frameworks — but never formulas. These are tools I return to often: 
-                not as answers, but as invitations.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
-              <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7A9A7F] text-xl text-white">👁️</div>
-                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Observation First</h3>
-                <p className="text-xs text-gray-600">
-                  We start by noticing patterns, dynamics, friction before we move.
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">🎯</div>
-                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
-                <p className="text-xs text-gray-600">
-                  You lead with head, heart, and gut. We work with all three.
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7E2D40] text-xl text-white">🔄</div>
-                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
-                <p className="text-xs text-gray-600">
-                  We surface what really matters — not just what sounds good.
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#D4B86A] text-xl text-white">⚖️</div>
-                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Sitting with Tension</h3>
-                <p className="text-xs text-gray-600">
-                  Some tensions aren&apos;t meant to be solved, but understood.
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">✨</div>
-                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Reducing Interference</h3>
-                <p className="text-xs text-gray-600">
-                  When interference clears, performance meets potential.
-                </p>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </Block>
-
-      {/* REAL TESTIMONIALS - Asymmetric Layout */}
-      <Block background="burgundy" spacing="compact">
-        <PageLayout>
-          <div className="py-8">
-            <h2 className="mb-8 text-center text-3xl font-bold text-white md:text-4xl">
-              Reflections from leaders
+          <div className="mb-8">
+            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              What gets in your way?
             </h2>
+            <p className="max-w-3xl text-lg text-gray-600">
+              Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
+              is the best use of your energy.
+            </p>
+          </div>
 
-            {/* Asymmetric Grid: Large + Stack */}
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-              {/* Large Testimonial - 2/3 */}
-              <div className="rounded-xl bg-white p-6 shadow-lg lg:col-span-2">
-                <div className="absolute -ml-1 -mt-2 text-5xl text-[#7E2D40]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-lg font-medium italic leading-relaxed text-[#1A365D]">
-                  My team and I have never had such honest conversations with each other, 
-                  until I started working with Phillip. His ability to create a safe space 
-                  where challenging topics can be discussed has transformed how we operate 
-                  as a leadership team.
+          {/* Aga-Style Boxy Grid */}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+            {/* Large Block - Inner Dialogue */}
+            <div className="rounded-lg bg-[#7E2D40] p-6 text-white shadow-lg md:col-span-2">
+              <div className="mb-4 text-3xl">🧠</div>
+              <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
+              <div className="space-y-3">
+                <p className="text-white/90">
+                  &ldquo;I don&apos;t really belong at this level.&rdquo;
                 </p>
-                <div className="flex items-center pl-6">
-                  <div className="mr-3 flex size-10 items-center justify-center rounded-full bg-[#7E2D40] text-sm font-bold text-white">
-                    CH
-                  </div>
-                  <div>
-                    <div className="font-semibold text-[#7E2D40]">Country Head</div>
-                    <div className="text-sm text-gray-600">Telecommunications</div>
-                  </div>
-                </div>
+                <p className="text-white/90">
+                  &ldquo;Anything less than flawless is failure.&rdquo;
+                </p>
+                <p className="text-sm text-white/80">
+                  That internal commentary creating doubt where there should be confidence.
+                </p>
+              </div>
+            </div>
+
+            {/* EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;What would it take to let more of the real me come through?&rdquo;
+              </p>
+            </div>
+
+            {/* Competing Values */}
+            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
+              <div className="mb-2 text-2xl">⚖️</div>
+              <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
+              <p className="text-sm text-gray-600">
+                Autonomy vs belonging. Care vs performance. Values pulling different directions.
+              </p>
+            </div>
+
+            {/* Environmental Blockers */}
+            <div className="rounded-lg border-l-4 border-[#7A9A7F] bg-white p-4 shadow">
+              <div className="mb-2 text-2xl">🌪️</div>
+              <h3 className="mb-2 font-semibold text-[#1A365D]">Environmental Blockers</h3>
+              <p className="text-sm text-gray-600">
+                Toxic team dynamics, silos, excessive admin that drains energy.
+              </p>
+            </div>
+
+            {/* Unhelpful Narratives - Large Block */}
+            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2">
+              <div className="mb-4 text-3xl text-[#D4B86A]">📖</div>
+              <h3 className="mb-4 text-xl font-bold">Unhelpful Narratives</h3>
+              <div className="space-y-2">
+                <p className="text-white/90">&ldquo;I must always have the answer.&rdquo;</p>
+                <p className="text-white/90">&ldquo;If I slow down, I&apos;ll fall behind.&rdquo;</p>
+                <p className="text-white/90">&ldquo;I&apos;m not strategic enough.&rdquo;</p>
+              </div>
+            </div>
+
+            {/* Another EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* WHITE STRIPE - Approach Frameworks with EQ Squares */}
+      <section className="w-full bg-white py-8 md:py-12">
+        <PageLayout>
+          <div className="mb-8 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              How I see it
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              I work in frameworks — but never formulas. These are tools I return to often: 
+              not as answers, but as invitations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-6">
+            {/* Framework Block */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center md:col-span-2">
+              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7A9A7F] text-xl text-white">👁️</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Observation First</h3>
+              <p className="text-xs text-gray-600">
+                We start by noticing patterns, dynamics, friction before we move.
+              </p>
+            </div>
+
+            {/* EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#7E2D40] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
+              </p>
+            </div>
+
+            {/* Framework Block */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
+              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">🎯</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
+              <p className="text-xs text-gray-600">
+                You lead with head, heart, and gut. We work with all three.
+              </p>
+            </div>
+
+            {/* Framework Block - Large */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center md:col-span-2">
+              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7E2D40] text-xl text-white">🔄</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
+              <p className="text-xs text-gray-600">
+                We surface what really matters — not just what sounds good. Through constellation work, we make visible the tensions and alignments that shape every decision.
+              </p>
+            </div>
+
+            {/* Framework Block */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
+              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#D4B86A] text-xl text-white">⚖️</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Sitting with Tension</h3>
+              <p className="text-xs text-gray-600">
+                Some tensions aren&apos;t meant to be solved, but understood.
+              </p>
+            </div>
+
+            {/* EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;How do I handle it when plans change?&rdquo;
+              </p>
+            </div>
+
+            {/* Framework Block */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
+              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">✨</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Reducing Interference</h3>
+              <p className="text-xs text-gray-600">
+                When interference clears, performance meets potential.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* BURGUNDY STRIPE - Real Testimonials Mixed Layout */}
+      <section className="w-full bg-[#7E2D40] py-8 md:py-12">
+        <PageLayout>
+          <h2 className="mb-8 text-center text-3xl font-bold text-white md:text-4xl">
+            Reflections from leaders
+          </h2>
+
+          {/* Asymmetric Testimonial Grid */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {/* Large Testimonial */}
+            <div className="rounded-lg bg-white p-6 shadow-lg md:col-span-2">
+              <div className="absolute -ml-1 -mt-2 text-4xl text-[#7E2D40]">&ldquo;</div>
+              <p className="mb-4 pl-6 text-lg font-medium italic leading-relaxed text-[#1A365D]">
+                My team and I have never had such honest conversations with each other, 
+                until I started working with Phillip. His ability to create a safe space 
+                where challenging topics can be discussed has transformed how we operate 
+                as a leadership team.
+              </p>
+              <div className="pl-6 text-right">
+                <div className="font-semibold text-[#7E2D40]">Country Head</div>
+                <div className="text-sm text-gray-600">Telecommunications</div>
+              </div>
+            </div>
+
+            {/* Stacked Content */}
+            <div className="space-y-4">
+              {/* EQ Square */}
+              <div className="aspect-square rounded-lg bg-[#D4B86A] p-4 text-white">
+                <p className="text-sm font-medium italic">
+                  &ldquo;What am I still hopeful about, even if I don&apos;t say it out loud?&rdquo;
+                </p>
               </div>
 
-              {/* Stacked Smaller Testimonials - 1/3 */}
-              <div className="space-y-4">
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <p className="mb-3 text-sm italic text-white">
-                    &ldquo;I have been surprised at how comfortable it has felt being stretched. 
-                    The stretch has become an additional approach rather than replacing who I am.&rdquo;
-                  </p>
-                  <div className="text-xs font-medium text-[#D4B86A]">
-                    CFO, Housing & Community
-                  </div>
+              {/* Small Testimonial */}
+              <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
+                <p className="mb-3 text-sm italic text-white">
+                  &ldquo;I have been surprised at how comfortable it has felt being stretched. 
+                  The stretch has become an additional approach rather than replacing who I am.&rdquo;
+                </p>
+                <div className="text-xs font-medium text-[#D4B86A]">
+                  CFO, Housing & Community
                 </div>
+              </div>
+            </div>
 
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <p className="mb-3 text-sm italic text-white">
-                    &ldquo;He is completely trustworthy and has an extremely high level of integrity, 
-                    acute business insight and many years of diverse experience to draw upon.&rdquo;
-                  </p>
-                  <div className="text-xs font-medium text-[#D4B86A]">
-                    Senior Civil-Servant, Government
-                  </div>
-                </div>
+            {/* Another testimonial */}
+            <div className="rounded-lg bg-white p-4 shadow">
+              <div className="absolute -ml-1 -mt-2 text-3xl text-[#7E2D40]">&ldquo;</div>
+              <p className="mb-3 pl-4 text-sm italic leading-relaxed text-[#1A365D]">
+                Phillip is one of the most talented and experienced professionals I have ever met. 
+                He is completely trustworthy and has an extremely high level of integrity.
+              </p>
+              <div className="pl-4 text-right">
+                <div className="text-xs font-semibold text-[#7E2D40]">Senior Civil-Servant</div>
+                <div className="text-xs text-gray-600">Government</div>
+              </div>
+            </div>
 
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <p className="mb-3 text-sm italic text-white">
-                    &ldquo;I have got my confidence back and my self-belief which had waned 
-                    back when we first met.&rdquo;
-                  </p>
-                  <div className="text-xs font-medium text-[#D4B86A]">
-                    Country Head, Manufacturing
-                  </div>
-                </div>
+            {/* Recovery testimonial */}
+            <div className="rounded-lg bg-white/10 p-4 backdrop-blur md:col-span-2">
+              <p className="mb-3 text-sm italic text-white">
+                &ldquo;Mentally, I am so pleased I arrived at this point with your coaching 
+                for which I am so grateful. I have got my confidence back and my self-belief 
+                which had waned back when we first met.&rdquo;
+              </p>
+              <div className="text-xs font-medium text-[#D4B86A]">
+                Country Head, Manufacturing
               </div>
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* GLOBAL REACH - Tight Regional Grid */}
-      <Block background="navy" spacing="compact">
+      {/* NAVY STRIPE - Global Reach Regional Blocks */}
+      <section className="w-full bg-[#1A365D] py-8 md:py-12">
         <PageLayout>
-          <div className="grid grid-cols-1 items-center gap-8 py-8 lg:grid-cols-2">
-            <div>
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
+            <div className="lg:col-span-1">
               <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
                 A <span className="text-[#F96E1E]">global</span> perspective
               </h2>
@@ -348,7 +386,7 @@ export default function Home() {
                 senior leaders across continents and industries.
               </p>
               
-              {/* EQ-i Squares for Global Context */}
+              {/* Stats EQ Squares */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4 text-center text-white">
                   <div>
@@ -365,8 +403,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Color-Coded Regional Blocks */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* Regional Blocks - Dense Grid */}
+            <div className="grid grid-cols-2 gap-4 lg:col-span-2">
               <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
                 <h4 className="mb-2 font-bold">Europe</h4>
                 <ul className="space-y-1 text-sm">
@@ -392,37 +430,49 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="rounded-lg bg-[#7E2D40] p-4 text-white">
+              <div className="rounded-lg bg-white p-4 text-[#1A365D]">
                 <h4 className="mb-2 font-bold">Asia Pacific</h4>
                 <ul className="space-y-1 text-sm">
                   <li>• India</li>
                   <li>• Singapore</li>
                 </ul>
               </div>
+
+              {/* Industries Block - Spanning */}
+              <div className="rounded-lg bg-white/10 p-4 text-white md:col-span-2 backdrop-blur">
+                <h4 className="mb-2 font-bold text-[#D4B86A]">Primary Industries</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>• Technology & Digital</div>
+                  <div>• Healthcare & Life Sciences</div>
+                  <div>• Financial Services</div>
+                  <div>• Manufacturing</div>
+                  <div>• Government & Public Sector</div>
+                </div>
+              </div>
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* CLOSING CTA - Bold Asymmetric */}
-      <Block background="white" spacing="compact">
+      {/* TANGERINE STRIPE - Bold CTA Finish */}
+      <section className="w-full bg-[#F96E1E] py-8 md:py-12">
         <PageLayout>
-          <div className="grid grid-cols-1 items-center gap-8 py-8 lg:grid-cols-3">
-            {/* Main Content - 2/3 Asymmetric */}
-            <div className="lg:col-span-2">
-              <h2 className="mb-6 text-4xl font-bold text-[#1A365D] md:text-5xl">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-5">
+            {/* Main CTA Content - 3/5 */}
+            <div className="lg:col-span-3">
+              <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
                 This is your leadership.
               </h2>
               
-              <div className="mb-6 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
-                <p className="text-xl leading-relaxed text-[#1A365D]">
+              <div className="mb-6 rounded-lg bg-white p-6">
+                <p className="text-xl font-medium leading-relaxed text-[#1A365D]">
                   You don&apos;t need a louder voice.<br />
                   You need a clearer signal.<br />
                   And a safe enough space to hear it.
                 </p>
               </div>
 
-              <p className="mb-6 text-lg text-gray-600">
+              <p className="mb-6 text-lg text-white/90">
                 If something here resonates, let&apos;s explore what&apos;s possible. 
                 No funnel. No pressure. Just a human conversation.
               </p>
@@ -430,35 +480,45 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                  className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
                 >
                   Let&apos;s Explore Together →
                 </Link>
                 <Link
                   href="/this-is-personal"
-                  className="rounded-lg border-2 border-[#7E2D40] px-8 py-4 text-lg font-semibold text-[#7E2D40] transition-colors hover:bg-[#7E2D40] hover:text-white"
+                  className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
                 >
                   This is Personal
                 </Link>
               </div>
             </div>
 
-            {/* CTA Side Block - 1/3 */}
-            <div className="rounded-xl bg-[#1A365D] p-6 text-center text-white">
-              <div className="mb-4 text-4xl text-[#D4B86A]">💭</div>
-              <h3 className="mb-4 text-lg font-bold text-white">Ready to begin?</h3>
-              <p className="mb-6 text-sm text-white/90">
-                Every transformation begins with a single, honest conversation.
-              </p>
-              <div className="rounded-lg bg-[#F96E1E] p-4">
-                <p className="text-sm font-medium text-white">
-                  Leadership is a <strong>practice</strong>, not a destination
+            {/* Closing EQ Squares - 2/5 */}
+            <div className="space-y-4 lg:col-span-2">
+              <div className="aspect-square rounded-lg bg-white p-4">
+                <div className="mb-2 text-2xl text-[#F96E1E]">💭</div>
+                <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Ready to begin?</h3>
+                <p className="text-xs text-gray-600">
+                  Every transformation begins with a single, honest conversation.
+                </p>
+              </div>
+
+              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+                <p className="text-sm font-medium italic">
+                  &ldquo;Leadership is a <strong>practice</strong>, not a destination&rdquo;
+                </p>
+              </div>
+
+              <div className="aspect-square rounded-lg bg-white/20 p-4 text-white backdrop-blur">
+                <div className="mb-2 text-2xl">🌱</div>
+                <p className="text-xs font-medium">
+                  Creating space for what wants to emerge
                 </p>
               </div>
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
     </Layout>
   )
 }
