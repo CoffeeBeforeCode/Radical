@@ -113,7 +113,7 @@ export default function Home() {
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
                   <div className="text-3xl text-[#F96E1E] mb-3">PE</div>
                   <h3 className="font-semibold text-white mb-2">Performance</h3>
                   <p className="text-white/80 text-sm">The observable results and impact you create</p>
@@ -225,7 +225,7 @@ export default function Home() {
           {/* Bold 5-column approach grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-[#7A9A7F] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">👁️</div>
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#7A9A7F] text-2xl text-white">👁️</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Observation First</h3>
               <p className="text-sm text-[#4A4A4A]">
                 We start by noticing. Patterns, dynamics, friction. Before we move, we understand.
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-[#F96E1E] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">🎯</div>
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#F96E1E] text-2xl text-white">🎯</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
               <p className="text-sm text-[#4A4A4A]">
                 You lead with your head, heart, and gut.                 We&apos;ll work with all three.
@@ -241,7 +241,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-[#7E2D40] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">🔄</div>
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#7E2D40] text-2xl text-white">🔄</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Values in Motion</h3>
               <p className="text-sm text-[#4A4A4A]">
                 We surface what really matters — not just what sounds good.
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-[#D4B86A] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">⚖️</div>
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D4B86A] text-2xl text-white">⚖️</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
               <p className="text-sm text-[#4A4A4A]">
                 Some tensions aren't meant to be solved.                 They&apos;re meant to be understood.
@@ -257,7 +257,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-[#1A365D] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">✨</div>
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#1A365D] text-2xl text-white">✨</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Reducing Interference</h3>
               <p className="text-sm text-[#4A4A4A]">
                 When interference clears, performance meets potential.
@@ -277,8 +277,8 @@ export default function Home() {
           {/* Asymmetric testimonial grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Large featured testimonial */}
-            <div className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl">
-              <div className="text-6xl text-[#7E2D40] mb-4">"</div>
+            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+              <div className="text-6xl text-[#7E2D40] mb-4">&quot;</div>
               <p className="text-xl text-[#1A365D] italic leading-relaxed mb-6">
                 My team and I have never had such honest conversations with each other, 
                 until I started working with Phillip. His ability to create a safe space 
@@ -286,7 +286,7 @@ export default function Home() {
                 as a leadership team.
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-[#7E2D40] rounded-full flex items-center justify-center text-white font-bold mr-4">
+                <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#7E2D40] font-bold text-white">
                   CH
                 </div>
                 <div>
@@ -325,18 +325,18 @@ export default function Home() {
       {/* GLOBAL REACH - Split Visual Treatment */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
                 A <span className="text-[#F96E1E]">global</span> perspective
               </h2>
-              <p className="text-xl text-white/90 mb-8">
+              <p className="mb-8 text-xl text-white/90">
                 My coaching partnerships span diverse contexts and cultures, working with 
                 senior leaders across continents and industries.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
                   <div className="text-3xl text-[#D4B86A] mb-3">🌍</div>
                   <h3 className="text-white font-semibold mb-2">4 Regions</h3>
                   <p className="text-white/80 text-sm">Europe, Middle East, Americas, Asia Pacific</p>
@@ -352,7 +352,7 @@ export default function Home() {
 
             {/* Regional breakdown in boxes */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#F96E1E] p-6 rounded-xl text-white">
+              <div className="rounded-xl bg-[#F96E1E] p-6 text-white">
                 <h4 className="font-bold mb-3">Europe</h4>
                 <ul className="text-sm space-y-1">
                   <li>• UK, Ireland</li>
@@ -361,7 +361,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="bg-[#7A9A7F] p-6 rounded-xl text-white">
+              <div className="rounded-xl bg-[#7A9A7F] p-6 text-white">
                 <h4 className="font-bold mb-3">Middle East</h4>
                 <ul className="text-sm space-y-1">
                   <li>• UAE, Saudi Arabia</li>
@@ -369,7 +369,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="bg-[#D4B86A] p-6 rounded-xl text-white">
+              <div className="rounded-xl bg-[#D4B86A] p-6 text-white">
                 <h4 className="font-bold mb-3">Americas</h4>
                 <ul className="text-sm space-y-1">
                   <li>• USA</li>
@@ -377,7 +377,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="bg-[#7E2D40] p-6 rounded-xl text-white">
+              <div className="rounded-xl bg-[#7E2D40] p-6 text-white">
                 <h4 className="font-bold mb-3">Asia Pacific</h4>
                 <ul className="text-sm space-y-1">
                   <li>• India</li>
@@ -392,14 +392,14 @@ export default function Home() {
       {/* CLOSING CTA - Bold Asymmetric Treatment */}
       <Block background="white" spacing="spacious">
         <PageLayout>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 items-center">
             {/* Large statement - 2 columns */}
             <div className="lg:col-span-2">
-              <h2 className="text-5xl md:text-6xl font-bold text-[#1A365D] leading-tight mb-8">
+              <h2 className="mb-8 text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl">
                 This is your leadership.
               </h2>
               
-              <div className="bg-[#F8F5EB] p-8 rounded-2xl border-l-8 border-[#F96E1E] mb-8">
+              <div className="mb-8 rounded-2xl border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-8">
                 <p className="text-2xl text-[#1A365D] leading-relaxed">
                 You don&apos;t need a louder voice.<br />
                   You need a clearer signal.<br />
@@ -407,7 +407,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <p className="text-lg text-[#4A4A4A] mb-8">
+              <p className="mb-8 text-lg text-[#4A4A4A]">
                 If something here resonates, let&apos;s explore what&apos;s possible. 
                 No funnel. No pressure. Just a human conversation.
               </p>
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
 
             {/* CTA box - 1 column */}
-            <div className="bg-[#1A365D] text-white p-8 rounded-2xl text-center shadow-2xl">
+            <div className="rounded-2xl bg-[#1A365D] p-8 text-center text-white shadow-2xl">
               <div className="text-5xl text-[#D4B86A] mb-4">💭</div>
               <h3 className="text-xl font-bold mb-4">Ready to begin?</h3>
               <p className="text-white/90 mb-6">
