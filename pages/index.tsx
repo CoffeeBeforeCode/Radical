@@ -36,7 +36,7 @@ export default function Home() {
       <Block background="white" spacing="default">
         <PageLayout>
           {/* Asymmetric hero layout - left-aligned power statement */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center min-h-[70vh]">
+          <div className="min-h-[70vh] grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="lg:col-span-2 space-y-8">
               {/* Massive serif headline - breaking size conventions */}
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] text-[#1A365D] tracking-tight">
@@ -47,7 +47,7 @@ export default function Home() {
               
               <div className="bg-[#F8F5EB] p-8 rounded-lg border-l-8 border-[#7E2D40]">
                 <p className="text-2xl md:text-3xl font-light text-[#1A365D] leading-relaxed">
-                  The strongest leaders I know don't arrive — they <strong>return</strong>.<br />
+                  The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
                   Again and again. To their values. Their vision. Their self.
                 </p>
               </div>
@@ -61,7 +61,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/the-work"
-                  className="inline-flex items-center justify-center border-2 border-[#1A365D] bg-transparent px-12 py-6 text-xl font-semibold text-[#1A365D] rounded-lg transition-all duration-300 hover:bg-[#1A365D] hover:text-white"
+                  className="inline-flex items-center justify-center bg-transparent border-2 border-[#1A365D] text-[#1A365D] px-12 py-6 text-xl font-semibold rounded-lg hover:bg-[#1A365D] hover:text-white transition-all duration-300"
                 >
                   Explore the Work
                 </Link>
@@ -79,11 +79,11 @@ export default function Home() {
               
               {/* Floating EQ-i question bubbles */}
               <div className="absolute -top-4 -right-8 bg-[#7A9A7F] text-white p-4 rounded-2xl shadow-lg transform -rotate-12 max-w-xs">
-                <p className="text-sm italic">                  &quot;What&apos;s the story I tell myself about who I am?&quot;</p>
+                <p className="text-sm italic">&quot;What&apos;s the story I tell myself about who I am?&quot;</p>
               </div>
               
               <div className="absolute -bottom-6 -left-4 bg-[#F96E1E] text-white p-4 rounded-2xl shadow-lg transform rotate-6 max-w-xs">
-                <p className="text-sm italic">                &quot;What helps me choose well when it&apos;s hard?&quot;</p>
+                <p className="text-sm italic">&quot;What helps me choose well when it&apos;s hard?&quot;</p>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
                   <div className="text-3xl text-[#F96E1E] mb-3">PE</div>
                   <h3 className="font-semibold text-white mb-2">Performance</h3>
                   <p className="text-white/80 text-sm">The observable results and impact you create</p>
@@ -128,14 +128,14 @@ export default function Home() {
                 <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
                   <div className="text-3xl text-[#F96E1E] mb-3">I</div>
                   <h3 className="font-semibold text-white mb-2">Interference</h3>
-                  <p className="text-white/80 text-sm">                The &quot;stuff&quot; that gets in your way</p>
+                  <p className="text-white/80 text-sm">The &quot;stuff&quot; that gets in your way</p>
                 </div>
               </div>
 
               <div className="bg-[#F96E1E] text-white p-6 rounded-lg">
                 <p className="text-lg font-medium">
-                  What limits performance isn't lack of capability — it's the presence of interference. 
-                  When we reduce what's in the way, performance naturally rises to meet potential.
+                  What limits performance isn&apos;t lack of capability — it&apos;s the presence of interference. 
+                  When we reduce what&apos;s in the way, performance naturally rises to meet potential.
                 </p>
               </div>
             </div>
@@ -156,24 +156,24 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Asymmetric grid of interference types */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Simplified grid to avoid complex ordering issues */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Large featured box */}
-            <div className="md:col-span-2 lg:col-span-1 bg-[#7E2D40] text-white p-8 rounded-2xl shadow-xl">
+            <div className="md:col-span-2 bg-[#7E2D40] text-white p-8 rounded-2xl shadow-xl">
               <div className="text-5xl mb-4">🧠</div>
               <h3 className="text-2xl font-bold mb-4">Inner Dialogue</h3>
               <p className="text-white/90 mb-4">
-                The voice of imposter syndrome:                   &quot;I don&apos;t really belong at this level.&quot;
+                The voice of imposter syndrome: &quot;I don&apos;t really belong at this level.&quot;
               </p>
               <p className="text-white/90 mb-4">
-                Perfectionism:                 &quot;Anything less than flawless is failure.&quot;
+                Perfectionism: &quot;Anything less than flawless is failure.&quot;
               </p>
               <p className="text-white/80 text-sm">
                 That internal commentary running through your mind, creating doubt where there should be confidence.
               </p>
             </div>
 
-            {/* Stacked smaller boxes */}
+            {/* Third column with quote and stacked boxes */}
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#F96E1E]">
                 <div className="text-3xl mb-3">⚖️</div>
@@ -193,18 +193,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            {/* Third column with quote */}
-            <div className="bg-[#1A365D] text-white p-8 rounded-2xl shadow-xl flex flex-col justify-center">
-              <div className="text-6xl text-[#D4B86A] mb-4">"</div>
-              <p className="text-lg italic mb-4">
-                Working with Phillip is like walking through fog and suddenly seeing the sun break through. 
-                You may have had the answer all along, but now you can see it.
-              </p>
-              <div className="text-[#D4B86A] text-sm font-medium">
-                Regional Director, Technology
-              </div>
-            </div>
           </div>
         </PageLayout>
       </Block>
@@ -222,42 +210,42 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Bold 5-column approach grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#7A9A7F] text-2xl text-white">👁️</div>
+          {/* Simplified 5-column grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-[#7A9A7F] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">👁️</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Observation First</h3>
               <p className="text-sm text-[#4A4A4A]">
                 We start by noticing. Patterns, dynamics, friction. Before we move, we understand.
               </p>
             </div>
 
-            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#F96E1E] text-2xl text-white">🎯</div>
+            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-[#F96E1E] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">🎯</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
               <p className="text-sm text-[#4A4A4A]">
-                You lead with your head, heart, and gut.                 We&apos;ll work with all three.
+                You lead with your head, heart, and gut. We&apos;ll work with all three.
               </p>
             </div>
 
-            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#7E2D40] text-2xl text-white">🔄</div>
+            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-[#7E2D40] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">🔄</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Values in Motion</h3>
               <p className="text-sm text-[#4A4A4A]">
                 We surface what really matters — not just what sounds good.
               </p>
             </div>
 
-            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D4B86A] text-2xl text-white">⚖️</div>
+            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-[#D4B86A] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">⚖️</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
               <p className="text-sm text-[#4A4A4A]">
-                Some tensions aren't meant to be solved.                 They&apos;re meant to be understood.
+                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood.
               </p>
             </div>
 
-            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#1A365D] text-2xl text-white">✨</div>
+            <div className="bg-[#F8F5EB] p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-[#1A365D] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">✨</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Reducing Interference</h3>
               <p className="text-sm text-[#4A4A4A]">
                 When interference clears, performance meets potential.
@@ -274,10 +262,10 @@ export default function Home() {
             Reflections from leaders
           </h2>
 
-          {/* Asymmetric testimonial grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Simplified testimonial grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Large featured testimonial */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+            <div className="bg-white p-8 rounded-2xl shadow-xl">
               <div className="text-6xl text-[#7E2D40] mb-4">&quot;</div>
               <p className="text-xl text-[#1A365D] italic leading-relaxed mb-6">
                 My team and I have never had such honest conversations with each other, 
@@ -286,7 +274,7 @@ export default function Home() {
                 as a leadership team.
               </p>
               <div className="flex items-center">
-                <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#7E2D40] font-bold text-white">
+                <div className="w-12 h-12 bg-[#7E2D40] rounded-full flex items-center justify-center text-white font-bold mr-4">
                   CH
                 </div>
                 <div>
@@ -301,7 +289,7 @@ export default function Home() {
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur">
                 <p className="text-white italic mb-4">
                   &quot;I have been surprised at how comfortable it has felt being stretched. 
-                  Expanding my capabilities while preserving my authentic self."
+                  Expanding my capabilities while preserving my authentic self.&quot;
                 </p>
                 <div className="text-[#D4B86A] text-sm font-medium">
                   CFO, Housing & Community
@@ -311,7 +299,7 @@ export default function Home() {
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur">
                 <p className="text-white italic mb-4">
                   &quot;He has the ability to swiftly and accurately pinpoint areas for development. 
-                  Completely trustworthy with extremely high integrity."
+                  Completely trustworthy with extremely high integrity.&quot;
                 </p>
                 <div className="text-[#D4B86A] text-sm font-medium">
                   Senior Civil-Servant, Government
@@ -325,18 +313,18 @@ export default function Home() {
       {/* GLOBAL REACH - Split Visual Treatment */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 A <span className="text-[#F96E1E]">global</span> perspective
               </h2>
-              <p className="mb-8 text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-8">
                 My coaching partnerships span diverse contexts and cultures, working with 
                 senior leaders across continents and industries.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
-                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
                   <div className="text-3xl text-[#D4B86A] mb-3">🌍</div>
                   <h3 className="text-white font-semibold mb-2">4 Regions</h3>
                   <p className="text-white/80 text-sm">Europe, Middle East, Americas, Asia Pacific</p>
@@ -352,7 +340,7 @@ export default function Home() {
 
             {/* Regional breakdown in boxes */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-xl bg-[#F96E1E] p-6 text-white">
+              <div className="bg-[#F96E1E] p-6 rounded-xl text-white">
                 <h4 className="font-bold mb-3">Europe</h4>
                 <ul className="text-sm space-y-1">
                   <li>• UK, Ireland</li>
@@ -361,7 +349,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="rounded-xl bg-[#7A9A7F] p-6 text-white">
+              <div className="bg-[#7A9A7F] p-6 rounded-xl text-white">
                 <h4 className="font-bold mb-3">Middle East</h4>
                 <ul className="text-sm space-y-1">
                   <li>• UAE, Saudi Arabia</li>
@@ -369,7 +357,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="rounded-xl bg-[#D4B86A] p-6 text-white">
+              <div className="bg-[#D4B86A] p-6 rounded-xl text-white">
                 <h4 className="font-bold mb-3">Americas</h4>
                 <ul className="text-sm space-y-1">
                   <li>• USA</li>
@@ -377,7 +365,7 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="rounded-xl bg-[#7E2D40] p-6 text-white">
+              <div className="bg-[#7E2D40] p-6 rounded-xl text-white">
                 <h4 className="font-bold mb-3">Asia Pacific</h4>
                 <ul className="text-sm space-y-1">
                   <li>• India</li>
@@ -392,22 +380,22 @@ export default function Home() {
       {/* CLOSING CTA - Bold Asymmetric Treatment */}
       <Block background="white" spacing="spacious">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             {/* Large statement - 2 columns */}
             <div className="lg:col-span-2">
-              <h2 className="mb-8 text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl">
+              <h2 className="text-5xl md:text-6xl font-bold text-[#1A365D] leading-tight mb-8">
                 This is your leadership.
               </h2>
               
-              <div className="mb-8 rounded-2xl border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-8">
+              <div className="bg-[#F8F5EB] p-8 rounded-2xl border-l-8 border-[#F96E1E] mb-8">
                 <p className="text-2xl text-[#1A365D] leading-relaxed">
-                You don&apos;t need a louder voice.<br />
+                  You don&apos;t need a louder voice.<br />
                   You need a clearer signal.<br />
                   And a safe enough space to hear it.
                 </p>
               </div>
 
-              <p className="mb-8 text-lg text-[#4A4A4A]">
+              <p className="text-lg text-[#4A4A4A] mb-8">
                 If something here resonates, let&apos;s explore what&apos;s possible. 
                 No funnel. No pressure. Just a human conversation.
               </p>
@@ -421,7 +409,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/this-is-personal"
-                  className="inline-flex items-center justify-center border-2 border-[#7E2D40] bg-transparent px-12 py-6 text-xl font-semibold text-[#7E2D40] rounded-lg transition-all duration-300 hover:bg-[#7E2D40] hover:text-white"
+                  className="inline-flex items-center justify-center bg-transparent border-2 border-[#7E2D40] text-[#7E2D40] px-12 py-6 text-xl font-semibold rounded-lg hover:bg-[#7E2D40] hover:text-white transition-all duration-300"
                 >
                   This is Personal
                 </Link>
@@ -429,13 +417,13 @@ export default function Home() {
             </div>
 
             {/* CTA box - 1 column */}
-            <div className="rounded-2xl bg-[#1A365D] p-8 text-center text-white shadow-2xl">
-              <div className="mb-6 text-5xl text-[#D4B86A]">💭</div>
-              <h3 className="mb-4 text-xl font-bold">Ready to begin?</h3>
-              <p className="mb-6 text-white/90">
+            <div className="bg-[#1A365D] text-white p-8 rounded-2xl text-center shadow-2xl">
+              <div className="text-5xl text-[#D4B86A] mb-4">💭</div>
+              <h3 className="text-xl font-bold mb-4">Ready to begin?</h3>
+              <p className="text-white/90 mb-6">
                 Every transformation begins with a single, honest conversation.
               </p>
-              <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
+              <div className="bg-[#F96E1E] text-white p-4 rounded-lg">
                 <p className="font-medium">
                   Leadership is a <strong>practice</strong>, not a destination
                 </p>
