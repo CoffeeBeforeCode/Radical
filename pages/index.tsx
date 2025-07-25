@@ -340,7 +340,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Regional breakdown in boxes */}
             <div className="grid gap-4 grid-cols-2">
               <div className="rounded-xl bg-[#F96E1E] p-6 text-white">
                 <h4 className="mb-3 text-white font-bold">Europe</h4>
@@ -418,9 +417,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* CTA box - 1 column */}
             <div className="rounded-2xl bg-[#1A365D] p-8 text-center text-white shadow-2xl">
-              <div className="mb-4 text-[#D4B86A] text-5xl">💭</div>
+              <div className="mb-4 text-5xl text-[#D4B86A]">💭</div>
               <h3 className="mb-4 text-xl text-white font-bold">Ready to begin?</h3>
               <p className="mb-6 text-white/90">
                 Every transformation begins with a single, honest conversation.
