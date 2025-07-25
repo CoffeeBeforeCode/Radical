@@ -1,17 +1,21 @@
 /**
- * AGA-INSPIRED HOMEPAGE - Phillip Collins Global Leadership Coach
+ * REFINED AGA-INSPIRED HOMEPAGE - Phillip Collins Global Leadership Coach
  * 
- * BREAKTHROUGH DESIGN with FULL-WIDTH COLOR STRIPES that DESTROYS consultant templates
- * Dense, confident layout inspired by Aga Szostek's bold approach
+ * SOPHISTICATED 4-COLOR BREAKTHROUGH DESIGN
+ * Full-width sections, refined palette, perfect mobile responsiveness
  * 
- * STRUCTURE:
- * - FULL-PAGE HERO: Screen-filling impact
- * - NAVY STRIPE: Leadership Equation showcase  
- * - CREAM STRIPE: Interference examples in boxy grid
- * - WHITE STRIPE: Approach frameworks with EQ squares
- * - BURGUNDY STRIPE: Real testimonials mixed layout
- * - NAVY STRIPE: Global reach regional blocks
- * - TANGERINE STRIPE: Bold CTA finish
+ * COLOR STRATEGY:
+ * - White: Hero, key messaging sections
+ * - Navy (#1A365D): Authority blocks, frameworks, global reach
+ * - Cream (#F8F5EB): Warm sections, interference examples  
+ * - Tangerine (#F96E1E): Energy, CTAs, key highlights
+ * 
+ * FIXES APPLIED:
+ * - Full-width hero with min-h-screen
+ * - Refined typography with strategic line breaks
+ * - 4-color palette only (no burgundy/sage)
+ * - Mobile grid fixes with lg:col-span-2 backups
+ * - Boxy grid template throughout all sections
  */
 
 import Layout, { PageLayout } from '../components/Layout'
@@ -24,22 +28,26 @@ export default function Home() {
       description="Creating space for leaders to see what gets in their way, reduce interference, and unlock their natural potential. Working with executives across Europe, Middle East, Americas, and Asia Pacific."
       canonical="/"
     >
-      {/* FULL-PAGE HERO - Screen Impact */}
+      {/* FULL-SCREEN HERO - White Background */}
       <section className="w-full min-h-screen bg-white flex items-center">
-        <PageLayout>
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
             {/* Main Hero Content - 3/5 Asymmetric */}
-            <div className="space-y-6 lg:col-span-3">
+            <div className="space-y-8 lg:col-span-3">
               <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
                 Not a title.<br />
                 Not a goal.<br />
                 <span className="font-light italic text-[#F96E1E]">A practice.</span>
               </h1>
               
-              <div className="rounded-lg border-l-8 border-[#7E2D40] bg-[#F8F5EB] p-6">
-                <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+              {/* Strategic Typography Pattern */}
+              <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-8">
+                <p className="text-xl md:text-2xl text-[#1A365D] leading-relaxed">
                   The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
-                  Again and again. To their values. Their vision. Their self.
+                  Again and again.<br />
+                  To their <strong>values</strong>.<br />
+                  Their <strong>vision</strong>.<br />
+                  Their <strong>self</strong>.
                 </p>
               </div>
 
@@ -72,13 +80,13 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4 text-white">
+              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
                 <p className="text-sm font-medium italic">
                   &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
                 </p>
               </div>
               
-              <div className="aspect-square rounded-lg bg-[#7E2D40] p-4 text-white">
+              <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
                 <p className="text-sm font-medium italic">
                   &ldquo;What do I reach for when things feel too much?&rdquo;
                 </p>
@@ -91,7 +99,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </PageLayout>
+        </div>
       </section>
 
       {/* NAVY STRIPE - Leadership Equation */}
@@ -100,11 +108,11 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
             {/* Equation Display - 1/3 */}
             <div className="text-center">
-              <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
-                <div className="mb-4 font-mono text-5xl font-bold text-[#D4B86A] md:text-6xl">
+              <div className="rounded-xl bg-white/10 p-8 backdrop-blur">
+                <div className="mb-4 font-mono text-5xl font-bold text-[#F96E1E] md:text-6xl">
                   PE = PO - I
                 </div>
-                <p className="text-lg font-semibold text-[#D4B86A]">
+                <p className="text-lg font-semibold text-white">
                   The Leadership Equation
                 </p>
               </div>
@@ -124,7 +132,7 @@ export default function Home() {
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-xl text-[#D4B86A]">PO</div>
+                  <div className="mb-2 text-xl text-white">PO</div>
                   <h3 className="mb-2 font-semibold text-white">Potential</h3>
                   <p className="text-sm text-white/80">Innate capabilities within you</p>
                 </div>
@@ -136,8 +144,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="rounded-lg bg-[#F96E1E] p-4">
-                <p className="font-medium text-white">
+              <div className="rounded-lg bg-[#F96E1E] p-6">
+                <p className="text-lg font-medium text-white">
                   When we reduce what&apos;s in the way, performance naturally rises to meet potential.
                 </p>
               </div>
@@ -146,23 +154,23 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Interference Examples in Boxy Grid */}
+      {/* CREAM STRIPE - Interference Examples (Perfect Boxy Grid Pattern) */}
       <section className="w-full bg-[#F8F5EB] py-8 md:py-12">
         <PageLayout>
           <div className="mb-8">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              What gets in your way?
+              What gets in your <span className="text-[#F96E1E]">way</span>?
             </h2>
-            <p className="max-w-3xl text-lg text-gray-600">
+            <p className="max-w-3xl text-lg text-gray-700">
               Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
               is the best use of your energy.
             </p>
           </div>
 
-          {/* Aga-Style Boxy Grid */}
+          {/* PERFECT Boxy Grid Pattern */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
             {/* Large Block - Inner Dialogue */}
-            <div className="rounded-lg bg-[#7E2D40] p-6 text-white shadow-lg md:col-span-2">
+            <div className="rounded-lg bg-[#1A365D] p-6 text-white shadow-lg md:col-span-2 lg:col-span-2">
               <div className="mb-4 text-3xl">🧠</div>
               <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
               <div className="space-y-3">
@@ -195,7 +203,7 @@ export default function Home() {
             </div>
 
             {/* Environmental Blockers */}
-            <div className="rounded-lg border-l-4 border-[#7A9A7F] bg-white p-4 shadow">
+            <div className="rounded-lg border-l-4 border-[#1A365D] bg-white p-4 shadow">
               <div className="mb-2 text-2xl">🌪️</div>
               <h3 className="mb-2 font-semibold text-[#1A365D]">Environmental Blockers</h3>
               <p className="text-sm text-gray-600">
@@ -204,8 +212,8 @@ export default function Home() {
             </div>
 
             {/* Unhelpful Narratives - Large Block */}
-            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2">
-              <div className="mb-4 text-3xl text-[#D4B86A]">📖</div>
+            <div className="rounded-lg bg-[#F96E1E] p-6 text-white md:col-span-2 lg:col-span-2">
+              <div className="mb-4 text-3xl">📖</div>
               <h3 className="mb-4 text-xl font-bold">Unhelpful Narratives</h3>
               <div className="space-y-2">
                 <p className="text-white/90">&ldquo;I must always have the answer.&rdquo;</p>
@@ -215,7 +223,7 @@ export default function Home() {
             </div>
 
             {/* Another EQ Square */}
-            <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4 text-white">
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
               <p className="text-sm font-medium italic">
                 &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
               </p>
@@ -224,94 +232,92 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - Approach Frameworks with EQ Squares */}
+      {/* WHITE STRIPE - Approach Frameworks */}
       <section className="w-full bg-white py-8 md:py-12">
         <PageLayout>
           <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               How I see it
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+            <p className="mx-auto max-w-3xl text-lg text-gray-700">
               I work in frameworks — but never formulas. These are tools I return to often: 
-              not as answers, but as invitations.
+              not as answers, but as <span className="font-semibold text-[#F96E1E]">invitations</span>.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-6">
-            {/* Framework Block */}
-            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center md:col-span-2">
-              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7A9A7F] text-xl text-white">👁️</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Observation First</h3>
-              <p className="text-xs text-gray-600">
-                We start by noticing patterns, dynamics, friction before we move.
-              </p>
-            </div>
-
-            {/* EQ Square */}
-            <div className="aspect-square rounded-lg bg-[#7E2D40] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
-              </p>
-            </div>
-
-            {/* Framework Block */}
-            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">🎯</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
-              <p className="text-xs text-gray-600">
-                You lead with head, heart, and gut. We work with all three.
-              </p>
-            </div>
-
-            {/* Framework Block - Large */}
-            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center md:col-span-2">
-              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#7E2D40] text-xl text-white">🔄</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
-              <p className="text-xs text-gray-600">
-                We surface what really matters — not just what sounds good. Through constellation work, we make visible the tensions and alignments that shape every decision.
-              </p>
-            </div>
-
-            {/* Framework Block */}
-            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#D4B86A] text-xl text-white">⚖️</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Sitting with Tension</h3>
-              <p className="text-xs text-gray-600">
-                Some tensions aren&apos;t meant to be solved, but understood.
+          {/* Boxy Grid for Frameworks */}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+            {/* Large Framework Block */}
+            <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-2 lg:col-span-2">
+              <div className="mb-4 flex items-center">
+                <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">👁️</div>
+                <h3 className="text-lg font-bold text-[#1A365D]">Observation First</h3>
+              </div>
+              <p className="text-gray-700">
+                We start by noticing patterns, dynamics, friction before we move. 
+                Sometimes the most important insights arise in the silence between words.
               </p>
             </div>
 
             {/* EQ Square */}
             <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
               <p className="text-sm font-medium italic">
-                &ldquo;How do I handle it when plans change?&rdquo;
+                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
               </p>
             </div>
 
-            {/* Framework Block */}
-            <div className="rounded-lg bg-[#F8F5EB] p-4 text-center">
-              <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">✨</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Reducing Interference</h3>
+            {/* Embodied Perception */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4">
+              <div className="mb-3 flex size-10 items-center justify-center rounded-full bg-[#F96E1E] text-lg text-white">🎯</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
               <p className="text-xs text-gray-600">
-                When interference clears, performance meets potential.
+                You lead with head, heart, and gut. We work with all three.
+              </p>
+            </div>
+
+            {/* Values in Motion */}
+            <div className="rounded-lg bg-[#F8F5EB] p-4">
+              <div className="mb-3 flex size-10 items-center justify-center rounded-full bg-[#1A365D] text-lg text-white">🔄</div>
+              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
+              <p className="text-xs text-gray-600">
+                Mapping what truly matters through constellation work.
+              </p>
+            </div>
+
+            {/* Large Framework Block */}
+            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2 lg:col-span-2">
+              <div className="mb-4 flex items-center">
+                <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">⚖️</div>
+                <h3 className="text-lg font-bold">Sitting with Tension</h3>
+              </div>
+              <p className="text-white/90">
+                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
+                Emotional discernment over reaction.
+              </p>
+            </div>
+
+            {/* EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;How do I handle it when plans change?&rdquo;
               </p>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* BURGUNDY STRIPE - Real Testimonials Mixed Layout */}
-      <section className="w-full bg-[#7E2D40] py-8 md:py-12">
+      {/* NAVY STRIPE - Real Testimonials & Global Reach */}
+      <section className="w-full bg-[#1A365D] py-8 md:py-12">
         <PageLayout>
           <h2 className="mb-8 text-center text-3xl font-bold text-white md:text-4xl">
-            Reflections from leaders
+            Reflections from <span className="text-[#F96E1E]">global</span> leaders
           </h2>
 
-          {/* Asymmetric Testimonial Grid */}
+          {/* Boxy Grid for Testimonials + Global */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {/* Large Testimonial */}
-            <div className="rounded-lg bg-white p-6 shadow-lg md:col-span-2">
-              <div className="absolute -ml-1 -mt-2 text-4xl text-[#7E2D40]">&ldquo;</div>
+            <div className="rounded-lg bg-white p-6 shadow-lg md:col-span-2 lg:col-span-2">
+              <div className="absolute -ml-1 -mt-2 text-4xl text-[#1A365D]">&ldquo;</div>
               <p className="mb-4 pl-6 text-lg font-medium italic leading-relaxed text-[#1A365D]">
                 My team and I have never had such honest conversations with each other, 
                 until I started working with Phillip. His ability to create a safe space 
@@ -319,135 +325,54 @@ export default function Home() {
                 as a leadership team.
               </p>
               <div className="pl-6 text-right">
-                <div className="font-semibold text-[#7E2D40]">Country Head</div>
+                <div className="font-semibold text-[#1A365D]">Country Head</div>
                 <div className="text-sm text-gray-600">Telecommunications</div>
               </div>
             </div>
 
-            {/* Stacked Content */}
+            {/* Global Stats */}
             <div className="space-y-4">
-              {/* EQ Square */}
-              <div className="aspect-square rounded-lg bg-[#D4B86A] p-4 text-white">
-                <p className="text-sm font-medium italic">
-                  &ldquo;What am I still hopeful about, even if I don&apos;t say it out loud?&rdquo;
-                </p>
+              <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4 text-center text-white">
+                <div>
+                  <div className="mb-2 text-2xl">🌍</div>
+                  <div className="text-sm font-medium">4 Continents</div>
+                </div>
               </div>
 
-              {/* Small Testimonial */}
-              <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                <p className="mb-3 text-sm italic text-white">
-                  &ldquo;I have been surprised at how comfortable it has felt being stretched. 
-                  The stretch has become an additional approach rather than replacing who I am.&rdquo;
-                </p>
-                <div className="text-xs font-medium text-[#D4B86A]">
-                  CFO, Housing & Community
+              <div className="rounded-lg bg-white/10 p-4 text-white backdrop-blur">
+                <h4 className="mb-2 font-bold text-[#F96E1E]">Core Regions</h4>
+                <div className="text-sm space-y-1">
+                  <div>• Europe (UK, Ireland, France)</div>
+                  <div>• Middle East (UAE, Saudi, Israel)</div>
+                  <div>• Americas (USA, Argentina, Brazil)</div>
+                  <div>• Asia Pacific (India, Singapore)</div>
                 </div>
               </div>
             </div>
 
-            {/* Another testimonial */}
-            <div className="rounded-lg bg-white p-4 shadow">
-              <div className="absolute -ml-1 -mt-2 text-3xl text-[#7E2D40]">&ldquo;</div>
-              <p className="mb-3 pl-4 text-sm italic leading-relaxed text-[#1A365D]">
-                Phillip is one of the most talented and experienced professionals I have ever met. 
-                He is completely trustworthy and has an extremely high level of integrity.
-              </p>
-              <div className="pl-4 text-right">
-                <div className="text-xs font-semibold text-[#7E2D40]">Senior Civil-Servant</div>
-                <div className="text-xs text-gray-600">Government</div>
-              </div>
-            </div>
-
-            {/* Recovery testimonial */}
-            <div className="rounded-lg bg-white/10 p-4 backdrop-blur md:col-span-2">
-              <p className="mb-3 text-sm italic text-white">
+            {/* Recovery Testimonial */}
+            <div className="rounded-lg bg-white/10 p-4 text-white backdrop-blur">
+              <p className="mb-3 text-sm italic">
                 &ldquo;Mentally, I am so pleased I arrived at this point with your coaching 
                 for which I am so grateful. I have got my confidence back and my self-belief 
                 which had waned back when we first met.&rdquo;
               </p>
-              <div className="text-xs font-medium text-[#D4B86A]">
+              <div className="text-xs font-medium text-[#F96E1E]">
                 Country Head, Manufacturing
               </div>
             </div>
-          </div>
-        </PageLayout>
-      </section>
 
-      {/* NAVY STRIPE - Global Reach Regional Blocks */}
-      <section className="w-full bg-[#1A365D] py-8 md:py-12">
-        <PageLayout>
-          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
-            <div className="lg:col-span-1">
-              <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-                A <span className="text-[#F96E1E]">global</span> perspective
-              </h2>
-              <p className="mb-6 text-lg text-white/90">
-                My coaching partnerships span diverse contexts and cultures, working with 
-                senior leaders across continents and industries.
+            {/* Authority Testimonial */}
+            <div className="rounded-lg bg-white p-4 shadow md:col-span-2 lg:col-span-2">
+              <div className="absolute -ml-1 -mt-2 text-3xl text-[#1A365D]">&ldquo;</div>
+              <p className="mb-3 pl-4 text-sm italic leading-relaxed text-[#1A365D]">
+                Phillip is one of the most talented and experienced professionals I have ever met. 
+                He is completely trustworthy and has an extremely high level of integrity, 
+                acute business insight and many years of diverse experience to draw upon.
               </p>
-              
-              {/* Stats EQ Squares */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4 text-center text-white">
-                  <div>
-                    <div className="mb-2 text-2xl">🌍</div>
-                    <div className="text-sm font-medium">4 Continents</div>
-                  </div>
-                </div>
-                <div className="flex aspect-square items-center justify-center rounded-lg bg-[#7A9A7F] p-4 text-center text-white">
-                  <div>
-                    <div className="mb-2 text-2xl">🏢</div>
-                    <div className="text-sm font-medium">5 Major Industries</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Regional Blocks - Dense Grid */}
-            <div className="grid grid-cols-2 gap-4 lg:col-span-2">
-              <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
-                <h4 className="mb-2 font-bold">Europe</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• UK, Ireland</li>
-                  <li>• France, Belgium</li>
-                  <li>• Netherlands</li>
-                </ul>
-              </div>
-              
-              <div className="rounded-lg bg-[#7A9A7F] p-4 text-white">
-                <h4 className="mb-2 font-bold">Middle East</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• UAE, Saudi Arabia</li>
-                  <li>• Israel</li>
-                </ul>
-              </div>
-              
-              <div className="rounded-lg bg-[#D4B86A] p-4 text-white">
-                <h4 className="mb-2 font-bold">Americas</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• USA</li>
-                  <li>• Argentina, Brazil</li>
-                </ul>
-              </div>
-              
-              <div className="rounded-lg bg-white p-4 text-[#1A365D]">
-                <h4 className="mb-2 font-bold">Asia Pacific</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• India</li>
-                  <li>• Singapore</li>
-                </ul>
-              </div>
-
-              {/* Industries Block - Spanning */}
-              <div className="rounded-lg bg-white/10 p-4 text-white md:col-span-2 backdrop-blur">
-                <h4 className="mb-2 font-bold text-[#D4B86A]">Primary Industries</h4>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>• Technology & Digital</div>
-                  <div>• Healthcare & Life Sciences</div>
-                  <div>• Financial Services</div>
-                  <div>• Manufacturing</div>
-                  <div>• Government & Public Sector</div>
-                </div>
+              <div className="pl-4 text-right">
+                <div className="text-xs font-semibold text-[#1A365D]">Senior Civil-Servant</div>
+                <div className="text-xs text-gray-600">Government</div>
               </div>
             </div>
           </div>
@@ -466,9 +391,9 @@ export default function Home() {
               
               <div className="mb-6 rounded-lg bg-white p-6">
                 <p className="text-xl font-medium leading-relaxed text-[#1A365D]">
-                  You don&apos;t need a louder voice.<br />
-                  You need a clearer signal.<br />
-                  And a safe enough space to hear it.
+                  You don&apos;t need a <strong>louder</strong> voice.<br />
+                  You need a <strong>clearer</strong> signal.<br />
+                  And a safe enough space to <strong>hear</strong> it.
                 </p>
               </div>
 
