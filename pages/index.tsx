@@ -61,7 +61,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/the-work"
-                  className="inline-flex items-center justify-center bg-transparent border-3 border-[#1A365D] text-[#1A365D] px-12 py-6 text-xl font-semibold rounded-lg hover:bg-[#1A365D] hover:text-white transition-all duration-300"
+                  className="inline-flex items-center justify-center border-2 border-[#1A365D] bg-transparent px-12 py-6 text-xl font-semibold text-[#1A365D] rounded-lg transition-all duration-300 hover:bg-[#1A365D] hover:text-white"
                 >
                   Explore the Work
                 </Link>
@@ -73,17 +73,17 @@ export default function Home() {
               {/* Large central statement bubble */}
               <div className="bg-[#7E2D40] text-white p-8 rounded-3xl shadow-2xl mb-6 transform rotate-2">
                 <p className="text-lg font-medium italic">
-                  "I create the space for that return — to what matters, what's emerging, and what's getting in the way."
+                  &quot;I create the space for that return — to what matters, what&apos;s emerging, and what&apos;s getting in the way.&quot;
                 </p>
               </div>
               
               {/* Floating EQ-i question bubbles */}
               <div className="absolute -top-4 -right-8 bg-[#7A9A7F] text-white p-4 rounded-2xl shadow-lg transform -rotate-12 max-w-xs">
-                <p className="text-sm italic">"What's the story I tell myself about who I am?"</p>
+                <p className="text-sm italic">                  &quot;What&apos;s the story I tell myself about who I am?&quot;</p>
               </div>
               
               <div className="absolute -bottom-6 -left-4 bg-[#F96E1E] text-white p-4 rounded-2xl shadow-lg transform rotate-6 max-w-xs">
-                <p className="text-sm italic">"What helps me choose well when it's hard?"</p>
+                <p className="text-sm italic">                &quot;What helps me choose well when it&apos;s hard?&quot;</p>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Home() {
                 <div className="bg-white/10 p-6 rounded-lg backdrop-blur">
                   <div className="text-3xl text-[#F96E1E] mb-3">I</div>
                   <h3 className="font-semibold text-white mb-2">Interference</h3>
-                  <p className="text-white/80 text-sm">The "stuff" that gets in your way</p>
+                  <p className="text-white/80 text-sm">                The &quot;stuff&quot; that gets in your way</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
               What gets in your way?
             </h2>
             <p className="text-xl text-[#4A4A4A] max-w-3xl">
-              Everyone has their "stuff." The question is whether dealing with it now 
+              Everyone has their &quot;stuff.&quot; The question is whether dealing with it now 
               is the best use of your energy.
             </p>
           </div>
@@ -163,10 +163,10 @@ export default function Home() {
               <div className="text-5xl mb-4">🧠</div>
               <h3 className="text-2xl font-bold mb-4">Inner Dialogue</h3>
               <p className="text-white/90 mb-4">
-                The voice of imposter syndrome: "I don't really belong at this level."
+                The voice of imposter syndrome:                   &quot;I don&apos;t really belong at this level.&quot;
               </p>
               <p className="text-white/90 mb-4">
-                Perfectionism: "Anything less than flawless is failure."
+                Perfectionism:                 &quot;Anything less than flawless is failure.&quot;
               </p>
               <p className="text-white/80 text-sm">
                 That internal commentary running through your mind, creating doubt where there should be confidence.
@@ -236,7 +236,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#F96E1E] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">🎯</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
               <p className="text-sm text-[#4A4A4A]">
-                You lead with your head, heart, and gut. We'll work with all three.
+                You lead with your head, heart, and gut.                 We&apos;ll work with all three.
               </p>
             </div>
 
@@ -252,7 +252,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#D4B86A] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">⚖️</div>
               <h3 className="font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
               <p className="text-sm text-[#4A4A4A]">
-                Some tensions aren't meant to be solved. They're meant to be understood.
+                Some tensions aren't meant to be solved.                 They&apos;re meant to be understood.
               </p>
             </div>
 
@@ -300,7 +300,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur">
                 <p className="text-white italic mb-4">
-                  "I have been surprised at how comfortable it has felt being stretched. 
+                  &quot;I have been surprised at how comfortable it has felt being stretched. 
                   Expanding my capabilities while preserving my authentic self."
                 </p>
                 <div className="text-[#D4B86A] text-sm font-medium">
@@ -310,7 +310,7 @@ export default function Home() {
 
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur">
                 <p className="text-white italic mb-4">
-                  "He has the ability to swiftly and accurately pinpoint areas for development. 
+                  &quot;He has the ability to swiftly and accurately pinpoint areas for development. 
                   Completely trustworthy with extremely high integrity."
                 </p>
                 <div className="text-[#D4B86A] text-sm font-medium">
@@ -401,14 +401,14 @@ export default function Home() {
               
               <div className="bg-[#F8F5EB] p-8 rounded-2xl border-l-8 border-[#F96E1E] mb-8">
                 <p className="text-2xl text-[#1A365D] leading-relaxed">
-                  You don't need a louder voice.<br />
+                You don&apos;t need a louder voice.<br />
                   You need a clearer signal.<br />
                   And a safe enough space to hear it.
                 </p>
               </div>
 
               <p className="text-lg text-[#4A4A4A] mb-8">
-                If something here resonates, let's explore what's possible. 
+                If something here resonates, let&apos;s explore what&apos;s possible. 
                 No funnel. No pressure. Just a human conversation.
               </p>
 
@@ -417,11 +417,11 @@ export default function Home() {
                   href="/contact"
                   className="inline-flex items-center justify-center bg-[#F96E1E] text-white px-12 py-6 text-xl font-semibold rounded-lg shadow-xl hover:bg-[#E55A1A] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
                 >
-                  Let's Explore Together →
+                  Let&apos;s Explore Together →
                 </Link>
                 <Link
                   href="/this-is-personal"
-                  className="inline-flex items-center justify-center bg-transparent border-3 border-[#7E2D40] text-[#7E2D40] px-12 py-6 text-xl font-semibold rounded-lg hover:bg-[#7E2D40] hover:text-white transition-all duration-300"
+                  className="inline-flex items-center justify-center border-2 border-[#7E2D40] bg-transparent px-12 py-6 text-xl font-semibold text-[#7E2D40] rounded-lg transition-all duration-300 hover:bg-[#7E2D40] hover:text-white"
                 >
                   This is Personal
                 </Link>
