@@ -293,17 +293,17 @@ export default function Home() {
                   &quot;I have been surprised at how comfortable it has felt being stretched. 
                   Expanding my capabilities while preserving my authentic self.&quot;
                 </p>
-                <div className="font-medium text-[#D4B86A] text-sm">
+                <div className="text-sm text-[#D4B86A] font-medium">
                   CFO, Housing & Community
                 </div>
               </div>
 
               <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
-                <p className="mb-4 italic text-white">
+                <p className="mb-4 text-white italic">
                   &quot;He has the ability to swiftly and accurately pinpoint areas for development. 
                   Completely trustworthy with extremely high integrity.&quot;
                 </p>
-                <div className="font-medium text-[#D4B86A] text-sm">
+                <div className="text-sm text-[#D4B86A] font-medium">
                   Senior Civil-Servant, Government
                 </div>
               </div>
@@ -328,14 +328,14 @@ export default function Home() {
               <div className="grid gap-6 grid-cols-2">
                 <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
                   <div className="mb-3 text-[#D4B86A] text-3xl">🌍</div>
-                  <h3 className="mb-2 font-semibold text-white">4 Regions</h3>
-                  <p className="text-white/80 text-sm">Europe, Middle East, Americas, Asia Pacific</p>
+                  <h3 className="mb-2 text-white font-semibold">4 Regions</h3>
+                  <p className="text-sm text-white/80">Europe, Middle East, Americas, Asia Pacific</p>
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-                  <div className="mb-3 text-[#D4B86A] text-3xl">🏢</div>
-                  <h3 className="mb-2 font-semibold text-white">5 Industries</h3>
-                  <p className="text-white/80 text-sm">Technology, Healthcare, Finance, Manufacturing, Government</p>
+                  <div className="mb-3 text-3xl text-[#D4B86A]">🏢</div>
+                  <h3 className="mb-2 text-white font-semibold">5 Industries</h3>
+                  <p className="text-sm text-white/80">Technology, Healthcare, Finance, Manufacturing, Government</p>
                 </div>
               </div>
             </div>
@@ -343,8 +343,8 @@ export default function Home() {
             {/* Regional breakdown in boxes */}
             <div className="grid gap-4 grid-cols-2">
               <div className="rounded-xl bg-[#F96E1E] p-6 text-white">
-                <h4 className="mb-3 font-bold">Europe</h4>
-                <ul className="space-y-1 text-sm">
+                <h4 className="mb-3 text-white font-bold">Europe</h4>
+                <ul className="text-sm space-y-1">
                   <li>• UK, Ireland</li>
                   <li>• France, Belgium</li>
                   <li>• Netherlands</li>
@@ -352,24 +352,24 @@ export default function Home() {
               </div>
               
               <div className="rounded-xl bg-[#7A9A7F] p-6 text-white">
-                <h4 className="mb-3 font-bold">Middle East</h4>
-                <ul className="space-y-1 text-sm">
+                <h4 className="mb-3 text-white font-bold">Middle East</h4>
+                <ul className="text-sm space-y-1">
                   <li>• UAE, Saudi Arabia</li>
                   <li>• Israel</li>
                 </ul>
               </div>
               
               <div className="rounded-xl bg-[#D4B86A] p-6 text-white">
-                <h4 className="mb-3 font-bold">Americas</h4>
-                <ul className="space-y-1 text-sm">
+                <h4 className="mb-3 text-white font-bold">Americas</h4>
+                <ul className="text-sm space-y-1">
                   <li>• USA</li>
                   <li>• Argentina, Brazil</li>
                 </ul>
               </div>
               
               <div className="rounded-xl bg-[#7E2D40] p-6 text-white">
-                <h4 className="mb-3 font-bold">Asia Pacific</h4>
-                <ul className="space-y-1 text-sm">
+                <h4 className="mb-3 text-white font-bold">Asia Pacific</h4>
+                <ul className="text-sm space-y-1">
                   <li>• India</li>
                   <li>• Singapore</li>
                 </ul>
@@ -421,12 +421,12 @@ export default function Home() {
             {/* CTA box - 1 column */}
             <div className="rounded-2xl bg-[#1A365D] p-8 text-center text-white shadow-2xl">
               <div className="mb-4 text-[#D4B86A] text-5xl">💭</div>
-              <h3 className="mb-4 font-bold text-xl">Ready to begin?</h3>
+              <h3 className="mb-4 text-xl text-white font-bold">Ready to begin?</h3>
               <p className="mb-6 text-white/90">
                 Every transformation begins with a single, honest conversation.
               </p>
               <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
-                <p className="font-medium">
+                <p className="text-white font-medium">
                   Leadership is a <strong>practice</strong>, not a destination
                 </p>
               </div>
