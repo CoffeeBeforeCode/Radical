@@ -40,14 +40,14 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-16">
               <div className="space-y-8 lg:col-span-2">
                 {/* Massive serif headline - breaking size conventions */}
-                <h1 className="font-bold leading-none tracking-tight text-[#1A365D] text-6xl md:text-8xl lg:text-9xl">
+                <h1 className="text-6xl font-bold leading-none tracking-tight text-[#1A365D] md:text-8xl lg:text-9xl">
                   Not a title.<br />
                   Not a goal.<br />
-                  <span className="font-light italic text-[#F96E1E]">A practice.</span>
+                  <span className="text-[#F96E1E] font-light italic">A practice.</span>
                 </h1>
                 
                 <div className="rounded-lg border-l-8 border-[#7E2D40] bg-[#F8F5EB] p-8">
-                  <p className="font-light leading-relaxed text-[#1A365D] text-2xl md:text-3xl">
+                  <p className="text-2xl font-light leading-relaxed text-[#1A365D] md:text-3xl">
                     The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
                     Again and again. To their values. Their vision. Their self.
                   </p>
@@ -269,7 +269,7 @@ export default function Home() {
             {/* Large featured testimonial */}
             <div className="rounded-2xl bg-white p-8 shadow-xl">
               <div className="mb-4 text-[#7E2D40] text-6xl">&quot;</div>
-              <p className="mb-6 font-medium italic leading-relaxed text-[#1A365D] text-xl">
+              <p className="mb-6 text-[#1A365D] text-xl font-medium italic leading-relaxed">
                 My team and I have never had such honest conversations with each other, 
                 until I started working with Phillip. His ability to create a safe space 
                 where challenging topics can be discussed has transformed how we operate 
