@@ -430,12 +430,12 @@ export default function Home() {
 
             {/* CTA box - 1 column */}
             <div className="rounded-2xl bg-[#1A365D] p-8 text-center text-white shadow-2xl">
-              <div className="text-5xl text-[#D4B86A] mb-4">💭</div>
-              <h3 className="text-xl font-bold mb-4">Ready to begin?</h3>
-              <p className="text-white/90 mb-6">
+              <div className="mb-6 text-5xl text-[#D4B86A]">💭</div>
+              <h3 className="mb-4 text-xl font-bold">Ready to begin?</h3>
+              <p className="mb-6 text-white/90">
                 Every transformation begins with a single, honest conversation.
               </p>
-              <div className="bg-[#F96E1E] text-white p-4 rounded-lg">
+              <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
                 <p className="font-medium">
                   Leadership is a <strong>practice</strong>, not a destination
                 </p>
