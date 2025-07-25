@@ -12,6 +12,11 @@
  * - BOLD color blocking that screams confidence over template safety
  * - REAL testimonials in styled asymmetric blocks
  * - PACKED content - more per screen than any consultant template
+ * 
+ * ALL BUILD ERRORS FIXED:
+ * - React unescaped entities properly escaped
+ * - Tailwind v3 opacity syntax (bg-white/10 instead of bg-opacity-10)
+ * - Proper Tailwind class ordering throughout
  */
 
 import Layout, { Block, PageLayout } from '../components/Layout'
@@ -65,22 +70,22 @@ export default function Home() {
             </div>
 
             {/* EQ-i Square Blocks Sidebar - 1/3 */}
-                          <div className="space-y-4 lg:col-span-1">
+            <div className="space-y-4 lg:col-span-1">
               <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  &quot;What&apos;s the story I tell myself about who I am; is it still true?&quot;
+                  &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
                 </p>
               </div>
               
               <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  &quot;What helps me choose well, especially when it&apos;s hard?&quot;
+                  &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
                 </p>
               </div>
               
               <div className="aspect-square rounded-lg bg-[#7E2D40] p-4 text-white">
                 <p className="text-sm font-medium italic">
-                  &quot;What do I reach for when things feel too much?&quot;
+                  &ldquo;What do I reach for when things feel too much?&rdquo;
                 </p>
               </div>
             </div>
@@ -94,7 +99,7 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-6 py-8 lg:grid-cols-5">
             {/* Equation Display - 2/5 */}
             <div className="text-center lg:col-span-2">
-              <div className="rounded-xl bg-white bg-opacity-10 p-8 backdrop-blur">
+              <div className="rounded-xl bg-white/10 p-8 backdrop-blur">
                 <div className="mb-4 font-mono text-6xl font-bold text-[#D4B86A] md:text-7xl">
                   PE = PO - I
                 </div>
@@ -111,22 +116,22 @@ export default function Home() {
               </h2>
               
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <div className="mb-2 text-2xl text-[#F96E1E]">PE</div>
                   <h3 className="mb-2 font-semibold text-white">Performance</h3>
-                  <p className="text-sm text-white text-opacity-80">Observable results and impact</p>
+                  <p className="text-sm text-white/80">Observable results and impact</p>
                 </div>
                 
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <div className="mb-2 text-2xl text-[#D4B86A]">PO</div>
                   <h3 className="mb-2 font-semibold text-white">Potential</h3>
-                  <p className="text-sm text-white text-opacity-80">Innate capabilities within you</p>
+                  <p className="text-sm text-white/80">Innate capabilities within you</p>
                 </div>
                 
-                <div className="rounded-lg bg-white bg-opacity-10 p-4 backdrop-blur">
+                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <div className="mb-2 text-2xl text-[#F96E1E]">I</div>
                   <h3 className="mb-2 font-semibold text-white">Interference</h3>
-                  <p className="text-sm text-white text-opacity-80">The "stuff" getting in your way</p>
+                  <p className="text-sm text-white/80">The &ldquo;stuff&rdquo; getting in your way</p>
                 </div>
               </div>
 
@@ -149,7 +154,7 @@ export default function Home() {
                 What gets in your way?
               </h2>
               <p className="max-w-3xl text-lg text-gray-600">
-                Everyone has their "stuff." The question is whether dealing with it now 
+                Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
                 is the best use of your energy.
               </p>
             </div>
@@ -162,10 +167,10 @@ export default function Home() {
                 <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
                 <div className="space-y-3">
                   <p className="text-white/90">
-                    The voice of imposter syndrome: &quot;I don&apos;t really belong at this level.&quot;
+                    The voice of imposter syndrome: &ldquo;I don&apos;t really belong at this level.&rdquo;
                   </p>
                   <p className="text-white/90">
-                    Perfectionism: &quot;Anything less than flawless is failure.&quot;
+                    Perfectionism: &ldquo;Anything less than flawless is failure.&rdquo;
                   </p>
                   <p className="text-sm text-white/80">
                     That internal commentary creating doubt where there should be confidence.
@@ -195,7 +200,7 @@ export default function Home() {
                   <div className="mb-2 text-2xl">📖</div>
                   <h3 className="mb-2 font-semibold text-[#1A365D]">Unhelpful Narratives</h3>
                   <p className="text-sm text-gray-600">
-                    &quot;I must always have the answer.&quot; &quot;If I slow down, I&apos;ll fall behind.&quot;
+                    &ldquo;I must always have the answer.&rdquo; &ldquo;If I slow down, I&apos;ll fall behind.&rdquo;
                   </p>
                 </div>
               </div>
@@ -275,7 +280,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {/* Large Testimonial - 2/3 */}
               <div className="rounded-xl bg-white p-6 shadow-lg lg:col-span-2">
-                <div className="absolute -ml-1 -mt-2 text-5xl text-[#7E2D40]">&quot;</div>
+                <div className="absolute -ml-1 -mt-2 text-5xl text-[#7E2D40]">&ldquo;</div>
                 <p className="mb-4 pl-6 text-lg font-medium italic leading-relaxed text-[#1A365D]">
                   My team and I have never had such honest conversations with each other, 
                   until I started working with Phillip. His ability to create a safe space 
@@ -297,8 +302,8 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    &quot;I have been surprised at how comfortable it has felt being stretched. 
-                    The stretch has become an additional approach rather than replacing who I am.&quot;
+                    &ldquo;I have been surprised at how comfortable it has felt being stretched. 
+                    The stretch has become an additional approach rather than replacing who I am.&rdquo;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     CFO, Housing & Community
@@ -307,8 +312,8 @@ export default function Home() {
 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    &quot;He is completely trustworthy and has an extremely high level of integrity, 
-                    acute business insight and many years of diverse experience to draw upon.&quot;
+                    &ldquo;He is completely trustworthy and has an extremely high level of integrity, 
+                    acute business insight and many years of diverse experience to draw upon.&rdquo;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     Senior Civil-Servant, Government
@@ -317,8 +322,8 @@ export default function Home() {
 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
                   <p className="mb-3 text-sm italic text-white">
-                    &quot;I have got my confidence back and my self-belief which had waned 
-                    back when we first met.&quot;
+                    &ldquo;I have got my confidence back and my self-belief which had waned 
+                    back when we first met.&rdquo;
                   </p>
                   <div className="text-xs font-medium text-[#D4B86A]">
                     Country Head, Manufacturing
