@@ -84,10 +84,6 @@ export default function Home() {
                 src="/images/eq-bubbles/bubble-1.png" 
                 alt="Thought bubble"
                 className="w-full h-full object-contain z-10"
-                onError={(e) => {
-                  console.log('Image failed to load:', e.target.src);
-                  e.target.style.display = 'none';
-                }}
               />
             </div>
             
@@ -96,10 +92,6 @@ export default function Home() {
                 src="/images/eq-bubbles/bubble-1.png" 
                 alt="Thought bubble"
                 className="w-full h-full object-contain z-10"
-                onError={(e) => {
-                  console.log('Image failed to load:', e.target.src);
-                  e.target.style.display = 'none';
-                }}
               />
             </div>
 
