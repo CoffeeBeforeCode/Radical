@@ -16,9 +16,11 @@ export default function Home() {
               {/* Hero Content - NO SIDEBAR */}
               <div className="max-w-4xl space-y-8">
                 <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  Your leadership?<br />
-                  <span className="font-light italic text-[#F96E1E]">It&apos;s already there.</span>
-                </h1>
+                    Your Leadership?
+                    Not a title.<br />
+                    Not a goal.<br />
+                    <span className="font-light italic text-[#F96E1E]">A practice.</span>
+                  </h1>
             
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
