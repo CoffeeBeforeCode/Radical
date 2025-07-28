@@ -16,13 +16,15 @@ export default function Home() {
               {/* Hero Content - NO SIDEBAR */}
               <div className="max-w-4xl space-y-8">
                 <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  Your leadership?<br />
-                  <span className="font-light italic text-[#F96E1E]">It&apos;s already there.</span>
+                  Your Leadership.<br />
+                  A Role?<br />
+                  A Title?<br />
+                  <span className="font-light italic text-[#F96E1E]">A Practice!</span>
                 </h1>
             
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                    The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
+                    The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                     Again and again.<br />
                     To their <strong>values</strong>.<br />
                     Their <strong>vision</strong>.<br />
@@ -31,8 +33,10 @@ export default function Home() {
                 </div>
 
                 <p className="text-lg leading-relaxed text-gray-600">
-                  I create the space for that return — to what matters, what&apos;s emerging, 
-                  and what&apos;s getting in the way. Not louder. Just wiser.
+                  I create the space for that return; to what matters, what&apos;s emerging, 
+                  and what&apos;s getting in the way.<br />
+                  Not louder.<br />
+                  Just wiser.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -75,16 +79,20 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
-              </p>
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white relative flex items-center justify-center">
+              <img 
+                src="/images/eq-bubbles/bubble-1.png" 
+                alt="Thought bubble"
+                className="w-full h-full object-contain"
+              />
             </div>
             
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;What do I reach for when things feel too much?&rdquo;
-              </p>
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white relative flex items-center justify-center">
+              <img 
+                src="/images/eq-bubbles/bubble-1.png" 
+                alt="Thought bubble"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
