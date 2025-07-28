@@ -17,8 +17,8 @@ export default function Home() {
               <div className="max-w-4xl space-y-8">
                 <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
                     Your Leadership?<br />
-                    Not a title.<br />
-                    Not a goal.<br />
+                    a title.<br />
+                    a goal.<br />
                     <span className="font-light italic text-[#F96E1E]">A practice.</span>
                   </h1>
             
