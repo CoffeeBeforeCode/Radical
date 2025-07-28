@@ -16,11 +16,9 @@ export default function Home() {
               {/* Hero Content - NO SIDEBAR */}
               <div className="max-w-4xl space-y-8">
                 <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                    Your Leadership.<br />
-                    A title?<br />
-                    A role?<br />
-                    <span className="font-light italic text-[#F96E1E]">A practice!</span>
-                  </h1>
+                  Your leadership?<br />
+                  <span className="font-light italic text-[#F96E1E]">It&apos;s already there.</span>
+                </h1>
             
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
@@ -62,11 +60,11 @@ export default function Home() {
         <PageLayout>
           <div className="mb-8">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Some questions that matter
+              Questions that matter
             </h2>
-            <p className="max-w-3xl text-lg text-gray-700">
+            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
               These aren&apos;t interview questions. They&apos;re invitations to notice 
-              what&apos;s already there, waiting to be seen.
+              what&apos;s already there, waiting&nbsp;to&nbsp;be&nbsp;seen.
             </p>
           </div>
 
