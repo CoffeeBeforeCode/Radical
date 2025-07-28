@@ -83,7 +83,11 @@ export default function Home() {
               <img 
                 src="/images/eq-bubbles/bubble-1.png" 
                 alt="Thought bubble"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain z-10"
+                onError={(e) => {
+                  console.log('Image failed to load:', e.target.src);
+                  e.target.style.display = 'none';
+                }}
               />
             </div>
             
@@ -91,7 +95,11 @@ export default function Home() {
               <img 
                 src="/images/eq-bubbles/bubble-1.png" 
                 alt="Thought bubble"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain z-10"
+                onError={(e) => {
+                  console.log('Image failed to load:', e.target.src);
+                  e.target.style.display = 'none';
+                }}
               />
             </div>
 
@@ -135,7 +143,7 @@ export default function Home() {
             {/* Equation Display - 1/3 */}
             <div className="text-center">
               <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
-                <div className="mb-4 font-mono text-5xl font-bold text-[#F96E1E] md:text-6xl">
+                <div className="mb-4 font-['Waiting_for_the_Sunrise'] text-5xl font-bold text-[#F96E1E] md:text-6xl">
                   PE = PO - I
                 </div>
                 <p className="text-lg font-semibold text-white">
@@ -152,19 +160,19 @@ export default function Home() {
               
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-xl text-[#F96E1E]">PE</div>
+                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-[#F96E1E]">PE</div>
                   <h3 className="mb-2 font-semibold text-white">Performance</h3>
                   <p className="text-sm text-white/80">Observable results and impact</p>
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-xl text-white">PO</div>
+                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-white">PO</div>
                   <h3 className="mb-2 font-semibold text-white">Potential</h3>
                   <p className="text-sm text-white/80">Innate capabilities within you</p>
                 </div>
                 
                 <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 text-xl text-[#F96E1E]">I</div>
+                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-[#F96E1E]">I</div>
                   <h3 className="mb-2 font-semibold text-white">Interference</h3>
                   <p className="text-sm text-white/80">The &ldquo;stuff&rdquo; getting in your way</p>
                 </div>
@@ -187,9 +195,9 @@ export default function Home() {
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               What gets in your <span className="text-[#F96E1E]">way</span>?
             </h2>
-            <p className="max-w-3xl text-lg text-gray-700">
+            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
               Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
-              is the best use of your energy.
+              is the best use&nbsp;of&nbsp;your&nbsp;energy.
             </p>
           </div>
 
@@ -315,9 +323,11 @@ export default function Home() {
               </p>
             </div>
 
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-white/90">
-              If something here resonates, let&apos;s explore what&apos;s possible. 
-              No funnel. No pressure. Just a human conversation.
+            <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-white/90">
+              If something here resonates, let&apos;s explore what&apos;s possible.<br />
+              No funnel.<br />
+              No pressure.<br />
+              Just a human conversation.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
