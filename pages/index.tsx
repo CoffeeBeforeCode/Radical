@@ -62,7 +62,7 @@ export default function Home() {
         <PageLayout>
           <div className="mb-8">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Questions that matter
+              Some questions that matter
             </h2>
             <p className="max-w-3xl text-lg text-gray-700">
               These aren&apos;t interview questions. They&apos;re invitations to notice 
