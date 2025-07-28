@@ -4,7 +4,7 @@
  * Everything else remains exactly as you have it
  */
 
-import Layout, { Block, Grid, PageLayout } from '../components/Layout'
+import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
 
 export default function Home() {
