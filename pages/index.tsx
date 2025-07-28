@@ -29,7 +29,7 @@ export default function Home() {
                   Again and again.<br />
                   To their <strong>values</strong>.<br />
                   Their <strong>vision</strong>.<br />
-                  Their <strong>self</strong>.
+                  Their <strong>self 1</strong>.
                 </p>
               </div>
 
