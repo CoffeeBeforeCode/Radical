@@ -8,18 +8,20 @@ export default function Home() {
       description="Creating space for leaders to see what gets in their way, reduce interference, and unlock their natural potential. Working with executives across Europe, Middle East, Americas, and Asia Pacific."
       canonical="/"
     >
-      {/* FULL-WIDTH HERO - No PageLayout wrapper */}
-      <section className="w-full min-h-screen bg-white flex items-center">
-        {/* Direct container without PageLayout constraint */}
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
-            {/* Main Hero Content - 3/5 Asymmetric */}
-            <div className="space-y-6 lg:col-span-3">
-              <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                Not a title.<br />
-                Not a goal.<br />
-                <span className="font-light italic text-[#F96E1E]">A practice.</span>
-              </h1>
+      {/* FULL-WIDTH HERO - Completely unconstrained */}
+      <section className="relative w-full min-h-screen bg-white">
+        {/* Full viewport hero container */}
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl">
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
+                {/* Main Hero Content - 3/5 Asymmetric */}
+                <div className="space-y-8 lg:col-span-3">
+                  <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
+                    Not a title.<br />
+                    Not a goal.<br />
+                    <span className="font-light italic text-[#F96E1E]">A practice.</span>
+                  </h1>
               
               <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                 <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
@@ -36,46 +38,48 @@ export default function Home() {
                 and what&apos;s getting in the way. Not louder. Just wiser.
               </p>
 
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                >
-                  Begin Here →
-                </Link>
-                <Link
-                  href="/the-work"
-                  className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                >
-                  The Work
-                </Link>
-              </div>
-            </div>
+                  <div className="flex flex-wrap gap-4">
+                    <Link
+                      href="/contact"
+                      className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                    >
+                      Begin Here →
+                    </Link>
+                    <Link
+                      href="/the-work"
+                      className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                    >
+                      The Work
+                    </Link>
+                  </div>
+                </div>
 
-            {/* EQ Square Sidebar - 2/5 */}
-            <div className="space-y-4 lg:col-span-2">
-              <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-                <p className="text-sm font-medium italic">
-                  &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
-                </p>
-              </div>
-              
-              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-                <p className="text-sm font-medium italic">
-                  &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
-                </p>
-              </div>
-              
-              <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-                <p className="text-sm font-medium italic">
-                  &ldquo;What do I reach for when things feel too much?&rdquo;
-                </p>
-              </div>
+                {/* EQ Square Sidebar - 2/5 - PROPERLY POSITIONED */}
+                <div className="space-y-4 lg:col-span-2">
+                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
+                    <p className="text-sm font-medium italic">
+                      &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
+                    </p>
+                  </div>
+                  
+                  <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+                    <p className="text-sm font-medium italic">
+                      &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
+                    </p>
+                  </div>
+                  
+                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
+                    <p className="text-sm font-medium italic">
+                      &ldquo;What do I reach for when things feel too much?&rdquo;
+                    </p>
+                  </div>
 
-              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-                <p className="text-sm font-medium italic">
-                  &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
-                </p>
+                  <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+                    <p className="text-sm font-medium italic">
+                      &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
