@@ -26,8 +26,8 @@ export default function Home() {
               {/* FULL WIDTH Quote + EQ Square - Perfect sequence */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-center">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-stretch">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3 h-full flex items-center">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                         Again and again.<br />
