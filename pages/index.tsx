@@ -21,25 +21,6 @@ export default function Home() {
                   A Title?<br />
                   <span className="font-light italic text-[#F96E1E]">A Practice!</span>
                 </h1>
-            
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-center">
-                  <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3">
-                    <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                      The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
-                      Again and again.<br />
-                      To their <strong>values</strong>.<br />
-                      Their <strong>vision</strong>.<br />
-                      Their <strong>self</strong>.
-                    </p>
-                  </div>
-                  
-                  {/* EQ Square - 25% width */}
-                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center md:col-span-1">
-                    <p className="text-sm font-medium italic text-center">
-                      &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
-                    </p>
-                  </div>
-                </div>
 
                 <p className="text-lg leading-relaxed text-gray-600">
                   I create the space for that return; to what matters, what&apos;s emerging, 
@@ -61,6 +42,30 @@ export default function Home() {
                   >
                     The Work
                   </Link>
+                </div>
+              </div>
+              
+              {/* FULL WIDTH Quote + EQ Square - Break out of container */}
+              <div className="w-full mt-8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-center">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3">
+                      <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                        The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
+                        Again and again.<br />
+                        To their <strong>values</strong>.<br />
+                        Their <strong>vision</strong>.<br />
+                        Their <strong>self</strong>.
+                      </p>
+                    </div>
+                    
+                    {/* EQ Square - 25% width */}
+                    <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center md:col-span-1">
+                      <p className="text-sm font-medium italic text-center">
+                        &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
