@@ -1,6 +1,5 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -107,14 +106,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {/* FIRST IMAGE - Replace first EQ square with bubble-1.png */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center relative">
-              <Image
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+              <img
                 src="/images/bubble-1.png"
                 alt="Leadership reflection bubble"
-                width={200}
-                height={200}
-                className="object-contain w-full h-full p-2"
-                unoptimized
+                className="w-full h-full object-contain"
               />
             </div>
             
@@ -287,14 +283,11 @@ export default function Home() {
             </div>
 
             {/* SECOND IMAGE - Replace EQ square with test-image.png */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center relative">
-              <Image
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+              <img
                 src="/images/test-image.png"
                 alt="Leadership coaching reflection"
-                width={200}
-                height={200}
-                className="object-contain w-full h-full p-2"
-                unoptimized
+                className="w-full h-full object-contain"
               />
             </div>
 
