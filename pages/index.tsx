@@ -114,10 +114,12 @@ export default function Home() {
               />
             </div>
             
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
-              </p>
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+              <img
+                src="/images/bubble-1.png"
+                alt="Leadership reflection bubble"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
