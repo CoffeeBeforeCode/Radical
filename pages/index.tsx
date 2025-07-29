@@ -110,7 +110,7 @@ export default function Home() {
               <img
                 src="/images/bubble-1.png"
                 alt="Leadership reflection bubble"
-                className="w-full h-full object-contain mix-blend-multiply"
+                className="w-full h-full object-contain"
               />
             </div>
             
