@@ -111,9 +111,10 @@ export default function Home() {
               <Image
                 src="/images/bubble-1.png"
                 alt="Leadership reflection bubble"
-                fill
-                className="object-contain p-2"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                width={200}
+                height={200}
+                className="object-contain w-full h-full p-2"
+                unoptimized
               />
             </div>
             
@@ -290,9 +291,10 @@ export default function Home() {
               <Image
                 src="/images/test-image.png"
                 alt="Leadership coaching reflection"
-                fill
-                className="object-contain p-2"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                width={200}
+                height={200}
+                className="object-contain w-full h-full p-2"
+                unoptimized
               />
             </div>
 
