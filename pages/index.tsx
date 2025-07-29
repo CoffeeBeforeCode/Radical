@@ -21,31 +21,9 @@ export default function Home() {
                   A Title?<br />
                   <span className="font-light italic text-[#F96E1E]">A Practice!</span>
                 </h1>
-
-                <p className="text-lg leading-relaxed text-gray-600">
-                  I create the space for that return; to what matters, what&apos;s emerging, 
-                  and what&apos;s getting in the way.<br />
-                  Not louder.<br />
-                  Just wiser.
-                </p>
-
-                <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="/contact"
-                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                  >
-                    Begin Here →
-                  </Link>
-                  <Link
-                    href="/the-work"
-                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                  >
-                    The Work
-                  </Link>
-                </div>
               </div>
               
-              {/* FULL WIDTH Quote + EQ Square - Break out of container */}
+              {/* FULL WIDTH Quote + EQ Square - Perfect sequence */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-center">
@@ -66,6 +44,31 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Rest of hero content */}
+              <div className="max-w-4xl space-y-8 mt-8">
+                <p className="text-lg leading-relaxed text-gray-600">
+                  I create the space for that return; to what matters, what&apos;s emerging, 
+                  and what&apos;s getting in the way.<br />
+                  Not louder.<br />
+                  Just wiser.
+                </p>
+
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/contact"
+                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                  >
+                    Begin Here →
+                  </Link>
+                  <Link
+                    href="/the-work"
+                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                  >
+                    The Work
+                  </Link>
                 </div>
               </div>
             </div>
