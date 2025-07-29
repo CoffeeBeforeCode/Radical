@@ -105,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {/* FIRST IMAGE - Replace first EQ square with bubble-1.png */}
+            {/* FIRST IMAGE - bubble-1.png on tangerine */}
             <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
               <img
                 src="/images/bubble-1.png"
@@ -114,6 +114,7 @@ export default function Home() {
               />
             </div>
             
+            {/* SECOND IMAGE - bubble-1.png on navy */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/bubble-1.png"
