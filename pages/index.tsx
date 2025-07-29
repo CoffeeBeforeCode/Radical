@@ -22,14 +22,23 @@ export default function Home() {
                   <span className="font-light italic text-[#F96E1E]">A Practice!</span>
                 </h1>
             
-                <div className="w-full rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
-                  <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                    The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
-                    Again and again.<br />
-                    To their <strong>values</strong>.<br />
-                    Their <strong>vision</strong>.<br />
-                    Their <strong>self</strong>.
-                  </p>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-center">
+                  <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3">
+                    <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                      The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
+                      Again and again.<br />
+                      To their <strong>values</strong>.<br />
+                      Their <strong>vision</strong>.<br />
+                      Their <strong>self</strong>.
+                    </p>
+                  </div>
+                  
+                  {/* EQ Square - Perfect Height Match */}
+                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center">
+                    <p className="text-sm font-medium italic text-center">
+                      &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
+                    </p>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-relaxed text-gray-600">
