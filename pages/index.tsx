@@ -15,14 +15,14 @@ export default function Home() {
             <div className="mx-auto max-w-7xl">
               {/* Hero Content - NO SIDEBAR */}
               <div className="max-w-4xl space-y-8">
-                <h1 className="text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
+                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
                   Your Leadership.<br />
                   A Role?<br />
                   A Title?<br />
                   <span className="font-light italic text-[#F96E1E]">A Practice!</span>
                 </h1>
             
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
+                <div className="w-full rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                     The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                     Again and again.<br />
@@ -59,14 +59,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EQ SQUARES SECTION - Separate section with proper structure */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+      {/* LEADERSHIP AS PRACTICE - Philosophy Section */}
+      <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Leadership is a <span className="text-[#F96E1E]">practice</span>, not a destination.
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+              Like yoga. Like meditation. Something you return to daily with intention, 
+              not something you achieve once and forget.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPACT EQ SQUARES SECTION - Only 4 squares */}
+      <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               Questions that matter
             </h2>
-            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
               These aren&apos;t interview questions. They&apos;re invitations to notice 
               what&apos;s already there, waiting&nbsp;to&nbsp;be&nbsp;seen.
             </p>
@@ -79,22 +94,6 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white relative flex items-center justify-center">
-              <img 
-                src="/images/eq-bubbles/bubble-1.png" 
-                alt="Thought bubble"
-                className="w-full h-full object-contain z-10"
-              />
-            </div>
-            
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white relative flex items-center justify-center">
-              <img 
-                src="/images/eq-bubbles/bubble-1.png" 
-                alt="Thought bubble"
-                className="w-full h-full object-contain z-10"
-              />
-            </div>
-
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
               <p className="text-sm font-medium italic">
                 &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
@@ -110,18 +109,6 @@ export default function Home() {
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
               <p className="text-sm font-medium italic">
                 &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
-              </p>
-            </div>
-
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;How do I handle it when plans change?&rdquo;
-              </p>
-            </div>
-
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
               </p>
             </div>
           </div>
@@ -151,21 +138,21 @@ export default function Home() {
               </h2>
               
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-[#F96E1E]">PE</div>
-                  <h3 className="mb-2 font-semibold text-white">Performance</h3>
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PE</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Performance</h3>
                   <p className="text-sm text-white/80">Observable results and impact</p>
                 </div>
                 
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-white">PO</div>
-                  <h3 className="mb-2 font-semibold text-white">Potential</h3>
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PO</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Potential</h3>
                   <p className="text-sm text-white/80">Innate capabilities within you</p>
                 </div>
                 
-                <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-                  <div className="mb-2 font-['Waiting_for_the_Sunrise'] text-xl text-[#F96E1E]">I</div>
-                  <h3 className="mb-2 font-semibold text-white">Interference</h3>
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">I</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Interference</h3>
                   <p className="text-sm text-white/80">The &ldquo;stuff&rdquo; getting in your way</p>
                 </div>
               </div>
@@ -180,7 +167,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Interference Examples in Boxy Grid */}
+      {/* CREAM STRIPE - Interference Examples with Distributed EQ */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
@@ -193,7 +180,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Aga-Style Boxy Grid */}
+          {/* Aga-Style Boxy Grid with EQ Square */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
             {/* Large Block - Inner Dialogue */}
             <div className="rounded-lg bg-[#1A365D] p-6 text-white shadow-lg md:col-span-2 lg:col-span-2">
@@ -212,7 +199,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Standard blocks for remaining interference types */}
+            {/* EQ Square - Distributed */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;How do I handle it when plans change?&rdquo;
+              </p>
+            </div>
+
+            {/* Standard block */}
             <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
               <div className="mb-2 text-2xl">⚖️</div>
               <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
@@ -243,8 +237,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* Continue with remaining sections... */}
-      {/* WHITE STRIPE - Approach Frameworks */}
+      {/* WHITE STRIPE - Approach Frameworks with EQ Integration */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -266,6 +259,13 @@ export default function Home() {
               <p className="text-gray-700">
                 We start by noticing patterns, dynamics, friction before we move. 
                 Sometimes the most important insights arise in the silence between words.
+              </p>
+            </div>
+
+            {/* EQ Square - Distributed */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
+              <p className="text-sm font-medium italic">
+                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
               </p>
             </div>
 
@@ -293,6 +293,93 @@ export default function Home() {
               <p className="text-white/90">
                 Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
                 Emotional discernment over reaction.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* CREAM STRIPE - Testimonials */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="mb-8 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Leaders reflect
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+              This work isn&apos;t loud. It doesn&apos;t need to be.<br />
+              It resonates when you&apos;re ready to hear yourself more clearly.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="relative rounded-lg bg-white p-6 shadow-sm">
+              <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">&ldquo;</div>
+              <p className="mb-4 pl-6 text-lg leading-relaxed italic">
+                My team and I have never had such honest conversations with each other, until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.
+              </p>
+              <div className="text-right text-sm font-medium text-[#7E2D40] not-italic">
+                Country Head<br />
+                Telecommunications
+              </div>
+            </div>
+
+            <div className="relative rounded-lg bg-white p-6 shadow-sm">
+              <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">&ldquo;</div>
+              <p className="mb-4 pl-6 text-lg leading-relaxed italic">
+                I have been surprised at how comfortable it has felt being stretched through this coaching process. The stretch has become an additional approach rather than replacing who I am; expanding my capabilities while preserving my authentic self.
+              </p>
+              <div className="text-right text-sm font-medium text-[#7E2D40] not-italic">
+                Chief Financial Officer<br />
+                Housing and Community Development
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Global Reach */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
+              Global perspective, personal connection
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-white/90 leading-relaxed">
+              My coaching partnerships span diverse contexts and cultures, working with senior leaders across continents and industries.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-3 text-2xl">🇪🇺</div>
+              <h3 className="mb-2 font-semibold text-white">Europe</h3>
+              <p className="text-sm text-white/80">UK, Ireland, France, Belgium, Netherlands</p>
+            </div>
+
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-3 text-2xl">🕌</div>
+              <h3 className="mb-2 font-semibold text-white">Middle East</h3>
+              <p className="text-sm text-white/80">UAE, Saudi Arabia, Israel</p>
+            </div>
+
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-3 text-2xl">🌎</div>
+              <h3 className="mb-2 font-semibold text-white">Americas</h3>
+              <p className="text-sm text-white/80">USA, Argentina, Brazil</p>
+            </div>
+
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-3 text-2xl">🏯</div>
+              <h3 className="mb-2 font-semibold text-white">Asia Pacific</h3>
+              <p className="text-sm text-white/80">India, Singapore</p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="mx-auto max-w-2xl rounded-lg bg-[#F96E1E] p-6">
+              <p className="text-lg font-medium text-white">
+                This global experience deepens my understanding of leadership challenges across different cultural contexts, enriching each coaching partnership while maintaining focus on your unique journey.
               </p>
             </div>
           </div>
