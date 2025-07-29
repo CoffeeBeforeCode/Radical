@@ -1,5 +1,6 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -105,10 +106,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
-              </p>
+            {/* FIRST IMAGE - Replace first EQ square with bubble-1.png */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center relative">
+              <Image
+                src="/images/bubble-1.png"
+                alt="Leadership reflection bubble"
+                fill
+                className="object-contain p-2"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              />
             </div>
             
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
@@ -279,11 +285,15 @@ export default function Home() {
               </p>
             </div>
 
-            {/* EQ Square - Distributed */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;Can I name what I&apos;m really feeling, underneath it all?&rdquo;
-              </p>
+            {/* SECOND IMAGE - Replace EQ square with test-image.png */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center relative">
+              <Image
+                src="/images/test-image.png"
+                alt="Leadership coaching reflection"
+                fill
+                className="object-contain p-2"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              />
             </div>
 
             <div className="rounded-lg bg-[#F8F5EB] p-4">
