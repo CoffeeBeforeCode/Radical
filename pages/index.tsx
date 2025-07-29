@@ -33,8 +33,8 @@ export default function Home() {
                     </p>
                   </div>
                   
-                  {/* EQ Square - Perfect Height Match */}
-                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center">
+                  {/* EQ Square - 25% width */}
+                  <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center md:col-span-1">
                     <p className="text-sm font-medium italic text-center">
                       &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
                     </p>
