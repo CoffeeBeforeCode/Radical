@@ -23,11 +23,11 @@ export default function Home() {
                 </h1>
               </div>
               
-              {/* FULL WIDTH Quote + EQ Square - Perfect sequence */}
+              {/* FULL WIDTH Quote + Hero Bubble */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-stretch">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-3 h-full flex items-center">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-2 h-full flex items-center">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                         Again and again.<br />
@@ -37,11 +37,13 @@ export default function Home() {
                       </p>
                     </div>
                     
-                    {/* EQ Square - 25% width */}
-                    <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white flex items-center justify-center md:col-span-1">
-                      <p className="text-sm font-medium italic text-center">
-                        &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
-                      </p>
+                    {/* WHAT'S THE STORY IMAGE - White background, no text */}
+                    <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center md:col-span-2 shadow-sm">
+                      <img
+                        src="/images/whats-the-story.png"
+                        alt="What's the story I tell myself about who I am; is it still true?"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   </div>
                 </div>
@@ -91,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COMPACT EQ SQUARES SECTION - Only 4 squares */}
+      {/* QUESTIONS THAT MATTER - 4 Bubble Images */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -105,34 +107,40 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {/* FIRST IMAGE - bubble-1.png on tangerine */}
+            {/* BUBBLE-1: Tangerine background */}
             <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
               <img
-                src="/images/bubble-1.png"
-                alt="Leadership reflection bubble"
+                src="/images/Bubble-1.png"
+                alt="Self-perception reflection"
                 className="w-full h-full object-contain"
               />
             </div>
             
-            {/* SECOND IMAGE - bubble-1.png on navy */}
+            {/* BUBBLE-2: Navy background */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
-                src="/images/bubble-1.png"
-                alt="Leadership reflection bubble"
+                src="/images/Bubble-2.png"
+                alt="Connection and relationships"
                 className="w-full h-full object-contain"
               />
             </div>
 
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;What would it take to let more of the real me come through?&rdquo;
-              </p>
+            {/* BUBBLE-3: Tangerine background */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+              <img
+                src="/images/Bubble-3.png"
+                alt="Authentic self-expression"
+                className="w-full h-full object-contain"
+              />
             </div>
 
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
-              </p>
+            {/* BUBBLE-4: Navy background */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+              <img
+                src="/images/Bubble-4.png"
+                alt="Decision-making and judgment"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </PageLayout>
@@ -190,7 +198,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Interference Examples with Distributed EQ */}
+      {/* CREAM STRIPE - What Gets In Your Way with Bubble-5 */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
@@ -203,7 +211,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Aga-Style Boxy Grid with EQ Square */}
+          {/* Aga-Style Boxy Grid with Bubble-5 */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
             {/* Large Block - Inner Dialogue */}
             <div className="rounded-lg bg-[#1A365D] p-6 text-white shadow-lg md:col-span-2 lg:col-span-2">
@@ -222,11 +230,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* EQ Square - Distributed */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 text-white">
-              <p className="text-sm font-medium italic">
-                &ldquo;How do I handle it when plans change?&rdquo;
-              </p>
+            {/* BUBBLE-5: Distributed EQ Square */}
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+              <img
+                src="/images/Bubble-5.png"
+                alt="Handling change and flexibility"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             {/* Standard block */}
@@ -260,7 +270,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - Approach Frameworks with EQ Integration */}
+      {/* WHITE STRIPE - How I See It with Bubble-6 */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -285,11 +295,11 @@ export default function Home() {
               </p>
             </div>
 
-            {/* SECOND IMAGE - Replace EQ square with test-image.png */}
+            {/* BUBBLE-6: Replace icon image with bubble */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
-                src="/images/test-image.png"
-                alt="Leadership coaching reflection"
+                src="/images/Bubble-6.png"
+                alt="Emotional self-awareness"
                 className="w-full h-full object-contain"
               />
             </div>
