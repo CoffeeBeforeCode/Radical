@@ -184,7 +184,7 @@ export default function ThisIsPersonal() {
                   
                   <div className="rounded-lg bg-[#F8F5EB] p-6">
                     <p className="text-lg text-gray-700">
-                      Because strategy means nothing if you're not sleeping well.
+                      Because strategy means nothing if you&apos;re not sleeping well.
                     </p>
                   </div>
                 </div>
