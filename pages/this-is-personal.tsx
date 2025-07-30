@@ -20,9 +20,9 @@ export default function ThisIsPersonal() {
               
               <div className="mt-8 space-y-6">
                 <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                  I've spent three decades working with leaders across the globe.<br />
-                  What stays with me isn't their titles.<br />
-                  It's their <strong>turning points</strong>.
+                  I&apos;ve spent three decades working with leaders across the globe.<br />
+                  What stays with me isn&apos;t their titles.<br />
+                  It&apos;s their <strong>turning points</strong>.
                 </p>
                 
                 <p className="text-lg leading-relaxed text-gray-600">
@@ -65,7 +65,7 @@ export default function ThisIsPersonal() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur md:col-span-2">
               <div className="space-y-6 text-white">
                 <p className="text-lg leading-relaxed">
-                  As a child, I was described as a <strong>"sensitive boy."</strong> For twenty years, 
+                  As a child, I was described as a <strong>&ldquo;sensitive boy.&rdquo;</strong> For twenty years, 
                   I received this as a weakness — a belief I carried that shaped how I saw myself 
                   and moved through the world.
                 </p>
@@ -112,7 +112,7 @@ export default function ThisIsPersonal() {
           </div>
 
           <div className="mt-12 rounded-lg bg-[#F96E1E] p-8">
-            <p className="text-center text-xl font-semibold text-white leading-relaxed">
+            <p className="text-center text-xl font-semibold leading-relaxed text-white">
               This personal transformation — from perceived weakness to developed strength —<br />
               is the heart of every coaching conversation I have.
             </p>
@@ -131,9 +131,9 @@ export default function ThisIsPersonal() {
               
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-gray-700">
-                  I don't push. I don't prescribe. I observe, then invite.<br />
-                  What's said — and unsaid.<br />
-                  What's felt — but not yet named.
+                  I don&apos;t push. I don&apos;t prescribe. I observe, then invite.<br />
+                  What&apos;s said — and unsaid.<br />
+                  What&apos;s felt — but not yet named.
                 </p>
                 
                 <p className="text-lg leading-relaxed text-gray-700">
@@ -198,7 +198,7 @@ export default function ThisIsPersonal() {
                   
                   <div className="rounded-lg bg-[#F96E1E] p-6">
                     <p className="text-lg font-medium text-white">
-                      Because the best leaders don't need fixing — they need space.
+                      Because the best leaders don&apos;t need fixing — they need space.
                     </p>
                   </div>
                 </div>
@@ -215,8 +215,8 @@ export default function ThisIsPersonal() {
             <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
               What <span className="text-[#F96E1E]">guides</span> me
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              These aren't aspirational values. They're lived principles<br />
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
+              These aren&apos;t aspirational values. They&apos;re lived principles<br />
               that shape every conversation, every decision, every day.
             </p>
           </div>
@@ -329,7 +329,7 @@ export default function ThisIsPersonal() {
             <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
               Books that shaped my thinking
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
               My approach has been shaped by key works that have influenced how I think about 
               leadership development, human potential, and meaningful change.
             </p>
@@ -338,48 +338,48 @@ export default function ThisIsPersonal() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The Inner Game of Tennis</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Timothy Gallwey's performance equation (PE = PO - I) became the foundation 
+              <p className="text-sm leading-relaxed text-gray-600">
+                Timothy Gallwey&apos;s performance equation (PE = PO - I) became the foundation 
                 of my Leadership Equation — reducing interference rather than forcing performance.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The 7 Habits of Highly Effective People</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Stephen Covey's "Begin with the End in Mind" framework, particularly the funeral 
+              <p className="text-sm leading-relaxed text-gray-600">
+                Stephen Covey&apos;s &ldquo;Begin with the End in Mind&rdquo; framework, particularly the funeral 
                 scenario across life domains, shaped my multi-domain leadership philosophy.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">Transitions</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                William Bridges' distinction between external change and internal transition 
+              <p className="text-sm leading-relaxed text-gray-600">
+                William Bridges&apos; distinction between external change and internal transition 
                 informs how I support leaders through major life shifts.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">True North</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Bill George's authentic leadership framework reinforced my belief 
+              <p className="text-sm leading-relaxed text-gray-600">
+                Bill George&apos;s authentic leadership framework reinforced my belief 
                 that leadership development is fundamentally about self-discovery.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">Best Practice in Performance Coaching</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Carol Wilson's seven principles of coaching provide the ethical and 
+              <p className="text-sm leading-relaxed text-gray-600">
+                Carol Wilson&apos;s seven principles of coaching provide the ethical and 
                 methodological foundation for my non-directive approach.
               </p>
             </div>
 
             <div className="rounded-lg bg-white p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The Four Agreements</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Don Miguel Ruiz's principles for personal freedom translate directly 
+              <p className="text-sm leading-relaxed text-gray-600">
+                Don Miguel Ruiz&apos;s principles for personal freedom translate directly 
                 into leadership authenticity and self-respect.
               </p>
             </div>
@@ -408,14 +408,14 @@ export default function ThisIsPersonal() {
                   </p>
                   
                   <p className="text-lg leading-relaxed">
-                    Throughout my journey, I've sought learning from original thought leaders to continuously 
-                    enhance my approach. I've trained directly with John Grinder, co-creator of 
-                    Neuro Linguistic Programming, and completed Seth Godin's altMBA programme.
+                    Throughout my journey, I&apos;ve sought learning from original thought leaders to continuously 
+                    enhance my approach. I&apos;ve trained directly with John Grinder, co-creator of 
+                    Neuro Linguistic Programming, and completed Seth Godin&apos;s altMBA programme.
                   </p>
                   
                   <p className="text-lg leading-relaxed">
                     My development has also included deeper exploration of Emotional Intelligence through 
-                    Reuven Bar-On's work, as well as Gestalt approaches, Clean Language, and 
+                    Reuven Bar-On&apos;s work, as well as Gestalt approaches, Clean Language, and 
                     Rational Emotive Behaviour Therapy (REBT).
                   </p>
                 </div>
@@ -440,7 +440,7 @@ export default function ThisIsPersonal() {
             </div>
 
             <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
-              <p className="text-xl font-semibold text-white leading-relaxed">
+              <p className="text-xl font-semibold leading-relaxed text-white">
                 This continuous learning enriches the perspective I bring to our coaching partnership<br />
                 whilst maintaining focus on your unique journey and objectives.
               </p>
@@ -454,11 +454,11 @@ export default function ThisIsPersonal() {
         <PageLayout>
           <div className="text-center">
             <blockquote className="mx-auto max-w-4xl">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light text-white leading-relaxed md:text-3xl">
-                "I've learned that the most powerful shifts don't happen in the spotlight.
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
               </p>
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light text-white leading-relaxed md:text-3xl">
-                They happen in quiet spaces, with honest questions, and just enough courage."
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
               </p>
               <footer className="mt-8 text-[#F96E1E] font-medium">
                 — Phillip Collins
@@ -476,9 +476,9 @@ export default function ThisIsPersonal() {
               Ready to begin?
             </h2>
             
-            <p className="mx-auto mb-8 max-w-3xl text-lg text-white/90 leading-relaxed">
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
               This personal journey informs every coaching conversation.<br />
-              If something here resonates, let's explore what's possible for you.
+              If something here resonates, let&apos;s explore what&apos;s possible for you.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
