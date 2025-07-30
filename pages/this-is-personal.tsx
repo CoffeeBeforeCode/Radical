@@ -20,7 +20,7 @@ export default function ThisIsPersonal() {
               
               <div className="mt-8 space-y-6">
                 <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                  I&apos;ve spent three decades working with leaders across the globe.<br />
+                  With over 10,000 hours of working with leaders across the globe.<br />
                   What stays with me isn&apos;t their titles.<br />
                   It&apos;s their <strong>turning points</strong>.
                 </p>
@@ -33,8 +33,8 @@ export default function ThisIsPersonal() {
                 
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
                   <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
-                    That&apos;s where I do my best work —<br />
-                    not in the certainty, but in the search.
+                    That&apos;s where I do my best work.<br />
+                    Not in the certainty, but in the search.
                   </p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function ThisIsPersonal() {
               <div className="space-y-6 text-white">
                 <p className="text-lg leading-relaxed">
                   As a child, I was described as a <strong>&ldquo;sensitive boy.&rdquo;</strong> For twenty years, 
-                  I received this as a weakness — a belief I carried that shaped how I saw myself 
+                  I received this as a weakness. A belief I carried that shaped how I saw myself 
                   and moved through the world.
                 </p>
                 
@@ -104,7 +104,7 @@ export default function ThisIsPersonal() {
               <div className="text-center">
                 <p className="text-xl font-medium leading-relaxed text-[#F96E1E]">
                   In the subsequent two decades, I&apos;ve developed this into what many call 
-                  my &lsquo;superpower&rsquo; — though I dislike the phrase.<br />
+                  my &lsquo;superpower&rsquo;, though I dislike the phrase.<br />
                   <span className="text-white">It&apos;s simply how I work.</span>
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function ThisIsPersonal() {
 
           <div className="mt-12 rounded-lg bg-[#F96E1E] p-8">
             <p className="text-center text-xl font-semibold leading-relaxed text-white">
-              This personal transformation — from perceived weakness to developed strength —<br />
+              This personal transformation, from perceived weakness to developed strength,<br />
               is the heart of every coaching conversation I have.
             </p>
           </div>
@@ -132,8 +132,8 @@ export default function ThisIsPersonal() {
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-gray-700">
                   I don&apos;t push. I don&apos;t prescribe. I observe, then invite.<br />
-                  What&apos;s said — and unsaid.<br />
-                  What&apos;s felt — but not yet named.
+                  What&apos;s said and unsaid.<br />
+                  What&apos;s felt but not yet named.
                 </p>
                 
                 <p className="text-lg leading-relaxed text-gray-700">
@@ -148,8 +148,8 @@ export default function ThisIsPersonal() {
               <div className="rounded-lg bg-white p-6 shadow-sm">
                 <h3 className="mb-3 text-lg font-bold text-[#1A365D]">My role</h3>
                 <p className="text-gray-600">
-                  Help leaders find not just what to do, but how to be — 
-                  with presence, dignity, and trust.
+                  Help leaders find not just what to do, but how to be. 
+                  With presence, dignity, and trust.
                 </p>
               </div>
               
@@ -178,7 +178,7 @@ export default function ThisIsPersonal() {
                 <div className="space-y-6 text-left">
                   <div className="rounded-lg bg-[#F8F5EB] p-6">
                     <p className="text-lg text-gray-700">
-                      Because leadership is hard — especially when you care.
+                      Because leadership is hard, especially when you care.
                     </p>
                   </div>
                   
@@ -192,13 +192,13 @@ export default function ThisIsPersonal() {
                 <div className="space-y-6 text-left">
                   <div className="rounded-lg bg-[#F8F5EB] p-6">
                     <p className="text-lg text-gray-700">
-                      Because authenticity isn&apos;t a tactic — it&apos;s a tension.
+                      Because authenticity isn&apos;t a tactic. It&apos;s a tension.
                     </p>
                   </div>
                   
                   <div className="rounded-lg bg-[#F96E1E] p-6">
                     <p className="text-lg font-medium text-white">
-                      Because the best leaders don&apos;t need fixing — they need space.
+                      Because the best leaders don&apos;t need fixing. They need space.
                     </p>
                   </div>
                 </div>
@@ -336,52 +336,160 @@ export default function ThisIsPersonal() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The Inner Game of Tennis</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Timothy Gallwey&apos;s performance equation (PE = PO - I) became the foundation 
-                of my Leadership Equation — reducing interference rather than forcing performance.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/inner-game-tennis-cover.jpg"
+                  alt="The Inner Game of Tennis book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/0679778314" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    The Inner Game of Tennis
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Timothy Gallwey&apos;s performance equation (PE = PO - I) became the foundation 
+                  of my Leadership Equation. Reducing interference rather than forcing performance.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The 7 Habits of Highly Effective People</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Stephen Covey&apos;s &ldquo;Begin with the End in Mind&rdquo; framework, particularly the funeral 
-                scenario across life domains, shaped my multi-domain leadership philosophy.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/parallax-cover.jpg"
+                  alt="The Parallax book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/1453894373" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    The Parallax
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Donald R. Rickert&apos;s exploration of shifting perspective to see familiar situations 
+                  differently. Integration of multiple viewpoints for deeper understanding.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">Transitions</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                William Bridges&apos; distinction between external change and internal transition 
-                informs how I support leaders through major life shifts.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/transitions-cover.jpg"
+                  alt="Transitions book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/0738285404" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Transitions
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  William Bridges&apos; distinction between external change and internal transition 
+                  informs how I support leaders through major life shifts.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">True North</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Bill George&apos;s authentic leadership framework reinforced my belief 
-                that leadership development is fundamentally about self-discovery.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/true-north-cover.jpg"
+                  alt="True North book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/0470595574" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    True North
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Bill George&apos;s authentic leadership framework reinforced my belief 
+                  that leadership development is fundamentally about self-discovery.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">Best Practice in Performance Coaching</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Carol Wilson&apos;s seven principles of coaching provide the ethical and 
-                methodological foundation for my non-directive approach.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/performance-coaching-cover.jpg"
+                  alt="Best Practice in Performance Coaching book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/0749471964" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Best Practice in Performance Coaching
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Carol Wilson&apos;s seven principles of coaching provide the ethical and 
+                  methodological foundation for my non-directive approach.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">The Four Agreements</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Don Miguel Ruiz&apos;s principles for personal freedom translate directly 
-                into leadership authenticity and self-respect.
-              </p>
+            <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
+              <div className="flex-shrink-0">
+                <img
+                  src="/images/four-agreements-cover.jpg"
+                  alt="The Four Agreements book cover"
+                  className="h-16 w-12 rounded object-cover shadow-sm"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
+                  <a 
+                    href="https://amazon.co.uk/dp/1878424319" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    The Four Agreements
+                  </a>
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Don Miguel Ruiz&apos;s principles for personal freedom translate directly 
+                  into leadership authenticity and self-respect.
+                </p>
+              </div>
             </div>
           </div>
         </PageLayout>
@@ -415,26 +523,19 @@ export default function ThisIsPersonal() {
                   
                   <p className="text-lg leading-relaxed">
                     My development has also included deeper exploration of Emotional Intelligence through 
-                    Reuven Bar-On&apos;s work, as well as Gestalt approaches, Clean Language, and 
-                    Rational Emotive Behaviour Therapy (REBT).
+                    Reuven Bar-On&apos;s work, as well as Gestalt approaches, Clean Language, 
+                    Cognitive Behavioural Therapy, and Rational Emotive Behaviour Therapy (REBT).
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-4">
-                <div className="rounded-lg bg-[#1A365D] p-4 text-white">
-                  <div className="text-2xl font-bold">1991</div>
-                  <p className="text-sm text-white/80">First Coach as Leader training</p>
-                </div>
-                
-                <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
-                  <div className="text-2xl font-bold">2016</div>
-                  <p className="text-sm text-white/80">Seth Godin&apos;s altMBA</p>
-                </div>
-                
-                <div className="rounded-lg bg-[#1A365D] p-4 text-white">
-                  <div className="text-2xl font-bold">30+</div>
-                  <p className="text-sm text-white/80">Years of development</p>
+              <div className="rounded-lg bg-[#1A365D] p-6 text-white">
+                <div className="flex h-full items-center justify-center">
+                  <img
+                    src="/images/time-line.png"
+                    alt="Learning journey timeline"
+                    className="size-full object-contain"
+                  />
                 </div>
               </div>
             </div>
