@@ -18,7 +18,68 @@ export default function ThisIsPersonal() {
                 This is <span className="text-[#F96E1E]">personal</span>.
               </h1>
               
-              <div className="mt-8 space-y-6">
+              <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
+              <p className="text-xl font-semibold leading-relaxed text-white">
+                This continuous learning enriches the perspective I bring to our coaching partnership<br />
+                whilst maintaining focus on your unique journey and objectives.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Personal Quote */}
+      <section className="w-full bg-[#1A365D] py-12 md:py-16">
+        <PageLayout>
+          <div className="text-center">
+            <blockquote className="mx-auto max-w-4xl">
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
+              </p>
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
+              </p>
+              <footer className="mt-8 text-[#F96E1E] font-medium">
+                — Phillip Collins
+              </footer>
+            </blockquote>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* TANGERINE STRIPE - Closing CTA */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
+              Ready to begin?
+            </h2>
+            
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
+              This personal journey informs every coaching conversation.<br />
+              If something here resonates, let&apos;s explore what&apos;s possible for you.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
+              >
+                Let&apos;s Talk →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
+              >
+                The Work
+              </Link>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+    </Layout>
+  )
+}-8 space-y-6">
                 <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
                   With over 10,000 hours of working with leaders across the globe.<br />
                   What stays with me isn&apos;t their titles.<br />
@@ -347,7 +408,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/0679778314" 
+                    href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926/ref=sr_1_1?crid=29T3DSYEME41Y&dib=eyJ2IjoiMSJ9.4yVsZEd-Yp1ziHykUj3qdA3fiBvwNCM37Mod_xcNnJZ1Vi8Kp7_HHMy-BfYxlym7q2gT_Cd3LwXHJHrNPwq6r2TmZOtR9Ir8VLxuU6SiiYaSRhXz6Tcj2ZSkkMpEvwwQfzwn-QSC-OFcMvqo8n2K4IourFzrRRKau2NxK071gFpSzijb8y-0SwggS_6rS8jt-gBfSFGEU_6_RWR_Uu0TOixaiCSjUihsm_QzOsYJKos.6WLXTQi-f96NaG_znsxNdDqtdXtpVxHQ8y8elb4LU8Y&dib_tag=se&keywords=the+inner+game+of+tennis+by+timothy+gallwey&qid=1753869525&sprefix=the+inner+game+of+tennis%2Caps%2C100&sr=8-1" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -373,7 +434,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/1453894373" 
+                    href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2?ref_=ast_author_dp" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -399,7 +460,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/0738285404" 
+                    href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=AUTHOR&dib=eyJ2IjoiMSJ9.l2aS-q5XZbyi478QHaV1OUaNyfHmEy75_f63OvA5D3nizXTLE7MfntS-tI2AuUIyBn32Zsn8EpOnJo02dx8a3XCFXYye85sNG_YXkJtirgHC25b0V553CPmLgfVuiOkuOAIWYoQxawyirEatIwHSciX444lUA2drV7mG0Lagd7jpX9_zOYxtjgHfoxmuBjxGMuh94ZEluiv1oJ4Mowh4y66cLMgvdZ3udNtWbNPRHpc.ST0J9Fp5DXsP5Ot8m2VsVRTezct2Ei9ZbPVaDn9LdQI" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -417,25 +478,26 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <img
-                  src="/images/true-north-cover.jpg"
-                  alt="True North book cover"
+                  src="/images/The-Imposter-Phenomenon.jpg"
+                  alt="The Imposter Phenomenon book cover"
                   className="h-16 w-12 rounded object-cover shadow-sm"
                 />
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/0470595574" 
+                    href="https://www.paulineroseclance.com/impostor_phenomenon.html" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    True North
+                    The Imposter Phenomenon
                   </a>
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600">
-                  Bill George&apos;s authentic leadership framework reinforced my belief 
-                  that leadership development is fundamentally about self-discovery.
+                  Dr. Pauline Rose Clance&apos;s groundbreaking work on imposter syndrome has deeply 
+                  influenced how I help leaders recognise and work with their internal narratives 
+                  around competence and belonging.
                 </p>
               </div>
             </div>
@@ -451,7 +513,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/0749471964" 
+                    href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.0LFbdd7EX68ntjgIf8Tz4rwwqNZfgZWpV5q_9i_OrIMWrUiM-o57DADH5BHJK0GZgS9AZu_7DvCy1lrv6KWmPl0AwLZdRqm4zcpsIwJA2AQ.gAanjQLvACGEXu4v70n7kOblFZD2egKmkuBlGHX2m_U&dib_tag=AUTHOR" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -477,7 +539,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://amazon.co.uk/dp/1878424319" 
+                    href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/ref=sr_1_1?crid=3K96T20ROQXKI&dib=eyJ2IjoiMSJ9.0wdz-daglmSIBTXOqenSS3WIcBFIxgrm0WTgX9C2EfWAdX2XsgcalTuD9DA6HHWc4uqEX56MQf493XbYHVDh6Cc1kWspMoF4IMnirTluokHRZ-tfW9w2SeCCtsLg9-GE7SUqxH_KaO8cxd4XrViueD4IbuPGWCXWsb9pUWZzpiMC8zHjuQB7bl3OYewsx-uC8SswU_oJfW0Oxpx90TvktbBS6AUZJqqq4N_lxr3PLqk.lO3RnIYVICdvp-W4_Z0tiI0ETmT0b_QSBEmdMDpnWb4&dib_tag=se&keywords=the+four+agreements&qid=1753870748&s=books&sprefix=the+four+agreements%2Cstripbooks%2C123&sr=1-1" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -540,65 +602,4 @@ export default function ThisIsPersonal() {
               </div>
             </div>
 
-            <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
-              <p className="text-xl font-semibold leading-relaxed text-white">
-                This continuous learning enriches the perspective I bring to our coaching partnership<br />
-                whilst maintaining focus on your unique journey and objectives.
-              </p>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* NAVY STRIPE - Personal Quote */}
-      <section className="w-full bg-[#1A365D] py-12 md:py-16">
-        <PageLayout>
-          <div className="text-center">
-            <blockquote className="mx-auto max-w-4xl">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
-                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
-              </p>
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
-                They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
-              </p>
-              <footer className="mt-8 text-[#F96E1E] font-medium">
-                — Phillip Collins
-              </footer>
-            </blockquote>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* TANGERINE STRIPE - Closing CTA */}
-      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
-        <PageLayout>
-          <div className="text-center">
-            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
-              Ready to begin?
-            </h2>
-            
-            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
-              This personal journey informs every coaching conversation.<br />
-              If something here resonates, let&apos;s explore what&apos;s possible for you.
-            </p>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/contact"
-                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
-              >
-                Let&apos;s Talk →
-              </Link>
-              <Link
-                href="/the-work"
-                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
-              >
-                The Work
-              </Link>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-    </Layout>
-  )
-}
+            <div className="mt
