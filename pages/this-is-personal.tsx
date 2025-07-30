@@ -170,7 +170,7 @@ export default function ThisIsPersonal() {
         <PageLayout>
           <div className="text-center">
             <h2 className="mb-12 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Why I'm here
+              Why I&apos;m here
             </h2>
             
             <div className="mx-auto max-w-4xl">
