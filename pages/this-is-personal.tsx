@@ -365,7 +365,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <img
-                  src="/images/parallax-cover.jpg"
+                  src="/images/the-parallax-cover.jpg"
                   alt="The Parallax book cover"
                   className="h-16 w-12 rounded object-cover shadow-sm"
                 />
@@ -391,7 +391,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <img
-                  src="/images/transitions-cover.jpg"
+                  src="/images/Transitions-cover.jpg"
                   alt="Transitions book cover"
                   className="h-16 w-12 rounded object-cover shadow-sm"
                 />
