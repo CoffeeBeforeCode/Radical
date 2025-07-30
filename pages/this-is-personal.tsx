@@ -5,7 +5,7 @@ export default function ThisIsPersonal() {
   return (
     <Layout
       title="This is Personal - Phillip Collins"
-      description="The personal journey from 'sensitive boy' to global leadership coach. How perceived weakness became developed strength over 30 years of intentional development."
+      description="The personal journey from &apos;sensitive boy&apos; to global leadership coach. How perceived weakness became developed strength over 30 years of intentional development."
       canonical="/this-is-personal"
     >
       {/* HERO SECTION - White background with personal opening */}
@@ -32,8 +32,8 @@ export default function ThisIsPersonal() {
                 </p>
                 
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
-                  <p className="text-lg font-medium text-[#1A365D] leading-relaxed">
-                    That's where I do my best work —<br />
+                  <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
+                    That&apos;s where I do my best work —<br />
                     not in the certainty, but in the search.
                   </p>
                 </div>
@@ -45,7 +45,7 @@ export default function ThisIsPersonal() {
               <img
                 src="/images/Bubble-personal-1.png"
                 alt="Personal leadership reflection"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
           </div>
@@ -102,10 +102,10 @@ export default function ThisIsPersonal() {
 
             <div className="rounded-lg bg-white/5 p-6 backdrop-blur md:col-span-4">
               <div className="text-center">
-                <p className="text-xl font-medium text-[#F96E1E] leading-relaxed">
-                  In the subsequent two decades, I've developed this into what many call 
-                  my 'superpower' — though I dislike the phrase.<br />
-                  <span className="text-white">It's simply how I work.</span>
+                <p className="text-xl font-medium leading-relaxed text-[#F96E1E]">
+                  In the subsequent two decades, I&apos;ve developed this into what many call 
+                  my &lsquo;superpower&rsquo; — though I dislike the phrase.<br />
+                  <span className="text-white">It&apos;s simply how I work.</span>
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function ThisIsPersonal() {
                 <div className="space-y-6 text-left">
                   <div className="rounded-lg bg-[#F8F5EB] p-6">
                     <p className="text-lg text-gray-700">
-                      Because authenticity isn't a tactic — it's a tension.
+                      Because authenticity isn&apos;t a tactic — it&apos;s a tension.
                     </p>
                   </div>
                   
@@ -288,11 +288,11 @@ export default function ThisIsPersonal() {
               </div>
             </div>
 
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            <div className="aspect-square flex items-center justify-center rounded-lg bg-[#F96E1E] p-4">
               <img
                 src="/images/Bubble-personal-2.png"
                 alt="Global leadership perspective"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
           </div>
@@ -429,7 +429,7 @@ export default function ThisIsPersonal() {
                 
                 <div className="rounded-lg bg-[#F96E1E] p-4 text-white">
                   <div className="text-2xl font-bold">2016</div>
-                  <p className="text-sm text-white/80">Seth Godin's altMBA</p>
+                  <p className="text-sm text-white/80">Seth Godin&apos;s altMBA</p>
                 </div>
                 
                 <div className="rounded-lg bg-[#1A365D] p-4 text-white">
@@ -486,7 +486,7 @@ export default function ThisIsPersonal() {
                 href="/contact"
                 className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
               >
-                Let's Talk →
+                Let&apos;s Talk →
               </Link>
               <Link
                 href="/the-work"
