@@ -18,68 +18,7 @@ export default function ThisIsPersonal() {
                 This is <span className="text-[#F96E1E]">personal</span>.
               </h1>
               
-              <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
-              <p className="text-xl font-semibold leading-relaxed text-white">
-                This continuous learning enriches the perspective I bring to our coaching partnership<br />
-                whilst maintaining focus on your unique journey and objectives.
-              </p>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* NAVY STRIPE - Personal Quote */}
-      <section className="w-full bg-[#1A365D] py-12 md:py-16">
-        <PageLayout>
-          <div className="text-center">
-            <blockquote className="mx-auto max-w-4xl">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
-                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
-              </p>
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
-                They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
-              </p>
-              <footer className="mt-8 text-[#F96E1E] font-medium">
-                — Phillip Collins
-              </footer>
-            </blockquote>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* TANGERINE STRIPE - Closing CTA */}
-      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
-        <PageLayout>
-          <div className="text-center">
-            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
-              Ready to begin?
-            </h2>
-            
-            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
-              This personal journey informs every coaching conversation.<br />
-              If something here resonates, let&apos;s explore what&apos;s possible for you.
-            </p>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/contact"
-                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
-              >
-                Let&apos;s Talk →
-              </Link>
-              <Link
-                href="/the-work"
-                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
-              >
-                The Work
-              </Link>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-    </Layout>
-  )
-}-8 space-y-6">
+              <div className="mt-8 space-y-6">
                 <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
                   With over 10,000 hours of working with leaders across the globe.<br />
                   What stays with me isn&apos;t their titles.<br />
@@ -496,7 +435,7 @@ export default function ThisIsPersonal() {
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600">
                   Dr. Pauline Rose Clance&apos;s groundbreaking work on imposter syndrome has deeply 
-                  influenced how I help leaders recognise and work with their internal narratives 
+                  influenced how I help leaders recognize and work with their internal narratives 
                   around competence and belonging.
                 </p>
               </div>
@@ -602,4 +541,65 @@ export default function ThisIsPersonal() {
               </div>
             </div>
 
-            <div className="mt
+            <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
+              <p className="text-xl font-semibold leading-relaxed text-white">
+                This continuous learning enriches the perspective I bring to our coaching partnership<br />
+                whilst maintaining focus on your unique journey and objectives.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Personal Quote */}
+      <section className="w-full bg-[#1A365D] py-12 md:py-16">
+        <PageLayout>
+          <div className="text-center">
+            <blockquote className="mx-auto max-w-4xl">
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
+              </p>
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
+                They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
+              </p>
+              <footer className="mt-8 text-[#F96E1E] font-medium">
+                — Phillip Collins
+              </footer>
+            </blockquote>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* TANGERINE STRIPE - Closing CTA */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
+              Ready to begin?
+            </h2>
+            
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
+              This personal journey informs every coaching conversation.<br />
+              If something here resonates, let&apos;s explore what&apos;s possible for you.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
+              >
+                Let&apos;s Talk →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
+              >
+                The Work
+              </Link>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+    </Layout>
+  )
+}
