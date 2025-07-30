@@ -338,11 +338,18 @@ export default function ThisIsPersonal() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/inner-game-tennis-cover.jpg"
-                  alt="The Inner Game of Tennis book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926/ref=sr_1_1?crid=29T3DSYEME41Y&dib=eyJ2IjoiMSJ9.4yVsZEd-Yp1ziHykUj3qdA3fiBvwNCM37Mod_xcNnJZ1Vi8Kp7_HHMy-BfYxlym7q2gT_Cd3LwXHJHrNPwq6r2TmZOtR9Ir8VLxuU6SiiYaSRhXz6Tcj2ZSkkMpEvwwQfzwn-QSC-OFcMvqo8n2K4IourFzrRRKau2NxK071gFpSzijb8y-0SwggS_6rS8jt-gBfSFGEU_6_RWR_Uu0TOixaiCSjUihsm_QzOsYJKos.6WLXTQi-f96NaG_znsxNdDqtdXtpVxHQ8y8elb4LU8Y&dib_tag=se&keywords=the+inner+game+of+tennis+by+timothy+gallwey&qid=1753869525&sprefix=the+inner+game+of+tennis%2Caps%2C100&sr=8-1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/inner-game-tennis-cover.jpg"
+                    alt="The Inner Game of Tennis book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
@@ -364,11 +371,18 @@ export default function ThisIsPersonal() {
 
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/the-parallax-cover.jpg"
-                  alt="The Parallax book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2?ref_=ast_author_dp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/the-parallax-cover.jpg"
+                    alt="The Parallax book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
@@ -390,11 +404,18 @@ export default function ThisIsPersonal() {
 
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/Transitions-cover.jpg"
-                  alt="Transitions book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=AUTHOR&dib=eyJ2IjoiMSJ9.l2aS-q5XZbyi478QHaV1OUaNyfHmEy75_f63OvA5D3nizXTLE7MfntS-tI2AuUIyBn32Zsn8EpOnJo02dx8a3XCFXYye85sNG_YXkJtirgHC25b0V553CPmLgfVuiOkuOAIWYoQxawyirEatIwHSciX444lUA2drV7mG0Lagd7jpX9_zOYxtjgHfoxmuBjxGMuh94ZEluiv1oJ4Mowh4y66cLMgvdZ3udNtWbNPRHpc.ST0J9Fp5DXsP5Ot8m2VsVRTezct2Ei9ZbPVaDn9LdQI" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/transitions-cover.jpg"
+                    alt="Transitions book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
@@ -416,11 +437,18 @@ export default function ThisIsPersonal() {
 
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/The-Imposter-Phenomenon.jpg"
-                  alt="The Imposter Phenomenon book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.paulineroseclance.com/impostor_phenomenon.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/The-Imposter-Phenomenon.jpg"
+                    alt="The Imposter Phenomenon book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
@@ -443,11 +471,18 @@ export default function ThisIsPersonal() {
 
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/performance-coaching-cover.jpg"
-                  alt="Best Practice in Performance Coaching book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.0LFbdd7EX68ntjgIf8Tz4rwwqNZfgZWpV5q_9i_OrIMWrUiM-o57DADH5BHJK0GZgS9AZu_7DvCy1lrv6KWmPl0AwLZdRqm4zcpsIwJA2AQ.gAanjQLvACGEXu4v70n7kOblFZD2egKmkuBlGHX2m_U&dib_tag=AUTHOR" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/performance-coaching-cover.jpg"
+                    alt="Best Practice in Performance Coaching book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
@@ -469,11 +504,18 @@ export default function ThisIsPersonal() {
 
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
-                <img
-                  src="/images/four-agreements-cover.jpg"
-                  alt="The Four Agreements book cover"
-                  className="h-16 w-12 rounded object-cover shadow-sm"
-                />
+                <a 
+                  href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/ref=sr_1_1?crid=3K96T20ROQXKI&dib=eyJ2IjoiMSJ9.0wdz-daglmSIBTXOqenSS3WIcBFIxgrm0WTgX9C2EfWAdX2XsgcalTuD9DA6HHWc4uqEX56MQf493XbYHVDh6Cc1kWspMoF4IMnirTluokHRZ-tfW9w2SeCCtsLg9-GE7SUqxH_KaO8cxd4XrViueD4IbuPGWCXWsb9pUWZzpiMC8zHjuQB7bl3OYewsx-uC8SswU_oJfW0Oxpx90TvktbBS6AUZJqqq4N_lxr3PLqk.lO3RnIYVICdvp-W4_Z0tiI0ETmT0b_QSBEmdMDpnWb4&dib_tag=se&keywords=the+four+agreements&qid=1753870748&s=books&sprefix=the+four+agreements%2Cstripbooks%2C123&sr=1-1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/images/four-agreements-cover.jpg"
+                    alt="The Four Agreements book cover"
+                    className="h-16 w-12 rounded object-cover shadow-sm"
+                  />
+                </a>
               </div>
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
