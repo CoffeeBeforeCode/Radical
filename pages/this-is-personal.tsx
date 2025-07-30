@@ -378,7 +378,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/the-parallax-cover.jpg"
+                    src="/images/The-Parallax-cover.jpg"
                     alt="The Parallax book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -411,7 +411,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/transitions-cover.jpg"
+                    src="/images/Transitions-cover.jpg"
                     alt="Transitions book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
