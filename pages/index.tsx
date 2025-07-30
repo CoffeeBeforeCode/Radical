@@ -23,11 +23,11 @@ export default function Home() {
                 </h1>
               </div>
               
-              {/* FULL WIDTH Quote + Hero Bubble */}
+              {/* FULL WIDTH Quote + What's The Story - Matched Heights */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-4 items-stretch">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:col-span-2 h-full flex items-center">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 items-stretch">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                         Again and again.<br />
@@ -37,12 +37,12 @@ export default function Home() {
                       </p>
                     </div>
                     
-                    {/* WHAT'S THE STORY IMAGE - White background, no text */}
-                    <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center md:col-span-2 shadow-sm">
+                    {/* WHAT'S THE STORY IMAGE - No visible border */}
+                    <div className="rounded-lg bg-white p-6 flex items-center justify-center border-0">
                       <img
                         src="/images/whats-the-story.png"
                         alt="What's the story I tell myself about who I am; is it still true?"
-                        className="w-full h-full object-contain"
+                        className="w-full h-auto object-contain max-h-full"
                       />
                     </div>
                   </div>
