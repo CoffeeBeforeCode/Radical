@@ -23,11 +23,11 @@ export default function Home() {
                 </h1>
               </div>
               
-              {/* FULL WIDTH Quote + What's The Story - Matched Heights */}
+              {/* FULL WIDTH Quote + What's The Story - Fixed Height Match */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 items-stretch">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                         Again and again.<br />
@@ -37,12 +37,12 @@ export default function Home() {
                       </p>
                     </div>
                     
-                    {/* WHAT'S THE STORY IMAGE - No visible border */}
-                    <div className="rounded-lg bg-white p-6 flex items-center justify-center border-0">
+                    {/* WHAT'S THE STORY IMAGE - Fixed Height, No Border */}
+                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                       <img
                         src="/images/whats-the-story.png"
                         alt="What's the story I tell myself about who I am; is it still true?"
-                        className="w-full h-auto object-contain max-h-full"
+                        className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                       />
                     </div>
                   </div>
