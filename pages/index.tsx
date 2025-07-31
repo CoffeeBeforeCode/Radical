@@ -187,10 +187,19 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="rounded-lg bg-[#F96E1E] p-4">
-                <p className="font-medium text-white">
-                  When we reduce what&apos;s in the way, performance naturally rises to meet potential.
-                </p>
+              <div className="rounded-lg bg-[#F96E1E] p-6">
+                <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
+                <div className="space-y-2 text-sm text-white/90">
+                  <p><strong>Conflicting values:</strong> Autonomy vs belonging, care vs performance, tradition vs innovation</p>
+                  <p><strong>Environmental blockers:</strong> Toxic team dynamics, organisational silos, excessive admin that drains energy</p>
+                  <p><strong>Unhelpful narratives:</strong> "I must always have the answer," "If I slow down, I'll fall behind," "I'm not strategic enough"</p>
+                  <p><strong>Inner dialogue:</strong> The voice of imposter syndrome creating doubt where there should be confidence</p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-white/20">
+                  <p className="font-medium text-white">
+                    When we reduce what&apos;s in the way, performance naturally rises to meet potential.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +220,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm w-full max-w-none">
                 <img
                   src="/images/Call-self-doubt.png"
                   alt="Internal struggle with belonging"
@@ -232,7 +241,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm w-full max-w-none">
                 <img
                   src="/images/Call-authority-burden.png"
                   alt="Leadership pressure and expectations"
@@ -253,7 +262,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm w-full max-w-none">
                 <img
                   src="/images/Bubble-5.png"
                   alt="Handling change and flexibility"
