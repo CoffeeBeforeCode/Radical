@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex min-h-[calc(100vh-5rem)] items-center">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
-              {/* Hero Content - NO SIDEBAR */}
+              {/* Hero Content */}
               <div className="max-w-4xl space-y-8">
                 <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
                   Your Leadership.<br />
@@ -23,13 +23,13 @@ export default function Home() {
                 </h1>
               </div>
               
-              {/* FULL WIDTH Quote + What's The Story - Fixed Height Match */}
+              {/* Quote + What's The Story */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                        The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
+                        The strongest leaders I know don't arrive; they <strong>return</strong>.<br />
                         Again and again.<br />
                         To their <strong>values</strong>.<br />
                         Their <strong>vision</strong>.<br />
@@ -37,7 +37,6 @@ export default function Home() {
                       </p>
                     </div>
                     
-                    {/* WHAT'S THE STORY IMAGE - Fixed Height, No Border */}
                     <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                       <img
                         src="/images/whats-the-story.png"
@@ -52,8 +51,8 @@ export default function Home() {
               {/* Rest of hero content */}
               <div className="max-w-4xl space-y-8 mt-8">
                 <p className="text-lg leading-relaxed text-gray-600">
-                  I create the space for that return; to what matters, what&apos;s emerging, 
-                  and what&apos;s getting in the way.<br />
+                  I create the space for that return; to what matters, what's emerging, 
+                  and what's getting in the way.<br />
                   Not louder.<br />
                   Just wiser.
                 </p>
@@ -78,7 +77,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LEADERSHIP AS PRACTICE - Philosophy Section */}
+      {/* LEADERSHIP AS PRACTICE */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
@@ -93,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE QUIET QUESTIONS - 4 Bubble Images */}
+      {/* THE QUIET QUESTIONS */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -101,12 +100,11 @@ export default function Home() {
               The quiet questions
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              What&apos;s already there, waiting for the safe space to be spoken out loud and truly be heard.
+              What's already there, waiting for the safe space to be spoken out loud and truly be heard.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {/* BUBBLE-1: White background with tangerine text */}
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-1.png"
@@ -115,7 +113,6 @@ export default function Home() {
               />
             </div>
             
-            {/* BUBBLE-2: Navy background with white text */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-2.png"
@@ -124,7 +121,6 @@ export default function Home() {
               />
             </div>
 
-            {/* BUBBLE-3: White background with tangerine text */}
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-3.png"
@@ -133,7 +129,6 @@ export default function Home() {
               />
             </div>
 
-            {/* BUBBLE-4: Navy background with white text */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-4.png"
@@ -149,7 +144,6 @@ export default function Home() {
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
-            {/* Equation Display - 1/3 */}
             <div className="text-center">
               <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
                 <div className="mb-4 font-['Waiting_for_the_Sunrise'] text-5xl font-bold text-[#F96E1E] md:text-6xl">
@@ -161,7 +155,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Explanation - 2/3 Asymmetric */}
             <div className="space-y-6 lg:col-span-2">
               <h2 className="text-3xl font-bold text-white md:text-4xl">
                 Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
@@ -183,21 +176,21 @@ export default function Home() {
                 <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
                   <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">I</div>
                   <h3 className="mb-2 text-lg font-semibold text-white">Interference</h3>
-                  <p className="text-sm text-white/80">The &ldquo;stuff&rdquo; getting in your way</p>
+                  <p className="text-sm text-white/80">The stuff getting in your way</p>
                 </div>
               </div>
 
               <div className="rounded-lg bg-[#F96E1E] p-6">
                 <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
                 <div className="space-y-2 text-sm text-white/90">
-                  <p><strong>Conflicting values:</strong> Autonomy vs belonging, care vs performance, tradition vs innovation</p>
-                  <p><strong>Environmental blockers:</strong> Toxic team dynamics, organisational silos, excessive admin that drains energy</p>
-                  <p><strong>Unhelpful narratives:</strong> "I must always have the answer," "If I slow down, I'll fall behind," "I'm not strategic enough"</p>
-                  <p><strong>Inner dialogue:</strong> The voice of imposter syndrome creating doubt where there should be confidence</p>
+                  <p><strong>Conflicting values:</strong> Autonomy vs belonging, care vs performance</p>
+                  <p><strong>Environmental blockers:</strong> Toxic team dynamics, silos, excessive admin</p>
+                  <p><strong>Unhelpful narratives:</strong> I must always have the answer, I'm not strategic enough</p>
+                  <p><strong>Inner dialogue:</strong> The voice creating doubt where there should be confidence</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/20">
                   <p className="font-medium text-white">
-                    When we reduce what&apos;s in the way, performance naturally rises to meet potential.
+                    When we reduce what's in the way, performance naturally rises to meet potential.
                   </p>
                 </div>
               </div>
@@ -206,7 +199,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - What Gets In Your Way - Call & Response */}
+      {/* CREAM STRIPE - Call & Response */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
@@ -218,12 +211,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Call & Response Grid - 3 Columns */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            
-            {/* FIRST CALL & RESPONSE PAIR */}
             <div className="space-y-4">
-              {/* The Call - Self-Doubt (Square) */}
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Call-self-doubt.png"
@@ -232,11 +221,10 @@ export default function Home() {
                 />
               </div>
               
-              {/* Social Proof Response */}
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">"</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  Mentally, I am so pleased I arrived at this point with your coaching for which I am so grateful. I have got my confidence back and my self-belief which had waned back when we first met.
+                  I have got my confidence back and my self-belief which had waned back when we first met.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Country Head<br />
@@ -245,9 +233,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* SECOND CALL & RESPONSE PAIR */}
             <div className="space-y-4">
-              {/* The Call - Authority Burden (Square) */}
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Call-authority-burden.png"
@@ -256,11 +242,10 @@ export default function Home() {
                 />
               </div>
               
-              {/* Social Proof Response */}
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">"</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  My team and I have never had such honest conversations with each other, until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.
+                  My team and I have never had such honest conversations with each other. His ability to create a safe space has transformed how we operate as a leadership team.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Country Head<br />
@@ -269,9 +254,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* THIRD CALL & RESPONSE PAIR */}
             <div className="space-y-4">
-              {/* The Call - Bubble-5 (Square) */}
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Bubble-5.png"
@@ -280,11 +263,10 @@ export default function Home() {
                 />
               </div>
               
-              {/* Social Proof Response - Professional Flexibility */}
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">"</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach. Fantastic experience!
+                  Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Country Head<br />
@@ -296,7 +278,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - How I See It with Bubble-6 */}
+      {/* WHITE STRIPE - How I See It */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -304,13 +286,13 @@ export default function Home() {
               How I see it
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-gray-700">
-              I work in frameworks — but never formulas. These are tools I return to often: 
+              I work in frameworks but never formulas. These are tools I return to often: 
               not as answers, but as <span className="font-semibold text-[#F96E1E]">invitations</span>.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-2 lg:col-span-2">
+            <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-2">
               <div className="mb-4 flex items-center">
                 <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">👁️</div>
                 <h3 className="text-lg font-bold text-[#1A365D]">Observation First</h3>
@@ -321,7 +303,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* BUBBLE-6: Navy background with white text */}
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-6.png"
@@ -346,13 +327,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2 lg:col-span-2">
+            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2">
               <div className="mb-4 flex items-center">
                 <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">⚖️</div>
                 <h3 className="text-lg font-bold">Sitting with Tension</h3>
               </div>
               <p className="text-white/90">
-                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
+                Some tensions aren't meant to be solved. They're meant to be understood. 
                 Emotional discernment over reaction.
               </p>
             </div>
@@ -360,7 +341,6 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* REMOVED OLD TESTIMONIALS SECTION - REPLACED WITH GLOBAL REACH */}
       {/* NAVY STRIPE - Global Reach */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -409,7 +389,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* TANGERINE STRIPE - Bold CTA Finish */}
+      {/* TANGERINE STRIPE - CTA */}
       <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
           <div className="text-center">
@@ -419,14 +399,14 @@ export default function Home() {
             
             <div className="mx-auto mb-6 max-w-2xl rounded-lg bg-white p-6">
               <p className="text-xl font-medium leading-relaxed text-[#1A365D]">
-                You don&apos;t need a <strong>louder</strong> voice.<br />
+                You don't need a <strong>louder</strong> voice.<br />
                 You need a <strong>clearer</strong> signal.<br />
                 And a safe enough space to <strong>hear</strong> it.
               </p>
             </div>
 
             <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-white/90">
-              If something here resonates, let&apos;s explore what&apos;s possible.<br />
+              If something here resonates, let's explore what's possible.<br />
               No funnel.<br />
               No pressure.<br />
               Just a human conversation.
@@ -437,7 +417,7 @@ export default function Home() {
                 href="/contact"
                 className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
               >
-                Let&apos;s Explore Together →
+                Let's Explore Together →
               </Link>
               <Link
                 href="/this-is-personal"
