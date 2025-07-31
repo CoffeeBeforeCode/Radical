@@ -214,7 +214,7 @@ export default function Home() {
               What gets in your <span className="text-[#F96E1E]">way</span>?
             </h2>
             <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
-              The internal conversations that create interference, and the leaders who&apos;ve found their way through.
+              The internal conversations that create interference, and the leaders who have found their way through.
             </p>
           </div>
 
