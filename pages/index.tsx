@@ -115,8 +115,8 @@ export default function Home() {
               />
             </div>
             
-            {/* BUBBLE-2: White background with tangerine text */}
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+            {/* BUBBLE-2: Navy background with white text */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-2.png"
                 alt="Connection and relationships"
@@ -133,8 +133,8 @@ export default function Home() {
               />
             </div>
 
-            {/* BUBBLE-4: White background with tangerine text */}
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+            {/* BUBBLE-4: Navy background with white text */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-4.png"
                 alt="Decision-making and judgment"
@@ -294,8 +294,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* BUBBLE-6: White background with tangerine text */}
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+            {/* BUBBLE-6: Navy background with white text */}
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-6.png"
                 alt="Emotional self-awareness"
