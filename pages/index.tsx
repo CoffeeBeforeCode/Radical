@@ -381,21 +381,13 @@ export default function Home() {
 
             {/* SITTING WITH TENSION - Wide Dynamic Card */}
             <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                {/* Background Texture */}
-                <div className="absolute right-0 top-0 w-32 h-32 opacity-20">
-                    <img
-                        src="/images/Bubble-10.png"
-                        alt="Tension and balance"
-                        className="w-full h-full object-contain"
-                    />
-                </div>
                 
                 <div className="relative z-10">
                     <div className="flex items-start mb-4">
                         <div className="flex-shrink-0 mr-6">
-                            <div className="w-16 h-16 rounded-lg bg-[#F96E1E] p-3 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-lg bg-white p-3 flex items-center justify-center">
                                 <img
-                                    src="/images/Bubble-11.png"
+                                    src="/images/Bubble-10.png"
                                     alt="Sitting with tension"
                                     className="w-full h-full object-contain"
                                 />
