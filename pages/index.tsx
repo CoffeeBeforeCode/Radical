@@ -98,17 +98,16 @@ export default function Home() {
         <PageLayout>
           <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Questions that matter
+              The quiet questions
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              These aren&apos;t interview questions. They&apos;re invitations to notice 
-              what&apos;s already there, waiting&nbsp;to&nbsp;be&nbsp;seen.
+              What&apos;s already there, waiting for the safe space to be spoken out loud and truly be heard.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {/* BUBBLE-1: Tangerine background */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            {/* BUBBLE-1: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-1.png"
                 alt="Self-perception reflection"
@@ -116,8 +115,8 @@ export default function Home() {
               />
             </div>
             
-            {/* BUBBLE-2: Navy background */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+            {/* BUBBLE-2: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-2.png"
                 alt="Connection and relationships"
@@ -125,8 +124,8 @@ export default function Home() {
               />
             </div>
 
-            {/* BUBBLE-3: Tangerine background */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            {/* BUBBLE-3: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-3.png"
                 alt="Authentic self-expression"
@@ -134,8 +133,8 @@ export default function Home() {
               />
             </div>
 
-            {/* BUBBLE-4: Navy background */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+            {/* BUBBLE-4: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-4.png"
                 alt="Decision-making and judgment"
@@ -230,8 +229,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* BUBBLE-5: Distributed EQ Square */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            {/* BUBBLE-5: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-5.png"
                 alt="Handling change and flexibility"
@@ -295,8 +294,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* BUBBLE-6: Replace icon image with bubble */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+            {/* BUBBLE-6: White background with tangerine text */}
+            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-6.png"
                 alt="Emotional self-awareness"
