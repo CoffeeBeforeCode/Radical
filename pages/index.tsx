@@ -1,13 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
 
-const PageLayout = ({ children }) => (
+interface PageLayoutProps {
+  children: React.ReactNode
+}
+
+interface LayoutProps {
+  children: React.ReactNode
+}
+
+const PageLayout: React.FC<PageLayoutProps> = ({ children }) => (
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     {children}
   </div>
 )
 
-const Layout = ({ children }) => (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
   <div className="min-h-screen bg-white">
     {children}
   </div>
@@ -234,11 +242,11 @@ export default function Homepage() {
             
             {/* OBSERVATION FIRST - Large Immersive Card */}
             <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                {/* Background Bubble Image */}
+                {/* Background - Hand-drawn observation eye */}
                 <div className="absolute inset-0">
                     <img
-                        src="/images/Bubble-1.png"
-                        alt="Observation and awareness"
+                        src="/images/observation-eye.png"
+                        alt="Hand-drawn eye representing observation"
                         className="w-full h-full object-cover opacity-15"
                     />
                 </div>
@@ -285,11 +293,11 @@ export default function Homepage() {
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
+                    {/* Hand-drawn body awareness icon */}
                     <div className="aspect-square rounded-lg bg-[#F96E1E] p-3 mb-4 flex items-center justify-center">
                         <img
-                            src="/images/Bubble-2.png"
-                            alt="Embodied perception"
+                            src="/images/body-mind-heart.png"
+                            alt="Hand-drawn figure showing head, heart, gut connection"
                             className="w-full h-full object-contain"
                         />
                     </div>
@@ -308,11 +316,11 @@ export default function Homepage() {
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
+                    {/* Hand-drawn constellation map */}
                     <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
                         <img
-                            src="/images/Bubble-3.png"
-                            alt="Values in motion"
+                            src="/images/values-constellation.png"
+                            alt="Hand-drawn constellation map of connected values"
                             className="w-full h-full object-contain"
                         />
                     </div>
@@ -326,11 +334,11 @@ export default function Homepage() {
 
             {/* SITTING WITH TENSION - Wide Dynamic Card */}
             <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                {/* Background Texture */}
+                {/* Background Texture - Abstract tension illustration */}
                 <div className="absolute right-0 top-0 w-32 h-32 opacity-10">
                     <img
-                        src="/images/Bubble-4.png"
-                        alt="Tension and balance"
+                        src="/images/tension-balance.png"
+                        alt="Hand-drawn representation of balanced tension"
                         className="w-full h-full object-contain"
                     />
                 </div>
@@ -340,8 +348,8 @@ export default function Homepage() {
                         <div className="flex-shrink-0 mr-6">
                             <div className="w-16 h-16 rounded-lg bg-[#F96E1E] p-3 flex items-center justify-center">
                                 <img
-                                    src="/images/Bubble-5.png"
-                                    alt="Sitting with tension"
+                                    src="/images/sitting-meditation.png"
+                                    alt="Hand-drawn figure in contemplative pose"
                                     className="w-full h-full object-contain"
                                 />
                             </div>
