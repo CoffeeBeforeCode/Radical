@@ -341,7 +341,7 @@ export default function Home() {
                 
                 <div className="h-full flex flex-col">
                     {/* Bubble Image */}
-                    <div className="aspect-square rounded-lg bg-[#F96E1E] p-3 mb-4 flex items-center justify-center">
+                    <div className="aspect-square rounded-lg bg-white p-3 mb-4 flex items-center justify-center">
                         <img
                             src="/images/Bubble-8.png"
                             alt="Embodied perception"
