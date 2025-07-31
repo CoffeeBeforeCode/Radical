@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QUESTIONS THAT MATTER - 4 Bubble Images */}
+      {/* THE QUIET QUESTIONS - 4 Bubble Images */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
           <div className="mb-8 text-center">
@@ -197,7 +197,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - What Gets In Your Way with Bubble-5 */}
+      {/* CREAM STRIPE - What Gets In Your Way - Call & Response */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
@@ -205,64 +205,69 @@ export default function Home() {
               What gets in your <span className="text-[#F96E1E]">way</span>?
             </h2>
             <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
-              Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
-              is the best use&nbsp;of&nbsp;your&nbsp;energy.
+              The internal conversations that create interference, and the leaders who&apos;ve found their way through.
             </p>
           </div>
 
-          {/* Aga-Style Boxy Grid with Bubble-5 */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            {/* Large Block - Inner Dialogue */}
-            <div className="rounded-lg bg-[#1A365D] p-6 text-white shadow-lg md:col-span-2 lg:col-span-2">
-              <div className="mb-4 text-3xl">🧠</div>
-              <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
-              <div className="space-y-3">
-                <p className="text-white/90">
-                  &ldquo;I don&apos;t really belong at this level.&rdquo;
+          {/* Call & Response Grid */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            
+            {/* FIRST CALL & RESPONSE PAIR */}
+            <div className="space-y-4">
+              {/* The Call - Self-Doubt Internal Struggle */}
+              <div className="rounded-lg bg-white p-6 flex items-center justify-center shadow-sm">
+                <img
+                  src="/images/Call-self-doubt.png"
+                  alt="I don't really belong at this level"
+                  className="w-full h-auto object-contain max-h-32"
+                />
+              </div>
+              
+              {/* Social Proof Response */}
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-lg leading-relaxed italic text-gray-800">
+                  Mentally, I am so pleased I arrived at this point with your coaching for which I am so grateful. I have got my confidence back and my self-belief which had waned back when we first met.
                 </p>
-                <p className="text-white/90">
-                  &ldquo;Anything less than flawless is failure.&rdquo;
-                </p>
-                <p className="text-sm text-white/80">
-                  That internal commentary creating doubt where there should be confidence.
-                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  Country Head<br />
+                  Manufacturing
+                </div>
               </div>
             </div>
 
-            {/* BUBBLE-5: White background with tangerine text */}
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-              <img
-                src="/images/Bubble-5.png"
-                alt="Handling change and flexibility"
-                className="w-full h-full object-contain"
-              />
+            {/* SECOND CALL & RESPONSE PAIR */}
+            <div className="space-y-4">
+              {/* The Call - Authority Burden */}
+              <div className="rounded-lg bg-white p-6 flex items-center justify-center shadow-sm">
+                <img
+                  src="/images/Call-authority-burden.png"
+                  alt="I must always have the answer"
+                  className="w-full h-auto object-contain max-h-32"
+                />
+              </div>
+              
+              {/* Social Proof Response */}
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-lg leading-relaxed italic text-gray-800">
+                  My team and I have never had such honest conversations with each other, until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.
+                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  Country Head<br />
+                  Telecommunications
+                </div>
+              </div>
             </div>
 
-            {/* Standard block */}
-            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
-              <div className="mb-2 text-2xl">⚖️</div>
-              <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
-              <p className="text-sm text-gray-600">
-                Autonomy vs belonging. Care vs performance. Values pulling different directions.
-              </p>
-            </div>
-
-            <div className="rounded-lg border-l-4 border-[#1A365D] bg-white p-4 shadow">
-              <div className="mb-2 text-2xl">🌪️</div>
-              <h3 className="mb-2 font-semibold text-[#1A365D]">Environmental Blockers</h3>
-              <p className="text-sm text-gray-600">
-                Toxic team dynamics, silos, excessive admin that drains energy.
-              </p>
-            </div>
-
-            {/* Unhelpful Narratives - Large Block */}
-            <div className="rounded-lg bg-[#F96E1E] p-6 text-white md:col-span-2 lg:col-span-2">
-              <div className="mb-4 text-3xl">📖</div>
-              <h3 className="mb-4 text-xl font-bold">Unhelpful Narratives</h3>
-              <div className="space-y-2">
-                <p className="text-white/90">&ldquo;I must always have the answer.&rdquo;</p>
-                <p className="text-white/90">&ldquo;If I slow down, I&apos;ll fall behind.&rdquo;</p>
-                <p className="text-white/90">&ldquo;I&apos;m not strategic enough.&rdquo;</p>
+            {/* BUBBLE-5: Distributed EQ Square */}
+            <div className="md:col-span-2 flex justify-center">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm max-w-xs">
+                <img
+                  src="/images/Bubble-5.png"
+                  alt="Handling change and flexibility"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
@@ -333,45 +338,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Testimonials */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
-        <PageLayout>
-          <div className="mb-8 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Leaders reflect
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              This work isn&apos;t loud. It doesn&apos;t need to be.<br />
-              It resonates when you&apos;re ready to hear yourself more clearly.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="relative rounded-lg bg-white p-6 shadow-sm">
-              <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">&ldquo;</div>
-              <p className="mb-4 pl-6 text-lg leading-relaxed italic">
-                My team and I have never had such honest conversations with each other, until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.
-              </p>
-              <div className="text-right text-sm font-medium text-[#7E2D40] not-italic">
-                Country Head<br />
-                Telecommunications
-              </div>
-            </div>
-
-            <div className="relative rounded-lg bg-white p-6 shadow-sm">
-              <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">&ldquo;</div>
-              <p className="mb-4 pl-6 text-lg leading-relaxed italic">
-                I have been surprised at how comfortable it has felt being stretched through this coaching process. The stretch has become an additional approach rather than replacing who I am; expanding my capabilities while preserving my authentic self.
-              </p>
-              <div className="text-right text-sm font-medium text-[#7E2D40] not-italic">
-                Chief Financial Officer<br />
-                Housing and Community Development
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
+      {/* REMOVED OLD TESTIMONIALS SECTION - REPLACED WITH GLOBAL REACH */}
       {/* NAVY STRIPE - Global Reach */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
