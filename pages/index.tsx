@@ -68,9 +68,7 @@ export default function Homepage() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {/* BUBBLE-1: Tangerine background */}
             <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-1.png"
                 alt="Self-perception reflection"
@@ -78,9 +76,7 @@ export default function Homepage() {
               />
             </div>
             
-            {/* BUBBLE-2: Navy background */}
             <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-2.png"
                 alt="Connection and relationships"
@@ -88,9 +84,7 @@ export default function Homepage() {
               />
             </div>
 
-            {/* BUBBLE-3: Tangerine background */}
             <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-3.png"
                 alt="Authentic self-expression"
@@ -98,9 +92,7 @@ export default function Homepage() {
               />
             </div>
 
-            {/* BUBBLE-4: Navy background */}
             <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-4.png"
                 alt="Decision-making and judgment"
@@ -115,7 +107,6 @@ export default function Homepage() {
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
-            {/* Equation Display - 1/3 */}
             <div className="text-center">
               <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
                 <div className="mb-4 font-['Waiting_for_the_Sunrise'] text-5xl font-bold text-[#F96E1E] md:text-6xl">
@@ -127,7 +118,6 @@ export default function Homepage() {
               </div>
             </div>
 
-            {/* Explanation - 2/3 Asymmetric */}
             <div className="space-y-6 lg:col-span-2">
               <h2 className="text-3xl font-bold text-white md:text-4xl">
                 Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
@@ -159,9 +149,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          {/* Aga-Style Boxy Grid with Bubble-5 */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            {/* Large Block - Inner Dialogue */}
             <div className="rounded-lg bg-[#1A365D] p-6 text-white shadow-lg md:col-span-2 lg:col-span-2">
               <div className="mb-4 text-3xl">🧠</div>
               <h3 className="mb-4 text-xl font-bold">Inner Dialogue</h3>
@@ -178,9 +166,7 @@ export default function Homepage() {
               </div>
             </div>
 
-            {/* BUBBLE-5: Distributed EQ Square */}
             <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-5.png"
                 alt="Handling change and flexibility"
@@ -188,7 +174,6 @@ export default function Homepage() {
               />
             </div>
 
-            {/* Standard blocks */}
             <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
               <div className="mb-2 text-2xl">⚖️</div>
               <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
@@ -224,7 +209,7 @@ export default function Homepage() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - How I See It - REDESIGNED */}
+      {/* WHITE STRIPE - How I See It - BOLD REDESIGN */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="relative mb-12 text-center">
@@ -242,36 +227,20 @@ export default function Homepage() {
             </div>
           </div>
 
-          {/* Revolutionary Grid Layout */}
+          {/* REVOLUTIONARY GRID LAYOUT - No New Images Needed */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
-            {/* OBSERVATION FIRST - Large Immersive Card */}
-            <div className="group relative cursor-pointer overflow-hidden rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2 md:row-span-2">
-                {/* Background - Hand-drawn observation eye */}
-                <div className="absolute inset-0">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                        src="/images/observation-eye.png"
-                        alt="Hand-drawn eye representing observation"
-                        className="size-full object-cover opacity-15"
-                    />
-                </div>
+            {/* OBSERVATION FIRST - Large Immersive Card with Bubble-1 */}
+            <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:col-span-2 md:row-span-2">
+                {/* Triple-layer background effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A365D] via-[#1A365D]/90 to-[#F96E1E]/20"></div>
+                <div className="absolute inset-0 bg-[url('/images/Bubble-1.png')] bg-cover bg-center opacity-5"></div>
                 
-                {/* Observation Layer */}
-                <div className="relative flex h-full min-h-[320px] flex-col justify-between p-8"
-                     style={{
-                       background: `linear-gradient(135deg, 
-                         rgba(26, 54, 93, 0.95) 0%, 
-                         rgba(26, 54, 93, 0.85) 50%, 
-                         rgba(249, 110, 30, 0.1) 100%)`
-                     }}>
-                    
-                    {/* Top: Method Title */}
+                <div className="relative flex h-full min-h-[320px] flex-col justify-between p-8 text-white">
                     <div>
                         <div className="mb-4 inline-flex items-center">
-                            <div className="mr-3 h-3 w-3 rounded-full bg-[#F96E1E]" 
-                                 style={{animation: 'subtleFloat 6s ease-in-out infinite'}}></div>
-                            <h3 className="text-2xl font-bold tracking-wide text-white">Observation First</h3>
+                            <div className="mr-3 h-3 w-3 animate-pulse rounded-full bg-[#F96E1E]"></div>
+                            <h3 className="text-2xl font-bold tracking-wide">Observation First</h3>
                         </div>
                         
                         <p className="mb-6 text-base leading-relaxed text-white/90">
@@ -280,31 +249,28 @@ export default function Homepage() {
                         </p>
                     </div>
                     
-                    {/* Bottom: Visual Metaphor */}
+                    {/* Floating Bubble-2 in corner */}
                     <div className="flex justify-end">
-                        <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white/10 backdrop-blur">
-                            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white/40">
-                                <div className="h-4 w-4 rounded-full bg-[#F96E1E]" 
-                                     style={{animation: 'pulse 2s ease-in-out infinite'}}></div>
-                            </div>
+                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white/10 p-2 backdrop-blur">
+                            <img
+                                src="/images/Bubble-2.png"
+                                alt="Deeper observation"
+                                className="size-full object-contain opacity-60"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* EMBODIED PERCEPTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
+            {/* EMBODIED PERCEPTION - Vertical Card with Bubble-3 */}
+            <div className="group relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="flex h-full flex-col">
-                    {/* Hand-drawn body awareness icon */}
                     <div className="mb-4 flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-3">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src="/images/body-mind-heart.png"
-                            alt="Hand-drawn figure showing head, heart, gut connection"
+                            src="/images/Bubble-3.png"
+                            alt="Embodied perception"
                             className="size-full object-contain"
                         />
                     </div>
@@ -316,19 +282,15 @@ export default function Homepage() {
                 </div>
             </div>
 
-            {/* VALUES IN MOTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
+            {/* VALUES IN MOTION - Vertical Card with Bubble-4 */}
+            <div className="group relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="flex h-full flex-col">
-                    {/* Hand-drawn constellation map */}
                     <div className="mb-4 flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-3">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src="/images/values-constellation.png"
-                            alt="Hand-drawn constellation map of connected values"
+                            src="/images/Bubble-4.png"
+                            alt="Values in motion"
                             className="size-full object-contain"
                         />
                     </div>
@@ -340,14 +302,13 @@ export default function Homepage() {
                 </div>
             </div>
 
-            {/* SITTING WITH TENSION - Wide Dynamic Card */}
-            <div className="relative overflow-hidden rounded-lg bg-[#1A365D] p-8 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2">
-                {/* Background Texture - Abstract tension illustration */}
-                <div className="absolute right-0 top-0 h-32 w-32 opacity-10">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+            {/* SITTING WITH TENSION - Wide Card with Bubble-5 & Bubble-6 */}
+            <div className="group relative overflow-hidden rounded-lg bg-[#1A365D] p-8 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2">
+                {/* Background texture using Bubble-6 */}
+                <div className="absolute right-0 top-0 h-32 w-32 opacity-5">
                     <img
-                        src="/images/tension-balance.png"
-                        alt="Hand-drawn representation of balanced tension"
+                        src="/images/Bubble-6.png"
+                        alt="Background tension pattern"
                         className="size-full object-contain"
                     />
                 </div>
@@ -356,10 +317,9 @@ export default function Homepage() {
                     <div className="mb-4 flex items-start">
                         <div className="mr-6 shrink-0">
                             <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#F96E1E] p-3">
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                    src="/images/sitting-meditation.png"
-                                    alt="Hand-drawn figure in contemplative pose"
+                                    src="/images/Bubble-5.png"
+                                    alt="Sitting with tension"
                                     className="size-full object-contain"
                                 />
                             </div>
@@ -377,17 +337,12 @@ export default function Homepage() {
             </div>
 
             {/* METHODOLOGY PHILOSOPHY - Organic Card */}
-            <div className="relative rounded-lg bg-gradient-to-br from-[#F8F5EB] to-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2"
-                 style={{
-                   borderRadius: '12px 24px 12px 24px',
-                   boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'
-                 }}>
+            <div className="group relative rounded-lg bg-gradient-to-br from-[#F8F5EB] to-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2"
+                 style={{borderRadius: '12px 24px 12px 24px'}}>
                 
-                {/* Floating Visual Elements */}
-                <div className="absolute right-4 top-4 h-8 w-8 rounded-full bg-[#F96E1E]/20"
-                     style={{animation: 'subtleFloat 6s ease-in-out infinite'}}></div>
-                <div className="absolute bottom-6 left-6 h-4 w-4 rounded-full bg-[#1A365D]/20"
-                     style={{animation: 'subtleFloat 6s ease-in-out infinite', animationDelay: '2s'}}></div>
+                {/* Floating visual elements */}
+                <div className="absolute right-4 top-4 h-8 w-8 animate-pulse rounded-full bg-[#F96E1E]/20"></div>
+                <div className="absolute bottom-6 left-6 h-4 w-4 rounded-full bg-[#1A365D]/20" style={{animationDelay: '1s'}}></div>
                 
                 <div className="relative z-10">
                     <div className="mb-6">
@@ -409,10 +364,18 @@ export default function Homepage() {
 
           </div>
           
-          {/* Closing Philosophical Statement */}
+          {/* Closing Statement with Bubble Integration */}
           <div className="mt-12 text-center">
-              <div className="inline-block max-w-2xl rounded-lg bg-gradient-to-r from-[#F8F5EB] to-white p-6"
-                   style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
+              <div className="relative mx-auto max-w-2xl rounded-lg bg-gradient-to-r from-[#F8F5EB] to-white p-8 shadow-lg">
+                  {/* Small bubble accent */}
+                  <div className="absolute -right-2 -top-2 h-12 w-12 rounded-full bg-[#F96E1E] p-2">
+                      <img
+                          src="/images/Bubble-1.png"
+                          alt="Insight bubble"
+                          className="size-full object-contain opacity-60"
+                      />
+                  </div>
+                  
                   <p className="italic leading-relaxed text-gray-700">
                       &ldquo;The most powerful questions aren&apos;t the ones we ask ourselves. 
                       They&apos;re the ones we finally allow ourselves to hear.&rdquo;
@@ -438,7 +401,6 @@ export default function Homepage() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="space-y-4">
               <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-6.png"
                   alt="Leadership transformation"
@@ -451,7 +413,7 @@ export default function Homepage() {
                 <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   My team and I have never had such honest conversations with each other, until I started working with Phillip.
                 </p>
-                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
+                <div className="not-italic text-right text-sm font-medium text-[#1A365D]">
                   Country Head<br />
                   Telecommunications
                 </div>
@@ -460,7 +422,6 @@ export default function Homepage() {
 
             <div className="space-y-4">
               <div className="flex aspect-square items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-1.png"
                   alt="Self-perception and confidence"
@@ -473,7 +434,7 @@ export default function Homepage() {
                 <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   Mentally, I am so pleased I arrived at this point with your coaching for which I am so grateful. I have got my confidence back.
                 </p>
-                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
+                <div className="not-italic text-right text-sm font-medium text-[#1A365D]">
                   Country Head<br />
                   Manufacturing
                 </div>
@@ -482,7 +443,6 @@ export default function Homepage() {
 
             <div className="space-y-4">
               <div className="flex aspect-square items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-5.png"
                   alt="Handling change and flexibility"
@@ -495,7 +455,7 @@ export default function Homepage() {
                 <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach.
                 </p>
-                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
+                <div className="not-italic text-right text-sm font-medium text-[#1A365D]">
                   Country Head<br />
                   Engineering
                 </div>
@@ -544,18 +504,6 @@ export default function Homepage() {
           </div>
         </PageLayout>
       </section>
-
-      <style jsx>{`
-        @keyframes subtleFloat {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-3px); }
-        }
-        
-        @keyframes pulse {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.5; }
-        }
-      `}</style>
     </Layout>
   )
 }
