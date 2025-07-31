@@ -47,7 +47,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               {/* Rest of hero content */}
               <div className="max-w-4xl space-y-8 mt-8">
                 <p className="text-lg leading-relaxed text-gray-600">
@@ -56,7 +55,6 @@ export default function Home() {
                   Not louder.<br />
                   Just wiser.
                 </p>
-
                 <div className="flex flex-wrap gap-4">
                   <Link
                     href="/contact"
@@ -103,7 +101,6 @@ export default function Home() {
               What&apos;s already there, waiting for the safe space to be spoken out loud and truly be heard.
             </p>
           </div>
-
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
@@ -120,7 +117,6 @@ export default function Home() {
                 className="size-full object-contain"
               />
             </div>
-
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
                 src="/images/Bubble-3.png"
@@ -128,7 +124,6 @@ export default function Home() {
                 className="size-full object-contain"
               />
             </div>
-
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
                 src="/images/Bubble-4.png"
@@ -154,7 +149,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <div className="space-y-6 lg:col-span-2">
               <h2 className="text-3xl font-bold text-white md:text-4xl">
                 Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
@@ -179,7 +173,6 @@ export default function Home() {
                   <p className="text-sm text-white/80">The stuff getting in your way</p>
                 </div>
               </div>
-
               <div className="rounded-lg bg-[#F96E1E] p-6">
                 <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
                 <div className="space-y-2 text-sm text-white/90">
@@ -210,7 +203,6 @@ export default function Home() {
               The internal conversations that create interference, and the leaders who have found their way through.
             </p>
           </div>
-
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
@@ -232,7 +224,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
@@ -253,7 +244,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
@@ -278,65 +268,191 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - How I See It */}
+      {/* WHITE STRIPE - How I See It - REDESIGNED SECTION ONLY */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="mb-8 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              How I see it
+          <div className="mb-12 text-center relative">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-32 h-1 bg-gradient-to-r from-transparent via-orange-300 to-transparent opacity-30"></div>
+            
+            <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
+                How I see it
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700">
-              I work in frameworks but never formulas. These are tools I return to often: 
-              not as answers, but as <span className="font-semibold text-[#F96E1E]">invitations</span>.
-            </p>
+            
+            <div className="mx-auto max-w-4xl mb-8">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                    I work in frameworks but never formulas. These are tools I return to often: 
+                    not as answers, but as <span className="font-semibold text-[#F96E1E]">invitations</span>.
+                </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-2">
-              <div className="mb-4 flex items-center">
-                <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#1A365D] text-xl text-white">👁️</div>
-                <h3 className="text-lg font-bold text-[#1A365D]">Observation First</h3>
+          {/* Revolutionary Grid Layout */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+            
+            {/* OBSERVATION FIRST - Large Immersive Card */}
+            <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                {/* Background Bubble Image */}
+                <div className="absolute inset-0">
+                    <img
+                        src="/images/Bubble-7.png"
+                        alt="Observation and awareness"
+                        className="w-full h-full object-cover opacity-20"
+                    />
+                </div>
+                
+                {/* Observation Layer */}
+                <div className="relative h-full min-h-[320px] p-8 flex flex-col justify-between"
+                     style={{
+                       background: `linear-gradient(135deg, 
+                         rgba(26, 54, 93, 0.95) 0%, 
+                         rgba(26, 54, 93, 0.85) 50%, 
+                         rgba(249, 110, 30, 0.1) 100%)`
+                     }}>
+                    
+                    {/* Top: Method Title */}
+                    <div>
+                        <div className="inline-flex items-center mb-4">
+                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
+                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
+                        </div>
+                        
+                        <p className="text-white/90 text-base leading-relaxed mb-6">
+                            We start by noticing patterns, dynamics, friction before we move. 
+                            Sometimes the most important insights arise in the silence between words.
+                        </p>
+                    </div>
+                    
+                    {/* Bottom: Visual Metaphor */}
+                    <div className="flex justify-end">
+                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
+                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
+                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* EMBODIED PERCEPTION - Vertical Bubble Card */}
+            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
+                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
+                
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+                
+                <div className="h-full flex flex-col">
+                    {/* Bubble Image */}
+                    <div className="aspect-square rounded-lg bg-[#F96E1E] p-3 mb-4 flex items-center justify-center">
+                        <img
+                            src="/images/Bubble-8.png"
+                            alt="Embodied perception"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
+                        You lead with head, heart, and gut. We work with all three.
+                    </p>
+                </div>
+            </div>
+
+            {/* VALUES IN MOTION - Vertical Bubble Card */}
+            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
+                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
+                
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+                
+                <div className="h-full flex flex-col">
+                    {/* Bubble Image */}
+                    <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
+                        <img
+                            src="/images/Bubble-9.png"
+                            alt="Values in motion"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Values in Motion</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
+                        Mapping what truly matters through constellation work.
+                    </p>
+                </div>
+            </div>
+
+            {/* SITTING WITH TENSION - Wide Dynamic Card */}
+            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                {/* Background Texture */}
+                <div className="absolute right-0 top-0 w-32 h-32 opacity-10">
+                    <img
+                        src="/images/Bubble-10.png"
+                        alt="Tension and balance"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
+                
+                <div className="relative z-10">
+                    <div className="flex items-start mb-4">
+                        <div className="flex-shrink-0 mr-6">
+                            <div className="w-16 h-16 rounded-lg bg-[#F96E1E] p-3 flex items-center justify-center">
+                                <img
+                                    src="/images/Bubble-11.png"
+                                    alt="Sitting with tension"
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        
+                        <div className="flex-grow">
+                            <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
+                            <p className="text-white/90 leading-relaxed">
+                                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
+                                Emotional discernment over reaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* METHODOLOGY PHILOSOPHY - Organic Card */}
+            <div className="md:col-span-2 bg-gradient-to-br from-[#F8F5EB] to-white p-8 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg relative rounded-lg"
+                 style={{
+                   borderRadius: '12px 24px 12px 24px',
+                   boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'
+                 }}>
+                
+                {/* Floating Visual Elements */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#F96E1E]/20 animate-pulse"></div>
+                <div className="absolute bottom-6 left-6 w-4 h-4 rounded-full bg-[#1A365D]/20 animate-pulse" style={{animationDelay: '2s'}}></div>
+                
+                <div className="relative z-10">
+                    <div className="mb-6">
+                        <div className="inline-flex items-center mb-4">
+                            <div className="w-2 h-12 bg-gradient-to-b from-[#F96E1E] to-[#1A365D] rounded-full mr-4"></div>
+                            <h3 className="text-xl font-bold text-[#1A365D]">Framework Philosophy</h3>
+                        </div>
+                    </div>
+                    
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        These approaches emerge from decades of working with leaders who think deeply and act thoughtfully.
+                    </p>
+                    
+                    <p className="text-sm text-gray-600 italic">
+                        Each framework adapts to your context, your challenges, your way of seeing the world.
+                    </p>
+                </div>
+            </div>
+
+          </div>
+          
+          {/* Closing Philosophical Statement */}
+          <div className="mt-12 text-center">
+              <div className="inline-block max-w-2xl p-6 rounded-lg bg-gradient-to-r from-[#F8F5EB] to-white"
+                   style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
+                  <p className="text-gray-700 leading-relaxed italic">
+                      &ldquo;The most powerful questions aren&apos;t the ones we ask ourselves. 
+                      They&apos;re the ones we finally allow ourselves to hear.&rdquo;
+                  </p>
               </div>
-              <p className="text-gray-700">
-                We start by noticing patterns, dynamics, friction before we move. 
-                Sometimes the most important insights arise in the silence between words.
-              </p>
-            </div>
-
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
-                src="/images/Bubble-6.png"
-                alt="Emotional self-awareness"
-                className="size-full object-contain"
-              />
-            </div>
-
-            <div className="rounded-lg bg-[#F8F5EB] p-4">
-              <div className="mb-3 flex size-10 items-center justify-center rounded-full bg-[#F96E1E] text-lg text-white">🎯</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Embodied Perception</h3>
-              <p className="text-xs text-gray-600">
-                You lead with head, heart, and gut. We work with all three.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-[#F8F5EB] p-4">
-              <div className="mb-3 flex size-10 items-center justify-center rounded-full bg-[#1A365D] text-lg text-white">🔄</div>
-              <h3 className="mb-2 text-sm font-bold text-[#1A365D]">Values in Motion</h3>
-              <p className="text-xs text-gray-600">
-                Mapping what truly matters through constellation work.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-2">
-              <div className="mb-4 flex items-center">
-                <div className="mr-4 flex size-12 items-center justify-center rounded-full bg-[#F96E1E] text-xl text-white">⚖️</div>
-                <h3 className="text-lg font-bold">Sitting with Tension</h3>
-              </div>
-              <p className="text-white/90">
-                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
-                Emotional discernment over reaction.
-              </p>
-            </div>
           </div>
         </PageLayout>
       </section>
@@ -352,33 +468,28 @@ export default function Home() {
               My coaching partnerships span diverse contexts and cultures, working with senior leaders across continents and industries.
             </p>
           </div>
-
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-3 text-2xl">🇪🇺</div>
               <h3 className="mb-2 font-semibold text-white">Europe</h3>
               <p className="text-sm text-white/80">UK, Ireland, France, Belgium, Netherlands</p>
             </div>
-
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-3 text-2xl">🕌</div>
               <h3 className="mb-2 font-semibold text-white">Middle East</h3>
               <p className="text-sm text-white/80">UAE, Saudi Arabia, Israel</p>
             </div>
-
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-3 text-2xl">🌎</div>
               <h3 className="mb-2 font-semibold text-white">Americas</h3>
               <p className="text-sm text-white/80">USA, Argentina, Brazil</p>
             </div>
-
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-3 text-2xl">🏯</div>
               <h3 className="mb-2 font-semibold text-white">Asia Pacific</h3>
               <p className="text-sm text-white/80">India, Singapore</p>
             </div>
           </div>
-
           <div className="mt-12 text-center">
             <div className="mx-auto max-w-2xl rounded-lg bg-[#F96E1E] p-6">
               <p className="text-lg font-medium text-white">
@@ -404,14 +515,12 @@ export default function Home() {
                 And a safe enough space to <strong>hear</strong> it.
               </p>
             </div>
-
             <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-white/90">
               If something here resonates, let&apos;s explore what&apos;s possible.<br />
               No funnel.<br />
               No pressure.<br />
               Just a human conversation.
             </p>
-
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
