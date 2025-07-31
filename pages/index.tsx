@@ -187,10 +187,19 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="rounded-lg bg-[#F96E1E] p-4">
-                <p className="font-medium text-white">
-                  When we reduce what&apos;s in the way, performance naturally rises to meet potential.
-                </p>
+              <div className="rounded-lg bg-[#F96E1E] p-6">
+                <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
+                <div className="space-y-2 text-sm text-white/90">
+                  <p><strong>Conflicting values:</strong> Autonomy vs belonging, care vs performance, tradition vs innovation</p>
+                  <p><strong>Environmental blockers:</strong> Toxic team dynamics, organisational silos, excessive admin that drains energy</p>
+                  <p><strong>Unhelpful narratives:</strong> "I must always have the answer," "If I slow down, I'll fall behind," "I'm not strategic enough"</p>
+                  <p><strong>Inner dialogue:</strong> The voice of imposter syndrome creating doubt where there should be confidence</p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-white/20">
+                  <p className="font-medium text-white">
+                    When we reduce what&apos;s in the way, performance naturally rises to meet potential.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -209,24 +218,24 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Call & Response Grid */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* Call & Response Grid - 3 Columns */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             
             {/* FIRST CALL & RESPONSE PAIR */}
             <div className="space-y-4">
-              {/* The Call - Self-Doubt Internal Struggle */}
-              <div className="rounded-lg bg-white p-6 flex items-center justify-center shadow-sm">
+              {/* The Call - Self-Doubt (Square) */}
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Call-self-doubt.png"
                   alt="I don't really belong at this level"
-                  className="w-full h-auto object-contain max-h-32"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
               {/* Social Proof Response */}
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
                 <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-lg leading-relaxed italic text-gray-800">
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
                   Mentally, I am so pleased I arrived at this point with your coaching for which I am so grateful. I have got my confidence back and my self-belief which had waned back when we first met.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
@@ -238,19 +247,19 @@ export default function Home() {
 
             {/* SECOND CALL & RESPONSE PAIR */}
             <div className="space-y-4">
-              {/* The Call - Authority Burden */}
-              <div className="rounded-lg bg-white p-6 flex items-center justify-center shadow-sm">
+              {/* The Call - Authority Burden (Square) */}
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Call-authority-burden.png"
                   alt="I must always have the answer"
-                  className="w-full h-auto object-contain max-h-32"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
               {/* Social Proof Response */}
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
                 <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-lg leading-relaxed italic text-gray-800">
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
                   My team and I have never had such honest conversations with each other, until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
@@ -260,14 +269,27 @@ export default function Home() {
               </div>
             </div>
 
-            {/* BUBBLE-5: Distributed EQ Square */}
-            <div className="md:col-span-2 flex justify-center">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm max-w-xs">
+            {/* THIRD CALL & RESPONSE PAIR */}
+            <div className="space-y-4">
+              {/* The Call - Bubble-5 (Square) */}
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
                   src="/images/Bubble-5.png"
-                  alt="Handling change and flexibility"
+                  alt="How do I handle it when plans change"
                   className="w-full h-full object-contain"
                 />
+              </div>
+              
+              {/* Social Proof Response - Professional Flexibility */}
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                  Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach. Fantastic experience!
+                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  Country Head<br />
+                  Engineering
+                </div>
               </div>
             </div>
           </div>
