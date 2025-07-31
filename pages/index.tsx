@@ -60,7 +60,7 @@ export default function Homepage() {
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               What leaders bring to this work
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
               They&apos;re not looking for another workshop or methodology. 
               They&apos;re invitations to notice 
               what&apos;s already there, waiting&nbsp;to&nbsp;be&nbsp;seen.
@@ -69,38 +69,42 @@ export default function Homepage() {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {/* BUBBLE-1: Tangerine background */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-1.png"
                 alt="Self-perception reflection"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
             
             {/* BUBBLE-2: Navy background */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+            <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-2.png"
                 alt="Connection and relationships"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
 
             {/* BUBBLE-3: Tangerine background */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-3.png"
                 alt="Authentic self-expression"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
 
             {/* BUBBLE-4: Navy background */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+            <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-4.png"
                 alt="Decision-making and judgment"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
           </div>
@@ -128,7 +132,7 @@ export default function Homepage() {
               <h2 className="text-3xl font-bold text-white md:text-4xl">
                 Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
               </h2>
-              <p className="text-white/90 text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed text-white/90">
                 The question is: what&apos;s getting in the way of accessing it consistently? 
                 Usually, it&apos;s not a lack of capability. It&apos;s interference.
               </p>
@@ -149,7 +153,7 @@ export default function Homepage() {
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               What creates interference
             </h2>
-            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
+            <p className="max-w-4xl text-lg leading-relaxed text-gray-700">
               Everyone has their &ldquo;stuff.&rdquo; The question is whether dealing with it now 
               is the best use&nbsp;of&nbsp;your&nbsp;energy.
             </p>
@@ -175,15 +179,16 @@ export default function Homepage() {
             </div>
 
             {/* BUBBLE-5: Distributed EQ Square */}
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4 flex items-center justify-center">
+            <div className="flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/Bubble-5.png"
                 alt="Handling change and flexibility"
-                className="w-full h-full object-contain"
+                className="size-full object-contain"
               />
             </div>
 
-            {/* Standard block */}
+            {/* Standard blocks */}
             <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-4 shadow">
               <div className="mb-2 text-2xl">⚖️</div>
               <h3 className="mb-2 font-semibold text-[#1A365D]">Competing Values</h3>
@@ -222,15 +227,15 @@ export default function Homepage() {
       {/* WHITE STRIPE - How I See It - REDESIGNED */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="mb-12 text-center relative">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-32 h-1 bg-gradient-to-r from-transparent via-orange-300 to-transparent opacity-30"></div>
+          <div className="relative mb-12 text-center">
+            <div className="absolute left-1/2 top-0 h-1 w-32 -translate-x-1/2 -translate-y-4 bg-gradient-to-r from-transparent via-orange-300 to-transparent opacity-30"></div>
             
             <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
                 How I see it
             </h2>
             
-            <div className="mx-auto max-w-4xl mb-8">
-                <p className="text-lg text-gray-700 leading-relaxed">
+            <div className="mx-auto mb-8 max-w-4xl">
+                <p className="text-lg leading-relaxed text-gray-700">
                     I work in frameworks but never formulas. These are tools I return to often: 
                     not as answers, but as <span className="font-semibold text-[#F96E1E]">invitations</span>.
                 </p>
@@ -241,18 +246,19 @@ export default function Homepage() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
             {/* OBSERVATION FIRST - Large Immersive Card */}
-            <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+            <div className="group relative cursor-pointer overflow-hidden rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2 md:row-span-2">
                 {/* Background - Hand-drawn observation eye */}
                 <div className="absolute inset-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/images/observation-eye.png"
                         alt="Hand-drawn eye representing observation"
-                        className="w-full h-full object-cover opacity-15"
+                        className="size-full object-cover opacity-15"
                     />
                 </div>
                 
                 {/* Observation Layer */}
-                <div className="relative h-full min-h-[320px] p-8 flex flex-col justify-between"
+                <div className="relative flex h-full min-h-[320px] flex-col justify-between p-8"
                      style={{
                        background: `linear-gradient(135deg, 
                          rgba(26, 54, 93, 0.95) 0%, 
@@ -262,13 +268,13 @@ export default function Homepage() {
                     
                     {/* Top: Method Title */}
                     <div>
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3" 
+                        <div className="mb-4 inline-flex items-center">
+                            <div className="mr-3 h-3 w-3 rounded-full bg-[#F96E1E]" 
                                  style={{animation: 'subtleFloat 6s ease-in-out infinite'}}></div>
-                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
+                            <h3 className="text-2xl font-bold tracking-wide text-white">Observation First</h3>
                         </div>
                         
-                        <p className="text-white/90 text-base leading-relaxed mb-6">
+                        <p className="mb-6 text-base leading-relaxed text-white/90">
                             We start by noticing patterns, dynamics, friction before we move. 
                             Sometimes the most important insights arise in the silence between words.
                         </p>
@@ -276,9 +282,9 @@ export default function Homepage() {
                     
                     {/* Bottom: Visual Metaphor */}
                     <div className="flex justify-end">
-                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
-                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full" 
+                        <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white/10 backdrop-blur">
+                            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white/40">
+                                <div className="h-4 w-4 rounded-full bg-[#F96E1E]" 
                                      style={{animation: 'pulse 2s ease-in-out infinite'}}></div>
                             </div>
                         </div>
@@ -287,77 +293,81 @@ export default function Homepage() {
             </div>
 
             {/* EMBODIED PERCEPTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
+            <div className="relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                  style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
                 
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+                <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
-                <div className="h-full flex flex-col">
+                <div className="flex h-full flex-col">
                     {/* Hand-drawn body awareness icon */}
-                    <div className="aspect-square rounded-lg bg-[#F96E1E] p-3 mb-4 flex items-center justify-center">
+                    <div className="mb-4 flex aspect-square items-center justify-center rounded-lg bg-[#F96E1E] p-3">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/images/body-mind-heart.png"
                             alt="Hand-drawn figure showing head, heart, gut connection"
-                            className="w-full h-full object-contain"
+                            className="size-full object-contain"
                         />
                     </div>
                     
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
+                    <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Embodied Perception</h3>
+                    <p className="flex-grow text-sm leading-relaxed text-gray-700">
                         You lead with head, heart, and gut. We work with all three.
                     </p>
                 </div>
             </div>
 
             {/* VALUES IN MOTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
+            <div className="relative overflow-hidden rounded-lg bg-[#F8F5EB] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                  style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
                 
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+                <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
-                <div className="h-full flex flex-col">
+                <div className="flex h-full flex-col">
                     {/* Hand-drawn constellation map */}
-                    <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
+                    <div className="mb-4 flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-3">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/images/values-constellation.png"
                             alt="Hand-drawn constellation map of connected values"
-                            className="w-full h-full object-contain"
+                            className="size-full object-contain"
                         />
                     </div>
                     
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Values in Motion</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
+                    <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Values in Motion</h3>
+                    <p className="flex-grow text-sm leading-relaxed text-gray-700">
                         Mapping what truly matters through constellation work.
                     </p>
                 </div>
             </div>
 
             {/* SITTING WITH TENSION - Wide Dynamic Card */}
-            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+            <div className="relative overflow-hidden rounded-lg bg-[#1A365D] p-8 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2">
                 {/* Background Texture - Abstract tension illustration */}
-                <div className="absolute right-0 top-0 w-32 h-32 opacity-10">
+                <div className="absolute right-0 top-0 h-32 w-32 opacity-10">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/images/tension-balance.png"
                         alt="Hand-drawn representation of balanced tension"
-                        className="w-full h-full object-contain"
+                        className="size-full object-contain"
                     />
                 </div>
                 
                 <div className="relative z-10">
-                    <div className="flex items-start mb-4">
-                        <div className="flex-shrink-0 mr-6">
-                            <div className="w-16 h-16 rounded-lg bg-[#F96E1E] p-3 flex items-center justify-center">
+                    <div className="mb-4 flex items-start">
+                        <div className="mr-6 shrink-0">
+                            <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#F96E1E] p-3">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src="/images/sitting-meditation.png"
                                     alt="Hand-drawn figure in contemplative pose"
-                                    className="w-full h-full object-contain"
+                                    className="size-full object-contain"
                                 />
                             </div>
                         </div>
                         
                         <div className="flex-grow">
-                            <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
-                            <p className="text-white/90 leading-relaxed">
+                            <h3 className="mb-3 text-xl font-bold">Sitting with Tension</h3>
+                            <p className="leading-relaxed text-white/90">
                                 Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
                                 Emotional discernment over reaction.
                             </p>
@@ -367,31 +377,31 @@ export default function Homepage() {
             </div>
 
             {/* METHODOLOGY PHILOSOPHY - Organic Card */}
-            <div className="md:col-span-2 bg-gradient-to-br from-[#F8F5EB] to-white p-8 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg relative rounded-lg"
+            <div className="relative rounded-lg bg-gradient-to-br from-[#F8F5EB] to-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2"
                  style={{
                    borderRadius: '12px 24px 12px 24px',
                    boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'
                  }}>
                 
                 {/* Floating Visual Elements */}
-                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#F96E1E]/20"
+                <div className="absolute right-4 top-4 h-8 w-8 rounded-full bg-[#F96E1E]/20"
                      style={{animation: 'subtleFloat 6s ease-in-out infinite'}}></div>
-                <div className="absolute bottom-6 left-6 w-4 h-4 rounded-full bg-[#1A365D]/20"
+                <div className="absolute bottom-6 left-6 h-4 w-4 rounded-full bg-[#1A365D]/20"
                      style={{animation: 'subtleFloat 6s ease-in-out infinite', animationDelay: '2s'}}></div>
                 
                 <div className="relative z-10">
                     <div className="mb-6">
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-2 h-12 bg-gradient-to-b from-[#F96E1E] to-[#1A365D] rounded-full mr-4"></div>
+                        <div className="mb-4 inline-flex items-center">
+                            <div className="mr-4 h-12 w-2 rounded-full bg-gradient-to-b from-[#F96E1E] to-[#1A365D]"></div>
                             <h3 className="text-xl font-bold text-[#1A365D]">Framework Philosophy</h3>
                         </div>
                     </div>
                     
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="mb-4 leading-relaxed text-gray-700">
                         These approaches emerge from decades of working with leaders who think deeply and act thoughtfully.
                     </p>
                     
-                    <p className="text-sm text-gray-600 italic">
+                    <p className="text-sm italic text-gray-600">
                         Each framework adapts to your context, your challenges, your way of seeing the world.
                     </p>
                 </div>
@@ -401,9 +411,9 @@ export default function Homepage() {
           
           {/* Closing Philosophical Statement */}
           <div className="mt-12 text-center">
-              <div className="inline-block max-w-2xl p-6 rounded-lg bg-gradient-to-r from-[#F8F5EB] to-white"
+              <div className="inline-block max-w-2xl rounded-lg bg-gradient-to-r from-[#F8F5EB] to-white p-6"
                    style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                  <p className="text-gray-700 leading-relaxed italic">
+                  <p className="italic leading-relaxed text-gray-700">
                       &ldquo;The most powerful questions aren&apos;t the ones we ask ourselves. 
                       They&apos;re the ones we finally allow ourselves to hear.&rdquo;
                   </p>
@@ -419,7 +429,7 @@ export default function Homepage() {
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
               Leaders reflect
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
               This work isn&apos;t loud. It doesn&apos;t need to be.<br />
               It resonates when you&apos;re ready to hear yourself more clearly.
             </p>
@@ -427,7 +437,8 @@ export default function Homepage() {
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
+              <div className="flex aspect-square items-center justify-center rounded-lg bg-[#1A365D] p-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-6.png"
                   alt="Leadership transformation"
@@ -435,12 +446,12 @@ export default function Homepage() {
                 />
               </div>
               
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#1A365D]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#1A365D]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+              <div className="relative rounded-lg border-l-4 border-[#1A365D] bg-white p-6 shadow-sm">
+                <div className="absolute -left-1 -top-2 font-['Waiting_for_the_Sunrise'] text-4xl text-[#1A365D]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   My team and I have never had such honest conversations with each other, until I started working with Phillip.
                 </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
                   Country Head<br />
                   Telecommunications
                 </div>
@@ -448,7 +459,8 @@ export default function Homepage() {
             </div>
 
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+              <div className="flex aspect-square items-center justify-center rounded-lg bg-white p-4 shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-1.png"
                   alt="Self-perception and confidence"
@@ -456,12 +468,12 @@ export default function Homepage() {
                 />
               </div>
               
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+              <div className="relative rounded-lg border-l-4 border-[#F96E1E] bg-white p-6 shadow-sm">
+                <div className="absolute -left-1 -top-2 font-['Waiting_for_the_Sunrise'] text-4xl text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   Mentally, I am so pleased I arrived at this point with your coaching for which I am so grateful. I have got my confidence back.
                 </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
                   Country Head<br />
                   Manufacturing
                 </div>
@@ -469,7 +481,8 @@ export default function Homepage() {
             </div>
 
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+              <div className="flex aspect-square items-center justify-center rounded-lg bg-white p-4 shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/Bubble-5.png"
                   alt="Handling change and flexibility"
@@ -477,12 +490,12 @@ export default function Homepage() {
                 />
               </div>
               
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+              <div className="relative rounded-lg border-l-4 border-[#F96E1E] bg-white p-6 shadow-sm">
+                <div className="absolute -left-1 -top-2 font-['Waiting_for_the_Sunrise'] text-4xl text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base italic leading-relaxed text-gray-800">
                   Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach.
                 </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                <div className="text-right text-sm font-medium not-italic text-[#1A365D]">
                   Country Head<br />
                   Engineering
                 </div>
@@ -501,7 +514,7 @@ export default function Homepage() {
             </h2>
             
             <div className="mx-auto mb-8 max-w-2xl">
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-lg leading-relaxed text-white/90">
                 This isn&apos;t about fixing what&apos;s broken.<br />
                 It&apos;s about accessing what&apos;s already there.
               </p>
