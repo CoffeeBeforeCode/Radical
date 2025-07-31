@@ -384,14 +384,12 @@ export default function Home() {
                 
                 <div className="relative z-10">
                     <div className="flex items-start mb-4">
-                        <div className="flex-shrink-0 mr-6">
-                            <div className="w-16 h-16 rounded-lg bg-white p-3 flex items-center justify-center">
-                                <img
-                                    src="/images/Bubble-10.png"
-                                    alt="Sitting with tension"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
+                        <div className="flex-shrink-0 mr-8">
+                            <img
+                                src="/images/Bubble-10.png"
+                                alt="Sitting with tension"
+                                className="w-24 h-24 object-contain"
+                            />
                         </div>
                         
                         <div className="flex-grow">
