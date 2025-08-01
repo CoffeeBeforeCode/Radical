@@ -357,7 +357,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+            <div className="relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="flex items-start mb-4">
                     <div className="flex-shrink-0 mr-8">
                         <img
@@ -395,13 +395,10 @@ export default function Home() {
           </div>
           
           <div className="mt-16 text-center">
-              <div className="relative inline-block max-w-3xl p-8 rounded-xl bg-gradient-to-r from-[#F8F5EB] via-white to-[#F8F5EB] transform hover:scale-105 transition-all duration-300"
+              <div className="relative inline-block max-w-3xl p-8 rounded-xl bg-[#F96E1E] transform hover:scale-105 transition-all duration-300"
                    style={{boxShadow: '0 8px 25px rgba(26, 54, 93, 0.15), 0 3px 10px rgba(249, 110, 30, 0.1)'}}>
                   
-                  <div className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-[#F96E1E] animate-pulse"></div>
-                  <div className="absolute -bottom-3 -right-3 w-4 h-4 rounded-full bg-[#1A365D] animate-pulse" style={{animationDelay: '1s'}}></div>
-                  
-                  <p className="text-xl italic leading-relaxed text-gray-700 font-medium">
+                  <p className="font-['Waiting_for_the_Sunrise'] text-xl leading-relaxed text-white font-medium">
                       &ldquo;The most powerful questions aren&apos;t the ones we ask ourselves. 
                       They&apos;re the ones we finally allow ourselves to hear.&rdquo;
                   </p>
