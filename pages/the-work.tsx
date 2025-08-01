@@ -232,14 +232,14 @@ export default function TheWork() {
       {/* Scattered Thought Bubbles Section */}
       <Block spacing="default">
         <PageLayout>
-          <Grid columns={4} className="gap-8">
+          <Grid columns={3} className="gap-8">
             <div className="aspect-square rounded-lg bg-[#F96E1E] p-4">
               <p className="text-center text-sm font-medium leading-relaxed text-white">
                 &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
               </p>
             </div>
             
-            <div className="col-span-2 space-y-6 rounded-lg bg-gray-50 p-8">
+            <div className="space-y-6 rounded-lg bg-gray-50 p-8">
               <h3 className="font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D]">
                 Interference patterns
               </h3>
