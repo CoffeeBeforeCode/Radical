@@ -268,7 +268,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - How I See It - REDESIGNED SECTION ONLY */}
+      {/* WHITE STRIPE - How I See It - REDESIGNED */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="mb-12 text-center relative">
@@ -286,129 +286,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Revolutionary Grid Layout */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
-            {/* OBSERVATION FIRST - Large Immersive Card */}
-            <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                {/* Background Bubble Image */}
-                <div className="absolute inset-0">
-                    <img
-                        src="/images/Bubble-7.png"
-                        alt="Observation and awareness"
-                        className="w-full h-full object-cover opacity-20"
-                    />
-                </div>
-                
-                {/* Observation Layer */}
-                <div className="relative h-full min-h-[320px] p-8 flex flex-col justify-between"
-                     style={{
-                       background: `linear-gradient(135deg, 
-                         rgba(26, 54, 93, 0.95) 0%, 
-                         rgba(26, 54, 93, 0.85) 50%, 
-                         rgba(249, 110, 30, 0.1) 100%)`
-                     }}>
-                    
-                    {/* Top: Method Title */}
-                    <div>
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
-                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
-                        </div>
-                        
-                        <p className="text-white/90 text-base leading-relaxed mb-6">
-                            We start by noticing patterns, dynamics, friction before we move. 
-                            Sometimes the most important insights arise in the silence between words.
-                        </p>
-                    </div>
-                    
-                    {/* Bottom: Visual Metaphor */}
-                    <div className="flex justify-end">
-                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
-                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full animate-pulse"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* EMBODIED PERCEPTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
-                
-                <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
-                    <div className="aspect-square rounded-lg bg-[#F8F5EB] p-3 mb-4 flex items-center justify-center">
-                        <img
-                            src="/images/Bubble-8.png"
-                            alt="Embodied perception"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
-                        You lead with head, heart, and gut. We work with all three.
-                    </p>
-                </div>
-            </div>
-
-            {/* VALUES IN MOTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
-                
-                <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
-                    <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
-                        <img
-                            src="/images/Bubble-9.png"
-                            alt="Values in motion"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Values in Motion</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
-                        Mapping what truly matters through constellation work.
-                    </p>
-                </div>
-            </div>
-
-            {/* SITTING WITH TENSION - Wide Dynamic Card */}
-            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                
-                <div className="relative z-10">
-                    <div className="flex items-start mb-4">
-                        <div className="flex-shrink-0 mr-8">
-                            <img
-                                src="/images/Bubble-10.png"
-                                alt="Sitting with tension"
-                                className="w-24 h-24 object-contain"
-                            />
-                        </div>
-                        
-                        <div className="flex-grow">
-                            <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
-                            <p className="text-white/90 leading-relaxed">
-                                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
-                                Emotional discernment over reaction.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-          {/* Revolutionary Grid Layout */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            
-            {/* OBSERVATION FIRST - Large Card (smaller on desktop) */}
-            <div className="md:col-span-2 relative rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                {/* Observation Layer - No background image */}
+            <div className="md:col-span-2 relative rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="relative h-full min-h-[280px] p-8 flex flex-col justify-between"
                      style={{
                        background: `linear-gradient(135deg, 
@@ -417,7 +297,6 @@ export default function Home() {
                          rgba(249, 110, 30, 0.1) 100%)`
                      }}>
                     
-                    {/* Top: Method Title */}
                     <div>
                         <div className="inline-flex items-center mb-4">
                             <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
@@ -430,7 +309,6 @@ export default function Home() {
                         </p>
                     </div>
                     
-                    {/* Bottom: Visual Metaphor */}
                     <div className="flex justify-end">
                         <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
                             <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
@@ -441,14 +319,10 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* EMBODIED PERCEPTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
+            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
                     <div className="aspect-square rounded-lg bg-[#F8F5EB] p-3 mb-4 flex items-center justify-center">
                         <img
                             src="/images/Bubble-8.png"
@@ -464,14 +338,10 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* VALUES IN MOTION - Vertical Bubble Card */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
+            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
-                    {/* Bubble Image */}
                     <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
                         <img
                             src="/images/Bubble-9.png"
@@ -487,38 +357,30 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* SITTING WITH TENSION - Wide Dynamic Card */}
             <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                
-                <div className="relative z-10">
-                    <div className="flex items-start mb-4">
-                        <div className="flex-shrink-0 mr-8">
-                            <img
-                                src="/images/Bubble-10.png"
-                                alt="Sitting with tension"
-                                className="w-24 h-24 object-contain"
-                            />
-                        </div>
-                        
-                        <div className="flex-grow">
-                            <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
-                            <p className="text-white/90 leading-relaxed">
-                                Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
-                                Emotional discernment over reaction.
-                            </p>
-                        </div>
+                <div className="flex items-start mb-4">
+                    <div className="flex-shrink-0 mr-8">
+                        <img
+                            src="/images/Bubble-10.png"
+                            alt="Sitting with tension"
+                            className="w-24 h-24 object-contain"
+                        />
+                    </div>
+                    
+                    <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
+                        <p className="text-white/90 leading-relaxed">
+                            Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
+                            Emotional discernment over reaction.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            {/* FRAMEWORK PHILOSOPHY - Now a regular card in the grid */}
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg"
-                 style={{boxShadow: '0 4px 6px rgba(26, 54, 93, 0.1), 0 1px 3px rgba(26, 54, 93, 0.08)'}}>
-                
+            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
-                    {/* Visual Element */}
                     <div className="aspect-square rounded-lg bg-gradient-to-br from-[#F96E1E] to-[#1A365D] p-3 mb-4 flex items-center justify-center">
                         <div className="w-2 h-8 bg-white rounded-full"></div>
                     </div>
@@ -532,12 +394,10 @@ export default function Home() {
 
           </div>
           
-          {/* Closing Philosophical Statement - MORE POP */}
           <div className="mt-16 text-center">
               <div className="relative inline-block max-w-3xl p-8 rounded-xl bg-gradient-to-r from-[#F8F5EB] via-white to-[#F8F5EB] transform hover:scale-105 transition-all duration-300"
                    style={{boxShadow: '0 8px 25px rgba(26, 54, 93, 0.15), 0 3px 10px rgba(249, 110, 30, 0.1)'}}>
                   
-                  {/* Decorative elements */}
                   <div className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-[#F96E1E] animate-pulse"></div>
                   <div className="absolute -bottom-3 -right-3 w-4 h-4 rounded-full bg-[#1A365D] animate-pulse" style={{animationDelay: '1s'}}></div>
                   
