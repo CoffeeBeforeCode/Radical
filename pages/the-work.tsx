@@ -1,5 +1,5 @@
-import Layout, { Block, Grid, PageLayout } from '../components/Layout'
-import Image from 'next/image'
+import Layout, { PageLayout } from '../components/Layout'
+import Link from 'next/link'
 
 export default function TheWork() {
   return (
@@ -8,7 +8,7 @@ export default function TheWork() {
       description="Professional leadership coaching for senior executives. The work beneath the work."
       canonical="/the-work"
     >
-      {/* FULL-WIDTH HERO - Matches Index Page Structure */}
+      {/* FULL-WIDTH HERO - Matches Index Structure */}
       <section className="relative w-full min-h-screen bg-white pt-20">
         <div className="flex min-h-[calc(100vh-5rem)] items-center">
           <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -54,36 +54,31 @@ export default function TheWork() {
                     </div>
                     
                     <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
-                      <div className="text-center space-y-4">
-                        <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
-                          &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Sometimes you already know; you just haven&apos;t backed yourself yet.
-                        </p>
-                      </div>
+                      <img
+                        src="/images/you-eqi.png"
+                        alt="Am I trusting my own judgement, or waiting for a green light?"
+                        className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
               
               {/* CTAs - Index Page Pattern */}
-              <div className="w-full mt-12">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="flex flex-col gap-4 sm:flex-row sm:justify-start">
-                    <a 
-                      href="mailto:phillip@phillip-collins.com"
-                      className="inline-flex items-center justify-center rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-0.5"
-                    >
-                      Begin here
-                    </a>
-                    <a 
-                      href="/this-is-personal"
-                      className="inline-flex items-center justify-center rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-medium text-[#1A365D] transition-all duration-300 hover:bg-[#1A365D] hover:text-white"
-                    >
-                      My approach
-                    </a>
-                  </div>
+              <div className="max-w-4xl space-y-8 mt-8">
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="mailto:phillip@phillip-collins.com"
+                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                  >
+                    Begin here
+                  </Link>
+                  <Link
+                    href="/this-is-personal"
+                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                  >
+                    My approach
+                  </Link>
                 </div>
               </div>
             </div>
@@ -91,50 +86,26 @@ export default function TheWork() {
         </div>
       </section>
 
-      {/* EQ-i Image Section - Navy Background */}
-      <Block background="navy" spacing="default">
-        <PageLayout>
-          <div className="flex items-center justify-center">
-            <Image
-              src="/images/you-eqi.png"
-              alt="EQ-i Leadership Assessment"
-              width={800}
-              height={450}
-              className="rounded-lg object-contain"
-            />
+      {/* LEADERSHIP EQUATION - Navy Section */}
+      <section className="w-full bg-[#1A365D] py-12 md:py-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl text-center">
+            <div className="font-['Waiting_for_the_Sunrise'] text-6xl font-bold leading-none text-white md:text-8xl">
+              PE = PO - I
+            </div>
+            <div className="mt-4 text-xl text-gray-300 md:text-2xl">
+              Performance = Potential - Interference
+            </div>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-gray-200">
+              We don&apos;t push for more. We remove what&apos;s in the way.<br />
+              Most leaders already possess remarkable potential.
+            </p>
           </div>
-        </PageLayout>
-      </Block>
+        </div>
+      </section>
 
-      {/* Call & Response - Performance Perfectionism */}
-      <Block background="cream" spacing="default">
-        <PageLayout>
-          <Grid columns={2} className="items-center gap-12">
-            {/* The Call - Internal Struggle */}
-            <div className="space-y-6">
-              <div className="aspect-square max-w-64 rounded-lg bg-[#F96E1E] p-8">
-                <p className="text-center text-lg font-medium leading-relaxed text-white">
-                  &ldquo;Anything less than flawless is failure&rdquo;
-                </p>
-              </div>
-              <p className="text-base leading-relaxed text-gray-600">
-                The internal pressure that drives excellence... and exhaustion.
-              </p>
-            </div>
-            
-            {/* The Response - Social Proof */}
-            <div className="space-y-6">
-              <blockquote className="rounded-lg bg-white p-8 text-lg leading-relaxed text-gray-700">
-                &ldquo;The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.&rdquo;
-              </blockquote>
-              <cite className="text-base font-medium text-[#1A365D]">C-suite Member, Technology</cite>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
-
-      {/* Frameworks - Dense Grid */}
-      <Block spacing="default">
+      {/* FRAMEWORKS - White Section */}
+      <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
           <div className="space-y-12">
             <div className="text-center">
@@ -146,7 +117,7 @@ export default function TheWork() {
               </p>
             </div>
             
-            <Grid columns={3}>
+            <div className="grid gap-8 md:grid-cols-3">
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
                 <div className="mb-6 text-center text-3xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">PE = PO - I</div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">The Leadership Equation</h3>
@@ -176,141 +147,74 @@ export default function TheWork() {
                   Emotional discernment over reaction.
                 </p>
               </div>
-            </Grid>
+            </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* The Work Beneath The Work - 5 Grid Dense */}
-      <Block background="navy" spacing="default">
+      {/* CALL & RESPONSE - Cream Section */}
+      <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <PageLayout>
-          <div className="mb-16 text-center">
-            <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl leading-tight text-white md:text-4xl">
-              The work beneath the work
-            </h2>
-          </div>
-          
-          <Grid columns={5}>
-            <div className="space-y-4 text-center">
-              <div className="text-3xl text-[#D4B86A]">👁</div>
-              <h3 className="text-lg font-semibold text-white">Observation before Intervention</h3>
-              <p className="text-sm text-white/80">
-                We start by noticing what&apos;s actually happening, not what we think should be.
+          <div className="grid gap-12 md:grid-cols-2 items-center">
+            {/* The Call - Internal Struggle */}
+            <div className="space-y-6">
+              <div className="aspect-square max-w-64 rounded-lg bg-[#F96E1E] p-8">
+                <p className="text-center text-lg font-medium leading-relaxed text-white">
+                  &ldquo;Anything less than flawless is failure&rdquo;
+                </p>
+              </div>
+              <p className="text-base leading-relaxed text-gray-600">
+                The internal pressure that drives excellence... and exhaustion.
               </p>
             </div>
             
-            <div className="space-y-4 text-center">
-              <div className="text-3xl text-[#D4B86A]">🎯</div>
-              <h3 className="text-lg font-semibold text-white">Precision over Prescription</h3>
-              <p className="text-sm text-white/80">
-                Instead of generic solutions, we identify your specific interference patterns.
-              </p>
-            </div>
-            
-            <div className="space-y-4 text-center">
-              <div className="text-3xl text-[#D4B86A]">🌊</div>
-              <h3 className="text-lg font-semibold text-white">Embodied Awareness</h3>
-              <p className="text-sm text-white/80">
-                Leadership lives in the body. We notice how challenges show up physically.
-              </p>
-            </div>
-            
-            <div className="space-y-4 text-center">
-              <div className="text-3xl text-[#D4B86A]">⚖</div>
-              <h3 className="text-lg font-semibold text-white">Tension as Teacher</h3>
-              <p className="text-sm text-white/80">
-                Some tensions hold wisdom. We learn to sit with them rather than rush to resolve.
-              </p>
-            </div>
-            
-            <div className="space-y-4 text-center">
-              <div className="text-3xl text-[#D4B86A]">🔄</div>
-              <h3 className="text-lg font-semibold text-white">Integration Practice</h3>
-              <p className="text-sm text-white/80">
-                New awareness becomes sustainable when practised in real leadership moments.
-              </p>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
-      {/* Call & Response - Strategic Inadequacy */}
-      <Block background="cream" spacing="default">
-        <PageLayout>
-          <Grid columns="asymmetric" className="items-center">
-            {/* The Response - Social Proof First */}
+            {/* The Response - Social Proof */}
             <div className="space-y-6">
               <blockquote className="rounded-lg bg-white p-8 text-lg leading-relaxed text-gray-700">
+                &ldquo;The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.&rdquo;
+              </blockquote>
+              <cite className="text-base font-medium text-[#1A365D]">C-suite Member, Technology</cite>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* TESTIMONIAL - White Section */}
+      <section className="w-full bg-white py-12 md:py-16">
+        <PageLayout>
+          <div className="mx-auto max-w-4xl space-y-8">
+            <div className="rounded-lg bg-gray-50 p-8">
+              <blockquote className="mb-4 text-lg leading-relaxed text-gray-700">
                 &ldquo;Phillip is one of the most talented professionals I have ever met. His ability to swiftly and accurately pinpoint areas for development, combined with complete trustworthiness and acute business insight, makes him invaluable.&rdquo;
               </blockquote>
               <cite className="text-base font-medium text-[#1A365D]">Senior Civil Servant, Government</cite>
             </div>
-            
-            {/* The Call - Internal Struggle */}
-            <div className="flex justify-center">
-              <div className="aspect-square max-w-48 rounded-lg bg-[#7A9A7F] p-6">
-                <p className="text-center text-sm font-medium leading-relaxed text-white">
-                  &ldquo;Others seem to see the big picture clearer than I do&rdquo;
-                </p>
-              </div>
-            </div>
-          </Grid>
+          </div>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* Scattered Thought Bubbles Section */}
-      <Block spacing="default">
-        <PageLayout>
-          <Grid columns={3} className="gap-8">
-            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4">
-              <p className="text-center text-sm font-medium leading-relaxed text-white">
-                &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
-              </p>
-            </div>
-            
-            <div className="space-y-6 rounded-lg bg-gray-50 p-8">
-              <h3 className="font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D]">
-                Interference patterns
-              </h3>
-              <p className="text-lg leading-relaxed text-gray-700">
-                Self-doubt masquerading as humility. Perfectionism disguised as excellence. 
-                The need to have all the answers when questions might serve better.
-              </p>
-              <p className="text-base leading-relaxed text-gray-600">
-                We identify these patterns not to judge them, but to understand how they shape leadership choices.
-              </p>
-            </div>
-            
-            <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4">
-              <p className="text-center text-sm font-medium leading-relaxed text-white">
-                &ldquo;What if I trusted my own judgement?&rdquo;
-              </p>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
-
-      {/* Final CTA Section - Manual Tangerine */}
-      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
-        <PageLayout>
-          <div className="mx-auto max-w-3xl space-y-8 text-center">
+      {/* FINAL CTA - Tangerine Section */}
+      <section className="w-full bg-[#F96E1E] py-12 md:py-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl text-center">
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-white md:text-4xl">
               What would change if you could reduce the interference?
             </h2>
             
-            <p className="text-lg leading-relaxed text-white">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white">
               Professional coaching partnerships for senior executives who recognise that leadership development is an inside job.
             </p>
             
-            <div className="pt-4">
-              <a 
-                href="mailto:phillip@phillip-collins.com" 
+            <div className="mt-8">
+              <Link
+                href="mailto:phillip@phillip-collins.com"
                 className="inline-flex items-center justify-center rounded bg-white px-8 py-4 text-lg font-medium text-[#1A365D] transition-colors hover:bg-gray-100"
               >
                 phillip@phillip-collins.com
-              </a>
+              </Link>
             </div>
           </div>
-        </PageLayout>
+        </div>
       </section>
     </Layout>
   )
