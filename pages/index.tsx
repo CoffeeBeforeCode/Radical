@@ -357,7 +357,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="flex items-start mb-4">
                     <div className="flex-shrink-0 mr-8">
                         <img
@@ -377,18 +377,16 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+            <div className="md:col-span-2 relative overflow-hidden bg-[#F96E1E] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-white to-[#1A365D] opacity-30"></div>
                 
-                <div className="h-full flex flex-col">
-                    <div className="aspect-square rounded-lg bg-gradient-to-br from-[#F96E1E] to-[#1A365D] p-3 mb-4 flex items-center justify-center">
-                        <div className="w-2 h-8 bg-white rounded-full"></div>
+                <div className="flex items-center h-full">
+                    <div className="w-full">
+                        <h3 className="text-xl font-bold text-white mb-4">Framework Philosophy</h3>
+                        <p className="text-white/90 leading-relaxed">
+                            These approaches have emerged from thousands of hours of working with leaders who think deeply and act thoughtfully.
+                        </p>
                     </div>
-                    
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Framework Philosophy</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
-                        These approaches have emerged from thousands of hours of working with leaders who think deeply and act thoughtfully.
-                    </p>
                 </div>
             </div>
 
