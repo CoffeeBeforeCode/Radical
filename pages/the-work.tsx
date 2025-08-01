@@ -21,13 +21,10 @@ export default function TheWork() {
                 
                 <div className="max-w-3xl space-y-6">
                   <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
-                    The real shift in leadership doesn&apos;t happen when we do something new.
+                    The real shift in leadership doesn&apos;t begin with doing something different.
                   </p>
                   <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
-                    It happens when we see something new.
-                  </p>
-                  <p className="text-xl font-medium text-[#1A365D] md:text-2xl">
-                    And begin to lead from there.
+                    It begins when something deeper rises to the surface.
                   </p>
                 </div>
               </div>
