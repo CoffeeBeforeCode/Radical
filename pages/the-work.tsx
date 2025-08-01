@@ -28,7 +28,7 @@ export default function TheWork() {
               <p className="text-base leading-relaxed text-gray-600">
                 Through embodied perception and precise observation, I help global executives identify and reduce what&apos;s truly getting in their way.
               </p>
-            </Grid>
+            </div>
           </div>
         </PageLayout>
       </Block>
