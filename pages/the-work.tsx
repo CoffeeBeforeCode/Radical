@@ -261,8 +261,8 @@ export default function TheWork() {
         </PageLayout>
       </Block>
 
-      {/* Final CTA Block */}
-      <Block background="tangerine" spacing="default">
+      {/* Final CTA Section - Manual Tangerine */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
           <div className="mx-auto max-w-3xl space-y-8 text-center">
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-white md:text-4xl">
@@ -283,7 +283,7 @@ export default function TheWork() {
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
     </Layout>
   )
 }
