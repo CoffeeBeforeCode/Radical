@@ -1,4 +1,5 @@
 import Layout, { Block, Grid, PageLayout } from '../components/Layout'
+import Image from 'next/image'
 
 export default function TheWork() {
   return (
@@ -54,7 +55,6 @@ export default function TheWork() {
                     
                     <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
                       <div className="text-center space-y-4">
-                        <div className="text-6xl">🤔</div>
                         <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
                           &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
                         </p>
@@ -66,37 +66,43 @@ export default function TheWork() {
                   </div>
                 </div>
               </div>
+              
+              {/* CTAs - Index Page Pattern */}
+              <div className="w-full mt-12">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:justify-start">
+                    <a 
+                      href="mailto:phillip@phillip-collins.com"
+                      className="inline-flex items-center justify-center rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-0.5"
+                    >
+                      Begin here
+                    </a>
+                    <a 
+                      href="/this-is-personal"
+                      className="inline-flex items-center justify-center rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-medium text-[#1A365D] transition-all duration-300 hover:bg-[#1A365D] hover:text-white"
+                    >
+                      My approach
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Leadership Equation Block - Navy */}
+      {/* EQ-i Image Section - Navy Background */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <Grid columns="asymmetric" className="items-center">
-            <div className="space-y-8">
-              <div className="font-['Waiting_for_the_Sunrise'] text-6xl font-bold leading-none text-white md:text-8xl">
-                PE = PO - I
-              </div>
-              <div className="text-xl text-gray-300 md:text-2xl">
-                Performance = Potential - Interference
-              </div>
-              <p className="max-w-3xl text-lg leading-relaxed text-gray-200">
-                We don&apos;t push for more. We remove what&apos;s in the way.<br />
-                Most leaders already possess remarkable potential.
-              </p>
-            </div>
-            
-            {/* Second Thought Bubble */}
-            <div className="flex justify-center">
-              <div className="aspect-square max-w-48 rounded-lg bg-[#7A9A7F] p-6">
-                <p className="text-center text-sm font-medium leading-relaxed text-white">
-                  &ldquo;I don&apos;t really belong at this level&rdquo;
-                </p>
-              </div>
-            </div>
-          </Grid>
+          <div className="flex justify-center">
+            <Image
+              src="/images/you-eqi.png"
+              alt="EQ-i Leadership Assessment"
+              width={800}
+              height={450}
+              className="rounded-lg"
+            />
+          </div>
         </PageLayout>
       </Block>
 
