@@ -12,21 +12,21 @@ export default function TheWorkPage() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
             {/* Main Hero Content */}
             <div className="p-6 md:col-span-2 md:p-8">
-              <h1 className="mb-6 text-4xl font-bold leading-tight text-[#1A365D] md:text-6xl font-['Waiting_for_the_Sunrise']">
+              <h1 className="mb-6 font-['Waiting_for_the_Sunrise'] text-4xl md:text-6xl font-bold leading-tight text-[#1A365D]">
                 The work beneath the work
               </h1>
-              <p className="mb-8 text-lg leading-relaxed text-gray-700 md:text-xl">
-                Most senior leaders already have the <span className="font-semibold text-[#F96E1E]">potential</span>. 
+              <p className="mb-8 text-lg md:text-xl leading-relaxed text-gray-700">
+                Most senior leaders already have the <span className="text-[#F96E1E] font-semibold">potential</span>. 
                 What gets in their way isn&apos;t lack of capability—it&apos;s the interference that blocks natural leadership excellence.
               </p>
-              <p className="text-base leading-relaxed text-gray-600 md:text-lg">
+              <p className="text-base md:text-lg leading-relaxed text-gray-600">
                 Through embodied perception and precise observation, I help global executives identify and reduce what&apos;s truly getting in their way.
               </p>
             </div>
             
             {/* EQ Question Bubble */}
-            <div className="aspect-square bg-[#F96E1E] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;What&apos;s the story I tell myself about who I am as a leader; is it still true?&rdquo;
               </p>
             </div>
@@ -49,21 +49,21 @@ export default function TheWorkPage() {
             {/* Equation Block */}
             <div className="p-6 md:col-span-2 md:p-8">
               <div className="mb-6 text-center">
-                <div className="text-6xl font-bold text-white md:text-8xl font-['Waiting_for_the_Sunrise']">
+                <div className="font-['Waiting_for_the_Sunrise'] text-6xl md:text-8xl font-bold text-white">
                   PE = PO - I
                 </div>
-                <div className="mt-4 text-xl text-gray-300 md:text-2xl">
+                <div className="mt-4 text-xl md:text-2xl text-gray-300">
                   Performance = Potential - Interference
                 </div>
               </div>
-              <p className="text-base leading-relaxed text-gray-200 md:text-lg">
+              <p className="text-base md:text-lg leading-relaxed text-gray-200">
                 Most leaders aren&apos;t missing skills or strategies. They&apos;re carrying interference—limiting beliefs, environmental pressures, values conflicts—that blocks their natural capabilities.
               </p>
             </div>
             
             {/* EQ Question */}
-            <div className="aspect-square bg-[#7A9A7F] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;What would it take to let more of the real me come through in my leadership?&rdquo;
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function TheWorkPage() {
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-[#1A365D] md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-[#1A365D]">
               Three Core Methodologies
             </h2>
             <p className="mt-4 text-lg text-gray-700">
@@ -104,8 +104,8 @@ export default function TheWorkPage() {
             </div>
             
             {/* EQ Block */}
-            <div className="aspect-square bg-[#F96E1E] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;Where do I feel most connected; what helps make that happen?&rdquo;
               </p>
             </div>
@@ -119,7 +119,7 @@ export default function TheWorkPage() {
             </div>
             
             {/* Sitting With Tension */}
-            <div className="bg-white p-6 md:col-span-2">
+            <div className="md:col-span-2 bg-white p-6">
               <h3 className="mb-4 text-xl font-semibold text-[#7E2D40]">Sitting With Tension</h3>
               <p className="text-base leading-relaxed text-gray-700">
                 Building capacity to hold complex tensions without rushing to resolution. The most important outcome isn&apos;t resolving conflict but developing emotional flexibility to navigate wisely.
@@ -127,8 +127,8 @@ export default function TheWorkPage() {
             </div>
             
             {/* EQ Block 2 */}
-            <div className="aspect-square bg-[#7A9A7F] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#7A9A7F] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;What helps me choose well, especially when it&apos;s hard?&rdquo;
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function TheWorkPage() {
       <section className="w-full bg-white py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-[#1A365D] md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-[#1A365D]">
               The Internal Leadership Challenge
             </h2>
           </div>
@@ -148,7 +148,7 @@ export default function TheWorkPage() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
             {/* Internal Struggle 1 */}
             <div className="bg-[#F8F5EB] p-6 md:col-span-2">
-              <h3 className="mb-4 text-lg font-semibold text-[#7E2D40] font-['Waiting_for_the_Sunrise']">
+              <h3 className="mb-4 font-['Waiting_for_the_Sunrise'] text-lg font-semibold text-[#7E2D40]">
                 &ldquo;Everyone thinks I&apos;ve got this sorted—but I&apos;m not sure I do.&rdquo;
               </h3>
               <p className="text-sm leading-relaxed text-gray-700">
@@ -157,7 +157,7 @@ export default function TheWorkPage() {
             </div>
             
             {/* Testimonial Response */}
-            <div className="bg-white p-6 md:col-span-2 border-l-4 border-[#F96E1E]">
+            <div className="md:col-span-2 border-l-4 border-[#F96E1E] bg-white p-6">
               <blockquote className="mb-4 text-base leading-relaxed text-gray-700">
                 &ldquo;Phillip is one of the most talented professionals I have ever met. His ability to swiftly and accurately pinpoint areas for development, combined with complete trustworthiness and acute business insight, makes him invaluable.&rdquo;
               </blockquote>
@@ -165,8 +165,8 @@ export default function TheWorkPage() {
             </div>
             
             {/* Internal Struggle 2 */}
-            <div className="bg-[#F8F5EB] p-6 md:col-span-2">
-              <h3 className="mb-4 text-lg font-semibold text-[#7E2D40] font-['Waiting_for_the_Sunrise']">
+            <div className="md:col-span-2 bg-[#F8F5EB] p-6">
+              <h3 className="mb-4 font-['Waiting_for_the_Sunrise'] text-lg font-semibold text-[#7E2D40]">
                 &ldquo;I keep micromanaging even though I know it&apos;s counterproductive.&rdquo;
               </h3>
               <p className="text-sm leading-relaxed text-gray-700">
@@ -175,7 +175,7 @@ export default function TheWorkPage() {
             </div>
             
             {/* Testimonial Response 2 */}
-            <div className="bg-white p-6 md:col-span-2 border-l-4 border-[#F96E1E]">
+            <div className="md:col-span-2 border-l-4 border-[#F96E1E] bg-white p-6">
               <blockquote className="mb-4 text-base leading-relaxed text-gray-700">
                 &ldquo;My team and I have never had such honest conversations until I started working with Phillip. His ability to create a safe space where challenging topics can be discussed has transformed how we operate as a leadership team.&rdquo;
               </blockquote>
@@ -189,8 +189,8 @@ export default function TheWorkPage() {
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="p-6 md:col-span-3 md:p-8">
-              <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <div className="md:col-span-3 p-6 md:p-8">
+              <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-white">
                 How the Coaching Actually Works
               </h2>
               <div className="space-y-6">
@@ -216,8 +216,8 @@ export default function TheWorkPage() {
             </div>
             
             {/* EQ Question */}
-            <div className="aspect-square bg-[#F96E1E] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#F96E1E] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;What do I reach for when things feel too much?&rdquo;
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function TheWorkPage() {
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-[#1A365D] md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-[#1A365D]">
               Professional Transformation Results
             </h2>
             <p className="mt-4 text-lg text-gray-700">
@@ -257,8 +257,8 @@ export default function TheWorkPage() {
             </div>
             
             {/* EQ Question */}
-            <div className="aspect-square bg-[#1A365D] p-4 rounded-lg">
-              <p className="text-white text-sm font-medium leading-relaxed">
+            <div className="aspect-square rounded-lg bg-[#1A365D] p-4">
+              <p className="text-sm font-medium leading-relaxed text-white">
                 &ldquo;What becomes possible when I stop questioning whether I deserve to be in the room?&rdquo;
               </p>
             </div>
@@ -273,7 +273,7 @@ export default function TheWorkPage() {
             </div>
             
             {/* Authority Testimonial */}
-            <div className="bg-[#1A365D] p-6 md:col-span-2">
+            <div className="md:col-span-2 bg-[#1A365D] p-6">
               <blockquote className="mb-4 text-base leading-relaxed text-white">
                 &ldquo;His experience at the highest level makes him incisive, honest and invaluable. Completely trustworthy with extremely high integrity, acute business insight and many years of diverse experience to draw upon.&rdquo;
               </blockquote>
@@ -281,7 +281,7 @@ export default function TheWorkPage() {
             </div>
             
             {/* Country Head Results */}
-            <div className="bg-white p-6 md:col-span-2">
+            <div className="md:col-span-2 bg-white p-6">
               <h3 className="mb-3 text-lg font-semibold text-[#1A365D]">Multiple Country Heads</h3>
               <p className="mb-4 text-sm leading-relaxed text-gray-700">
                 Confidence restoration, team transformation, and self-empowerment through values clarification and interference reduction across engineering and manufacturing contexts.
@@ -296,8 +296,8 @@ export default function TheWorkPage() {
       <section className="w-full bg-white py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="p-6 md:col-span-3">
-              <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <div className="md:col-span-3 p-6">
+              <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-[#1A365D]">
                 Boardroom to Breakthrough
               </h2>
               <div className="space-y-4">
@@ -333,7 +333,7 @@ export default function TheWorkPage() {
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="bg-white p-6 md:col-span-2">
+            <div className="md:col-span-2 bg-white p-6">
               <blockquote className="mb-4 text-lg leading-relaxed text-gray-700">
                 &ldquo;Phillip has the ability to uncover challenges that leaders may not even be aware of. He listens deeply without rushing to &lsquo;fix&rsquo; the client, giving people space to work through their own challenges and tap into their innate resourcefulness.&rdquo;
               </blockquote>
@@ -341,9 +341,9 @@ export default function TheWorkPage() {
             </div>
             
             {/* Integration Approach */}
-            <div className="p-6 md:col-span-2">
+            <div className="md:col-span-2 p-6">
               <h3 className="mb-4 text-xl font-semibold text-white">Integration Question</h3>
-              <p className="mb-4 text-lg leading-relaxed text-[#F96E1E] font-['Waiting_for_the_Sunrise']">
+              <p className="mb-4 font-['Waiting_for_the_Sunrise'] text-lg leading-relaxed text-[#F96E1E]">
                 &ldquo;What would leadership look like if I truly believed I belonged here?&rdquo;
               </p>
               <p className="text-base leading-relaxed text-gray-200">
@@ -358,8 +358,33 @@ export default function TheWorkPage() {
       <section className="w-full bg-[#F96E1E] py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <div className="p-6 md:col-span-3">
-              <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl font-['Waiting_for_the_Sunrise']">
+            <div className="md:col-span-3 p-6">
+              <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl font-bold text-white">
+                Ready to explore what&apos;s getting in your way?
+              </h2>
+              <p className="mb-6 text-lg leading-relaxed text-white">
+                Professional coaching partnerships for senior executives who need space to explore the internal challenges that external performance demands don&apos;t address.
+              </p>
+              <div className="space-y-4">
+                <p className="text-base leading-relaxed text-orange-100">
+                  Initial conversation: 90 minutes to map your leadership context and explore whether the approach fits your needs.
+                </p>
+                <p className="text-base leading-relaxed text-orange-100">
+                  Ongoing partnership: Monthly 90-minute sessions with email support between meetings.
+                </p>
+              </div>
+            </div>
+            
+            {/* Contact CTA */}
+            <div className="rounded-lg bg-white p-6">
+              <h3 className="mb-4 text-lg font-semibold text-[#1A365D]">Start the Conversation</h3>
+              <p className="mb-4 text-sm leading-relaxed text-gray-700">
+                Email to explore whether this approach fits your current leadership context.
+              </p>
+              <a 
+                href="mailto:phillip@phillip-collins.com" 
+                className="inline-block w-full rounded bg-[#1A365D] px-4 py-3 text-center font-medium text-white transition-colors duration-300 hover:bg-[#2A4A6B]"
+              >Waiting_for_the_Sunrise']">
                 Ready to explore what&apos;s getting in your way?
               </h2>
               <p className="mb-6 text-lg leading-relaxed text-white">
