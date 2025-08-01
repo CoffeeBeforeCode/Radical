@@ -94,13 +94,13 @@ export default function TheWork() {
       {/* EQ-i Image Section - Navy Background */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <div className="flex justify-center">
+          <div className="flex items-center justify-center">
             <Image
               src="/images/you-eqi.png"
               alt="EQ-i Leadership Assessment"
               width={800}
               height={450}
-              className="rounded-lg"
+              className="rounded-lg object-contain"
             />
           </div>
         </PageLayout>
