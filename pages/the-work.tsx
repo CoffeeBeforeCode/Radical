@@ -30,14 +30,6 @@ export default function TheWork() {
                     And begin to lead from there.
                   </p>
                 </div>
-                
-                <div className="max-w-2xl space-y-4">
-                  <p className="text-base leading-relaxed text-gray-600 md:text-lg">
-                    I work in frameworks — but never formulas.<br />
-                    What you&apos;ll see here are tools I return to often with leaders:<br />
-                    not as answers, but as invitations.
-                  </p>
-                </div>
               </div>
               
               {/* Quote + Executive Question - Index Page Pattern */}
