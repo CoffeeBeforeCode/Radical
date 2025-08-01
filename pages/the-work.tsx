@@ -86,20 +86,15 @@ export default function TheWork() {
         </div>
       </section>
 
-      {/* LEADERSHIP EQUATION - Navy Section */}
+      {/* EQ-i IMAGE - Navy Section */}
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl text-center">
-            <div className="font-['Waiting_for_the_Sunrise'] text-6xl font-bold leading-none text-white md:text-8xl">
-              PE = PO - I
-            </div>
-            <div className="mt-4 text-xl text-gray-300 md:text-2xl">
-              Performance = Potential - Interference
-            </div>
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-gray-200">
-              We don&apos;t push for more. We remove what&apos;s in the way.<br />
-              Most leaders already possess remarkable potential.
-            </p>
+          <div className="mx-auto max-w-7xl flex justify-center">
+            <img
+              src="/images/your-eqi.png"
+              alt="EQ-i Leadership Assessment"
+              className="w-full h-auto object-contain max-w-4xl"
+            />
           </div>
         </div>
       </section>
