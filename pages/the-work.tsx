@@ -384,31 +384,6 @@ export default function TheWorkPage() {
               <a 
                 href="mailto:phillip@phillip-collins.com" 
                 className="inline-block w-full rounded bg-[#1A365D] px-4 py-3 text-center font-medium text-white transition-colors duration-300 hover:bg-[#2A4A6B]"
-              >Waiting_for_the_Sunrise']">
-                Ready to explore what&apos;s getting in your way?
-              </h2>
-              <p className="mb-6 text-lg leading-relaxed text-white">
-                Professional coaching partnerships for senior executives who need space to explore the internal challenges that external performance demands don&apos;t address.
-              </p>
-              <div className="space-y-4">
-                <p className="text-base leading-relaxed text-orange-100">
-                  Initial conversation: 90 minutes to map your leadership context and explore whether the approach fits your needs.
-                </p>
-                <p className="text-base leading-relaxed text-orange-100">
-                  Ongoing partnership: Monthly 90-minute sessions with email support between meetings.
-                </p>
-              </div>
-            </div>
-            
-            {/* Contact CTA */}
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="mb-4 text-lg font-semibold text-[#1A365D]">Start the Conversation</h3>
-              <p className="mb-4 text-sm leading-relaxed text-gray-700">
-                Email to explore whether this approach fits your current leadership context.
-              </p>
-              <a 
-                href="mailto:phillip@phillip-collins.com" 
-                className="inline-block w-full bg-[#1A365D] py-3 px-4 text-center text-white font-medium rounded hover:bg-[#2A4A6B] transition-colors duration-300"
               >
                 phillip@phillip-collins.com
               </a>
