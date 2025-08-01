@@ -7,47 +7,69 @@ export default function TheWork() {
       description="Professional leadership coaching for senior executives. The work beneath the work."
       canonical="/the-work"
     >
-      {/* Hero Block - Aggressive Opening */}
-      <Block spacing="default">
-        <PageLayout>
-          <Grid columns="asymmetric" className="items-center">
-            <div className="space-y-8">
-              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-                The work beneath the work.
-              </h1>
-              
-              <div className="space-y-6">
-                <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
-                  The real shift in leadership doesn&apos;t happen when we do something new.
-                </p>
-                <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
-                  It happens when we see something new.
-                </p>
-                <p className="text-xl font-medium text-[#1A365D] md:text-2xl">
-                  And begin to lead from there.
-                </p>
+      {/* FULL-WIDTH HERO - Matches Index Page Structure */}
+      <section className="relative w-full min-h-screen bg-white pt-20">
+        <div className="flex min-h-[calc(100vh-5rem)] items-center">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl">
+              {/* Hero Content */}
+              <div className="max-w-4xl space-y-8">
+                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
+                  The work beneath the work.
+                </h1>
+                
+                <div className="max-w-3xl space-y-6">
+                  <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
+                    The real shift in leadership doesn&apos;t happen when we do something new.
+                  </p>
+                  <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
+                    It happens when we see something new.
+                  </p>
+                  <p className="text-xl font-medium text-[#1A365D] md:text-2xl">
+                    And begin to lead from there.
+                  </p>
+                </div>
+                
+                <div className="max-w-2xl space-y-4">
+                  <p className="text-base leading-relaxed text-gray-600 md:text-lg">
+                    I work in frameworks — but never formulas.<br />
+                    What you&apos;ll see here are tools I return to often with leaders:<br />
+                    not as answers, but as invitations.
+                  </p>
+                </div>
               </div>
               
-              <div className="max-w-2xl space-y-4">
-                <p className="text-base leading-relaxed text-gray-600 md:text-lg">
-                  I work in frameworks — but never formulas.<br />
-                  What you&apos;ll see here are tools I return to often with leaders:<br />
-                  not as answers, but as invitations.
-                </p>
+              {/* Quote + Executive Question - Index Page Pattern */}
+              <div className="w-full mt-8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                      <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                        Most senior leaders already have the <strong>potential</strong>.<br />
+                        What gets in their way isn&apos;t lack of capability—<br />
+                        it&apos;s the interference that blocks<br />
+                        natural leadership <strong>excellence</strong>.
+                      </p>
+                    </div>
+                    
+                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
+                      <div className="text-center space-y-4">
+                        <div className="text-6xl">🤔</div>
+                        <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
+                          &ldquo;Am I trusting my own judgement, or waiting for a green light?&rdquo;
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Sometimes you already know; you just haven&apos;t backed yourself yet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            {/* Thought Bubble */}
-            <div className="flex justify-center">
-              <div className="aspect-square max-w-48 rounded-lg bg-[#F96E1E] p-6">
-                <p className="text-center text-sm font-medium leading-relaxed text-white">
-                  &ldquo;What&apos;s the story I tell myself about who I am; is it still true?&rdquo;
-                </p>
-              </div>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
+          </div>
+        </div>
+      </section>
 
       {/* Leadership Equation Block - Navy */}
       <Block background="navy" spacing="default">
