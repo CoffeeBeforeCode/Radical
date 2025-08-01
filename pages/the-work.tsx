@@ -84,6 +84,7 @@ export default function TheWork() {
                   Building capacity to hold complex tensions without rushing to resolution. Developing emotional flexibility to navigate wisely.
                 </p>
               </div>
+            </Grid>
             </div>
           </div>
         </PageLayout>
