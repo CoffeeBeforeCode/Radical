@@ -27,8 +27,7 @@ export default function ThisIsPersonal() {
                 
                 <p className="text-lg leading-relaxed text-gray-600">
                   Their questions. Their internal contradictions.<br />
-                  The moment they stopped performing leadership<br />
-                  and started <em>living</em> it.
+                  The moment they stopped performing leadership and started <em>living</em> it.
                 </p>
                 
                 <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
