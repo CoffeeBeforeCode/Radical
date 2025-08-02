@@ -44,7 +44,7 @@ export default function TheWork() {
                     
                     <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
                       <img
-                        src="/images/you-eqi.png"
+                        src="/images/Bubble-9.png"
                         alt="Am I trusting my own judgement, or waiting for a green light?"
                         className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                       />
