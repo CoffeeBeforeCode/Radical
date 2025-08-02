@@ -64,7 +64,7 @@ export default function ThisIsPersonal() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur md:col-span-2">
               <div className="space-y-6 text-white">
                 <p className="text-lg leading-relaxed">
-                  In childhood, I was described as a <strong>&ldquo;sensitive child.&rdquo;</strong> For twenty years, 
+                  In childhood, I was described as a <strong>&ldquo;sensitive child.&rdquo;</strong> For years, 
                   I received this as a weakness. A belief I carried that shaped how I saw myself 
                   and moved through the world.
                 </p>
