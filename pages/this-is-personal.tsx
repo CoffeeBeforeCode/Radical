@@ -132,13 +132,13 @@ export default function ThisIsPersonal() {
                 <p className="text-lg leading-relaxed text-gray-700">
                   I don&apos;t push. I don&apos;t prescribe. I observe, then invite.<br />
                   What&apos;s said and unsaid.<br />
-                  What&apos;s felt but not yet named.
+                  What&apos;s felt, and not yet named.
                 </p>
                 
                 <p className="text-lg leading-relaxed text-gray-700">
                   I blend the strategic with the emotional,<br />
                   the measurable with the intuitive,<br />
-                  the urgent with the important.
+                  the pressing with the timeless.
                 </p>
               </div>
             </div>
