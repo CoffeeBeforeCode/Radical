@@ -10,7 +10,7 @@ export default function AtHome() {
       canonical="/at-home"
     >
       {/* Hero Section */}
-      <Block spacing="hero">
+      <Block spacing="spacious">
         <div className="relative flex min-h-[calc(100vh-5rem)] items-center">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
