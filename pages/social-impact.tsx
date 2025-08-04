@@ -8,100 +8,76 @@ export default function SocialImpact() {
       description="Demonstrating leadership in the community domain through mentoring over 1,000 unemployed individuals in entrepreneurship. Five domains of integrated leadership: Self, Work, Community, Family, Friendship."
       canonical="/social-impact"
     >
-      {/* Hero Block - Leadership Beyond the Workplace */}
-      <Block spacing="spacious">
+      {/* HERO SECTION - White background with clear headline */}
+      <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="mx-auto max-w-4xl text-center space-y-8">
-            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl md:text-6xl text-[#1A365D] leading-tight">
-              Leadership beyond the workplace
-            </h1>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+            {/* Main headline - spans 3 columns */}
+            <div className="md:col-span-3">
+              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+                Leadership beyond the <span className="text-[#F96E1E]">workplace</span>
+              </h1>
+              
+              <div className="mt-8 space-y-6">
+                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
+                  <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                    Leadership is not a hat we put on.<br />
+                    It&apos;s a way we show up &mdash; everywhere.
+                  </p>
+                </div>
+                
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/contact"
+                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                  >
+                    Explore integrated leadership →
+                  </Link>
+                  <Link
+                    href="/the-work"
+                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                  >
+                    The Work
+                  </Link>
+                </div>
+              </div>
+            </div>
             
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Leadership is not a hat we put on.<br />
-              It&apos;s a way we show up &mdash; everywhere.
+            {/* Side content placeholder - spans 1 column */}
+            <div className="md:col-span-1 flex items-center justify-center">
+              <div className="aspect-square rounded-lg bg-[#7A9A7F] p-6 flex items-center justify-center max-w-[200px]">
+                <p className="text-white text-sm font-medium text-center leading-relaxed">
+                  &ldquo;Where do you show up as a leader when no one&apos;s watching?&rdquo;
+                </p>
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* FULL-WIDTH FIVE DOMAINS IMAGE BLOCK */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center mb-8">
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight mb-4">
+              The Five Domains of Intentional Leadership
+            </h2>
+            <p className="text-lg text-white/90 leading-relaxed mx-auto max-w-3xl">
+              Authentic leadership integrates across every context. These five domains represent where leadership lives and grows.
             </p>
           </div>
-        </PageLayout>
-      </Block>
-
-      {/* Five Domains - Ring Style Layout */}
-      <Block background="cream" spacing="spacious">
-        <PageLayout>
-          <div className="mx-auto max-w-6xl">
-            <div className="text-center mb-16">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight mb-6">
-                The Five Domains of Intentional Leadership
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mx-auto max-w-3xl">
-                Authentic leadership integrates across every context. These five domains represent where leadership lives and grows.
-              </p>
-            </div>
-
-            {/* Central Hub */}
-            <div className="text-center mb-12">
-              <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-[#1A365D] text-center md:h-40 md:w-40">
-                <div className="text-white">
-                  <div className="font-['Waiting_for_the_Sunrise'] text-2xl md:text-3xl">You</div>
-                  <div className="text-sm font-medium">at the centre</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Five Domains Grid */}
-            <Grid columns={5} className="gap-6 md:gap-8">
-              <div className="text-center space-y-4">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#7E2D40] text-2xl text-white md:h-24 md:w-24 md:text-3xl">
-                  🧘‍♂️
-                </div>
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl text-[#7E2D40] md:text-2xl">Self</h3>
-                <p className="text-sm text-gray-600">
-                  The origin of all leadership
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#1A365D] text-2xl text-white md:h-24 md:w-24 md:text-3xl">
-                  💼
-                </div>
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl text-[#1A365D] md:text-2xl">Work</h3>
-                <p className="text-sm text-gray-600">
-                  Influence beyond authority
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#7A9A7F] text-2xl text-white md:h-24 md:w-24 md:text-3xl">
-                  🌍
-                </div>
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl text-[#7A9A7F] md:text-2xl">Community</h3>
-                <p className="text-sm text-gray-600">
-                  Belonging, not broadcasting
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#D4B86A] text-2xl text-white md:h-24 md:w-24 md:text-3xl">
-                  👨‍👩‍👧‍👦
-                </div>
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl text-[#D4B86A] md:text-2xl">Family</h3>
-                <p className="text-sm text-gray-600">
-                  Presence before perfection
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#F96E1E] text-2xl text-white md:h-24 md:w-24 md:text-3xl">
-                  🤝
-                </div>
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl text-[#F96E1E] md:text-2xl">Friendship</h3>
-                <p className="text-sm text-gray-600">
-                  Mutuality over performance
-                </p>
-              </div>
-            </Grid>
+          
+          <div className="rounded-lg overflow-hidden">
+            <Image
+              src="/images/The-Five-Domains-of-Intentional-Leadership.png"
+              alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
+              width={1200}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
       {/* Philosophy Block */}
       <Block spacing="default">
