@@ -402,43 +402,6 @@ export default function SocialImpact() {
         </PageLayout>
       </Block>
 
-      {/* Results & Impact Metrics */}
-      <Block background="cream" spacing="default">
-        <PageLayout>
-          <div className="text-center space-y-12">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight">
-              Leadership impact measured
-            </h2>
-
-            <Grid columns={3} className="gap-8">
-              <div className="text-center space-y-4">
-                <div className="text-4xl md:text-5xl font-bold text-[#F96E1E]">1,000+</div>
-                <h3 className="text-lg font-semibold text-[#1A365D]">Individuals Mentored</h3>
-                <p className="text-gray-600">
-                  Unemployed individuals supported in creating employment opportunities
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="text-4xl md:text-5xl font-bold text-[#7A9A7F]">5</div>
-                <h3 className="text-lg font-semibold text-[#1A365D]">Business Fundamentals</h3>
-                <p className="text-gray-600">
-                  Core framework areas providing structured entrepreneurship support
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="text-4xl md:text-5xl font-bold text-[#D4B86A]">15+</div>
-                <h3 className="text-lg font-semibold text-[#1A365D]">Years Active</h3>
-                <p className="text-gray-600">
-                  Sustained community leadership demonstration across multiple contexts
-                </p>
-              </div>
-            </Grid>
-          </div>
-        </PageLayout>
-      </Block>
-
       {/* Closing CTA Block */}
       <Block background="navy" spacing="default">
         <PageLayout>
