@@ -9,59 +9,53 @@ export default function AtHome() {
       canonical="/at-home"
     >
       {/* Hero Section */}
-      <Block spacing="spacious">
-        <div className="relative flex min-h-[calc(100vh-5rem)] items-center">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-7xl">
-              {/* Hero Content */}
-              <div className="max-w-4xl space-y-8">
-                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  Where leadership<br />
-                  <span className="font-light italic text-[#F96E1E]">lives too</span>.
-                </h1>
-              </div>
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+            {/* Main headline - spans 3 columns */}
+            <div className="md:col-span-3">
+              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+                Where leadership<br />
+                <span className="text-[#F96E1E]">lives too</span>
+              </h1>
               
-              {/* Quote + Bubble Image Grid */}
-              <div className="w-full mt-8">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
-                      <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                        Leadership isn&apos;t something we switch on and off.<br />
-                        It lives in the <strong>kitchen</strong>.<br />
-                        In <strong>conversation</strong>.<br />
-                        In the <strong>ordinary</strong>.
-                      </p>
-                    </div>
-                    
-                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
-                      <div className="aspect-square flex items-center justify-center rounded-lg bg-[#1A365D] p-4 size-full">
-                        <div className="text-8xl">🏠</div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="mt-8 space-y-6">
+                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px]">
+                  <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                    Leadership isn&apos;t something we switch on and off.<br />
+                    It lives in the <strong>kitchen</strong>.<br />
+                    In <strong>conversation</strong>.<br />
+                    In the <strong>ordinary</strong>.
+                  </p>
                 </div>
               </div>
-              
-              {/* CTA Buttons */}
-              <div className="mt-12 flex flex-wrap justify-center gap-4 md:justify-start">
-                <Link
-                  href="/the-work"
-                  className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                >
-                  Explore the work
-                </Link>
-                <Link
-                  href="/this-is-personal"
-                  className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                >
-                  This is personal
-                </Link>
+            </div>
+            
+            {/* Bubble image placeholder - single column */}
+            <div className="flex items-center justify-center">
+              <div className="aspect-square w-full max-w-[200px] rounded-lg bg-[#1A365D] flex items-center justify-center">
+                <div className="text-6xl text-white">🏠</div>
               </div>
             </div>
           </div>
-        </div>
-      </Block>
+          
+          {/* CTA Buttons */}
+          <div className="mt-12 flex flex-wrap justify-center gap-4 md:justify-start">
+            <Link
+              href="/the-work"
+              className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+            >
+              Explore the work
+            </Link>
+            <Link
+              href="/this-is-personal"
+              className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+            >
+              This is personal
+            </Link>
+          </div>
+        </PageLayout>
+      </section>
 
       {/* Cooking as Leadership Practice */}
       <Block background="cream" spacing="default">
