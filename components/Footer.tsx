@@ -33,10 +33,10 @@ const Footer: React.FC = () => {
   
   return (
     <footer>
-      {/* Signature statement - prominent top positioning with tangerine background */}
-      <div className="bg-[#F96E1E] py-8">
+      {/* Signature statement - prominent top positioning with cream background */}
+      <div className="bg-[#F8F5EB] py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-['Waiting_for_the_Sunrise'] text-xl md:text-2xl text-[#F8F5EB]">
+          <p className="font-['Waiting_for_the_Sunrise'] text-xl md:text-2xl text-[#F96E1E]">
             Leadership is a <strong>practice</strong>, not a destination
           </p>
         </div>
@@ -60,9 +60,6 @@ const Footer: React.FC = () => {
               <div className="text-white/70 space-y-3">
                 <p className="text-sm leading-relaxed">
                   My coaching partnerships have spanned diverse contexts and cultures, allowing me to work with senior leaders across continents and industries.
-                </p>
-                <p className="text-sm leading-relaxed">
-                  This global experience has deepened my understanding of leadership challenges across different cultural contexts, creating space for authentic leadership development that transcends traditional boundaries.
                 </p>
                 <p className="text-sm leading-relaxed">
                   Whether working with emerging leaders finding their voice or seasoned executives navigating complex transitions, the focus remains the same: reducing interference to unlock potential.
@@ -129,13 +126,15 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Geographic credibility and copyright */}
-          <div className="mt-8 border-t border-white/10 pt-8 text-center space-y-2">
-            <p className="text-sm text-white/60">
-              Based in the UK, working globally across Europe, Middle East, Americas, and Asia Pacific
-            </p>
-            <p className="text-sm text-white/60">
-              © {currentYear} Phillip Collins. Reducing interference since 2011.
-            </p>
+          <div className="mt-8 border-t border-white/10 pt-8">
+            <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center md:space-y-0">
+              <p className="text-sm text-white/60 text-center md:text-left">
+                © {currentYear} Phillip Collins. Reducing interference since 2011.
+              </p>
+              <p className="text-sm text-white/60 text-center md:text-right">
+                Based in the UK, working globally across Europe, Middle East, Americas, and Asia Pacific
+              </p>
+            </div>
           </div>
         </div>
       </div>
