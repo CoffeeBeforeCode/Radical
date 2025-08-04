@@ -55,7 +55,7 @@ export default function SocialImpact() {
         </PageLayout>
       </section>
 
-      {/* FULL-WIDTH FIVE DOMAINS IMAGE BLOCK */}
+      {/* FULL-WIDTH FIVE DOMAINS BLOCK - Dark Blue Background */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
           <div className="text-center mb-8">
@@ -67,14 +67,13 @@ export default function SocialImpact() {
             </p>
           </div>
           
-          <div className="rounded-lg overflow-hidden">
-            <Image
-              src="/images/The-Five-Domains-of-Intentional-Leadership.png"
-              alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
-              width={1200}
-              height={600}
-              className="w-full h-auto object-contain"
-            />
+          <div className="rounded-lg bg-white/10 p-8 text-center">
+            <p className="text-white/80 text-lg font-medium">
+              [The-Five-Domains-of-Intentional-Leadership.png will be placed here]
+            </p>
+            <p className="text-white/60 text-sm mt-2">
+              Landscape image showing the integration of Self, Work, Community, Family, and Friendship domains
+            </p>
           </div>
         </PageLayout>
       </section>
