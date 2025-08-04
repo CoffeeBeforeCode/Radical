@@ -56,9 +56,9 @@ export default function SocialImpact() {
       </section>
 
       {/* FULL-WIDTH FIVE DOMAINS BLOCK - Dark Blue Background */}
-      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+      <section className="w-full bg-[#1A365D] py-8 md:py-12">
         <PageLayout>
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight mb-4">
               The Five Domains of Intentional Leadership
             </h2>
