@@ -31,8 +31,8 @@ export default function AtHome() {
             </div>
             
             {/* Bubble image placeholder - single column */}
-            <div className="flex items-end justify-center md:items-start">
-              <div className="aspect-square w-full max-w-[200px] rounded-lg bg-[#1A365D] flex items-center justify-center mt-8 md:mt-16">
+            <div className="flex justify-center">
+              <div className="aspect-square w-full max-w-[200px] rounded-lg bg-[#1A365D] flex items-center justify-center" style={{marginTop: '8rem'}}>
                 <div className="text-6xl text-white">🏠</div>
               </div>
             </div>
