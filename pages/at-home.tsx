@@ -15,8 +15,7 @@ export default function AtHome() {
             {/* Main headline - spans 3 columns */}
             <div className="md:col-span-3">
               <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-                Where leadership<br />
-                <span className="text-[#F96E1E]">lives too</span>
+                Where leadership <span className="text-[#F96E1E]">lives too</span>
               </h1>
               
               <div className="mt-8 space-y-6">
@@ -32,7 +31,7 @@ export default function AtHome() {
             </div>
             
             {/* Bubble image placeholder - single column */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center">
               <div className="aspect-square w-full max-w-[200px] rounded-lg bg-[#1A365D] flex items-center justify-center">
                 <div className="text-6xl text-white">🏠</div>
               </div>
