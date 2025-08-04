@@ -1,5 +1,4 @@
 import Layout, { Block, Grid, PageLayout } from '../components/Layout'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function SocialImpact() {
@@ -69,11 +68,9 @@ export default function SocialImpact() {
           </div>
           
           <div className="rounded-lg overflow-hidden">
-            <Image
+            <img
               src="/images/The-Five-Domains-of-Intentional-Leadership.png"
               alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
-              width={1200}
-              height={600}
               className="w-full h-auto object-contain"
             />
           </div>
