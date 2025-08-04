@@ -1,4 +1,5 @@
 import Layout, { Block, Grid, PageLayout } from '../components/Layout'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function SocialImpact() {
@@ -67,13 +68,14 @@ export default function SocialImpact() {
             </p>
           </div>
           
-          <div className="rounded-lg bg-white/10 p-8 text-center">
-            <p className="text-white/80 text-lg font-medium">
-              [The-Five-Domains-of-Intentional-Leadership.png will be placed here]
-            </p>
-            <p className="text-white/60 text-sm mt-2">
-              Landscape image showing the integration of Self, Work, Community, Family, and Friendship domains
-            </p>
+          <div className="rounded-lg overflow-hidden">
+            <Image
+              src="/images/The-Five-Domains-of-Intentional-Leadership.png"
+              alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
+              width={1200}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
           </div>
         </PageLayout>
       </section>
