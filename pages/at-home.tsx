@@ -305,7 +305,7 @@ export default function AtHome() {
       </Block>
 
       {/* Personal Quote */}
-      <Block background="tangerine" spacing="default">
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
           <div className="text-center">
             <div className="mx-auto max-w-3xl space-y-8">
@@ -321,7 +321,7 @@ export default function AtHome() {
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
 
       {/* Closing CTA */}
       <Block background="navy" spacing="default">
