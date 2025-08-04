@@ -30,9 +30,9 @@ export default function AtHome() {
               </div>
             </div>
             
-            {/* Bubble image placeholder - single column */}
-            <div className="flex justify-center mt-8">
-              <div className="w-[200px] h-[200px] rounded-lg bg-[#1A365D] flex items-center justify-center">
+            {/* Side content placeholder - spans 1 column */}
+            <div className="md:col-span-1 flex items-center justify-center">
+              <div className="aspect-square rounded-lg bg-[#1A365D] p-6 flex items-center justify-center max-w-[200px] min-h-[200px]">
                 <div className="text-6xl text-white">🏠</div>
               </div>
             </div>
