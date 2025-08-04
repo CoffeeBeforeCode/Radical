@@ -126,8 +126,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Geographic credibility and copyright */}
-          <div className="mt-4 border-t border-white/10 pt-4">
-            <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center md:space-y-0">
+          <div className="mt-4 border-t border-white/10 pt-2">
+            <div className="flex flex-col space-y-1 md:flex-row md:justify-between md:items-center md:space-y-0">
               <p className="text-sm text-white/60 text-center md:text-left">
                 © {currentYear} Phillip Collins. Reducing interference since 2011.
               </p>
