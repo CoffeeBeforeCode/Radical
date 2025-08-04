@@ -71,7 +71,7 @@ export default function SocialImpact() {
             <img
               src="/images/The-Five-Domains-of-Intentional-Leadership.png"
               alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain max-h-[60vh]"
             />
           </div>
         </PageLayout>
@@ -187,9 +187,6 @@ export default function SocialImpact() {
 
           <Grid columns={3} className="gap-8">
             <div className="text-center space-y-4">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#7A9A7F] text-2xl text-white">
-                💼
-              </div>
               <h3 className="text-xl font-semibold text-[#1A365D]">Sustainable Employment</h3>
               <p className="text-gray-700 leading-relaxed">
                 Creating local employment opportunities that build community resilience 
@@ -198,9 +195,6 @@ export default function SocialImpact() {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#D4B86A] text-2xl text-white">
-                🎯
-              </div>
               <h3 className="text-xl font-semibold text-[#1A365D]">Entrepreneurial Capabilities</h3>
               <p className="text-gray-700 leading-relaxed">
                 Building business thinking and self-reliance within communities, 
@@ -209,9 +203,6 @@ export default function SocialImpact() {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F96E1E] text-2xl text-white">
-                🌱
-              </div>
               <h3 className="text-xl font-semibold text-[#1A365D]">Economic Resilience</h3>
               <p className="text-gray-700 leading-relaxed">
                 Developing pathways to self-employment that create stability 
