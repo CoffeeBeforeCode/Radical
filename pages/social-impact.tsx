@@ -19,10 +19,10 @@ export default function SocialImpact() {
               </h1>
               
               <div className="mt-8 space-y-6">
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
+                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px]">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                     Leadership is not a hat we put on.<br />
-                    It&apos;s a way we show up &mdash; everywhere.
+                    It&apos;s a way we show up; everywhere.
                   </p>
                 </div>
                 
@@ -45,7 +45,7 @@ export default function SocialImpact() {
             
             {/* Side content placeholder - spans 1 column */}
             <div className="md:col-span-1 flex items-center justify-center">
-              <div className="aspect-square rounded-lg bg-[#7A9A7F] p-6 flex items-center justify-center max-w-[200px]">
+              <div className="aspect-square rounded-lg bg-[#7A9A7F] p-6 flex items-center justify-center max-w-[200px] min-h-[200px]">
                 <p className="text-white text-sm font-medium text-center leading-relaxed">
                   &ldquo;Where do you show up as a leader when no one&apos;s watching?&rdquo;
                 </p>
@@ -88,7 +88,7 @@ export default function SocialImpact() {
             <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
               <p>
                 The executives I work with often discover that their greatest leadership challenges
-                aren&apos;t technical or strategic &mdash; they&apos;re about integration.
+                aren&apos;t technical or strategic; they&apos;re about integration.
               </p>
 
               <p>
@@ -121,7 +121,7 @@ export default function SocialImpact() {
               </p>
 
               <p className="text-lg text-white/90 leading-relaxed">
-                This isn&apos;t about giving back &mdash; it&apos;s about showing up as a leader
+                This isn&apos;t about giving back; it&apos;s about showing up as a leader
                 where leadership is needed most.
               </p>
             </div>
@@ -304,7 +304,7 @@ export default function SocialImpact() {
 
             <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed">
               <p>
-                Where do you show up as a leader &mdash; when no one&apos;s watching?
+                Where do you show up as a leader; when no one&apos;s watching?
               </p>
 
               <p>
@@ -402,7 +402,7 @@ export default function SocialImpact() {
             </h2>
 
             <p className="mx-auto max-w-2xl text-lg text-white/90 leading-relaxed">
-              These five domains come alive in conversation &mdash; not as theories to understand, 
+              These five domains come alive in conversation; not as theories to understand, 
               but as contexts for authentic leadership practice.
             </p>
 
