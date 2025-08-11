@@ -35,8 +35,8 @@ export default function Custom404() {
               transition: "transform 0.2s ease",
               cursor: "pointer"
             }}
-            onMouseOver={(e) => e.target.style.transform = "scale(1.05)"}
-            onMouseOut={(e) => e.target.style.transform = "scale(1)"}
+            onMouseOver={(e) => (e.target as HTMLElement).style.transform = "scale(1.05)"}
+            onMouseOut={(e) => (e.target as HTMLElement).style.transform = "scale(1)"}
           >
             <img
               src="/images/404.png"
@@ -57,8 +57,8 @@ export default function Custom404() {
               transition: "transform 0.2s ease",
               cursor: "pointer"
             }}
-            onMouseOver={(e) => e.target.style.transform = "scale(1.05)"}
-            onMouseOut={(e) => e.target.style.transform = "scale(1)"}
+            onMouseOver={(e) => (e.target as HTMLElement).style.transform = "scale(1.05)"}
+            onMouseOut={(e) => (e.target as HTMLElement).style.transform = "scale(1)"}
           >
             <img
               src="/images/Sometimes the most valuable insights come from unexpected detours.png"
