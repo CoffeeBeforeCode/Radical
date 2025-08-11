@@ -1,13 +1,10 @@
-import Layout, { PageLayout } from '../components/Layout'
-
 export default function Custom404() {
   return (
-    <Layout
-      title="Page Not Found - Phillip Collins"
-      description="The page you're looking for doesn't exist"
-      canonical="/404"
-      noIndex={true}
-    >
+    <>
+      <head>
+        <title>404: This page could not be found - Phillip Collins</title>
+        <meta name="robots" content="noindex" />
+      </head>
       <div style={{
         fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif",
         height: "100vh",
@@ -15,7 +12,10 @@ export default function Custom404() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        margin: 0,
+        color: "#000",
+        background: "#fff"
       }}>
         <div>
           <h1 style={{
@@ -52,6 +52,6 @@ export default function Custom404() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
