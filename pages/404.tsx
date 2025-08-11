@@ -15,41 +15,61 @@ export default function Custom404() {
         justifyContent: "center",
         margin: 0,
         color: "#000",
-        background: "#fff"
+        background: "#fff",
+        padding: "20px"
       }}>
-        <div>
-          <h1 style={{
-            display: "inline-block",
-            margin: 0,
-            marginRight: "20px",
-            padding: "0 23px 0 0",
-            fontSize: "24px",
-            fontWeight: 500,
-            verticalAlign: "top",
-            lineHeight: "49px",
-            borderRight: "1px solid rgba(0, 0, 0, .3)"
-          }}>
-            404
-          </h1>
-          <div style={{
-            display: "inline-block",
-            textAlign: "left",
-            lineHeight: "49px",
-            height: "49px",
-            verticalAlign: "middle"
-          }}>
-            <h2 style={{
-              fontFamily: "'Waiting for the Sunrise', cursive",
-              fontSize: "16px",
-              fontWeight: "normal",
-              lineHeight: "49px",
-              margin: 0,
-              padding: 0,
-              color: "#F96E1E"
-            }}>
-              This page could not be found.
-            </h2>
-          </div>
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "40px",
+          flexWrap: "wrap",
+          maxWidth: "800px"
+        }}>
+          {/* 404 Circle Image */}
+          <a 
+            href="/"
+            style={{
+              display: "block",
+              transition: "transform 0.2s ease",
+              cursor: "pointer"
+            }}
+            onMouseOver={(e) => e.target.style.transform = "scale(1.05)"}
+            onMouseOut={(e) => e.target.style.transform = "scale(1)"}
+          >
+            <img
+              src="/images/404.png"
+              alt="404 - Page not found"
+              style={{
+                width: "250px",
+                height: "250px",
+                objectFit: "contain"
+              }}
+            />
+          </a>
+
+          {/* Sometimes... Speech Bubble Image */}
+          <a 
+            href="/"
+            style={{
+              display: "block",
+              transition: "transform 0.2s ease",
+              cursor: "pointer"
+            }}
+            onMouseOver={(e) => e.target.style.transform = "scale(1.05)"}
+            onMouseOut={(e) => e.target.style.transform = "scale(1)"}
+          >
+            <img
+              src="/images/Sometimes the most valuable insights come from unexpected detours.png"
+              alt="Sometimes the most valuable insights come from unexpected detours"
+              style={{
+                width: "250px",
+                height: "250px",
+                objectFit: "contain"
+              }}
+            />
+          </a>
         </div>
       </div>
     </>
