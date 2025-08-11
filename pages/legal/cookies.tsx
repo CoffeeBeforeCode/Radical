@@ -4,7 +4,7 @@ export default function CookiesPolicy() {
   return (
     <Layout
       title="Cookie Policy"
-      description="How Phillip Collins uses cookies on this website to improve your experience and understand how you interact with our content."
+      description="How cookies are used on this website to improve your experience and understand how you interact with the content."
       canonical="/legal/cookies"
     >
       {/* Hero Section */}
@@ -15,7 +15,7 @@ export default function CookiesPolicy() {
               Cookie Policy
             </h1>
             <p className="text-xl text-[#F8F5EB] leading-relaxed">
-              How we use cookies to improve your experience and understand how you interact with our content.
+              How cookies are used to improve your experience and understand how you interact with the content.
             </p>
             <div className="mt-8 text-sm text-[#F8F5EB]/80">
               Last updated: August 2025
@@ -40,8 +40,8 @@ export default function CookiesPolicy() {
                   They are widely used to make websites work more efficiently and provide information to website owners.
                 </p>
                 <p>
-                  At Phillip Collins Leadership Coaching, we use cookies to enhance your browsing experience, 
-                  understand how you interact with our content, and improve our services.
+                  On this website, cookies are used to enhance your browsing experience, 
+                  understand how you interact with the content, and improve the services offered.
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function CookiesPolicy() {
             {/* Types of Cookies */}
             <div>
               <h2 className="mb-6 text-3xl font-bold text-[#1A365D]">
-                Types of <span className="text-[#F96E1E]">cookies</span> we use
+                Types of <span className="text-[#F96E1E]">cookies</span> used
               </h2>
               
               <div className="grid gap-8 md:grid-cols-2">
@@ -64,7 +64,7 @@ export default function CookiesPolicy() {
                       They enable basic functions like page navigation and access to secure areas.
                     </p>
                     <div className="text-sm">
-                      <strong>Examples:</strong>
+                      <strong>Examples include:</strong>
                       <ul className="mt-2 list-disc pl-5 space-y-1">
                         <li>Session management</li>
                         <li>Security tokens</li>
@@ -81,11 +81,11 @@ export default function CookiesPolicy() {
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p>
-                      These cookies help us understand how visitors interact with our website 
+                      These cookies help provide understanding of how visitors interact with the website 
                       by collecting and reporting information anonymously.
                     </p>
                     <div className="text-sm">
-                      <strong>Examples:</strong>
+                      <strong>Examples include:</strong>
                       <ul className="mt-2 list-disc pl-5 space-y-1">
                         <li>Page views and session duration</li>
                         <li>Traffic sources</li>
@@ -155,11 +155,11 @@ export default function CookiesPolicy() {
                     On this website
                   </h3>
                   <p className="mb-4">
-                    You can change your cookie preferences at any time by clicking the button below. 
+                    Cookie preferences can be changed at any time by clicking the button below. 
                     This will re-display the cookie consent banner, allowing you to update your choices.
                   </p>
                   <button 
-                    className="rounded-lg bg-[#F96E1E] px-6 py-3 font-medium text-white hover:bg-[#E55A0F] transition-colors"
+                    className="rounded-lg bg-[#F96E1E] px-6 py-3 font-medium text-white hover:bg-[#E55A0F] transition-colours"
                     onClick={() => {
                       localStorage.removeItem('pc-cookie-consent');
                       window.location.reload();
@@ -176,14 +176,14 @@ export default function CookiesPolicy() {
                     </h3>
                     <div className="space-y-3 text-gray-700">
                       <p>
-                        You can also control cookies through your browser settings. 
+                        Cookies can also be controlled through your browser settings. 
                         Most browsers allow you to:
                       </p>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Block all cookies</li>
                         <li>Block third-party cookies</li>
                         <li>Delete cookies when you close your browser</li>
-                        <li>Get notified when cookies are set</li>
+                        <li>Receive notifications when cookies are set</li>
                       </ul>
                     </div>
                   </div>
@@ -194,7 +194,7 @@ export default function CookiesPolicy() {
                     </h3>
                     <div className="space-y-3 text-gray-700">
                       <p>
-                        You can opt out of Google Analytics tracking by using:
+                        Opting out of Google Analytics tracking is possible using:
                       </p>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>
@@ -226,11 +226,11 @@ export default function CookiesPolicy() {
                 <div className="space-y-4 text-gray-700">
                   <p>
                     <strong>Essential cookies:</strong> Blocking these may prevent the website from working properly. 
-                    You may experience issues with contact forms, navigation, or security features.
+                    Issues may arise with contact forms, navigation, or security features.
                   </p>
                   <p>
                     <strong>Analytics cookies:</strong> Blocking these will not affect your browsing experience, 
-                    but it will prevent us from understanding how visitors use our site and improving our services.
+                    but will prevent understanding of how visitors use the site and limit improvements to the service.
                   </p>
                 </div>
               </div>
@@ -245,11 +245,11 @@ export default function CookiesPolicy() {
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
                   Under UK data protection law (UK GDPR) and the Privacy and Electronic Communications Regulations (PECR), 
-                  we need your consent to use non-essential cookies.
+                  consent is required for the use of non-essential cookies.
                 </p>
                 <p>
-                  Essential cookies are necessary for the legitimate operation of our website and do not require consent. 
-                  All other cookies require your explicit consent, which we obtain through our cookie banner.
+                  Essential cookies are necessary for the legitimate operation of this website and do not require consent. 
+                  All other cookies require explicit consent, which is obtained through the cookie banner.
                 </p>
               </div>
             </div>
@@ -263,8 +263,8 @@ export default function CookiesPolicy() {
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
                   <p className="mb-4 text-[#F8F5EB]">
-                    If you have any questions about our use of cookies or this policy, 
-                    please don&apos;t hesitate to contact us.
+                    Any questions about the use of cookies or this policy can be directed 
+                    through the contact details below.
                   </p>
                   <div className="space-y-2 text-sm">
                     <p><strong>Email:</strong> hello@phillip-collins.com</p>
@@ -277,8 +277,8 @@ export default function CookiesPolicy() {
                     Policy Updates
                   </h3>
                   <p className="text-sm text-[#F8F5EB]">
-                    We may update this cookie policy from time to time to reflect changes in technology, 
-                    legislation, or our business practices. The current version is always available at 
+                    This cookie policy may be updated from time to time to reflect changes in technology, 
+                    legislation, or business practices. The current version is always available at 
                     this web address with the date of last revision clearly marked.
                   </p>
                 </div>
