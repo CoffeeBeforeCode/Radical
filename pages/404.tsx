@@ -79,12 +79,20 @@ export default function Custom404() {
         
         {/* Click hint */}
         <div style={{
-          marginTop: "30px",
-          color: "#666",
-          fontSize: "14px",
-          fontStyle: "italic"
+          marginTop: "30px"
         }}>
-          Click to return home
+          <Link 
+            href="/"
+            style={{
+              color: "#666",
+              fontSize: "14px",
+              fontStyle: "italic",
+              textDecoration: "underline",
+              cursor: "pointer"
+            }}
+          >
+            Click to return home
+          </Link>
         </div>
       </div>
     </>
