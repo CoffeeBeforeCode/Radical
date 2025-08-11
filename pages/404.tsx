@@ -70,6 +70,7 @@ export default function Custom404() {
                 height: "250px",
                 objectFit: "contain"
               }}
+              className="md:!w-[500px] md:!h-[500px]"
             />
           </Link>
         </div>
