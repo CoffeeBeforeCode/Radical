@@ -6,6 +6,8 @@ export default function Custom404() {
       <head>
         <title>404: This page could not be found - Phillip Collins</title>
         <meta name="robots" content="noindex" />
+        <link rel="preload" href="/images/404.png" as="image" />
+        <link rel="preload" href="/images/Sometimes the most valuable insights come from unexpected detours.png" as="image" />
       </head>
       <div style={{
         fontFamily: "-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif",
@@ -73,6 +75,16 @@ export default function Custom404() {
               className="md:!w-[500px] md:!h-[500px]"
             />
           </Link>
+        </div>
+        
+        {/* Click hint */}
+        <div style={{
+          marginTop: "30px",
+          color: "#666",
+          fontSize: "14px",
+          fontStyle: "italic"
+        }}>
+          Click to return home
         </div>
       </div>
     </>
