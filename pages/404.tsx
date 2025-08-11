@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Custom404() {
   return (
     <>
@@ -28,7 +30,7 @@ export default function Custom404() {
           maxWidth: "800px"
         }}>
           {/* 404 Circle Image */}
-          <a 
+          <Link 
             href="/"
             style={{
               display: "block",
@@ -47,10 +49,10 @@ export default function Custom404() {
                 objectFit: "contain"
               }}
             />
-          </a>
+          </Link>
 
           {/* Sometimes... Speech Bubble Image */}
-          <a 
+          <Link 
             href="/"
             style={{
               display: "block",
@@ -69,7 +71,7 @@ export default function Custom404() {
                 objectFit: "contain"
               }}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </>
