@@ -8,162 +8,191 @@ export default function Custom404() {
       canonical="/404"
       noIndex={true}
     >
-      <section className="w-full bg-white py-16 md:py-24">
-        <PageLayout>
-          {/* Hero Section */}
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 mb-16">
-            <div className="lg:col-span-8">
-              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl mb-6">
-                Well, this is interesting.
-              </h1>
-              <div className="bg-[#F96E1E] p-6 text-white mb-8">
-                <p className="text-xl font-medium leading-relaxed md:text-2xl">
-                  You've stumbled into the digital equivalent of a dead end. 
-                  The page you're looking for doesn't exist.
+      {/* FULL-WIDTH HERO - Accounts for header */}
+      <section className="relative w-full min-h-screen bg-white pt-20">
+        <div className="flex min-h-[calc(100vh-5rem)] items-center">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl">
+              {/* Hero Content */}
+              <div className="max-w-4xl space-y-8">
+                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
+                  Well, this is<br />
+                  <span className="font-light italic text-[#F96E1E]">interesting.</span>
+                </h1>
+                
+                <p className="text-lg leading-relaxed text-gray-600">
+                  You've stumbled into the digital equivalent of a dead end.<br />
+                  The page you're looking for doesn't exist.<br />
+                  But what if this detour is exactly what you needed?
                 </p>
-              </div>
-            </div>
-            <div className="lg:col-span-4 flex justify-center lg:justify-end">
-              <div className="bg-[#F8F5EB] rounded-full flex items-center justify-center w-32 h-32">
-                <span className="text-4xl">🧭</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Main Content Grid */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-            
-            {/* What Gets in Your Way */}
-            <div className="bg-[#1A365D] p-8 text-white">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-2xl md:text-3xl mb-4">
-                What's getting in your way?
-              </h2>
-              <p className="text-lg leading-relaxed mb-4">
-                Perhaps you're looking for something specific. Or maybe you followed a link that's no longer there.
-              </p>
-              <p className="font-medium text-[#F8F5EB]">
-                Either way, this feels like interference worth reducing.
-              </p>
-            </div>
-
-            {/* Navigation Options */}
-            <div className="bg-[#F8F5EB] p-8">
-              <h3 className="font-['Waiting_for_the_Sunrise'] text-2xl text-[#1A365D] mb-6">
-                Let's get you back on track
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="/" className="text-[#1A365D] hover:text-[#F96E1E] font-medium underline decoration-[#F96E1E] transition-colors">
-                    Home → The Leadership Equation
+                
+                <div className="flex flex-wrap gap-4">
+                  <a
+                    href="/"
+                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                  >
+                    Home → Leadership Equation
                   </a>
-                </li>
-                <li>
-                  <a href="/this-is-personal" className="text-[#1A365D] hover:text-[#F96E1E] font-medium underline decoration-[#F96E1E] transition-colors">
-                    This is Personal → My story
+                  <a
+                    href="/this-is-personal"
+                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                  >
+                    This is Personal
                   </a>
-                </li>
-                <li>
-                  <a href="/at-work" className="text-[#1A365D] hover:text-[#F96E1E] font-medium underline decoration-[#F96E1E] transition-colors">
-                    At Work → Professional coaching
-                  </a>
-                </li>
-                <li>
-                  <a href="/social-impact" className="text-[#1A365D] hover:text-[#F96E1E] font-medium underline decoration-[#F96E1E] transition-colors">
-                    Social Impact → Beyond the workplace
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Reflection Section */}
-            <div className="bg-[#F96E1E] p-8 text-white">
-              <h3 className="font-['Waiting_for_the_Sunrise'] text-xl md:text-2xl mb-4">
-                A moment to pause
-              </h3>
-              <p className="text-lg leading-relaxed mb-4">
-                Sometimes getting lost leads to something more valuable than what we were originally seeking.
-              </p>
-              <p className="font-medium">
-                What if this detour is exactly what you needed?
-              </p>
-            </div>
-          </div>
-
-          {/* Leadership Equation Connection */}
-          <div className="bg-slate-50 p-8 md:p-12 mb-16">
-            <div className="text-center mx-auto max-w-4xl">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] mb-6">
-                PE = PO - I
-              </h2>
-              <p className="text-xl leading-relaxed text-gray-700 mb-8">
-                Your performance equals your potential minus interference. Right now, this missing page might feel like interference. But what if we used this moment differently?
-              </p>
-              <div className="grid grid-cols-1 gap-8 text-left md:grid-cols-2">
-                <div>
-                  <h4 className="font-semibold text-[#1A365D] mb-3">Potential (PO):</h4>
-                  <p className="text-gray-700">
-                    You were seeking something specific, which shows intentionality and purpose in your exploration.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#1A365D] mb-3">Interference (I):</h4>
-                  <p className="text-gray-700">
-                    A broken link or mistyped URL created an obstacle between you and your intended destination.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* What Now Section */}
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            <div>
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] mb-6">
-                So, what now?
-              </h2>
-              <p className="text-xl leading-relaxed text-gray-700 mb-6">
-                You could simply navigate away. Or you could take a moment to notice what this moment reveals about how you handle unexpected obstacles.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-600 mb-8">
-                In leadership, as in life, it's rarely about the detour itself. It's about how we respond when things don't go according to plan.
-              </p>
-              
-              {/* Contact CTA */}
-              <div className="bg-[#1A365D] p-6 text-white">
-                <p className="text-lg mb-4">
-                  If you were looking for something specific and can't find it, I'm happy to help.
-                </p>
-                <a 
-                  href="mailto:phillip@phillip-collins.com" 
-                  className="text-[#F96E1E] hover:text-[#F8F5EB] font-medium underline decoration-[#F96E1E] transition-colors"
-                >
-                  phillip@phillip-collins.com
-                </a>
-              </div>
-            </div>
-
-            <div className="lg:text-right">
-              <div className="bg-[#F8F5EB] p-8 inline-block">
-                <h3 className="font-['Waiting_for_the_Sunrise'] text-2xl text-[#1A365D] mb-4">
-                  Leadership is a practice
-                </h3>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                  Not a destination.
-                </p>
-                <p className="text-gray-600">
-                  Even when we end up somewhere we didn't plan to be, we can choose how to respond with intention and authenticity.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Footer Message */}
-          <div className="border-t border-gray-200 pt-8 mt-16 text-center">
-            <p className="text-sm text-gray-500">
-              <em>Sometimes the most profound insights come from the paths we never intended to take.</em>
+      {/* WHAT GETS IN YOUR WAY */}
+      <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              What gets in your <span className="text-[#F96E1E]">way</span>?
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+              Perhaps you're looking for something specific. Or maybe you followed a link that's no longer there.
+              Either way, this feels like interference worth reducing.
             </p>
           </div>
+        </div>
+      </section>
 
+      {/* LEADERSHIP EQUATION */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
+            <div className="text-center">
+              <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
+                <div className="mb-4 font-['Waiting_for_the_Sunrise'] text-5xl font-bold text-[#F96E1E] md:text-6xl">
+                  PE = PO - I
+                </div>
+                <p className="text-lg font-semibold text-white">
+                  The Leadership Equation
+                </p>
+              </div>
+            </div>
+            <div className="space-y-6 lg:col-span-2">
+              <h2 className="text-3xl font-bold text-white md:text-4xl">
+                Even when we end up somewhere we didn't <span className="text-[#F96E1E]">plan</span> to be.
+              </h2>
+              
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PE</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Performance</h3>
+                  <p className="text-sm text-white/80">How we respond to obstacles</p>
+                </div>
+                
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PO</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Potential</h3>
+                  <p className="text-sm text-white/80">Your capacity for growth</p>
+                </div>
+                
+                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">I</div>
+                  <h3 className="mb-2 text-lg font-semibold text-white">Interference</h3>
+                  <p className="text-sm text-white/80">What's in the way</p>
+                </div>
+              </div>
+              
+              <div className="rounded-lg bg-[#F96E1E] p-6">
+                <h3 className="mb-3 text-lg font-bold text-white">Right now, this missing page might feel like interference.</h3>
+                <p className="font-medium text-white">
+                  But what if we used this moment differently? What if getting lost led to something more valuable than what you were originally seeking?
+                </p>
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVIGATION OPTIONS */}
+      <section className="w-full bg-white py-12 md:py-16">
+        <PageLayout>
+          <div className="mb-8 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Let's get you back on track
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
+              In leadership, as in life, it's rarely about the detour itself. It's about how we respond when things don't go according to plan.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Home</h3>
+              <p className="mb-4 text-gray-700 text-sm">The Leadership Equation and core philosophy</p>
+              <a href="/" className="text-[#F96E1E] hover:text-[#1A365D] font-medium underline decoration-[#F96E1E] transition-colors">
+                Explore →
+              </a>
+            </div>
+            
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">This is Personal</h3>
+              <p className="mb-4 text-gray-700 text-sm">My story and authentic approach to leadership</p>
+              <a href="/this-is-personal" className="text-[#F96E1E] hover:text-[#1A365D] font-medium underline decoration-[#F96E1E] transition-colors">
+                My Story →
+              </a>
+            </div>
+            
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">At Work</h3>
+              <p className="mb-4 text-gray-700 text-sm">Professional coaching for senior executives</p>
+              <a href="/at-work" className="text-[#F96E1E] hover:text-[#1A365D] font-medium underline decoration-[#F96E1E] transition-colors">
+                The Work →
+              </a>
+            </div>
+            
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Social Impact</h3>
+              <p className="mb-4 text-gray-700 text-sm">Leadership beyond the workplace</p>
+              <a href="/social-impact" className="text-[#F96E1E] hover:text-[#1A365D] font-medium underline decoration-[#F96E1E] transition-colors">
+                Beyond Work →
+              </a>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* FINAL MESSAGE */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+              Leadership is a practice.
+            </h2>
+            
+            <div className="mx-auto mb-6 max-w-2xl rounded-lg bg-white p-6">
+              <p className="text-xl font-medium leading-relaxed text-[#1A365D]">
+                Not a destination.<br />
+                Even when we end up somewhere we didn't plan to be, we can choose how to respond with <strong>intention</strong> and <strong>authenticity</strong>.
+              </p>
+            </div>
+            
+            <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-white/90">
+              If you were looking for something specific and can't find it, I'm happy to help.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="mailto:phillip@phillip-collins.com"
+                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
+              >
+                phillip@phillip-collins.com
+              </a>
+            </div>
+            
+            <div className="mt-8 pt-6 border-t border-white/20">
+              <p className="text-sm text-white/70">
+                <em>Sometimes the most profound insights come from the paths we never intended to take.</em>
+              </p>
+            </div>
+          </div>
         </PageLayout>
       </section>
     </Layout>
