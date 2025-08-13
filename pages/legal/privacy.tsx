@@ -419,8 +419,8 @@ export default function PrivacyPolicy() {
                     can be directed through the contact details below.
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p><strong>Email:</strong> hello@phillip-collins.com</p>
-                    <p><strong>Website:</strong> www.phillip-collins.com/contact</p>
+                    <p><strong>Email:</strong> datacontroller@phillipcollins.com</p>
+                    <p><strong>Website:</strong> www.phillipcollins.com/contact</p>
                     <p><strong>Response time:</strong> Within 48 hours</p>
                   </div>
                 </div>
