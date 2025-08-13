@@ -43,8 +43,8 @@ export default function PrivacyPolicy() {
                   <div className="text-base">
                     <p><strong>Contact details:</strong></p>
                     <ul className="mt-2 space-y-1">
-                      <li><strong>Email:</strong> hello@phillip-collins.com</li>
-                      <li><strong>Website:</strong> www.phillip-collins.com/contact</li>
+                      <li><strong>Email:</strong> datacontroller@phillipcollins.com</li>
+                      <li><strong>Website:</strong> www.phillipcollins.com/contact</li>
                       <li><strong>Business address:</strong> United Kingdom</li>
                     </ul>
                   </div>
