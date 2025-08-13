@@ -364,7 +364,7 @@ export default function PrivacyPolicy() {
                       please contact us directly. Most issues can be resolved quickly.
                     </p>
                     <div className="text-sm">
-                      <p><strong>Email:</strong> hello@phillip-collins.com</p>
+                      <p><strong>Email:</strong> datacontroller@phillipcollins.com</p>
                       <p><strong>Response time:</strong> Within 48 hours</p>
                     </div>
                   </div>
