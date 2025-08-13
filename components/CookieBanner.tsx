@@ -3,27 +3,22 @@ import Link from 'next/link';
 
 const CookieBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isAccepted, setIsAccepted] = useState(false);
 
   useEffect(() => {
     // Check if user has already made a choice
     const cookieChoice = localStorage.getItem('pc-cookie-consent');
     if (!cookieChoice) {
       setIsVisible(true);
-    } else {
-      setIsAccepted(cookieChoice === 'accepted');
     }
   }, []);
 
   const handleAccept = () => {
     localStorage.setItem('pc-cookie-consent', 'accepted');
-    setIsAccepted(true);
     setIsVisible(false);
   };
 
   const handleDecline = () => {
     localStorage.setItem('pc-cookie-consent', 'declined');
-    setIsAccepted(false);
     setIsVisible(false);
   };
 
@@ -38,7 +33,7 @@ const CookieBanner: React.FC = () => {
       />
       
       {/* Cookie Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 transform transition-transform duration-500 ease-out">
+      <div className="fixed inset-x-0 bottom-0 z-50 transition-transform duration-500 ease-out">
         <div className="bg-[#1A365D] border-t-4 border-[#F96E1E] shadow-2xl">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8 items-center">
