@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const CookieBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,29 +45,29 @@ const CookieBanner: React.FC = () => {
               
               {/* Content Section - Takes up 2/3 on desktop */}
               <div className="lg:col-span-2 space-y-4">
-                <h3 className="text-xl font-bold text-white font-['Waiting_for_the_Sunrise']">
+                <h3 className="font-['Waiting_for_the_Sunrise'] text-xl font-bold text-white">
                   We value your privacy
                 </h3>
-                <p className="text-[#F8F5EB] text-sm leading-relaxed">
+                <p className="text-sm leading-relaxed text-[#F8F5EB]">
                   This website uses cookies to improve your browsing experience and 
                   help us understand how you interact with our content. We use 
                   essential cookies for website functionality and optional analytics 
                   cookies to help us improve our services.
                 </p>
                 <div className="flex flex-wrap gap-2 text-xs">
-                  <a 
+                  <Link 
                     href="/legal/cookies" 
-                    className="text-[#F96E1E] hover:text-white underline transition-colors"
+                    className="text-[#F96E1E] underline transition-colors hover:text-white"
                   >
                     Cookie Policy
-                  </a>
+                  </Link>
                   <span className="text-[#F8F5EB]">•</span>
-                  <a 
+                  <Link 
                     href="/legal/privacy" 
-                    className="text-[#F96E1E] hover:text-white underline transition-colors"
+                    className="text-[#F96E1E] underline transition-colors hover:text-white"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -74,20 +75,20 @@ const CookieBanner: React.FC = () => {
               <div className="flex flex-col gap-3 lg:items-end">
                 <button
                   onClick={handleAccept}
-                  className="w-full lg:w-auto bg-[#F96E1E] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E55A0F] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2 focus:ring-offset-[#1A365D]"
+                  className="w-full rounded-lg bg-[#F96E1E] px-6 py-3 font-medium text-white transition-colors duration-200 hover:bg-[#E55A0F] focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2 focus:ring-offset-[#1A365D] lg:w-auto"
                 >
                   Accept All Cookies
                 </button>
-                <div className="flex gap-3 w-full lg:w-auto">
+                <div className="flex w-full gap-3 lg:w-auto">
                   <button
                     onClick={handleDecline}
-                    className="flex-1 lg:flex-none bg-transparent border border-[#F8F5EB] text-[#F8F5EB] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#F8F5EB] hover:text-[#1A365D] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#F8F5EB] focus:ring-offset-2 focus:ring-offset-[#1A365D]"
+                    className="flex-1 rounded-lg border border-[#F8F5EB] bg-transparent px-4 py-2 text-sm font-medium text-[#F8F5EB] transition-colors duration-200 hover:bg-[#F8F5EB] hover:text-[#1A365D] focus:outline-none focus:ring-2 focus:ring-[#F8F5EB] focus:ring-offset-2 focus:ring-offset-[#1A365D] lg:flex-none"
                   >
                     Essential Only
                   </button>
                   <button
                     onClick={() => setIsVisible(false)}
-                    className="flex-1 lg:flex-none bg-transparent text-[#F8F5EB] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#F8F5EB]/10 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#F8F5EB] focus:ring-offset-2 focus:ring-offset-[#1A365D]"
+                    className="flex-1 rounded-lg bg-transparent px-4 py-2 text-sm font-medium text-[#F8F5EB] transition-colors duration-200 hover:bg-[#F8F5EB]/10 focus:outline-none focus:ring-2 focus:ring-[#F8F5EB] focus:ring-offset-2 focus:ring-offset-[#1A365D] lg:flex-none"
                   >
                     Customize
                   </button>
