@@ -8,44 +8,57 @@ export default function ThisIsPersonal() {
       description="The personal journey from &apos;sensitive boy&apos; to global leadership coach. How perceived weakness became developed strength over 30 years of intentional development."
       canonical="/this-is-personal"
     >
-      {/* HERO SECTION - White background with personal opening */}
+      {/* HERO SECTION - Fixed Structure */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            {/* Main headline - spans 3 columns */}
-            <div className="md:col-span-3">
-              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-                This is <span className="text-[#F96E1E]">personal</span>.
-              </h1>
-              
-              <div className="mt-8 space-y-6">
-                <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                  With over 10,000 hours of working with leaders across the globe.<br />
-                  What stays with me isn&apos;t their titles.<br />
-                  It&apos;s their <strong>turning points</strong>.
-                </p>
+          {/* Headline First - Separate */}
+          <div className="max-w-4xl space-y-8">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+              This is <span className="text-[#F96E1E]">personal</span>.
+            </h1>
+          </div>
+          
+          {/* Text Box + Image Grid */}
+          <div className="w-full mt-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                {/* Text Box - 3/4 width */}
+                <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                  <div className="space-y-6">
+                    <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                      With over 10,000 hours of working with leaders across the globe.<br />
+                      What stays with me isn&apos;t their titles.<br />
+                      It&apos;s their <strong>turning points</strong>.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed text-gray-600">
+                      Their questions. Their internal contradictions.<br />
+                      The moment they stopped performing leadership and started <em>living</em> it.
+                    </p>
+                    
+                    <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
+                      That&apos;s where I do my best work.<br />
+                      Not in the certainty, but in the search.
+                    </p>
+                  </div>
+                </div>
                 
-                <p className="text-lg leading-relaxed text-gray-600">
-                  Their questions. Their internal contradictions.<br />
-                  The moment they stopped performing leadership and started <em>living</em> it.
-                </p>
-                
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6">
-                  <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
-                    That&apos;s where I do my best work.<br />
-                    Not in the certainty, but in the search.
-                  </p>
+                {/* Image Box - 1/4 width - NO BORDER */}
+                <div className="md:col-span-1 rounded-lg bg-[#1A365D] p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                  <img
+                    src="/images/Bubble-personal-1.png"
+                    alt="Personal leadership reflection"
+                    className="size-full object-contain"
+                  />
                 </div>
               </div>
             </div>
-
-            {/* Bubble image */}
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
-                src="/images/Bubble-personal-1.png"
-                alt="Personal leadership reflection"
-                className="size-full object-contain"
-              />
+          </div>
+          
+          {/* CTAs - Completely Outside */}
+          <div className="mx-auto max-w-7xl mt-8 px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap gap-4">
+              {/* No CTAs in original hero section - they appear at the end of the page */}
             </div>
           </div>
         </PageLayout>
@@ -59,7 +72,6 @@ export default function ThisIsPersonal() {
               From weakness to <span className="text-[#F96E1E]">superpower</span>
             </h2>
           </div>
-
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur md:col-span-2">
               <div className="space-y-6 text-white">
@@ -75,7 +87,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="rounded-lg bg-[#F96E1E] p-6 text-white md:col-span-2">
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">What others called sensitivity...</h3>
@@ -98,7 +109,6 @@ export default function ThisIsPersonal() {
                 </div>
               </div>
             </div>
-
             <div className="rounded-lg bg-white/5 p-6 backdrop-blur md:col-span-4">
               <div className="text-center">
                 <p className="text-xl font-medium leading-relaxed text-[#F96E1E]">
@@ -109,7 +119,6 @@ export default function ThisIsPersonal() {
               </div>
             </div>
           </div>
-
           <div className="mt-12 rounded-lg bg-[#F96E1E] p-8">
             <p className="text-center text-xl font-semibold leading-relaxed text-white">
               This personal transformation, from perceived weakness to developed strength,<br />
@@ -142,7 +151,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="space-y-4 md:col-span-2">
               <div className="rounded-lg bg-white p-6 shadow-sm">
                 <h3 className="mb-3 text-lg font-bold text-[#1A365D]">My role</h3>
@@ -219,7 +227,6 @@ export default function ThisIsPersonal() {
               that shape every conversation, every decision, every day.
             </p>
           </div>
-
           <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <div className="mb-4 text-3xl">🎯</div>
@@ -228,7 +235,6 @@ export default function ThisIsPersonal() {
                 Applied through discernment, not just knowledge.
               </p>
             </div>
-
             <div className="rounded-lg bg-[#1A365D] p-6 text-center text-white">
               <div className="mb-4 text-3xl">🔒</div>
               <h3 className="mb-3 text-lg font-bold">Integrity</h3>
@@ -236,7 +242,6 @@ export default function ThisIsPersonal() {
                 Lived, not performed. The foundation of trust.
               </p>
             </div>
-
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <div className="mb-4 text-3xl">🪞</div>
               <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Self-respect</h3>
@@ -244,7 +249,6 @@ export default function ThisIsPersonal() {
                 The origin of every healthy boundary.
               </p>
             </div>
-
             <div className="rounded-lg bg-[#F96E1E] p-6 text-center text-white">
               <div className="mb-4 text-3xl">📈</div>
               <h3 className="mb-3 text-lg font-bold">Personal Development</h3>
@@ -252,7 +256,6 @@ export default function ThisIsPersonal() {
                 Not a badge, but a way of life.
               </p>
             </div>
-
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <div className="mb-4 text-3xl">🕊️</div>
               <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Freedom</h3>
@@ -286,7 +289,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="aspect-square flex items-center justify-center rounded-lg bg-[#F96E1E] p-4">
               <img
                 src="/images/Bubble-personal-2.png"
@@ -295,7 +297,6 @@ export default function ThisIsPersonal() {
               />
             </div>
           </div>
-
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <h3 className="mb-4 text-xl font-bold text-[#F96E1E]">Core Regions</h3>
@@ -306,7 +307,6 @@ export default function ThisIsPersonal() {
                 <p>• Asia & Pacific (India, Singapore)</p>
               </div>
             </div>
-
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <h3 className="mb-4 text-xl font-bold text-[#F96E1E]">Primary Industries</h3>
               <div className="space-y-2 text-white/90">
@@ -333,7 +333,6 @@ export default function ThisIsPersonal() {
               leadership development, human potential, and meaningful change.
             </p>
           </div>
-
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
@@ -367,7 +366,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
@@ -400,7 +398,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
@@ -433,7 +430,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
@@ -467,7 +463,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
@@ -500,7 +495,6 @@ export default function ThisIsPersonal() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
@@ -546,7 +540,6 @@ export default function ThisIsPersonal() {
                 The learning never stops
               </h2>
             </div>
-
             <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
               <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-3">
                 <div className="space-y-6 text-gray-700">
@@ -570,7 +563,6 @@ export default function ThisIsPersonal() {
                   </p>
                 </div>
               </div>
-
               <div className="rounded-lg bg-[#1A365D] p-6 text-white">
                 <div className="flex h-full items-center justify-center">
                   <img
@@ -581,7 +573,6 @@ export default function ThisIsPersonal() {
                 </div>
               </div>
             </div>
-
             <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
               <p className="text-xl font-semibold leading-relaxed text-white">
                 This continuous learning enriches the perspective I bring to our coaching partnership<br />
