@@ -8,50 +8,55 @@ export default function SocialImpact() {
       description="Demonstrating leadership in the community domain through mentoring over 1,000 unemployed individuals in entrepreneurship. Five domains of integrated leadership: Self, Work, Community, Family, Friendship."
       canonical="/social-impact"
     >
-      {/* HERO SECTION - White background with clear headline */}
+     {/* HERO SECTION - Fixed Structure */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            {/* Main headline - spans 3 columns */}
-            <div className="md:col-span-3">
-              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-                Leadership beyond the <span className="text-[#F96E1E]">workplace</span>
-              </h1>
-              
-              <div className="mt-8 space-y-6">
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+          {/* Headline First - Separate */}
+          <div className="max-w-4xl space-y-8">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+              *Leadership beyond the <span className="text-[#F96E1E]">workplace</span>
+            </h1>
+          </div>
+          
+          {/* Text Box + Image Grid */}
+          <div className="w-full mt-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                {/* Text Box - 3/4 width */}
+                <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                     Leadership is not a hat we put on.<br />
                     It&apos;s a way we show up; everywhere.
                   </p>
                 </div>
                 
-                <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="/contact"
-                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                  >
-                    Explore integrated leadership →
-                  </Link>
-                  <Link
-                    href="/the-work"
-                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                  >
-                    The Work
-                  </Link>
+                {/* Image Box - 1/4 width - NO BORDER */}
+                <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                  <img
+                    src="/images/Social-Impact-Bubble.png"
+                    alt="Where do you show up as a leader when no one's watching?"
+                    className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
+                  />
                 </div>
               </div>
             </div>
-            
-            {/* Side content placeholder - spans 1 column */}
-            <div className="md:col-span-1 flex items-center justify-center">
-              <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
-                <img
-                  src="/images/Social-Impact-Bubble.png"
-                  alt="Where do you show up as a leader when no one's watching?"
-                  className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
-                />
-              </div>
+          </div>
+          
+          {/* CTAs - Completely Outside */}
+          <div className="max-w-4xl mt-8">
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+              >
+                Explore integrated leadership →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+              >
+                The Work
+              </Link>
             </div>
           </div>
         </PageLayout>
