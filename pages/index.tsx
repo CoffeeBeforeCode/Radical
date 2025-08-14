@@ -8,72 +8,78 @@ export default function Home() {
       description="Creating space for leaders to see what gets in their way, reduce interference, and unlock their natural potential. Working with executives across Europe, Middle East, Americas, and Asia Pacific."
       canonical="/"
     >
-      {/* FULL-WIDTH HERO - Accounts for header */}
-      <section className="relative w-full min-h-screen bg-white pt-20">
-        <div className="flex min-h-[calc(100vh-5rem)] items-center">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-7xl">
-              {/* Hero Content */}
-              <div className="max-w-4xl space-y-8">
-                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  Your Leadership.<br />
-                  A Role?<br />
-                  A Title?<br />
-                  <span className="font-light italic text-[#F96E1E]">A Practice!</span>
-                </h1>
-              </div>
-              
-              {/* Quote + What's The Story */}
-              <div className="w-full mt-8">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
-                      <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                        The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
-                        Again and again.<br />
-                        To their <strong>values</strong>.<br />
-                        Their <strong>vision</strong>.<br />
-                        Their <strong>self</strong>.
-                      </p>
-                    </div>
-                    
-                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
-                      <img
-                        src="/images/whats-the-story.png"
-                        alt="What's the story I tell myself about who I am; is it still true?"
-                        className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
-                      />
-                    </div>
-                  </div>
+      {/* HERO SECTION - Fixed Structure */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          {/* Headline First - Separate */}
+          <div className="max-w-4xl space-y-8">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+              Your Leadership.<br />
+              A Role?<br />
+              A Title?<br />
+              <span className="font-light italic text-[#F96E1E]">A Practice!</span>
+            </h1>
+          </div>
+          
+          {/* Text Box + Image Grid */}
+          <div className="w-full mt-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                {/* Text Box - 3/4 width */}
+                <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                  <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
+                    The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
+                    Again and again.<br />
+                    To their <strong>values</strong>.<br />
+                    Their <strong>vision</strong>.<br />
+                    Their <strong>self</strong>.
+                  </p>
                 </div>
-              </div>
-              {/* Rest of hero content */}
-              <div className="max-w-4xl space-y-8 mt-8">
-                <p className="text-lg leading-relaxed text-gray-600">
-                  I create the space for that return; to what matters, what&apos;s emerging, 
-                  and what&apos;s getting in the way.<br />
-                  Not louder.<br />
-                  Just wiser.
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="/contact"
-                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                  >
-                    Begin Here →
-                  </Link>
-                  <Link
-                    href="/the-work"
-                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                  >
-                    The Work
-                  </Link>
+                
+                {/* Image Box - 1/4 width - NO BORDER */}
+                <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                  <img
+                    src="/images/whats-the-story.png"
+                    alt="What's the story I tell myself about who I am; is it still true?"
+                    className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          
+          {/* Additional Content */}
+          <div className="max-w-4xl space-y-8 mt-8">
+            <p className="text-lg leading-relaxed text-gray-600">
+              I create the space for that return; to what matters, what&apos;s emerging, 
+              and what&apos;s getting in the way.<br />
+              Not louder.<br />
+              Just wiser.
+            </p>
+          </div>
+          
+          {/* CTAs - Completely Outside */}
+          <div className="mx-auto max-w-7xl mt-8 px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+              >
+                Begin Here →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+              >
+                The Work
+              </Link>
+            </div>
+          </div>
+        </PageLayout>
       </section>
+    </Layout>
+  )
+}
 
       {/* LEADERSHIP AS PRACTICE */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
