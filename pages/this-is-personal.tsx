@@ -24,23 +24,11 @@ export default function ThisIsPersonal() {
               <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
                 {/* Text Box - 3/4 width */}
                 <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
-                  <div className="space-y-6">
-                    <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                      With over 10,000 hours of working with leaders across the globe.<br />
-                      What stays with me isn&apos;t their titles.<br />
-                      It&apos;s their <strong>turning points</strong>.
-                    </p>
-                    
-                    <p className="text-lg leading-relaxed text-gray-600">
-                      Their questions. Their internal contradictions.<br />
-                      The moment they stopped performing leadership and started <em>living</em> it.
-                    </p>
-                    
-                    <p className="text-lg font-medium leading-relaxed text-[#1A365D]">
-                      That&apos;s where I do my best work.<br />
-                      Not in the certainty, but in the search.
-                    </p>
-                  </div>
+                  <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                    With over 10,000 hours of working with leaders across the globe.<br />
+                    What stays with me isn&apos;t their titles.<br />
+                    It&apos;s their <strong>turning points</strong>.
+                  </p>
                 </div>
                 
                 {/* Image Box - 1/4 width - NO BORDER */}
