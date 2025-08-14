@@ -45,10 +45,12 @@ export default function SocialImpact() {
             
             {/* Side content placeholder - spans 1 column */}
             <div className="md:col-span-1 flex items-center justify-center">
-              <div className="aspect-square rounded-lg bg-[#7A9A7F] p-6 flex items-center justify-center max-w-[200px] min-h-[200px]">
-                <p className="text-white text-sm font-medium text-center leading-relaxed">
-                  &ldquo;Where do you show up as a leader when no one&apos;s watching?&rdquo;
-                </p>
+              <div className="rounded-lg bg-white p-4 flex items-center justify-center max-w-[200px] min-h-[200px]">
+                <img
+                  src="/images/Social-Impact-Bubble.png"
+                  alt="Where do you show up as a leader when no one's watching?"
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
           </div>
