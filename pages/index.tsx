@@ -444,7 +444,7 @@ export default function Home() {
                   className="size-20 object-contain"
                 />
               </div>
-              <p className="text-sm text-white/80 text-center">USA, Canada</p>
+              <p className="text-sm text-white/80 text-center">USA, Canada, Caribbean</p>
             </div>
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
