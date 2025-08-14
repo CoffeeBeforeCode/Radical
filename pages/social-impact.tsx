@@ -19,7 +19,7 @@ export default function SocialImpact() {
               </h1>
               
               <div className="mt-8 space-y-6">
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px]">
+                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                     Leadership is not a hat we put on.<br />
                     It&apos;s a way we show up; everywhere.
@@ -45,11 +45,11 @@ export default function SocialImpact() {
             
             {/* Side content placeholder - spans 1 column */}
             <div className="md:col-span-1 flex items-center justify-center">
-              <div className="rounded-lg bg-white p-4 flex items-center justify-center max-w-[200px] min-h-[200px]">
+              <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
                 <img
                   src="/images/Social-Impact-Bubble.png"
                   alt="Where do you show up as a leader when no one's watching?"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                 />
               </div>
             </div>
