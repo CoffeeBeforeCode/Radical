@@ -14,7 +14,7 @@ export default function SocialImpact() {
           {/* Headline First - Separate */}
           <div className="max-w-4xl space-y-8">
             <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-              *Leadership beyond the <span className="text-[#F96E1E]">workplace</span>
+              Leadership beyond the <span className="text-[#F96E1E]">workplace</span>
             </h1>
           </div>
           
