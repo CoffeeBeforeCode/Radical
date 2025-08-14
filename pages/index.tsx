@@ -77,9 +77,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-    </Layout>
-  )
-}
 
       {/* LEADERSHIP AS PRACTICE */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
@@ -291,7 +288,6 @@ export default function Home() {
                 </p>
             </div>
           </div>
-
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
             <div className="md:col-span-2 relative rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
@@ -324,7 +320,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
@@ -343,7 +338,6 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-
             <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
@@ -362,7 +356,6 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-
             <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="flex items-start mb-4">
                     <div className="flex-shrink-0 mr-8">
@@ -382,7 +375,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <div className="md:col-span-2 relative overflow-hidden bg-[#F96E1E] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-white to-[#1A365D] opacity-30"></div>
                 
