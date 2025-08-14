@@ -5,210 +5,265 @@ export default function Home() {
   return (
     <Layout
       title="Global Leadership Coach"
-      description="Creating space for leaders to see what gets in their way, reduce interference, and unlock their natural potential. Working with executives across Europe, Middle East, Americas, and Asia Pacific."
+      description="Executive coaching partnerships with senior leaders across Europe, Middle East, Americas, and Asia Pacific using the Leadership Equation: PE = PO - I."
       canonical="/"
     >
-      {/* FULL-WIDTH HERO - Accounts for header */}
-      <section className="relative w-full min-h-screen bg-white pt-20">
-        <div className="flex min-h-[calc(100vh-5rem)] items-center">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-7xl">
-              {/* Hero Content */}
-              <div className="max-w-4xl space-y-8">
-                <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  Your Leadership.<br />
-                  A Role?<br />
-                  A Title?<br />
-                  <span className="font-light italic text-[#F96E1E]">A Practice!</span>
-                </h1>
+      {/* HERO SECTION - White background with personal opening */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            {/* Portrait Column */}
+            <div className="order-2 md:order-1">
+              <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="/images/Phillip-Collins-Portrait.jpg"
+                  alt="Phillip Collins - Global Leadership Coach"
+                  className="h-full w-full object-cover"
+                />
               </div>
+            </div>
+
+            {/* Content Column */}
+            <div className="order-1 md:order-2">
+              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+                Hello! <span className="text-[#F96E1E]">I&apos;m Phillip Collins</span>
+              </h1>
               
-              {/* Quote + What's The Story */}
-              <div className="w-full mt-8">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
-                      <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                        The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
-                        Again and again.<br />
-                        To their <strong>values</strong>.<br />
-                        Their <strong>vision</strong>.<br />
-                        Their <strong>self</strong>.
-                      </p>
+              <div className="mt-8 space-y-6">
+                <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
+                  My coaching partnerships have spanned diverse contexts and cultures, allowing me to work with senior leaders across continents and industries. This global experience has deepened my understanding of leadership challenges across different cultural contexts.
+                </p>
+
+                {/* Coloured Box */}
+                <div className="rounded-lg bg-[#7E2D40] p-6 text-white">
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="mb-4 text-xl font-semibold text-[#D4B86A]">Core Regions</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Europe (UK, Ireland, France, Belgium, Holland)</li>
+                        <li>• Middle East (UAE, Saudi Arabia, Israel)</li>
+                        <li>• Americas (USA, Argentina, Brazil)</li>
+                        <li>• Asia &amp; Pacific (India, Singapore)</li>
+                      </ul>
                     </div>
-                    
-                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
-                      <img
-                        src="/images/whats-the-story.png"
-                        alt="What's the story I tell myself about who I am; is it still true?"
-                        className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
-                      />
+
+                    <div>
+                      <h3 className="mb-4 text-xl font-semibold text-[#D4B86A]">Primary Industries</h3>
+                      <p className="mb-3 text-sm">I&apos;ve worked with executives across major industries including:</p>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Technology &amp; Digital Innovation</li>
+                        <li>• Healthcare &amp; Life Sciences</li>
+                        <li>• Financial Services &amp; Banking</li>
+                        <li>• Manufacturing &amp; Engineering</li>
+                        <li>• Government &amp; Public Sector</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* Rest of hero content */}
-              <div className="max-w-4xl space-y-8 mt-8">
+
                 <p className="text-lg leading-relaxed text-gray-600">
-                  I create the space for that return; to what matters, what&apos;s emerging, 
-                  and what&apos;s getting in the way.<br />
-                  Not louder.<br />
-                  Just wiser.
+                  Within these broad industries, I&apos;ve partnered with leaders across numerous sectors - too many to list here, ranging from early-stage startups to established multinationals.
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="/contact"
-                    className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                  >
-                    Begin Here →
-                  </Link>
-                  <Link
-                    href="/the-work"
-                    className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-                  >
-                    The Work
-                  </Link>
+
+                <p className="text-lg leading-relaxed text-gray-600">
+                  This breadth of experience enriches each coaching partnership while maintaining focus on your unique context and objectives.
+                </p>
+
+                {/* Signature */}
+                <div className="pt-6">
+                  <p className="font-['Yesteryear'] text-2xl text-[#DD9933]">Phillip Collins</p>
+                  
+                  {/* Social Icons */}
+                  <div className="mt-4 flex space-x-4">
+                    <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
+                      <span className="sr-only">LinkedIn</span>
+                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </a>
+                    <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
+                      <span className="sr-only">X</span>
+                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                      </svg>
+                    </a>
+                    <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
+                      <span className="sr-only">Instagram</span>
+                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.295C4.198 14.81 3.652 13.531 3.652 12c0-1.531.546-2.809 1.474-3.693.875-.805 2.026-1.295 3.323-1.295 1.297 0 2.448.49 3.323 1.295.928.884 1.474 2.162 1.474 3.693 0 1.531-.546 2.81-1.474 3.693-.875.805-2.026 1.295-3.323 1.295zm7.068-7.405h-1.829v1.829h1.829v-1.829zm0-1.219h-1.829V6.535h1.829v1.829z"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </PageLayout>
       </section>
 
-      {/* LEADERSHIP AS PRACTICE */}
-      <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl text-center">
-            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Leadership is a <span className="text-[#F96E1E]">practice</span>, not a destination.
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              Like yoga. Like meditation. Something you return to daily with intention, 
-              not something you achieve once and forget.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* THE QUIET QUESTIONS */}
-      <section className="w-full bg-white py-12 md:py-16">
+      {/* FULL WIDTH CTA */}
+      <section className="w-full bg-[#F96E1E] py-12">
         <PageLayout>
-          <div className="mb-8 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              The quiet questions
+          <div className="text-center">
+            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
+              Curious about your leadership equation?
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-700 leading-relaxed">
-              What&apos;s already there, waiting for the safe space to be spoken out loud and truly be heard.
+            <Link 
+              href="/contact" 
+              className="inline-block rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-all hover:bg-gray-50 hover:shadow-lg"
+            >
+              Let&apos;s explore together
+            </Link>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* WHY PEOPLE NEED A LEADERSHIP COACH */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="mb-12 text-center">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Why People need a <span className="text-[#F96E1E]">Leadership Coach</span>
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-lg bg-[#7E2D40] p-6 text-center text-white">
+              <div className="mb-4 text-3xl">🎯</div>
+              <h4 className="mb-4 text-xl font-semibold">The Leadership Equation</h4>
+              <p className="text-sm leading-relaxed">
+                I help executives apply the PE=PO-I equation in their specific context. When we reduce interference—all the "stuff" that gets in your way—your performance naturally rises to meet your potential. Our coaching partnership creates space for you to identify what&apos;s limiting your effectiveness and develop strategies that work for you.
+              </p>
+            </div>
+
+            <div className="rounded-lg bg-[#1A365D] p-6 text-center text-white">
+              <div className="mb-4 text-3xl">🌍</div>
+              <h4 className="mb-4 text-xl font-semibold">Cross-Cultural Intelligence</h4>
+              <p className="text-sm leading-relaxed">
+                My coaching partnerships have spanned diverse contexts across Europe, the Middle East, Americas, and Asia. This global experience has deepened my understanding of leadership challenges across different cultural contexts, allowing you to navigate the complexities of leading across boundaries with strategic clarity.
+              </p>
+            </div>
+
+            <div className="rounded-lg bg-[#F96E1E] p-6 text-center text-white">
+              <div className="mb-4 text-3xl">❤️</div>
+              <h4 className="mb-4 text-xl font-semibold">Emotional Intelligence</h4>
+              <p className="text-sm leading-relaxed">
+                Leadership effectiveness is profoundly influenced by emotional intelligence. Through our partnership, you&apos;ll develop greater self-awareness, emotional regulation, and the ability to create psychological safety for your teams while maintaining authentic authority.
+              </p>
+            </div>
+
+            <div className="rounded-lg bg-[#D4B86A] p-6 text-center text-white">
+              <div className="mb-4 text-3xl">⚖️</div>
+              <h4 className="mb-4 text-xl font-semibold">Values Alignment</h4>
+              <p className="text-sm leading-relaxed">
+                True leadership effectiveness emerges when your actions align with your deepest values. Our work together helps you identify and embody your core principles, creating consistency between who you are and how you lead, resulting in more authentic and sustainable leadership.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Global Reach */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
+              Global perspective, personal connection
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-white/90 leading-relaxed">
+              My coaching partnerships span diverse contexts and cultures, working with senior leaders across continents and industries.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-              <img
-                src="/images/Bubble-1.png"
-                alt="Self-perception reflection"
-                className="size-full object-contain"
-              />
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-4 flex justify-center">
+                <img
+                  src="/images/europe.png"
+                  alt="Europe"
+                  className="h-20 w-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-white/80 text-center">UK, Ireland, France, Belgium, Switzerland, Netherlands, Sweden</p>
             </div>
-            
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
-                src="/images/Bubble-2.png"
-                alt="Connection and relationships"
-                className="size-full object-contain"
-              />
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-4 flex justify-center">
+                <img
+                  src="/images/asia.png"
+                  alt="Asia"
+                  className="h-20 w-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-white/80 text-center">UAE, Saudi Arabia, Israel, India, Singapore</p>
             </div>
-            <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-              <img
-                src="/images/Bubble-3.png"
-                alt="Authentic self-expression"
-                className="size-full object-contain"
-              />
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-4 flex justify-center">
+                <img
+                  src="/images/north-america.png"
+                  alt="North America"
+                  className="h-20 w-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-white/80 text-center">USA, Canada</p>
             </div>
-            <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
-                src="/images/Bubble-4.png"
-                alt="Decision-making and judgment"
-                className="size-full object-contain"
-              />
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <div className="mb-4 flex justify-center">
+                <img
+                  src="/images/south-america.png"
+                  alt="South America"
+                  className="h-20 w-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-white/80 text-center">Argentina, Brazil, Chile</p>
+            </div>
+          </div>
+          <div className="mt-12 text-center">
+            <div className="mx-auto max-w-2xl rounded-lg bg-[#F96E1E] p-6">
+              <p className="text-lg font-medium text-white">
+                This global experience deepens my understanding of leadership challenges across different cultural contexts, enriching each coaching partnership while maintaining focus on your unique journey.
+              </p>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* NAVY STRIPE - Leadership Equation */}
-      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+      {/* TANGERINE STRIPE - CTA */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
-          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
-            <div className="text-center">
-              <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
-                <div className="mb-4 font-['Waiting_for_the_Sunrise'] text-5xl font-bold text-[#F96E1E] md:text-6xl">
-                  PE = PO - I
-                </div>
-                <p className="text-lg font-semibold text-white">
-                  The Leadership Equation
-                </p>
-              </div>
-            </div>
-            <div className="space-y-6 lg:col-span-2">
-              <h2 className="text-3xl font-bold text-white md:text-4xl">
-                Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
-              </h2>
-              
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PE</div>
-                  <h3 className="mb-2 text-lg font-semibold text-white">Performance</h3>
-                  <p className="text-sm text-white/80">Observable results and impact</p>
-                </div>
-                
-                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">PO</div>
-                  <h3 className="mb-2 text-lg font-semibold text-white">Potential</h3>
-                  <p className="text-sm text-white/80">Innate capabilities within you</p>
-                </div>
-                
-                <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-                  <div className="mb-3 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">I</div>
-                  <h3 className="mb-2 text-lg font-semibold text-white">Interference</h3>
-                  <p className="text-sm text-white/80">The stuff getting in your way</p>
-                </div>
-              </div>
-              <div className="rounded-lg bg-[#F96E1E] p-6">
-                <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
-                <div className="space-y-2 text-sm text-white/90">
-                  <p><strong>Conflicting values:</strong> Autonomy vs belonging, care vs performance</p>
-                  <p><strong>Environmental blockers:</strong> Toxic team dynamics, silos, excessive admin</p>
-                  <p><strong>Unhelpful narratives:</strong> I must always have the answer, I&apos;m not strategic enough</p>
-                  <p><strong>Inner dialogue:</strong> The voice creating doubt where there should be confidence</p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-white/20">
-                  <p className="font-medium text-white">
-                    When we reduce what&apos;s in the way, performance naturally rises to meet potential.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* CREAM STRIPE - Call & Response */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
-        <PageLayout>
-          <div className="mb-8">
-            <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              What gets in your <span className="text-[#F96E1E]">way</span>?
+          <div className="text-center">
+            <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+              This is your leadership equation.
             </h2>
-            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
-              The internal conversations that create interference, and the leaders who have found their way through.
+            <p className="mx-auto mb-8 max-w-2xl text-xl text-white/90">
+              Ready to reduce the interference and unlock your potential?
+            </p>
+            <Link 
+              href="/contact"
+              className="inline-block rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-all hover:bg-gray-50 hover:shadow-lg"
+            >
+              Start the conversation
+            </Link>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="mb-12 text-center">
+            <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              What leaders say
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">
+              Real feedback from senior executives across industries and continents.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/images/Call-self-doubt.png"
-                  alt="Internal struggle with belonging"
+                  src="/images/Bubble-1.png"
+                  alt="Leadership development and growth"
                   className="size-full object-contain"
                 />
               </div>
@@ -216,27 +271,7 @@ export default function Home() {
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
                 <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  I have got my confidence back and my self-belief which had waned back when we first met.
-                </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
-                  Country Head<br />
-                  Manufacturing
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
-                  src="/images/Call-authority-burden.png"
-                  alt="Leadership pressure and expectations"
-                  className="size-full object-contain"
-                />
-              </div>
-              
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  My team and I have never had such honest conversations with each other, until I started working with Phillip.
+                  When you feel like you&apos;re not listening anymore. That&apos;s when the real questions begin. They&apos;re the ones we finally allow ourselves to hear.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Country Head<br />
@@ -286,202 +321,91 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            
-            <div className="md:col-span-2 relative rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="relative h-full min-h-[280px] p-8 flex flex-col justify-between"
-                     style={{
-                       background: `linear-gradient(135deg, 
-                         rgba(26, 54, 93, 0.95) 0%, 
-                         rgba(26, 54, 93, 0.85) 50%, 
-                         rgba(249, 110, 30, 0.1) 100%)`
-                     }}>
-                    
-                    <div>
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
-                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
-                        </div>
-                        
-                        <p className="text-white/90 text-base leading-relaxed mb-6">
-                            We start by noticing patterns, dynamics, friction before we move. 
-                            Sometimes the most important insights arise in the silence between words.
-                        </p>
-                    </div>
-                    
-                    <div className="flex justify-end">
-                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
-                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full animate-pulse"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
-                
-                <div className="h-full flex flex-col">
-                    <div className="aspect-square rounded-lg bg-[#F8F5EB] p-3 mb-4 flex items-center justify-center">
-                        <img
-                            src="/images/Bubble-8.png"
-                            alt="Embodied perception"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Embodied Perception</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
-                        You lead with head, heart, and gut. We work with all three.
-                    </p>
-                </div>
-            </div>
-
-            <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
-                
-                <div className="h-full flex flex-col">
-                    <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
-                        <img
-                            src="/images/Bubble-9.png"
-                            alt="Values in motion"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Values in Motion</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
-                        Mapping what truly matters through constellation work.
-                    </p>
-                </div>
-            </div>
-
-            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="flex items-start mb-4">
-                    <div className="flex-shrink-0 mr-8">
-                        <img
-                            src="/images/Bubble-10.png"
-                            alt="Sitting with tension"
-                            className="w-24 h-24 object-contain"
-                        />
-                    </div>
-                    
-                    <div className="flex-grow">
-                        <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
-                        <p className="text-white/90 leading-relaxed">
-                            Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
-                            Emotional discernment over reaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="md:col-span-2 relative overflow-hidden bg-[#F96E1E] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-white to-[#1A365D] opacity-30"></div>
-                
-                <div className="flex items-center h-full">
-                    <div className="w-full">
-                        <h3 className="text-xl font-bold text-white mb-4">Framework Philosophy</h3>
-                        <p className="text-white/90 leading-relaxed">
-                            These approaches have emerged from thousands of hours of working with leaders who think deeply and act thoughtfully.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-          </div>
-          
-          <div className="mt-16 text-center">
-              <div className="relative inline-block max-w-3xl p-8 rounded-xl bg-[#F96E1E] transform hover:scale-105 transition-all duration-300"
-                   style={{boxShadow: '0 8px 25px rgba(26, 54, 93, 0.15), 0 3px 10px rgba(249, 110, 30, 0.1)'}}>
-                  
-                  <p className="font-['Waiting_for_the_Sunrise'] text-xl leading-relaxed text-white font-medium">
-                      &ldquo;The most powerful questions aren&apos;t the ones we ask ourselves. 
-                      They&apos;re the ones we finally allow ourselves to hear.&rdquo;
-                  </p>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <div className="mb-4 text-center">
+                <img
+                  src="/images/Bubble-6.png"
+                  alt="The Leadership Equation"
+                  className="mx-auto h-16 w-16 object-contain"
+                />
               </div>
-          </div>
-        </PageLayout>
-      </section>
+              <h3 className="mb-3 text-center text-lg font-bold text-[#1A365D]">The Leadership Equation</h3>
+              <p className="text-sm text-gray-600 leading-relaxed text-center">
+                PE = PO - I. Performance equals Potential minus Interference. Simple to state, profound to live.
+              </p>
+            </div>
 
-      {/* NAVY STRIPE - Global Reach */}
-      <section className="w-full bg-[#1A365D] py-16 md:py-24">
-        <PageLayout>
-          <div className="text-center mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-              Global perspective, personal connection
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg text-white/90 leading-relaxed">
-              My coaching partnerships span diverse contexts and cultures, working with senior leaders across continents and industries.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-              <div className="mb-3 text-2xl">🇪🇺</div>
-              <h3 className="mb-2 font-semibold text-white">Europe</h3>
-              <p className="text-sm text-white/80">UK, Ireland, France, Belgium, Netherlands</p>
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <div className="mb-4 text-center">
+                <img
+                  src="/images/Bubble-2.png"
+                  alt="Values Constellation"
+                  className="mx-auto h-16 w-16 object-contain"
+                />
+              </div>
+              <h3 className="mb-3 text-center text-lg font-bold text-[#1A365D]">Values Constellation</h3>
+              <p className="text-sm text-gray-600 leading-relaxed text-center">
+                Your values don&apos;t exist in isolation. They form constellations that guide decisions when logic isn&apos;t enough.
+              </p>
             </div>
-            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-              <div className="mb-3 text-2xl">🕌</div>
-              <h3 className="mb-2 font-semibold text-white">Middle East</h3>
-              <p className="text-sm text-white/80">UAE, Saudi Arabia, Israel</p>
-            </div>
-            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-              <div className="mb-3 text-2xl">🌎</div>
-              <h3 className="mb-2 font-semibold text-white">Americas</h3>
-              <p className="text-sm text-white/80">USA, Argentina, Brazil</p>
-            </div>
-            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
-              <div className="mb-3 text-2xl">🏯</div>
-              <h3 className="mb-2 font-semibold text-white">Asia Pacific</h3>
-              <p className="text-sm text-white/80">India, Singapore</p>
-            </div>
-          </div>
-          <div className="mt-12 text-center">
-            <div className="mx-auto max-w-2xl rounded-lg bg-[#F96E1E] p-6">
-              <p className="text-lg font-medium text-white">
-                This global experience deepens my understanding of leadership challenges across different cultural contexts, enriching each coaching partnership while maintaining focus on your unique journey.
+
+            <div className="rounded-lg bg-[#F8F5EB] p-6">
+              <div className="mb-4 text-center">
+                <img
+                  src="/images/Bubble-3.png"
+                  alt="Embodied Perception"
+                  className="mx-auto h-16 w-16 object-contain"
+                />
+              </div>
+              <h3 className="mb-3 text-center text-lg font-bold text-[#1A365D]">Embodied Perception</h3>
+              <p className="text-sm text-gray-600 leading-relaxed text-center">
+                What you notice first tells you about yourself. What you avoid noticing tells you even more.
               </p>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* TANGERINE STRIPE - CTA */}
-      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
+      {/* CREAM STRIPE - Foundational Learning */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
-          <div className="text-center">
-            <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-              This is your leadership.
+          <div className="mb-12 text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Books that shaped my thinking
             </h2>
-            
-            <div className="mx-auto mb-6 max-w-2xl rounded-lg bg-white p-6">
-              <p className="text-xl font-medium leading-relaxed text-[#1A365D]">
-                You don&apos;t need a <strong>louder</strong> voice.<br />
-                You need a <strong>clearer</strong> signal.<br />
-                And a safe enough space to <strong>hear</strong> it.
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
+              My approach has been shaped by key works that have influenced how I think about 
+              leadership development, human potential, and meaningful change.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">The Inner Game of Tennis</h3>
+              <p className="mb-3 text-sm font-medium text-[#F96E1E]">Timothy Gallwey</p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                The foundation of performance coaching. Gallwey&apos;s insights about reducing interference 
+                between mind and body remain revolutionary.
               </p>
             </div>
-            <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-white/90">
-              If something here resonates, let&apos;s explore what&apos;s possible.<br />
-              No funnel.<br />
-              No pressure.<br />
-              Just a human conversation.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/contact"
-                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
-              >
-                Let&apos;s Explore Together →
-              </Link>
-              <Link
-                href="/this-is-personal"
-                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
-              >
-                This is Personal
-              </Link>
+
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Whispering in the Wind</h3>
+              <p className="mb-3 text-sm font-medium text-[#F96E1E]">John Grinder & Carmen Bostic St. Clair</p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Advanced NLP principles that deepened my understanding of how language shapes 
+                perception and possibilities.
+              </p>
+            </div>
+
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-bold text-[#1A365D]">The Work</h3>
+              <p className="mb-3 text-sm font-medium text-[#F96E1E]">Byron Katie</p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Four simple questions that cut through assumption and story to reveal what&apos;s 
+                actually true in any situation.
+              </p>
             </div>
           </div>
         </PageLayout>
