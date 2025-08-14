@@ -55,10 +55,33 @@ export default function ThisIsPersonal() {
             </div>
           </div>
           
+          {/* Additional Content */}
+          <div className="max-w-4xl space-y-8 mt-8">
+            <p className="text-lg leading-relaxed text-gray-600">
+              Their questions. Their internal contradictions.<br />
+              The moment they stopped performing leadership and started <em>living</em> it.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-600">
+              That&apos;s where I do my best work.<br />
+              Not in the certainty, but in the search.
+            </p>
+          </div>
+          
           {/* CTAs - Completely Outside */}
           <div className="mx-auto max-w-7xl mt-8 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-4">
-              {/* No CTAs in original hero section - they appear at the end of the page */}
+              <Link
+                href="/contact"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+              >
+                Let&apos;s Talk →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+              >
+                The Work
+              </Link>
             </div>
           </div>
         </PageLayout>
