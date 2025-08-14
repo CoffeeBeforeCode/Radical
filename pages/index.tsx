@@ -18,7 +18,7 @@ export default function Home() {
                 <img
                   src="/images/Phillip-Collins-Portrait.jpg"
                   alt="Phillip Collins - Global Leadership Coach"
-                  className="h-full w-full object-cover"
+                  className="size-full object-cover"
                 />
               </div>
             </div>
@@ -77,19 +77,19 @@ export default function Home() {
                   <div className="mt-4 flex space-x-4">
                     <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
                       <span className="sr-only">LinkedIn</span>
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <svg                       className="size-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                       </svg>
                     </a>
                     <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
                       <span className="sr-only">X</span>
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <svg                       className="size-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
                       </svg>
                     </a>
                     <a href="#" className="text-[#1A365D] hover:text-[#F96E1E]">
                       <span className="sr-only">Instagram</span>
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <svg                       className="size-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.295C4.198 14.81 3.652 13.531 3.652 12c0-1.531.546-2.809 1.474-3.693.875-.805 2.026-1.295 3.323-1.295 1.297 0 2.448.49 3.323 1.295.928.884 1.474 2.162 1.474 3.693 0 1.531-.546 2.81-1.474 3.693-.875.805-2.026 1.295-3.323 1.295zm7.068-7.405h-1.829v1.829h1.829v-1.829zm0-1.219h-1.829V6.535h1.829v1.829z"/>
                       </svg>
                     </a>
@@ -132,7 +132,7 @@ export default function Home() {
               <div className="mb-4 text-3xl">🎯</div>
               <h4 className="mb-4 text-xl font-semibold">The Leadership Equation</h4>
               <p className="text-sm leading-relaxed">
-                I help executives apply the PE=PO-I equation in their specific context. When we reduce interference—all the "stuff" that gets in your way—your performance naturally rises to meet your potential. Our coaching partnership creates space for you to identify what&apos;s limiting your effectiveness and develop strategies that work for you.
+                                  I help executives apply the PE=PO-I equation in their specific context. When we reduce interference—all the &ldquo;stuff&rdquo; that gets in your way—your performance naturally rises to meet your potential. Our coaching partnership creates space for you to identify what&apos;s limiting your effectiveness and develop strategies that work for you.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
                 <img
                   src="/images/europe.png"
                   alt="Europe"
-                  className="h-20 w-20 object-contain"
+                  className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">UK, Ireland, France, Belgium, Switzerland, Netherlands, Sweden</p>
@@ -190,7 +190,7 @@ export default function Home() {
                 <img
                   src="/images/asia.png"
                   alt="Asia"
-                  className="h-20 w-20 object-contain"
+                  className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">UAE, Saudi Arabia, Israel, India, Singapore</p>
@@ -200,7 +200,7 @@ export default function Home() {
                 <img
                   src="/images/north-america.png"
                   alt="North America"
-                  className="h-20 w-20 object-contain"
+                  className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">USA, Canada</p>
@@ -210,7 +210,7 @@ export default function Home() {
                 <img
                   src="/images/south-america.png"
                   alt="South America"
-                  className="h-20 w-20 object-contain"
+                  className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">Argentina, Brazil, Chile</p>
