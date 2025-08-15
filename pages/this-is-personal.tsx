@@ -31,7 +31,7 @@ export default function ThisIsPersonal() {
                 </div>
                 
                 {/* Image Box - 1/4 width - NO BORDER */}
-                <div className="md:col-span-1 rounded-lg bg-[#1A365D] p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
                     src="/images/embodied-perception.png"
                     alt="Personal leadership reflection"
