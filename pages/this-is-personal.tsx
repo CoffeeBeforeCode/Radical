@@ -1,6 +1,5 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
-
 export default function ThisIsPersonal() {
   return (
     <Layout
@@ -34,7 +33,7 @@ export default function ThisIsPersonal() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-[#1A365D] p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="/images/Bubble-personal-1.png"
+                    src="public/images/embodied-perception.png"
                     alt="Personal leadership reflection"
                     className="size-full object-contain"
                   />
@@ -74,7 +73,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* NAVY STRIPE - The Sensitive Boy Story */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -138,7 +136,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* CREAM STRIPE - How I Coach / Philosophy */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -182,7 +179,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* WHITE STRIPE - Why I'm Here */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
@@ -225,7 +221,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* CREAM STRIPE - Values Integration */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -239,36 +234,31 @@ export default function ThisIsPersonal() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
-            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
-              <div className="mb-4 text-3xl">🎯</div>
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm flex flex-col justify-center items-center aspect-square">
               <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Wisdom</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Applied through discernment, not just knowledge.
               </p>
             </div>
-            <div className="rounded-lg bg-[#1A365D] p-6 text-center text-white">
-              <div className="mb-4 text-3xl">🔒</div>
+            <div className="rounded-lg bg-[#1A365D] p-6 text-center text-white flex flex-col justify-center items-center aspect-square">
               <h3 className="mb-3 text-lg font-bold">Integrity</h3>
               <p className="text-sm text-white/80 leading-relaxed">
                 Lived, not performed. The foundation of trust.
               </p>
             </div>
-            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
-              <div className="mb-4 text-3xl">🪞</div>
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm flex flex-col justify-center items-center aspect-square">
               <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Self-respect</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 The origin of every healthy boundary.
               </p>
             </div>
-            <div className="rounded-lg bg-[#F96E1E] p-6 text-center text-white">
-              <div className="mb-4 text-3xl">📈</div>
+            <div className="rounded-lg bg-[#F96E1E] p-6 text-center text-white flex flex-col justify-center items-center aspect-square">
               <h3 className="mb-3 text-lg font-bold">Personal Development</h3>
               <p className="text-sm text-white/80 leading-relaxed">
                 Not a badge, but a way of life.
               </p>
             </div>
-            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
-              <div className="mb-4 text-3xl">🕊️</div>
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm flex flex-col justify-center items-center aspect-square">
               <h3 className="mb-3 text-lg font-bold text-[#1A365D]">Freedom</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 To think, question, and choose consciously.
@@ -277,7 +267,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* NAVY STRIPE - Global Experience */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -302,7 +291,7 @@ export default function ThisIsPersonal() {
             </div>
             <div className="aspect-square flex items-center justify-center rounded-lg bg-[#F96E1E] p-4">
               <img
-                src="/images/Bubble-personal-2.png"
+                src="public/images/global-perspective.png"
                 alt="Global leadership perspective"
                 className="size-full object-contain"
               />
@@ -331,7 +320,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* CREAM STRIPE - Foundational Learning */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -541,7 +529,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* WHITE STRIPE - Learning Journey */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
@@ -593,7 +580,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* NAVY STRIPE - Personal Quote */}
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <PageLayout>
@@ -612,7 +598,6 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
-
       {/* TANGERINE STRIPE - Closing CTA */}
       <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
