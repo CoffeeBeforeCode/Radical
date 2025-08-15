@@ -33,7 +33,7 @@ export default function ThisIsPersonal() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-[#1A365D] p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="public/images/embodied-perception.png"
+                    src="/images/embodied-perception.png"
                     alt="Personal leadership reflection"
                     className="size-full object-contain"
                   />
@@ -291,7 +291,7 @@ export default function ThisIsPersonal() {
             </div>
             <div className="aspect-square flex items-center justify-center rounded-lg bg-[#F96E1E] p-4">
               <img
-                src="public/images/global-perspective.png"
+                src="/images/global-perspective.png"
                 alt="Global leadership perspective"
                 className="size-full object-contain"
               />
