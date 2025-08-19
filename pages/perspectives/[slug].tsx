@@ -1,4 +1,142 @@
-// Blog post content
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import Head from 'next/head'
+
+interface BlogPostProps {
+  post: {
+    slug: string
+    title: string
+    excerpt: string
+    category: string
+    readTime: string
+    publishDate: string
+    content: string
+  }
+}
+
+const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+  const router = useRouter()
+
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+
+  if (!post) {
+    return <div>Post not found</div>
+  }
+
+  return (
+    <>
+      <Head>
+        <title>{post.title} | Perspectives | Phillip Collins</title>
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={`leadership coaching, ${post.category.toLowerCase()}, executive coaching, ${post.slug.replace('-', ' ')}`} />
+      </Head>
+
+      <article className="min-h-screen bg-white">
+        {/* Hero Section */}
+        <section className="bg-[#1A365D] py-16 md:py-24">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="space-y-6 text-center">
+              <div className="flex items-center justify-center space-x-4">
+                <Link
+                  href="/perspectives"
+                  className="font-medium text-[#D4B86A] transition-colors hover:text-white"
+                >
+                  ← Back to Perspectives
+                </Link>
+                <span className="inline-block rounded-full bg-[#F96E1E] px-3 py-1 text-sm font-medium text-white">
+                  {post.category}
+                </span>
+              </div>
+              
+              <h1 className="font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl leading-tight text-white md:text-5xl">
+                {post.title}
+              </h1>
+              
+              <div className="flex items-center justify-center space-x-6 text-sm text-white/80">
+                <time>
+                  {new Date(post.publishDate).toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric'
+                  })}
+                </time>
+                <span>{post.readTime}</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Article Content */}
+        <section className="py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="prose prose-lg mx-auto max-w-none prose-headings:font-[&apos;Waiting_for_the_Sunrise&apos;] prose-headings:text-[#1A365D] prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-gray-700 prose-strong:text-[#7E2D40] prose-a:text-[#F96E1E] hover:prose-a:text-[#E55A1A]">
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            </div>
+          </div>
+        </section>
+
+        {/* Navigation */}
+        <section className="border-t border-gray-200 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <Link
+                href="/perspectives"
+                className="inline-flex items-center justify-center rounded bg-[#1A365D] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2A4A6B] focus:outline-none focus:ring-2 focus:ring-[#1A365D] focus:ring-offset-2"
+              >
+                ← Back to All Perspectives
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="bg-[#F8F5EB] py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="mb-6 font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl text-[#1A365D] md:text-4xl">
+              Ready to explore your leadership development?
+            </h2>
+            <p className="mb-8 text-lg leading-relaxed text-gray-700">
+              These perspectives emerge from real coaching conversations. 
+              Let&apos;s explore what&apos;s getting in your way.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded bg-[#F96E1E] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E55A1A] focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2"
+            >
+              Start the conversation
+            </Link>
+          </div>
+        </section>
+      </article>
+    </>
+  )
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const slugs = [
+    'leadership-equation',
+    'leadership-as-practice', 
+    'values-evolution',
+    'internal-narratives'
+  ]
+
+  const paths = slugs.map((slug) => ({
+    params: { slug }
+  }))
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string
+
+  // Blog post content
   const blogPosts: { [key: string]: any } = {
     'leadership-equation': {
       slug: 'leadership-equation',
@@ -198,39 +336,128 @@
 
           <p>This integration also creates unexpected leadership opportunities. When people see you leading with the same integrity in multiple contexts, they trust you more deeply. They&apos;re more likely to seek your guidance, support your initiatives, and follow your example.</p>
 
-          <h2>Navigating the Challenges</h2>
-
-          <p>Integrated leadership practice isn&apos;t without challenges. Different contexts may seem to require different approaches. Professional environments might reward behaviours that feel inauthentic in family settings. Community involvement might highlight values conflicts you haven&apos;t previously acknowledged.</p>
-
-          <p>The goal isn&apos;t to be identical in every context, but to be consistent in your core values and presence. A parent speaking firmly to a child about boundaries might use different language than a CEO addressing performance issues, but the underlying respect for human dignity and commitment to growth can remain constant.</p>
-
-          <h2>Leadership Practice During Transitions</h2>
-
-          <p>Life transitions offer particularly rich opportunities for leadership practice. Marriage, parenthood, career changes, geographic moves, and health challenges all provide laboratories for applying leadership principles in new contexts.</p>
-
-          <p>I&apos;ve observed that leaders who approach transitions with curiosity rather than resistance often emerge with expanded capacity and deeper authenticity. They use the disruption as an opportunity to examine patterns that no longer serve them and experiment with new ways of being.</p>
-
-          <h2>The Community Dimension</h2>
-
-          <p>Perhaps the most overlooked aspect of leadership practice is community engagement. Many executives excel at professional and family leadership but struggle to translate their capabilities into meaningful community contribution.</p>
-
-          <p>Community leadership offers unique development opportunities. It provides practice in influencing without formal authority, working with diverse stakeholders, and pursuing long-term vision without immediate rewards. These skills directly enhance professional leadership capacity.</p>
-
-          <h2>Building Your Practice</h2>
-
-          <p>Developing integrated leadership practice requires intention and patience. Here are some practical starting points:</p>
-
-          <ul class="space-y-2">
-            <li><strong>Domain Assessment:</strong> Honestly evaluate your current effectiveness across all five domains</li>
-            <li><strong>Pattern Recognition:</strong> Notice where you show up most authentically and where you feel most challenged</li>
-            <li><strong>Value Clarity:</strong> Identify your core values and examine how they express themselves in different contexts</li>
-            <li><strong>Cross-Pollination:</strong> Actively look for opportunities to apply insights from one domain to another</li>
-            <li><strong>Feedback Systems:</strong> Create mechanisms to receive honest feedback from people in different areas of your life</li>
-          </ul>
-
           <h2>Conclusion</h2>
 
           <p>Leadership as a lifelong practice extends far beyond organisational boundaries. It&apos;s about developing the capacity to show up authentically and intentionally in every domain of our lives. This doesn&apos;t mean being perfect everywhere it means being conscious everywhere.</p>
+
+          <p>The leaders who have the most sustainable impact are those who recognise that their family relationships, friendships, and community involvement aren&apos;t separate from their professional leadership development they&apos;re integral to it. Each domain offers unique opportunities for growth, feedback, and the development of authentic presence.</p>
+
+          <p>When we embrace leadership as a practice rather than a position, we create space for continuous growth that honours both our achievements and our ongoing journey. We develop the kind of integrated authenticity that not only makes us more effective leaders but more fulfilled human beings.</p>
+
+          <p><em>Which domain of your life is calling for more intentional leadership? What would it look like to bring the same presence there that you bring to your areas of greatest strength?</em></p>
+        </div>
+      `
+    },
+    'values-evolution': {
+      slug: 'values-evolution',
+      title: 'Navigating Values Evolution Through Leadership Transitions',
+      excerpt: 'One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.',
+      category: 'Values Evolution',
+      readTime: '12 min read',
+      publishDate: '2025-08-19',
+      content: `
+        <div class="space-y-6">
+          <p class="text-xl leading-relaxed text-gray-800">One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles unchanging guideposts that should remain constant throughout our careers and lives. Yet in my coaching practice, I&apos;ve observed that major transitions often catalyse profound shifts in what matters most to us, creating both opportunities for authentic growth and potential interference in our leadership effectiveness.</p>
+
+          <p>Consider this: the ambitious executive who prioritised achievement and recognition in their thirties may find themselves valuing work-life integration and meaningful relationships after becoming a parent. The military officer who lived by service and duty might discover that family security takes precedence after transitioning to civilian life. The entrepreneur who thrived on risk and innovation could find themselves seeking stability and predictability during a health crisis.</p>
+
+          <p>These shifts aren&apos;t signs of inconsistency or weakness they&apos;re natural responses to changing life circumstances and evolving self-awareness. However, when we fail to recognise and consciously integrate these value changes, they can create significant interference in our Leadership Equation (PE = PO - I), limiting our effectiveness precisely when we most need clarity and authenticity.</p>
+
+          <h2>Understanding Values Evolution</h2>
+
+          <p>Values evolution presents a unique challenge for leaders because it often occurs beneath conscious awareness. Unlike skill development or knowledge acquisition, which we can observe and measure, values shifts tend to emerge gradually through our responses to new experiences and changing life circumstances.</p>
+
+          <h3>The Myth of Fixed Values</h3>
+
+          <p>Many leadership development approaches treat values as constants to be discovered and then applied consistently. This perspective assumes that once we identify our core values, perhaps through a workshop or assessment, we can rely on them to guide decision-making indefinitely.</p>
+
+          <p>My experience suggests otherwise. Values evolve constantly through life transitions: marriage, parenthood, career changes, health challenges, geographic moves, and countless other experiences that reshape our understanding of what matters most. The values hierarchy that served us in our twenties may require conscious recalibration as we navigate our forties.</p>
+
+          <p>This isn&apos;t a flaw in the human system it&apos;s a feature. Our capacity to adapt our values to changing circumstances is part of what makes us resilient and authentic leaders.</p>
+
+          <h2>Common Triggers for Values Evolution</h2>
+
+          <p>Several types of transitions commonly catalyse significant values shifts:</p>
+
+          <h3>Life Stage Transitions</h3>
+          <p>Becoming a parent, caring for aging relatives, experiencing health challenges, or facing mortality can fundamentally alter what we prioritise. A former client married, became a father, and bought a house within six months each life-changing event triggering value shifts that, combined, required significant recalibration of his leadership approach.</p>
+
+          <h3>Career Transitions</h3>
+          <p>Moving from individual contributor to manager, transitioning between industries, or shifting from corporate to entrepreneurial contexts often reveals new aspects of what matters to us. The skills and values that made us successful in one context may not serve us in another.</p>
+
+          <h3>Relationship Transitions</h3>
+          <p>Marriage, divorce, deepening friendships, or losing important relationships can shift our understanding of what we need from others and what we&apos;re willing to give. These changes often ripple into our professional leadership as well.</p>
+
+          <h3>Cultural and Geographic Transitions</h3>
+          <p>Moving between countries, engaging with different cultures, or experiencing significant socioeconomic changes can expand our perspective on what constitutes a meaningful life and effective leadership.</p>
+
+          <h2>The Values Integration Challenge</h2>
+
+          <p>When values evolve, leaders often face a challenging integration process. They may experience internal conflict between old and new priorities, confusion about decision-making frameworks, or concern that others will perceive them as inconsistent.</p>
+
+          <p>I worked with a former army officer who struggled after becoming a father. The values of service and duty that had driven his military career remained important, but family security had become paramount. He felt torn between these seemingly competing priorities until we explored how to integrate rather than choose between them.</p>
+
+          <p>The key insight was recognising that values evolution doesn&apos;t require abandoning previous principles it requires conscious integration of expanded priorities.</p>
+
+          <h2>Practical Approaches to Values Navigation</h2>
+
+          <h3>1. Values Archaeology</h3>
+          <p>Regularly examine your current values landscape. What matters most to you now compared to five years ago? What life experiences have influenced these shifts? What values have remained constant, and which have evolved?</p>
+
+          <p>I often work with clients to create what I call a &ldquo;values timeline&rdquo; mapping how their priorities have shifted through major life transitions. This exercise reveals patterns and helps predict how future changes might affect their value system.</p>
+
+          <h3>2. Transition Mapping</h3>
+          <p>During major life transitions, consciously map how your values might be shifting. What new priorities are emerging? How might these changes affect your leadership approach? What support do you need during this recalibration?</p>
+
+          <h3>3. Integration Rather Than Replacement</h3>
+          <p>Instead of viewing values evolution as replacing old priorities with new ones, explore how to integrate expanded perspectives. How can you honour both your evolving and your enduring values?</p>
+
+          <p>The army officer I mentioned earlier discovered that his commitment to service could encompass both his duty to country and his responsibility to family. Rather than competing values, they became complementary expressions of his core principle of protection and service.</p>
+
+          <h3>4. Decision-Making Frameworks</h3>
+          <p>Develop conscious frameworks for making decisions when values seem to conflict. What principles will guide you when family security competes with professional advancement? How will you navigate situations where personal values conflict with organisational expectations?</p>
+
+          <h3>5. Stakeholder Communication</h3>
+          <p>Consider how to communicate values evolution to key stakeholders. How can you help your team, family, and colleagues understand changes in your priorities without appearing inconsistent or uncommitted?</p>
+
+          <h2>The Growth Opportunity in Values Evolution</h2>
+
+          <p>Values evolution, when navigated consciously, becomes a source of leadership strength rather than confusion. Leaders who openly acknowledge their evolving priorities often discover several benefits:</p>
+
+          <h3>Enhanced Authenticity</h3>
+          <p>Living aligned with current rather than outdated values increases authentic presence and decision-making confidence.</p>
+
+          <h3>Expanded Empathy</h3>
+          <p>Understanding your own values evolution helps you recognise and support others&apos; transitions more effectively.</p>
+
+          <h3>Improved Decision-Making</h3>
+          <p>Conscious values integration provides clearer frameworks for complex decisions that honour multiple priorities.</p>
+
+          <h2>A Personal Example</h2>
+
+          <p>I experienced this firsthand when I got married (after 20 years together) and welcomed a puppy into our lives. Despite the long relationship, the formal commitment and new responsibility shifted my values in subtle but important ways. I noticed different factors influencing decisions, changes in how I approach risk, and new considerations in work-life balance. Rather than ignoring these shifts, I&apos;ve consciously integrated them into my leadership practice.</p>
+
+          <p>The formal commitment of marriage, even after two decades together, created a different quality of partnership that influenced how I think about long-term planning and mutual support. Adding a puppy introduced considerations about responsibility, routine, and the integration of work and home life that I hadn&apos;t previously navigated.</p>
+
+          <h2>Building Values Resilience</h2>
+
+          <p>The goal isn&apos;t to prevent values evolution it&apos;s to develop resilience for navigating change consciously. This requires:</p>
+
+          <h3>Regular Self-Reflection</h3>
+          <p>Creating space to notice values shifts as they occur rather than waiting for crisis to force awareness.</p>
+
+          <h3>Supportive Relationships</h3>
+          <p>Surrounding yourself with people who can provide perspective during values transitions.</p>
+
+          <h3>Experimental Mindset</h3>
+          <p>Approaching values evolution as an experiment rather than a failure of consistency.</p>
+
+          <h3>Integration Skills</h3>
+          <p>Developing the capacity to hold multiple priorities simultaneously rather than defaulting to either/or thinking.</p>
+
+          <h2>Conclusion</h2>
+
+          <p>Values evolution is an inevitable part of leadership development and human growth. Rather than viewing it as a challenge to overcome, we can embrace it as an opportunity for deeper authenticity and expanded effectiveness.</p>
 
           <p>The leaders who have the most sustainable impact are those who remain curious about their evolving priorities whilst maintaining connection to their core principles. They develop what I call &ldquo;values fluency&rdquo; the ability to navigate changing priorities with grace and conscious intention.</p>
 
@@ -262,18 +489,6 @@
           <h2>Understanding the Narrative-Leadership Connection</h2>
 
           <p>Internal narratives operate at the intersection of our past experiences, current context, and future aspirations. They&apos;re formed through years of feedback, success and failure patterns, cultural messaging, and significant relationships. Often, the narratives that once served us well become limitations as our leadership contexts evolve.</p>
-
-          <h3>The Helper&apos;s Narrative</h3>
-          <p>A leader who learned early that their worth came from helping others might struggle with delegation, constantly taking on excessive work to feel valuable.</p>
-
-          <h3>The Perfectionist&apos;s Story</h3>
-          <p>Someone whose early success came from flawless execution might develop narratives about failure being unacceptable, leading to risk aversion and team anxiety.</p>
-
-          <h3>The Outsider&apos;s Script</h3>
-          <p>A leader who succeeded by proving themselves as an outsider might maintain narratives about needing to work twice as hard as others, creating unsustainable patterns and imposter syndrome.</p>
-
-          <h3>The Rescuer&apos;s Identity</h3>
-          <p>Leaders who built their reputation by solving crises might unconsciously create or maintain dramatic situations to feel needed and competent.</p>
 
           <h2>Common Leadership Narratives and Their Impact</h2>
 
@@ -333,30 +548,6 @@
           <p><strong>Step 4: Choose Empowering Narratives</strong><br>
           &ldquo;This setback provides valuable learning that will make me a stronger leader. Resilience is built through navigating challenges, not avoiding them.&rdquo;</p>
 
-          <h2>Narratives and Cultural Context</h2>
-
-          <p>Our internal narratives are heavily influenced by cultural background, and this becomes particularly important for leaders working across diverse contexts. What feels like natural self-reflection in one culture might be perceived as harmful self-criticism in another.</p>
-
-          <p>I&apos;ve worked with leaders from cultures that emphasise collective harmony who struggled with narratives about individual assertiveness being selfish. Conversely, leaders from highly individualistic cultures sometimes carried narratives that seeking help was weakness.</p>
-
-          <p>Effective global leaders develop cultural narrative fluency the ability to recognise how different cultural contexts shape internal stories and adjust their leadership approach accordingly.</p>
-
-          <h2>Team Narratives and Collective Stories</h2>
-
-          <p>Individual narratives don&apos;t exist in isolation they interact with and influence team narratives. A leader&apos;s story about perfectionism can create team narratives about failure being unacceptable. A leader&apos;s imposter syndrome can contribute to team stories about not being good enough.</p>
-
-          <p>Conversely, leaders who model healthy narratives about learning from failure, seeking support, and maintaining perspective can help teams develop more resilient collective stories.</p>
-
-          <h3>Identifying Team Narratives</h3>
-
-          <ul class="space-y-2">
-            <li>What stories does your team tell about success and failure?</li>
-            <li>How do they interpret challenging situations?</li>
-            <li>What assumptions do they make about leadership expectations?</li>
-            <li>How do they talk about other teams or departments?</li>
-            <li>What narratives exist about change and innovation?</li>
-          </ul>
-
           <h2>The Role of Self-Compassion</h2>
 
           <p>Perhaps the most important aspect of working with internal narratives is developing self-compassion. Many limiting narratives are reinforced by harsh self-criticism that creates a cycle of negative thinking.</p>
@@ -382,27 +573,11 @@
             <li>What opportunities might this challenge create?</li>
           </ul>
 
-          <h3>The Narrative Journal</h3>
-          <p>Keep a brief record of challenging situations and your internal responses. Over time, patterns become clear, and you can track progress in developing more helpful narratives.</p>
-
           <h2>Building Narrative Resilience</h2>
 
           <p>Narrative resilience is the ability to maintain empowering stories during challenging times. This doesn&apos;t mean denial or toxic positivity it means developing the capacity to find useful meaning in difficult experiences.</p>
 
           <p>Leaders with strong narrative resilience can help teams maintain perspective during crises, find learning in setbacks, and maintain hope during uncertainty. They become anchors of stability and growth for their organisations.</p>
-
-          <h2>When Narratives Serve Us Well</h2>
-
-          <p>Not all internal narratives need changing. Many serve us well by providing motivation, maintaining standards, and guiding decision-making. The key is discerning which narratives enhance our leadership and which limit it.</p>
-
-          <p>Helpful narratives tend to be:</p>
-          <ul class="space-y-2">
-            <li>Realistic but optimistic</li>
-            <li>Focused on learning and growth</li>
-            <li>Encouraging of appropriate risk-taking</li>
-            <li>Supportive of authentic relationships</li>
-            <li>Aligned with your values and goals</li>
-          </ul>
 
           <h2>Conclusion</h2>
 
@@ -416,426 +591,6 @@
 
           <p><em>What story are you telling yourself about your leadership journey? How might a slight shift in that narrative unlock new possibilities for yourself and your team?</em></p>
         </div>
-      `
-    }
-  } are those who recognise that their family relationships, friendships, and community involvement aren&apos;t separate from their professional leadership development they&apos;re integral to it. Each domain offers unique opportunities for growth, feedback, and the development of authentic presence.</p>
-
-          <p>When we embrace leadership as a practice rather than a position, we create space for continuous growth that honours both our achievements and our ongoing journey. We develop the kind of integrated authenticity that not only makes us more effective leaders but more fulfilled human beings.</p>
-
-          <p><em>Which domain of your life is calling for more intentional leadership? What would it look like to bring the same presence there that you bring to your areas of greatest strength?</em></p>
-        </div>
-      `
-    },
-    'values-evolution': {
-      slug: 'values-evolution',
-      title: 'Navigating Values Evolution Through Leadership Transitions',
-      excerpt: 'One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.',
-      category: 'Values Evolution',
-      readTime: '12 min read',
-      publishDate: '2025-08-19',
-      content: `
-        <div class="space-y-6">
-          <p class="text-xl leading-relaxed text-gray-800">One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles unchanging guideposts that should remain constant throughout our careers and lives. Yet in my coaching practice, I&apos;ve observed that major transitions often catalyse profound shifts in what matters most to us, creating both opportunities for authentic growth and potential interference in our leadership effectiveness.</p>
-
-          <p>Consider this: the ambitious executive who prioritised achievement and recognition in their thirties may find themselves valuing work-life integration and meaningful relationships after becoming a parent. The military officer who lived by service and duty might discover that family security takes precedence after transitioning to civilian life. The entrepreneur who thrived on risk and innovation could find themselves seeking stability and predictability during a health crisis.</p>
-
-          <p>These shifts aren&apos;t signs of inconsistency or weakness they&apos;re natural responses to changing life circumstances and evolving self-awareness. However, when we fail to recognise and consciously integrate these value changes, they can create significant interference in our Leadership Equation (PE = PO - I), limiting our effectiveness precisely when we most need clarity and authenticity.</p>
-
-          <h2>Understanding Values Evolution</h2>
-
-          <p>Values evolution presents a unique challenge for leaders because it often occurs beneath conscious awareness. Unlike skill development or knowledge acquisition, which we can observe and measure, values shifts tend to emerge gradually through our responses to new experiences and changing life circumstances.</p>
-
-          <h3>The Myth of Fixed Values</h3>
-
-          <p>Many leadership development approaches treat values as constants to be discovered and then applied consistently. This perspective assumes that once we identify our core values, perhaps through a workshop or assessment, we can rely on them to guide decision-making indefinitely.</p>
-
-          <p>My experience suggests otherwise. Values evolve constantly through life transitions: marriage, parenthood, career changes, health challenges, geographic moves, and countless other experiences that reshape our understanding of what matters most. The values hierarchy that served us in our twenties may require conscious recalibration as we navigate our forties.</p>
-
-          <p>This isn&apos;t a flaw in the human system it&apos;s a feature. Our capacity to adapt our values to changing circumstances is part of what makes us resilient and authentic leaders.</p>
-
-          <h2>Common Triggers for Values Evolution</h2>
-
-          <p>Several types of transitions commonly catalyse significant values shifts:</p>
-
-          <h3>Life Stage Transitions</h3>
-          <p>Becoming a parent, caring for aging relatives, experiencing health challenges, or facing mortality can fundamentally alter what we prioritise. A former client married, became a father, and bought a house within six months each life-changing event triggering value shifts that, combined, required significant recalibration of his leadership approach.</p>
-
-          <h3>Career Transitions</h3>
-          <p>Moving from individual contributor to manager, transitioning between industries, or shifting from corporate to entrepreneurial contexts often reveals new aspects of what matters to us. The skills and values that made us successful in one context may not serve us in another.</p>
-
-          <h3>Relationship Transitions</h3>
-          <p>Marriage, divorce, deepening friendships, or losing important relationships can shift our understanding of what we need from others and what we&apos;re willing to give. These changes often ripple into our professional leadership as well.</p>
-
-          <h3>Cultural and Geographic Transitions</h3>
-          <p>Moving between countries, engaging with different cultures, or experiencing significant socioeconomic changes can expand our perspective on what constitutes a meaningful life and effective leadership.</p>
-
-          <h2>The Values Integration Challenge</h2>
-
-          <p>When values evolve, leaders often face a challenging integration process. They may experience internal conflict between old and new priorities, confusion about decision-making frameworks, or concern that others will perceive them as inconsistent.</p>
-
-          <p>I worked with a former army officer who struggled after becoming a father. The values of service and duty that had driven his military career remained important, but family security had become paramount. He felt torn between these seemingly competing priorities until we explored how to integrate rather than choose between them.</p>
-
-          <p>The key insight was recognising that values evolution doesn&apos;t require abandoning previous principles it requires conscious integration of expanded priorities.</p>
-
-          <h2>Recognising Values Shifts in Real Time</h2>
-
-          <p>One of the challenges of values evolution is that it often happens gradually, beneath conscious awareness. Here are some signals that your values might be shifting:</p>
-
-          <ul class="space-y-2">
-            <li><strong>Decision fatigue:</strong> Previously straightforward decisions become complex or emotionally charged</li>
-            <li><strong>Energy drain:</strong> Activities that once energised you feel depleting, or vice versa</li>
-            <li><strong>Relationship tension:</strong> Conflicts with people who share your &ldquo;old&rdquo; values</li>
-            <li><strong>Identity confusion:</strong> Feeling disconnected from your previous sense of self</li>
-            <li><strong>Performance inconsistency:</strong> Your usual approaches to leadership challenges feel forced or inauthentic</li>
-          </ul>
-
-          <h2>Practical Approaches to Values Navigation</h2>
-
-          <h3>1. Values Archaeology</h3>
-          <p>Regularly examine your current values landscape. What matters most to you now compared to five years ago? What life experiences have influenced these shifts? What values have remained constant, and which have evolved?</p>
-
-          <p>I often work with clients to create what I call a &ldquo;values timeline&rdquo; mapping how their priorities have shifted through major life transitions. This exercise reveals patterns and helps predict how future changes might affect their value system.</p>
-
-          <h3>2. Transition Mapping</h3>
-          <p>During major life transitions, consciously map how your values might be shifting. What new priorities are emerging? How might these changes affect your leadership approach? What support do you need during this recalibration?</p>
-
-          <h3>3. Integration Rather Than Replacement</h3>
-          <p>Instead of viewing values evolution as replacing old priorities with new ones, explore how to integrate expanded perspectives. How can you honour both your evolving and your enduring values?</p>
-
-          <p>The army officer I mentioned earlier discovered that his commitment to service could encompass both his duty to country and his responsibility to family. Rather than competing values, they became complementary expressions of his core principle of protection and service.</p>
-
-          <h3>4. Decision-Making Frameworks</h3>
-          <p>Develop conscious frameworks for making decisions when values seem to conflict. What principles will guide you when family security competes with professional advancement? How will you navigate situations where personal values conflict with organisational expectations?</p>
-
-          <h3>5. Stakeholder Communication</h3>
-          <p>Consider how to communicate values evolution to key stakeholders. How can you help your team, family, and colleagues understand changes in your priorities without appearing inconsistent or uncommitted?</p>
-
-          <h2>Values Evolution in Leadership Contexts</h2>
-
-          <p>Values shifts can particularly challenge leaders because others depend on their consistency and predictability. A CEO who previously made decisions based primarily on financial metrics might begin weighing environmental and social impacts more heavily. A manager who once prioritised efficiency above all else might start focusing on team wellbeing and development.</p>
-
-          <p>These changes can create confusion for stakeholders who expect consistent leadership behaviour. The key is transparent communication about evolving priorities whilst maintaining reliability in core leadership functions.</p>
-
-          <h2>The Growth Opportunity in Values Evolution</h2>
-
-          <p>Values evolution, when navigated consciously, becomes a source of leadership strength rather than confusion. Leaders who openly acknowledge their evolving priorities often discover several benefits:</p>
-
-          <h3>Enhanced Authenticity</h3>
-          <p>Living aligned with current rather than outdated values increases authentic presence and decision-making confidence.</p>
-
-          <h3>Expanded Empathy</h3>
-          <p>Understanding your own values evolution helps you recognise and support others&apos; transitions more effectively.</p>
-
-          <h3>Improved Decision-Making</h3>
-          <p>Conscious values integration provides clearer frameworks for complex decisions that honour multiple priorities.</p>
-
-          <h3>Sustainable Leadership</h3>
-          <p>Aligning leadership practice with evolving values prevents the burnout that comes from pursuing outdated success metrics.</p>
-
-          <h2>A Personal Example</h2>
-
-          <p>I experienced this firsthand when I got married (after 20 years together) and welcomed a puppy into our lives. Despite the long relationship, the formal commitment and new responsibility shifted my values in subtle but important ways. I noticed different factors influencing decisions, changes in how I approach risk, and new considerations in work-life balance. Rather than ignoring these shifts, I&apos;ve consciously integrated them into my leadership practice.</p>
-
-          <p>The formal commitment of marriage, even after two decades together, created a different quality of partnership that influenced how I think about long-term planning and mutual support. Adding a puppy introduced considerations about responsibility, routine, and the integration of work and home life that I hadn&apos;t previously navigated.</p>
-
-          <h2>Supporting Others Through Values Transitions</h2>
-
-          <p>As leaders, we often support team members through their own values evolution. Recognising the signs and providing appropriate support can dramatically improve retention and performance:</p>
-
-          <ul class="space-y-2">
-            <li><strong>Create safe spaces</strong> for people to discuss changing priorities</li>
-            <li><strong>Offer flexibility</strong> in role definitions and working arrangements when possible</li>
-            <li><strong>Provide coaching support</strong> during major life transitions</li>
-            <li><strong>Model authenticity</strong> by sharing your own values evolution journey</li>
-            <li><strong>Adjust performance metrics</strong> to account for changing motivations and strengths</li>
-          </ul>
-
-          <h2>Building Values Resilience</h2>
-
-          <p>The goal isn&apos;t to prevent values evolution it&apos;s to develop resilience for navigating change consciously. This requires:</p>
-
-          <h3>Regular Self-Reflection</h3>
-          <p>Creating space to notice values shifts as they occur rather than waiting for crisis to force awareness.</p>
-
-          <h3>Supportive Relationships</h3>
-          <p>Surrounding yourself with people who can provide perspective during values transitions.</p>
-
-          <h3>Experimental Mindset</h3>
-          <p>Approaching values evolution as an experiment rather than a failure of consistency.</p>
-
-          <h3>Integration Skills</h3>
-          <p>Developing the capacity to hold multiple priorities simultaneously rather than defaulting to either/or thinking.</p>
-
-          <h2>Values Evolution and Organisational Culture</h2>
-
-          <p>Organisations that acknowledge and support values evolution tend to have more engaged, authentic, and innovative cultures. They recognise that people change, and create systems that allow for growth rather than demanding rigid consistency.</p>
-
-          <p>This might include regular values check-ins during performance reviews, flexible career paths that accommodate changing priorities, and leadership development that addresses the whole person rather than just professional skills.</p>
-
-          <h2>Conclusion</h2>
-
-          <p>Values evolution is an inevitable part of leadership development and human growth. Rather than viewing it as a challenge to overcome, we can embrace it as an opportunity for deeper authenticity and expanded effectiveness.</p>
-
-          <p>The leaders who have the most sustainable impactimport { GetStaticPaths, GetStaticProps } from 'next'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import Head from 'next/head'
-
-interface BlogPostProps {
-  post: {
-    slug: string
-    title: string
-    excerpt: string
-    category: string
-    readTime: string
-    publishDate: string
-    content: string
-  }
-}
-
-const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
-  const router = useRouter()
-
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
-
-  if (!post) {
-    return <div>Post not found</div>
-  }
-
-  return (
-    <>
-      <Head>
-        <title>{post.title} | Perspectives | Phillip Collins</title>
-        <meta name="description" content={post.excerpt} />
-        <meta name="keywords" content={`leadership coaching, ${post.category.toLowerCase()}, executive coaching, ${post.slug.replace('-', ' ')}`} />
-      </Head>
-
-      <article className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-[#1A365D] py-16 md:py-24">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="space-y-6 text-center">
-              <div className="flex items-center justify-center space-x-4">
-                <Link
-                  href="/perspectives"
-                  className="font-medium text-[#D4B86A] transition-colors hover:text-white"
-                >
-                  ← Back to Perspectives
-                </Link>
-                <span className="inline-block rounded-full bg-[#F96E1E] px-3 py-1 text-sm font-medium text-white">
-                  {post.category}
-                </span>
-              </div>
-              
-              <h1 className="font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl leading-tight text-white md:text-5xl">
-                {post.title}
-              </h1>
-              
-              <div className="flex items-center justify-center space-x-6 text-sm text-white/80">
-                <time>
-                  {new Date(post.publishDate).toLocaleDateString('en-GB', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
-                  })}
-                </time>
-                <span>{post.readTime}</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Article Content */}
-        <section className="py-16">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-lg mx-auto max-w-none prose-headings:font-[&apos;Waiting_for_the_Sunrise&apos;] prose-headings:text-[#1A365D] prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-gray-700 prose-strong:text-[#7E2D40] prose-a:text-[#F96E1E] hover:prose-a:text-[#E55A1A]">
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            </div>
-          </div>
-        </section>
-
-        {/* Navigation */}
-        <section className="border-t border-gray-200 py-12">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <Link
-                href="/perspectives"
-                className="inline-flex items-center justify-center rounded bg-[#1A365D] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2A4A6B] focus:outline-none focus:ring-2 focus:ring-[#1A365D] focus:ring-offset-2"
-              >
-                ← Back to All Perspectives
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action */}
-        <section className="bg-[#F8F5EB] py-16">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="mb-6 font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl text-[#1A365D] md:text-4xl">
-              Ready to explore your leadership development?
-            </h2>
-            <p className="mb-8 text-lg leading-relaxed text-gray-700">
-              These perspectives emerge from real coaching conversations. 
-              Let&apos;s explore what&apos;s getting in your way.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded bg-[#F96E1E] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E55A1A] focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2"
-            >
-              Start the conversation
-            </Link>
-          </div>
-        </section>
-      </article>
-    </>
-  )
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const slugs = [
-    'leadership-equation',
-    'leadership-as-practice', 
-    'values-evolution',
-    'internal-narratives'
-  ]
-
-  const paths = slugs.map((slug) => ({
-    params: { slug }
-  }))
-
-  return {
-    paths,
-    fallback: false
-  }
-}
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const slug = params?.slug as string
-
-  // Blog post content
-  const blogPosts: { [key: string]: any } = {
-    'leadership-equation': {
-      slug: 'leadership-equation',
-      title: 'The Leadership Equation: Unlocking Performance by Reducing Interference',
-      excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn&apos;t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
-      category: 'Leadership Equation',
-      readTime: '8 min read',
-      publishDate: '2025-08-19',
-      content: `
-        <p class="text-xl leading-relaxed text-gray-800 mb-8">Leadership development traditionally focuses on adding: more skills, more knowledge, more techniques. Yet what if the most impactful approach isn't about adding, but removing? What if the difference between good and exceptional leadership isn't what we lack, but what gets in our way?</p>
-
-        <p>The Leadership Equation offers a different perspective: <strong>Performance Equals Potential minus Interference (PE = PO - I)</strong>. This deceptively simple formula suggests that most leaders already possess remarkable potential. What limits their performance isn't a lack of capability, but the presence of interference—or as I often call it in my coaching practice, their "stuff."</p>
-
-        <p>This approach transforms how we think about leadership development. Rather than constantly pushing for more performance through additional pressure or techniques, we create space for inherent excellence to emerge by identifying and reducing what's getting in the way.</p>
-
-        <p>This perspective speaks to what many senior leaders experience privately: carrying the quiet loneliness at the top whilst projecting confidence in public forums. As one regional director confided, 'Everyone thinks I've got this sorted—but I'm not sure I do.' The Leadership Equation offers a framework for addressing this gap between external perception and internal experience.</p>
-
-        <h2>From Theory to Practice: A Real-World Example</h2>
-
-        <p>Let's examine how the Leadership Equation can play out in actual leadership contexts. Consider a Regional Director I worked with recently. Despite his exceptional strategic thinking and technical expertise, his team was experiencing burnout, and key projects were falling behind. Traditional leadership development might have focused on giving him new management techniques or stronger delegation skills. Instead, we explored what was interfering with his underlying leadership capabilities.</p>
-
-        <p>Through our work together, we discovered that his fear of being seen as incompetent was driving him to micromanage his team and take on excessive work himself. This fear—his 'interference'—was preventing his natural leadership potential from emerging. Once he recognised this pattern and developed strategies to reduce the interference, his team's performance improved dramatically, not because he learned new skills, but because he removed what was getting in his way.</p>
-
-        <h2>Common Forms of Leadership Interference</h2>
-
-        <p>In my coaching practice, I've observed several recurring patterns of interference that limit leadership effectiveness:</p>
-
-        <h3>The Perfectionist Trap</h3>
-        <p>Leaders who demand flawless execution from themselves and others, creating paralysis and team anxiety rather than excellence. This interference manifests as endless revision cycles, reluctance to delegate, and teams that become risk-averse because they fear making mistakes.</p>
-
-        <h3>The People-Pleasing Pattern</h3>
-        <p>Executives who struggle to make difficult decisions because they fear disappointing stakeholders, leading to delayed action and unclear direction. This creates confusion in teams who need clear guidance and decisive leadership.</p>
-
-        <h3>The Control Complex</h3>
-        <p>Leaders who believe they must manage every detail personally, preventing team growth and creating bottlenecks. This interference stems from believing that delegation equals abdication of responsibility.</p>
-
-        <h3>The Imposter Narrative</h3>
-        <p>High-achieving leaders who secretly fear being exposed as frauds, leading to overcompensation and inauthentic behaviour. This creates exhausting cycles of proving worth rather than creating value.</p>
-
-        <h3>The Perfectionism-Performance Paradox</h3>
-        <p>The belief that higher standards automatically lead to better results, when in reality, excessive perfectionism often decreases performance by creating paralysis and team anxiety.</p>
-
-        <h2>The Origins of Interference</h2>
-
-        <p>Understanding where interference comes from helps us approach it with compassion rather than judgment. Most interference patterns develop as survival strategies that once served us well:</p>
-
-        <ul>
-          <li><strong>Early success patterns:</strong> Behaviours that brought recognition in previous roles may become limiting in new contexts</li>
-          <li><strong>Organisational culture:</strong> Environments that reward certain behaviours can reinforce interference patterns</li>
-          <li><strong>Transition stress:</strong> Major changes often amplify existing interference patterns</li>
-          <li><strong>Identity attachment:</strong> When our sense of self becomes tied to specific ways of leading, we resist change</li>
-        </ul>
-
-        <h2>Practical Approaches to Reducing Interference</h2>
-
-        <p>The Leadership Equation isn't just a philosophical framework—it provides practical pathways for development:</p>
-
-        <h3>1. Interference Identification</h3>
-        <p>Begin by observing your patterns without judgment. What situations consistently trigger stress or suboptimal performance? What stories do you tell yourself during challenging moments? What physical sensations accompany difficult leadership decisions?</p>
-
-        <p>I often work with clients to develop what I call "interference awareness"—the capacity to notice when you're operating from interference rather than potential. This awareness creates the possibility for choice.</p>
-
-        <h3>2. Pattern Recognition</h3>
-        <p>Notice recurring themes in your interference. Do you default to controlling behaviour when feeling uncertain? Do you avoid difficult conversations to maintain harmony? Do you take on excessive work to prove your worth?</p>
-
-        <p>One executive I worked with realised that every time he felt uncertain about a decision, he would gather more data—even when he had sufficient information to act. This data-gathering had become a form of interference that delayed important decisions.</p>
-
-        <h3>3. Gentle Experimentation</h3>
-        <p>Once you've identified interference patterns, experiment with small changes. If you tend to micromanage, try delegating one small task completely. If you avoid difficult conversations, practice having one low-stakes honest discussion.</p>
-
-        <p>The key is starting small. Dramatic attempts to eliminate interference often create more interference through self-judgment and frustration.</p>
-
-        <h3>4. Integration and Reflection</h3>
-        <p>Regular reflection helps embed new patterns. What happened when you reduced your usual interference? What did you notice about your team's response? How did it feel to lead with less 'stuff' getting in your way?</p>
-
-        <h2>The Role of Self-Compassion</h2>
-
-        <p>Perhaps the most important aspect of working with the Leadership Equation is approaching your interference with self-compassion rather than self-criticism. Interference patterns developed for good reasons—they were attempts to create safety, success, or belonging in specific contexts.</p>
-
-        <p>When we can appreciate that our interference once served us, we can release it with gratitude rather than fighting against it. This creates the psychological safety necessary for genuine change.</p>
-
-        <h2>The Ripple Effect of Reduced Interference</h2>
-
-        <p>When leaders reduce their interference, the impact extends far beyond individual performance. Teams experience greater psychological safety, innovation increases, and organisational culture shifts toward authenticity and trust. The leader's willingness to acknowledge and address their own 'stuff' gives others permission to do the same.</p>
-
-        <p>I've observed that organisations where leaders practice the Leadership Equation develop cultures of continuous learning rather than defensive perfectionism. People become more willing to acknowledge challenges, seek support, and experiment with new approaches.</p>
-
-        <h2>Leadership Equation in Practice: A Five-Stage Process</h2>
-
-        <p>In my coaching practice, I've found that working with the Leadership Equation typically follows five stages:</p>
-
-        <h3>Stage 1: Awareness (Noticing Patterns)</h3>
-        <p>Leaders begin to recognise when they're operating from interference rather than potential. This stage requires developing what I call "neutral observation"—noticing patterns without immediately trying to fix them.</p>
-
-        <h3>Stage 2: Understanding (Exploring Origins)</h3>
-        <p>We explore where interference patterns come from, approaching them with curiosity rather than judgment. Understanding the positive intention behind interference creates space for change.</p>
-
-        <h3>Stage 3: Choice (Creating Space)</h3>
-        <p>As awareness develops, leaders begin to notice the moment of choice between operating from interference or potential. This is where conscious leadership begins.</p>
-
-        <h3>Stage 4: Experimentation (Small Changes)</h3>
-        <p>Leaders begin making small experiments in reducing interference, learning what works in their specific context and relationships.</p>
-
-        <h3>Stage 5: Integration (New Practice)</h3>
-        <p>New patterns become embedded through consistent practice and reflection. Leaders develop confidence in their ability to recognise and reduce interference as it arises.</p>
-
-        <h2>When the Leadership Equation Becomes Personal</h2>
-
-        <p>One of the most powerful aspects of the Leadership Equation is recognising that our "stuff" isn't just professional—it's deeply personal. The interference patterns that limit our leadership effectiveness often show up in our relationships, parenting, and community involvement.</p>
-
-        <p>This recognition creates an opportunity for integrated development. As we reduce interference in one domain of our lives, we often find it easier to address similar patterns in other areas. Leadership development becomes personal development, and vice versa.</p>
-
-        <h2>Conclusion: The Ongoing Practice</h2>
-
-        <p>The Leadership Equation offers a refreshing alternative to the endless pursuit of more skills and techniques. By focusing on what we need to remove rather than what we need to add, we create space for our inherent leadership potential to emerge. This approach requires courage—the courage to acknowledge our interference patterns and experiment with new ways of being.</p>
-
-        <p>Leadership development through the Leadership Equation isn't about perfection; it's about progress. It's about creating a sustainable practice of identifying and reducing whatever gets in the way of our authentic leadership expression. In my experience, this creates not only better leaders but more fulfilled human beings.</p>
-
-        <p>The formula is simple: <strong>Performance = Potential - Interference</strong>. The practice is lifelong. The results—for leaders, teams, and organisations—can be transformational.</p>
-
-        <p><em>What's one piece of interference you've noticed in your own leadership? What would become possible if you could reduce it by just 10%?</em></p>
       `
     }
   }
