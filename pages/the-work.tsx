@@ -16,7 +16,7 @@ export default function TheWork() {
               {/* Hero Content */}
               <div className="max-w-4xl space-y-8">
                 <h1 className="font-['Waiting_for_the_Sunrise'] text-5xl font-bold leading-tight text-[#1A365D] md:text-6xl lg:text-7xl">
-                  The work beneath the work.
+                  The work <span className="text-[#F96E1E]">beneath</span> the work.
                 </h1>
                 
                 <div className="max-w-3xl space-y-6">
