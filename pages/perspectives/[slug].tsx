@@ -134,6 +134,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
         </section>
       </article>
     </Layout>
+  )
+}
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
