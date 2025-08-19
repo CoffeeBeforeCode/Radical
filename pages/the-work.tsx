@@ -216,8 +216,8 @@ export default function TheWork() {
       <section className="w-full bg-[#F96E1E] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
-              What would change if you could reduce the <span className="text-[#F96E1E]">interference</span>?
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-white md:text-4xl">
+              What would change if you could reduce the <span className="text-white">interference</span>?
             </h2>
             
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white">
