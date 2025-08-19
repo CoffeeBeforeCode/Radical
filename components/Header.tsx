@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     { href: '/at-home', label: 'At Home' },
     { href: '/the-work', label: 'The Work' },
     { href: '/social-impact', label: 'Social Impact' },
-    { href: '/insights', label: 'Insights' },
+    { href: '/perspectives', label: 'Perspectives' },
     { href: '/contact', label: 'Contact' }
   ]
 
@@ -52,7 +52,6 @@ const Header: React.FC = () => {
                   Global Leadership Coach
                 </div>
               </div>
-
               {/* OPTION 2: Responsive text sizing - uncomment this and comment out Option 1
               <div className="block">
                 <div className="text-base sm:text-lg font-semibold text-[#1A365D] group-hover:text-[#F96E1E] transition-colors duration-300">
@@ -63,7 +62,6 @@ const Header: React.FC = () => {
                 </div>
               </div>
               */}
-
               {/* OPTION 3: Compact mobile version - uncomment this and comment out Option 1
               <div className="block">
                 <div className="text-base sm:text-lg font-semibold text-[#1A365D] group-hover:text-[#F96E1E] transition-colors duration-300">
