@@ -1,49 +1,71 @@
-import { useState } from 'react'
+import { useState }
+
+// File-based blog post scanning
+export const getStaticProps: GetStaticProps = async () => {
+  const postsDirectory = path.join(process.cwd(), 'pages/perspectives/posts')
+  
+  // Check if posts directory exists, if not create empty array
+  let posts: BlogPost[] = []
+  
+  try {
+    const filenames = fs.readdirSync(postsDirectory)
+    const markdownFiles = filenames.filter(name => name.endsWith('.md'))
+    
+    posts = markdownFiles.map(filename => {
+      const filePath = path.join(postsDirectory, filename)
+      const fileContents = fs.readFileSync(filePath, 'utf8')
+      const { data } = matter(fileContents)
+      
+      return {
+        slug: filename.replace('.md', ''),
+        title: data.title || 'Untitled',
+        excerpt: data.excerpt || '',
+        category: data.category || 'Uncategorized',
+        readTime: data.readTime || '5 min read',
+        publishDate: data.publishDate || new Date().toISOString().split('T')[0],
+        featured: data.featured || false
+      }
+    })
+    
+    // Sort by publish date (newest first)
+    posts.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+  } catch (error) {
+    // Posts directory doesn't exist yet, return empty array
+    console.log('Posts directory not found, returning empty array')
+  }
+  
+  return {
+    props: {
+      posts
+    }
+  }
+} from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import { GetStaticProps } from 'next'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
-const PerspectivesIndex: React.FC = () => {
+interface BlogPost {
+  slug: string
+  title: string
+  excerpt: string
+  category: string
+  readTime: string
+  publishDate: string
+  featured: boolean
+}
+
+interface PerspectivesIndexProps {
+  posts: BlogPost[]
+}
+
+const PerspectivesIndex: React.FC<PerspectivesIndexProps> = ({ posts }) => {
   const [selectedCategory, setSelectedCategory] = useState('all')
 
-  // Blog posts data - you'll replace this with your actual content
-  const blogPosts = [
-    {
-      slug: 'leadership-equation',
-      title: 'The Leadership Equation: Unlocking Performance by Reducing Interference',
-      excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn\'t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
-      category: 'Leadership Equation',
-      readTime: '8 min read',
-      publishDate: '2025-01-15',
-      featured: true
-    },
-    {
-      slug: 'leadership-as-practice',
-      title: 'Leadership as a Lifelong Practice: Beyond the Workplace',
-      excerpt: 'Most leadership development focuses exclusively on workplace contexts. Yet the leaders I most respect demonstrate a remarkable quality: they bring the same intentionality, presence, and values to every domain of their lives.',
-      category: 'Embodied Perception',
-      readTime: '10 min read',
-      publishDate: '2025-01-10',
-      featured: true
-    },
-    {
-      slug: 'values-evolution',
-      title: 'Navigating Values Evolution Through Leadership Transitions',
-      excerpt: 'One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.',
-      category: 'Values Evolution',
-      readTime: '12 min read',
-      publishDate: '2025-01-05',
-      featured: false
-    },
-    {
-      slug: 'internal-narratives',
-      title: 'The Power of Internal Narratives in Leadership Identity',
-      excerpt: 'Every leader carries an internal narrator—a voice that provides running commentary on their experiences, interprets events, and shapes their responses to challenges. These internal narratives profoundly influence our leadership presence and effectiveness.',
-      category: 'Cross-Cultural Intelligence',
-      readTime: '9 min read',
-      publishDate: '2025-01-01',
-      featured: false
-    }
-  ]
+  // Blog posts come from props now
+  const blogPosts = posts
 
   const categories = ['all', 'Leadership Equation', 'Embodied Perception', 'Cross-Cultural Intelligence', 'Values Evolution']
 
@@ -76,14 +98,14 @@ const PerspectivesIndex: React.FC = () => {
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
                 Insights from the practice of leadership coaching
               </p>
-              <div className="w-24 h-1 mx-auto bg-[#F96E1E]" 
+              <div className="mx-auto h-1 w-24 bg-[#F96E1E]" 
                 style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='96' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2c8-1 16 1 24 0s16-1 24 0 16 1 24 0 16-1 24 0' stroke='%23F96E1E' stroke-width='2' fill='none'/%3E%3C/svg%3E")`,
                   backgroundSize: '96px 4px',
                   backgroundRepeat: 'repeat-x'
                 }}
               />
-              <p className="text-lg text-white/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/80">
                 These perspectives emerge from real coaching conversations, client breakthroughs, 
                 and the ongoing practice of leadership development across cultures and contexts.
               </p>
