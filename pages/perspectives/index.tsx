@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import Layout, { PageLayout } from '../components/Layout'
+import Layout, { PageLayout } from '../../components/Layout'
 
 interface BlogPost {
   slug: string
