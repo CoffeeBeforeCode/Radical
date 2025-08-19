@@ -23,7 +23,7 @@ const PerspectivesIndex: React.FC = () => {
       excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn&apos;t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
       category: 'Leadership Equation',
       readTime: '8 min read',
-      publishDate: '2025-01-15',
+      publishDate: '2025-08-19',
       featured: true
     },
     {
@@ -32,7 +32,7 @@ const PerspectivesIndex: React.FC = () => {
       excerpt: 'Most leadership development focuses exclusively on workplace contexts. Yet the leaders I most respect demonstrate a remarkable quality: they bring the same intentionality, presence, and values to every domain of their lives.',
       category: 'Embodied Perception',
       readTime: '10 min read',
-      publishDate: '2025-01-10',
+      publishDate: '2025-08-18',
       featured: true
     },
     {
@@ -41,7 +41,7 @@ const PerspectivesIndex: React.FC = () => {
       excerpt: 'One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.',
       category: 'Values Evolution',
       readTime: '12 min read',
-      publishDate: '2025-01-05',
+      publishDate: '2025-08-17',
       featured: false
     },
     {
@@ -50,7 +50,7 @@ const PerspectivesIndex: React.FC = () => {
       excerpt: 'Every leader carries an internal narrator—a voice that provides running commentary on their experiences, interprets events, and shapes their responses to challenges. These internal narratives profoundly influence our leadership presence and effectiveness.',
       category: 'Cross-Cultural Intelligence',
       readTime: '9 min read',
-      publishDate: '2025-01-01',
+      publishDate: '2025-08-16',
       featured: false
     }
   ]
