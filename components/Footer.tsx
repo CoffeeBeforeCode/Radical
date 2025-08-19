@@ -1,31 +1,3 @@
-/**
- * Footer Component - Phillip Collins Global Leadership Coach
- * 
- * Purpose: Brand-reinforcing footer that emphasizes social presence, geographic reach,
- * and the signature philosophy statement. Designed to build credibility and provide
- * clear pathways for executive connections while maintaining personality over corporate polish.
- * 
- * Key Brand Elements:
- * - Signature statement: "Leadership is a practice, not a destination" - now prominently at top
- * - LinkedIn prominence with icon (GlobalLeadershipCoach URL emphasis)
- * - Twitter/X social presence
- * - Geographic credibility across four continents
- * - Personality-driven copyright with coaching inception date
- * - Legal section with Cookie Policy and Privacy Policy links
- * 
- * Design Approach:
- * - Tangerine background (#F96E1E) for signature statement prominence
- * - Navy background for authority and contrast
- * - Gold accent colors for wisdom and premium positioning
- * - Clean grid layout that works across all device sizes
- * - Social links with proper accessibility labels and icons
- * 
- * Executive Audience Considerations:
- * - Clear contact pathways for business inquiries
- * - Professional social media emphasis (LinkedIn and Twitter)
- * - Geographic scope that matches global executive contexts
- * - Sophisticated color treatment that avoids consultant template clichés
- */
 
 import Link from 'next/link'
 
@@ -84,8 +56,8 @@ const Footer: React.FC = () => {
                 <Link href="/social-impact" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                   Social Impact
                 </Link>
-                <Link href="/insights" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
-                  Insights
+                <Link href="/perspectives" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
+                  Perspectives
                 </Link>
                 <Link href="/contact" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                   Contact
