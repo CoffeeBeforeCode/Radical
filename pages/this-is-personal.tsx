@@ -564,7 +564,7 @@ export default function ThisIsPersonal() {
               <div className="rounded-lg bg-[#1A365D] p-6 text-white">
                 <div className="flex h-full items-center justify-center">
                   <img
-                    src="/images/time-line.png"
+                    src="/images/Learning-Journey.png"
                     alt="Learning journey timeline"
                     className="size-full object-contain"
                   />
