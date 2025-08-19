@@ -1,4 +1,128 @@
-// Blog post content
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import Layout, { PageLayout } from '../../components/Layout'
+
+interface BlogPostProps {
+  post: {
+    slug: string
+    title: string
+    excerpt: string
+    category: string
+    readTime: string
+    publishDate: string
+    content: string
+  }
+}
+
+const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+  const router = useRouter()
+
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+
+  if (!post) {
+    return <div>Post not found</div>
+  }
+
+  return (
+    <Layout
+      title={post.title}
+      description={post.excerpt}
+      canonical={`/perspectives/${post.slug}`}
+    >
+      {/* Hero Section */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="mx-auto max-w-4xl space-y-6 text-center">
+            <div className="flex items-center justify-center space-x-4">
+              <Link
+                href="/perspectives"
+                className="font-medium text-[#D4B86A] transition-colors hover:text-white"
+              >
+                ← Back to Perspectives
+              </Link>
+              <span className="inline-block rounded-full bg-[#F96E1E] px-3 py-1 text-sm font-medium text-white">
+                {post.category}
+              </span>
+            </div>
+            
+            <h1 className="font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl leading-tight text-white md:text-5xl">
+              {post.title}
+            </h1>
+            
+            <div className="flex items-center justify-center space-x-6 text-sm text-white/80">
+              <time>
+                {new Date(post.publishDate).toLocaleDateString('en-GB', {
+                  day: '2-digit',
+                  month: '2-digit',
+                  year: 'numeric'
+                })}
+              </time>
+              <span>{post.readTime}</span>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* Article Content */}
+      <section className="w-full bg-white py-16">
+        <PageLayout>
+          <div className="mx-auto max-w-4xl">
+            <div className="prose prose-lg mx-auto max-w-none prose-headings:font-[&apos;Waiting_for_the_Sunrise&apos;] prose-headings:text-[#1A365D] prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-gray-700 prose-strong:text-[#7E2D40] prose-a:text-[#F96E1E] hover:prose-a:text-[#E55A1A]">
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* Call to Action */}
+      <section className="w-full bg-[#F8F5EB] py-16">
+        <PageLayout>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="mb-6 font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl text-[#1A365D] md:text-4xl">
+              Ready to explore <span className="text-[#F96E1E]">your</span> leadership development?
+            </h2>
+            <p className="mb-8 text-lg leading-relaxed text-gray-700">
+              These perspectives emerge from real coaching conversations. 
+              Let&apos;s explore what&apos;s getting in your way.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded bg-[#F96E1E] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E55A1A] focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2"
+            >
+              Start the conversation
+            </Link>
+          </div>
+        </PageLayout>
+      </section>
+    </Layout>
+  )
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const slugs = [
+    'leadership-equation',
+    'leadership-as-practice', 
+    'values-evolution',
+    'values-in-motion'
+  ]
+
+  const paths = slugs.map((slug) => ({
+    params: { slug }
+  }))
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string
+
+  // Blog post content
   const blogPosts: { [key: string]: any } = {
     'leadership-equation': {
       slug: 'leadership-equation',
@@ -44,195 +168,6 @@
           <p>Let&apos;s examine how the Leadership Equation might play out in actual leadership contexts. Consider a leader who, despite exceptional strategic thinking and technical expertise, finds their team experiencing burnout while key projects fall behind.</p>
 
           <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
-            <p class="text-lg text-[#1A365D] font-medium">What distinguishes effective leaders isn&apos;t the absence of values evolution; it&apos;s the consciousness with which they navigate these changes.</p>
-          </div>
-
-          <p>Rather than allowing values shifts to create confusion or interference, conscious leaders develop the capacity to recognise, explore, and integrate evolving priorities with intention and wisdom. This transforms values evolution from a potential source of instability into a competitive advantage.</p>
-
-          <p>Remember that values evolution represents your continued engagement with growth, your responsiveness to changing life circumstances, and your commitment to leading from authenticity rather than habit. The practice of conscious values evolution continues throughout our leadership journey, offering ongoing opportunities for enhanced authenticity, effectiveness, and contribution.</p>
-
-          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Reflection Questions</h3>
-            <ul class="text-gray-700 space-y-2">
-              <li>• How have your core values shifted over the past five years? What triggered these changes?</li>
-              <li>• Where do you notice tension between your evolved values and established patterns or expectations?</li>
-              <li>• How might embracing values evolution enhance rather than diminish your leadership effectiveness?</li>
-            </ul>
-          </div>
-        </div>
-      `
-    },
-    'values-in-motion': {
-      slug: 'values-in-motion',
-      title: 'Values in Motion: Making the Invisible Visible Through Constellation Work',
-      excerpt: 'Values conflicts often remain invisible precisely because they&apos;re internal. When competing priorities swirl around in our minds, they can feel overwhelming and abstract. Constellation mapping makes the invisible visible.',
-      category: 'Constellation Work',
-      readTime: '9 min read',
-      publishDate: '2025-08-05',
-      content: `
-        <div class="space-y-8">
-          <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">I&apos;m always surprised by how many leaders struggle to describe their values conflicts in clear terms. They know something feels &ldquo;off&rdquo; about a decision, but they can&apos;t quite articulate what&apos;s creating the tension. That&apos;s where Values Constellation Mapping comes in.</p>
-
-          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">The Challenge</h3>
-            <p class="text-gray-700">Values conflicts often remain invisible precisely because they&apos;re internal. When competing priorities swirl around in our minds, they can feel overwhelming and abstract. We sense the tension, but we can&apos;t quite grasp where it&apos;s coming from or how to work with it.</p>
-          </div>
-
-          <p>It&apos;s one of my favourite coaching techniques, particularly because I&apos;m a fan of in-person work where we can use physical space to explore complex internal dynamics. Like many things for me, I&apos;ve learned that what we can&apos;t see clearly, we can&apos;t address effectively.</p>
-
-          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border border-[#D4B86A]">
-            <div class="pt-2">
-              <p class="text-lg italic text-[#1A365D] text-center">
-                &ldquo;I know this decision matters, but I can&apos;t figure out why it feels so difficult...&rdquo;
-              </p>
-              <div class="text-center mt-3">
-                <span class="text-sm text-gray-600">[Internal narrative: The frustration of sensing tension without understanding its source]</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="my-8 h-px bg-gradient-to-r from-transparent via-[#D4B86A] to-transparent"></div>
-
-          <h2><strong>The Problem with Internal Processing</strong></h2>
-
-          <p>The interference these conflicts create in our decision-making often stems not from the values themselves, but from our inability to understand how they&apos;re relating to each other in specific contexts. When competing priorities swirl around in our minds, they can feel overwhelming and abstract.</p>
-
-          <h2><strong>Making the Abstract Tangible</strong></h2>
-
-          <p>In my coaching practice, I approach Values Constellation Mapping as a physical or visual exercise. We might use post-it notes, objects, or even position ourselves in different parts of the room to represent different values in relation to a particular decision.</p>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-            <div class="border border-[#D4B86A] rounded-lg p-6">
-              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
-                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">1</span>
-                Identify the Decision
-              </h3>
-              <p class="text-gray-700">We begin by identifying the specific decision or situation creating values tension.</p>
-            </div>
-            
-            <div class="border border-[#D4B86A] rounded-lg p-6">
-              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
-                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">2</span>
-                Name the Values
-              </h3>
-              <p class="text-gray-700">Then we name the relevant values involved in this context.</p>
-            </div>
-            
-            <div class="border border-[#D4B86A] rounded-lg p-6">
-              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
-                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">3</span>
-                Create Physical Representations
-              </h3>
-              <p class="text-gray-700">I ask the leader to create physical representations for each value and position them spatially in relation to the decision and each other.</p>
-            </div>
-            
-            <div class="border border-[#D4B86A] rounded-lg p-6">
-              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
-                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">4</span>
-                Explore the Relationships
-              </h3>
-              <p class="text-gray-700">What emerges next is where the real work begins—observing the relationships and tensions between values.</p>
-            </div>
-          </div>
-
-          <h2><strong>Questions That Illuminate</strong></h2>
-
-          <p>I find that certain questions consistently reveal important insights during constellation work:</p>
-
-          <ul class="list-disc pl-6 space-y-2 text-gray-700 my-6">
-            <li>&ldquo;Which values feel closest to this decision? Which seem furthest away?&rdquo;</li>
-            <li>&ldquo;What do you notice about the distance between these two values?&rdquo;</li>
-            <li>&ldquo;What happens if you move this value closer to the decision?&rdquo;</li>
-            <li>&ldquo;Which values seem to naturally cluster together?&rdquo;</li>
-          </ul>
-
-          <p>These aren&apos;t rhetorical questions. I&apos;m genuinely curious about what the leader observes when they can literally see the relationships between their competing priorities.</p>
-
-          <h2><strong>The Power of Spatial Intelligence</strong></h2>
-
-          <p>The spatial element is crucial. When we can physically see the distance between competing values, or notice how certain priorities cluster together whilst others remain isolated, insights emerge that might remain hidden in purely verbal discussions.</p>
-
-          <div class="my-8 bg-gradient-to-r from-[#F8F5EB] to-white p-1 rounded-lg">
-            <div class="bg-white p-6 rounded-lg">
-              <blockquote class="text-xl italic text-[#1A365D] text-center">
-                &ldquo;I remember working with a regional director who was facing a career opportunity requiring international relocation. Through constellation mapping, we externalised the values in tension.&rdquo;
-              </blockquote>
-            </div>
-          </div>
-
-          <p>Career advancement positioned close to the opportunity, family stability positioned far from it, adventure and growth somewhere in between. Through physically moving these representations, he discovered that family stability and community connection were more important to him than he had consciously realised.</p>
-
-          <p>The constellation revealed that whilst the opportunity offered career and financial benefits, it would require compromising values that had become more central to his identity since becoming a father.</p>
-
-          <h2><strong>Beyond Problem-Solving</strong></h2>
-
-          <p>Can I share an observation? Sometimes the most important outcome isn&apos;t necessarily resolving the conflict but learning to sit with the tension in a way that allows for better decision-making.</p>
-
-          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
-            <p class="text-lg text-[#1A365D] font-medium">My role as a coach isn&apos;t to make the trade-offs easier but to help leaders build the emotional and cognitive flexibility to navigate them wisely.</p>
-          </div>
-
-          <p>The constellation work creates space for that flexibility to develop. It&apos;s not just cognitive—this work accesses embodied intelligence that often provides earlier warning signals than our cognitive awareness.</p>
-
-          <h2><strong>The Embodied Dimension</strong></h2>
-
-          <p>What I&apos;ve learned is that this work isn&apos;t just cognitive. One client described it this way: &ldquo;Every time I made decisions based on what I thought should matter to me, I felt this tightness in my chest. It was like my body was telling me something my mind hadn&apos;t yet acknowledged.&rdquo;</p>
-
-          <p>When we externalise values conflicts through constellation work, we&apos;re often accessing this physical knowing that might otherwise remain unconscious.</p>
-
-          <h2><strong>Practical Applications</strong></h2>
-
-          <p>The methodology adapts to different contexts:</p>
-
-          <div class="space-y-4 my-8">
-            <div class="border-l-4 border-[#F96E1E] pl-6">
-              <h3 class="text-[#1A365D] font-semibold mb-2">Team Settings</h3>
-              <p class="text-gray-700">Mapping collective values and identifying areas of alignment or tension.</p>
-            </div>
-            
-            <div class="border-l-4 border-[#F96E1E] pl-6">
-              <h3 class="text-[#1A365D] font-semibold mb-2">Strategic Planning</h3>
-              <p class="text-gray-700">Exploring organisational values in relation to different strategic options.</p>
-            </div>
-            
-            <div class="border-l-4 border-[#F96E1E] pl-6">
-              <h3 class="text-[#1A365D] font-semibold mb-2">Career Decisions</h3>
-              <p class="text-gray-700">Examining how different opportunities align with personal priorities.</p>
-            </div>
-          </div>
-
-          <p>The key is creating safe space for authentic exploration rather than rushing to resolution. Sometimes a leader needs to experiment with repositioning elements several times before patterns become clear.</p>
-
-          <h2><strong>When Complexity Becomes Clarity</strong></h2>
-
-          <p>I find that leaders who engage with this process often discover unexpected relationships between their values. They notice which priorities naturally support each other and which create genuine tension that needs conscious navigation.</p>
-
-          <p>Beyond that, they develop what I think of as &ldquo;both/and&rdquo; leadership capability. Instead of rushing to choose between competing priorities, they learn to hold multiple perspectives simultaneously.</p>
-
-          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
-            <p class="text-lg text-[#1A365D] font-medium">This connects directly to what emotional intelligence research shows us about decision-making. Problem Solving, Reality Testing, and Impulse Control are all enhanced when we develop the capacity to work skillfully with complexity.</p>
-          </div>
-
-          <h2><strong>Conclusion: The Space Between Knowing and Action</strong></h2>
-
-          <p>Values in Motion isn&apos;t about finding perfect answers. It&apos;s about developing the capacity to work consciously with the tensions that shape our leadership decisions.</p>
-
-          <p>When leaders can see their values conflicts externalised, they gain perspective and agency that&apos;s often unavailable when wrestling with abstract concerns. They can experiment with different arrangements, test various approaches, and develop solutions that honour the complexity of their authentic priorities.</p>
-
-          <p>Most importantly, they learn to trust the process of conscious decision-making rather than defaulting to reactive patterns when values compete for attention.</p>
-
-          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Reflection Questions</h3>
-            <ul class="text-gray-700 space-y-2">
-              <li>• What decision are you currently facing where you sense values tension but can&apos;t quite articulate it?</li>
-              <li>• How might externalising this conflict help you see patterns you haven&apos;t recognised?</li>
-              <li>• What would become possible if you could work more skillfully with competing priorities?</li>
-            </ul>
-          </div>
-        </div>
-      `
-    }
-  }">
             <p class="text-lg text-[#1A365D] font-medium">Through coaching work, such a leader might discover that their fear of being seen as incompetent is driving them to micromanage their team and take on excessive work themselves.</p>
           </div>
 
@@ -540,9 +475,210 @@
 
           <p>The leaders who navigate these transitions most successfully don&apos;t fight against changing priorities. They learn to embrace values evolution as a natural and valuable aspect of leadership development.</p>
 
-          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2  const slugs = [
-    'leadership-equation',
-    'leadership-as-practice', 
-    'values-evolution',
-    'values-in-motion'
-  ]
+          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
+            <p class="text-lg text-[#1A365D] font-medium">What distinguishes effective leaders isn&apos;t the absence of values evolution; it&apos;s the consciousness with which they navigate these changes.</p>
+          </div>
+
+          <p>Rather than allowing values shifts to create confusion or interference, conscious leaders develop the capacity to recognise, explore, and integrate evolving priorities with intention and wisdom. This transforms values evolution from a potential source of instability into a competitive advantage.</p>
+
+          <p>Remember that values evolution represents your continued engagement with growth, your responsiveness to changing life circumstances, and your commitment to leading from authenticity rather than habit. The practice of conscious values evolution continues throughout our leadership journey, offering ongoing opportunities for enhanced authenticity, effectiveness, and contribution.</p>
+
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Reflection Questions</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• How have your core values shifted over the past five years? What triggered these changes?</li>
+              <li>• Where do you notice tension between your evolved values and established patterns or expectations?</li>
+              <li>• How might embracing values evolution enhance rather than diminish your leadership effectiveness?</li>
+            </ul>
+          </div>
+        </div>
+      `
+    },
+    'values-in-motion': {
+      slug: 'values-in-motion',
+      title: 'Values in Motion: Making the Invisible Visible Through Constellation Work',
+      excerpt: 'Values conflicts often remain invisible precisely because they&apos;re internal. When competing priorities swirl around in our minds, they can feel overwhelming and abstract. Constellation mapping makes the invisible visible.',
+      category: 'Constellation Work',
+      readTime: '9 min read',
+      publishDate: '2025-08-05',
+      content: `
+        <div class="space-y-8">
+          <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">I&apos;m always surprised by how many leaders struggle to describe their values conflicts in clear terms. They know something feels &ldquo;off&rdquo; about a decision, but they can&apos;t quite articulate what&apos;s creating the tension. That&apos;s where Values Constellation Mapping comes in.</p>
+
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">The Challenge</h3>
+            <p class="text-gray-700">Values conflicts often remain invisible precisely because they&apos;re internal. When competing priorities swirl around in our minds, they can feel overwhelming and abstract. We sense the tension, but we can&apos;t quite grasp where it&apos;s coming from or how to work with it.</p>
+          </div>
+
+          <p>It&apos;s one of my favourite coaching techniques, particularly because I&apos;m a fan of in-person work where we can use physical space to explore complex internal dynamics. Like many things for me, I&apos;ve learned that what we can&apos;t see clearly, we can&apos;t address effectively.</p>
+
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border border-[#D4B86A]">
+            <div class="pt-2">
+              <p class="text-lg italic text-[#1A365D] text-center">
+                &ldquo;I know this decision matters, but I can&apos;t figure out why it feels so difficult...&rdquo;
+              </p>
+              <div class="text-center mt-3">
+                <span class="text-sm text-gray-600">[Internal narrative: The frustration of sensing tension without understanding its source]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-8 h-px bg-gradient-to-r from-transparent via-[#D4B86A] to-transparent"></div>
+
+          <h2><strong>The Problem with Internal Processing</strong></h2>
+
+          <p>The interference these conflicts create in our decision-making often stems not from the values themselves, but from our inability to understand how they&apos;re relating to each other in specific contexts. When competing priorities swirl around in our minds, they can feel overwhelming and abstract.</p>
+
+          <h2><strong>Making the Abstract Tangible</strong></h2>
+
+          <p>In my coaching practice, I approach Values Constellation Mapping as a physical or visual exercise. We might use post-it notes, objects, or even position ourselves in different parts of the room to represent different values in relation to a particular decision.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div class="border border-[#D4B86A] rounded-lg p-6">
+              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
+                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">1</span>
+                Identify the Decision
+              </h3>
+              <p class="text-gray-700">We begin by identifying the specific decision or situation creating values tension.</p>
+            </div>
+            
+            <div class="border border-[#D4B86A] rounded-lg p-6">
+              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
+                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">2</span>
+                Name the Values
+              </h3>
+              <p class="text-gray-700">Then we name the relevant values involved in this context.</p>
+            </div>
+            
+            <div class="border border-[#D4B86A] rounded-lg p-6">
+              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
+                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">3</span>
+                Create Physical Representations
+              </h3>
+              <p class="text-gray-700">I ask the leader to create physical representations for each value and position them spatially in relation to the decision and each other.</p>
+            </div>
+            
+            <div class="border border-[#D4B86A] rounded-lg p-6">
+              <h3 class="text-[#1A365D] font-semibold mb-3 flex items-center">
+                <span class="inline-block w-8 h-8 bg-[#F96E1E] text-white rounded-full text-sm font-bold flex items-center justify-center mr-3">4</span>
+                Explore the Relationships
+              </h3>
+              <p class="text-gray-700">What emerges next is where the real work begins—observing the relationships and tensions between values.</p>
+            </div>
+          </div>
+
+          <h2><strong>Questions That Illuminate</strong></h2>
+
+          <p>I find that certain questions consistently reveal important insights during constellation work:</p>
+
+          <ul class="list-disc pl-6 space-y-2 text-gray-700 my-6">
+            <li>&ldquo;Which values feel closest to this decision? Which seem furthest away?&rdquo;</li>
+            <li>&ldquo;What do you notice about the distance between these two values?&rdquo;</li>
+            <li>&ldquo;What happens if you move this value closer to the decision?&rdquo;</li>
+            <li>&ldquo;Which values seem to naturally cluster together?&rdquo;</li>
+          </ul>
+
+          <p>These aren&apos;t rhetorical questions. I&apos;m genuinely curious about what the leader observes when they can literally see the relationships between their competing priorities.</p>
+
+          <h2><strong>The Power of Spatial Intelligence</strong></h2>
+
+          <p>The spatial element is crucial. When we can physically see the distance between competing values, or notice how certain priorities cluster together whilst others remain isolated, insights emerge that might remain hidden in purely verbal discussions.</p>
+
+          <div class="my-8 bg-gradient-to-r from-[#F8F5EB] to-white p-1 rounded-lg">
+            <div class="bg-white p-6 rounded-lg">
+              <blockquote class="text-xl italic text-[#1A365D] text-center">
+                &ldquo;I remember working with a regional director who was facing a career opportunity requiring international relocation. Through constellation mapping, we externalised the values in tension.&rdquo;
+              </blockquote>
+            </div>
+          </div>
+
+          <p>Career advancement positioned close to the opportunity, family stability positioned far from it, adventure and growth somewhere in between. Through physically moving these representations, he discovered that family stability and community connection were more important to him than he had consciously realised.</p>
+
+          <p>The constellation revealed that whilst the opportunity offered career and financial benefits, it would require compromising values that had become more central to his identity since becoming a father.</p>
+
+          <h2><strong>Beyond Problem-Solving</strong></h2>
+
+          <p>Can I share an observation? Sometimes the most important outcome isn&apos;t necessarily resolving the conflict but learning to sit with the tension in a way that allows for better decision-making.</p>
+
+          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
+            <p class="text-lg text-[#1A365D] font-medium">My role as a coach isn&apos;t to make the trade-offs easier but to help leaders build the emotional and cognitive flexibility to navigate them wisely.</p>
+          </div>
+
+          <p>The constellation work creates space for that flexibility to develop. It&apos;s not just cognitive—this work accesses embodied intelligence that often provides earlier warning signals than our cognitive awareness.</p>
+
+          <h2><strong>The Embodied Dimension</strong></h2>
+
+          <p>What I&apos;ve learned is that this work isn&apos;t just cognitive. One client described it this way: &ldquo;Every time I made decisions based on what I thought should matter to me, I felt this tightness in my chest. It was like my body was telling me something my mind hadn&apos;t yet acknowledged.&rdquo;</p>
+
+          <p>When we externalise values conflicts through constellation work, we&apos;re often accessing this physical knowing that might otherwise remain unconscious.</p>
+
+          <h2><strong>Practical Applications</strong></h2>
+
+          <p>The methodology adapts to different contexts:</p>
+
+          <div class="space-y-4 my-8">
+            <div class="border-l-4 border-[#F96E1E] pl-6">
+              <h3 class="text-[#1A365D] font-semibold mb-2">Team Settings</h3>
+              <p class="text-gray-700">Mapping collective values and identifying areas of alignment or tension.</p>
+            </div>
+            
+            <div class="border-l-4 border-[#F96E1E] pl-6">
+              <h3 class="text-[#1A365D] font-semibold mb-2">Strategic Planning</h3>
+              <p class="text-gray-700">Exploring organisational values in relation to different strategic options.</p>
+            </div>
+            
+            <div class="border-l-4 border-[#F96E1E] pl-6">
+              <h3 class="text-[#1A365D] font-semibold mb-2">Career Decisions</h3>
+              <p class="text-gray-700">Examining how different opportunities align with personal priorities.</p>
+            </div>
+          </div>
+
+          <p>The key is creating safe space for authentic exploration rather than rushing to resolution. Sometimes a leader needs to experiment with repositioning elements several times before patterns become clear.</p>
+
+          <h2><strong>When Complexity Becomes Clarity</strong></h2>
+
+          <p>I find that leaders who engage with this process often discover unexpected relationships between their values. They notice which priorities naturally support each other and which create genuine tension that needs conscious navigation.</p>
+
+          <p>Beyond that, they develop what I think of as &ldquo;both/and&rdquo; leadership capability. Instead of rushing to choose between competing priorities, they learn to hold multiple perspectives simultaneously.</p>
+
+          <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
+            <p class="text-lg text-[#1A365D] font-medium">This connects directly to what emotional intelligence research shows us about decision-making. Problem Solving, Reality Testing, and Impulse Control are all enhanced when we develop the capacity to work skillfully with complexity.</p>
+          </div>
+
+          <h2><strong>Conclusion: The Space Between Knowing and Action</strong></h2>
+
+          <p>Values in Motion isn&apos;t about finding perfect answers. It&apos;s about developing the capacity to work consciously with the tensions that shape our leadership decisions.</p>
+
+          <p>When leaders can see their values conflicts externalised, they gain perspective and agency that&apos;s often unavailable when wrestling with abstract concerns. They can experiment with different arrangements, test various approaches, and develop solutions that honour the complexity of their authentic priorities.</p>
+
+          <p>Most importantly, they learn to trust the process of conscious decision-making rather than defaulting to reactive patterns when values compete for attention.</p>
+
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Reflection Questions</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• What decision are you currently facing where you sense values tension but can&apos;t quite articulate it?</li>
+              <li>• How might externalising this conflict help you see patterns you haven&apos;t recognised?</li>
+              <li>• What would become possible if you could work more skillfully with competing priorities?</li>
+            </ul>
+          </div>
+        </div>
+      `
+    }
+  }
+
+  const postData = blogPosts[slug]
+
+  if (!postData) {
+    return {
+      notFound: true
+    }
+  }
+
+  return {
+    props: {
+      post: postData
+    }
+  }
+}
+
+export default BlogPost
