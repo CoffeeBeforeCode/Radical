@@ -136,7 +136,6 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
     </Layout>
   )
 }
-}
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = [
