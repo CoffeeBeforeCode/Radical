@@ -82,7 +82,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
         <PageLayout>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="mb-6 font-[&apos;Waiting_for_the_Sunrise&apos;] text-3xl text-[#1A365D] md:text-4xl">
-              Ready to explore your leadership development?
+              Ready to explore <span className="text-[#F96E1E]">your</span> leadership development?
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-700">
               These perspectives emerge from real coaching conversations. 
@@ -140,15 +140,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
             <p class="text-gray-700">The Leadership Equation (PE = PO - I) suggests that most leaders already possess remarkable potential. What limits performance isn&apos;t lack of capability, but the presence of interference.</p>
           </div>
 
-          <p>The Leadership Equation offers a different perspective: <span class="bg-[#F96E1E] text-white px-2 py-1 rounded font-semibold">Performance Equals Potential minus Interference (PE = PO - I)</span>. This deceptively simple formula suggests that most leaders already possess remarkable potential.</p>
+          <p>The Leadership Equation offers a different perspective: <span class="text-[#F96E1E] font-semibold">Performance Equals Potential minus Interference (PE = PO - I)</span>. This deceptively simple formula suggests that most leaders already possess remarkable potential.</p>
 
           <p>What limits their performance isn&apos;t a lack of capability, but the presence of interference—or as I often call it in my coaching practice, their &ldquo;stuff.&rdquo;</p>
 
-          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border border-[#D4B86A] relative">
-            <div class="absolute -top-3 left-6 bg-white px-3 py-1 rounded-full text-sm font-medium text-[#1A365D]">
-              Internal Narrative
-            </div>
-            <div class="pt-4">
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border border-[#D4B86A]">
+            <div class="pt-2">
               <p class="text-lg italic text-[#1A365D] text-center">
                 &ldquo;Everyone thinks I&apos;ve got this sorted... but I&apos;m not sure I do.&rdquo;
               </p>
@@ -174,7 +171,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
             <p class="text-lg text-[#1A365D] font-medium">Through coaching work, such a leader might discover that their fear of being seen as incompetent is driving them to micromanage their team and take on excessive work themselves.</p>
           </div>
 
-          <p>This fear—their &lsquo;interference&rsquo;—could be preventing their natural leadership potential from emerging. Once they recognise this pattern and develop strategies to reduce the interference, their team&apos;s performance might improve dramatically, not because they learned new skills, but because they removed what was getting in their way.</p>
+          <p>This fear (their &lsquo;interference&rsquo;) could be preventing their natural leadership potential from emerging. Once they recognise this pattern and develop strategies to reduce the interference, their team&apos;s performance might improve dramatically, not because they learned new skills, but because they removed what was getting in their way.</p>
 
           <div class="my-8 h-px bg-gradient-to-r from-transparent via-[#D4B86A] to-transparent"></div>
 
@@ -255,7 +252,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
             </div>
           </div>
 
-          <h2>The Role of Self-Compassion</h2>
+          <h2><strong>The Role of Self-Compassion</strong></h2>
 
           <p>Perhaps the most important aspect of working with the Leadership Equation is approaching your interference with self-compassion rather than self-criticism. Interference patterns developed for good reasons—they were attempts to create safety, success, or belonging in specific contexts.</p>
 
@@ -267,7 +264,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
           <div class="my-8 h-px bg-gradient-to-r from-transparent via-[#D4B86A] to-transparent"></div>
 
-          <h2>Conclusion: The Ongoing Practice</h2>
+          <h2><strong>Conclusion: The Ongoing Practice</strong></h2>
 
           <div class="my-8 rounded-lg bg-[#1A365D] text-white p-8">
             <h3 class="text-[#D4B86A] font-semibold mb-4">The Formula for Transformation</h3>
