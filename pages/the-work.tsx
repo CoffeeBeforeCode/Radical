@@ -137,48 +137,76 @@ export default function TheWork() {
       </section>
       
       {/* CALL & RESPONSE - Cream Section */}
-      <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
-          <div className="space-y-12">
-            <div className="text-center">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#F96E1E] md:text-4xl">
-                The internal pressure that drives excellence... and exhaustion.
-              </h2>
-            </div>
-            
-            <div className="grid gap-12 md:grid-cols-2 items-center">
-              {/* The Call - Internal Struggle */}
-              <div className="space-y-6">
-                <div className="flex items-center justify-center min-h-[200px]">
-                  <img
-                    src="/images/Bubble-30.png"
-                    alt="Anything less than flawless is failure"
-                    className="w-full h-auto object-contain max-w-64"
-                  />
-                </div>
+          <div className="mb-8">
+            <h2 className="mb-4 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#F96E1E] md:text-4xl">
+              The internal pressure that drives excellence... and exhaustion.
+            </h2>
+            <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
+              The internal conversations that create interference, and the leaders who have found their way through.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="space-y-4">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+                <img
+                  src="/images/Bubble-32.png"
+                  alt="I can't afford to make mistakes at this level"
+                  className="size-full object-contain"
+                />
               </div>
               
-              {/* The Response - Social Proof */}
-              <div className="space-y-6">
-                <blockquote className="rounded-lg bg-white p-8 text-lg leading-relaxed text-gray-700">
-                  &ldquo;The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.&rdquo;
-                </blockquote>
-                <cite className="text-base font-medium text-[#1A365D]">C-suite Member, Technology</cite>
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                  The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.
+                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  C-suite Member<br />
+                  Technology
+                </div>
               </div>
             </div>
-          </div>
-        </PageLayout>
-      </section>
-      
-      {/* TESTIMONIAL - White Section */}
-      <section className="w-full bg-white py-12 md:py-16">
-        <PageLayout>
-          <div className="mx-auto max-w-4xl space-y-8">
-            <div className="rounded-lg bg-gray-50 p-8">
-              <blockquote className="mb-4 text-lg leading-relaxed text-gray-700">
-                &ldquo;Phillip is one of the most talented professionals I have ever met. His ability to swiftly and accurately pinpoint areas for development, combined with complete trustworthiness and acute business insight, makes him invaluable.&rdquo;
-              </blockquote>
-              <cite className="text-base font-medium text-[#1A365D]">Senior Civil Servant, Government</cite>
+            <div className="space-y-4">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+                <img
+                  src="/images/Bubble-31.png"
+                  alt="Others seem to see the big picture clearer than I do"
+                  className="size-full object-contain"
+                />
+              </div>
+              
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                  Phillip is one of the most talented professionals I have ever met. His ability to swiftly and accurately pinpoint areas for development, combined with complete trustworthiness and acute business insight, makes him invaluable.
+                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  Senior Civil Servant<br />
+                  Government
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+                <img
+                  src="/images/Bubble-30.png"
+                  alt="Anything less than flawless is failure"
+                  className="size-full object-contain"
+                />
+              </div>
+              
+              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                  I have been surprised at how comfortable it has felt being stretched through this coaching process. The stretch has become an additional approach rather than replacing who I am; expanding my capabilities while preserving my authentic self.
+                </p>
+                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                  Chief Financial Officer<br />
+                  Housing and Community Development
+                </div>
+              </div>
             </div>
           </div>
         </PageLayout>
