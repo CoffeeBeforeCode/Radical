@@ -20,7 +20,7 @@ const PerspectivesIndex: React.FC = () => {
     {
       slug: 'leadership-equation',
       title: 'The Leadership Equation: Unlocking Performance by Reducing Interference',
-      excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn\'t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
+      excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn&apos;t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
       category: 'Leadership Equation',
       readTime: '8 min read',
       publishDate: '2025-01-15',
@@ -232,7 +232,7 @@ const PerspectivesIndex: React.FC = () => {
               </h2>
               <p className="text-lg leading-relaxed text-white/80">
                 These perspectives emerge from real coaching conversations. 
-                Let's explore what's getting in your way.
+                Let&apos;s explore what&apos;s getting in your way.
               </p>
               <Link
                 href="/contact"
