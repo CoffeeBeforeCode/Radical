@@ -561,7 +561,7 @@ export default function ThisIsPersonal() {
                   </p>
                 </div>
               </div>
-              <div className="rounded-lg bg-[#1A365D] p-6 text-white">
+              <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-1">
                 <div className="flex h-full items-center justify-center">
                   <img
                     src="/images/Learning-Journey.png"
