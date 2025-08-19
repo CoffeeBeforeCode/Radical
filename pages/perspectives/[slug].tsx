@@ -144,12 +144,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
           <p>What limits their performance isn&apos;t a lack of capability, but the presence of interference—or as I often call it in my coaching practice, their &ldquo;stuff.&rdquo;</p>
 
-          <div class="my-8 bg-gradient-to-r from-[#F8F5EB] to-white p-1 rounded-lg">
-            <div class="bg-white p-6 rounded-lg">
-              <blockquote class="text-xl italic text-[#1A365D] text-center">
-                &ldquo;Everyone thinks I&apos;ve got this sorted—but I&apos;m not sure I do.&rdquo;
-                <footer class="text-sm text-gray-600 mt-2">— Regional Director</footer>
-              </blockquote>
+          <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border border-[#D4B86A] relative">
+            <div class="absolute -top-3 left-6 bg-white px-3 py-1 rounded-full text-sm font-medium text-[#1A365D]">
+              Internal Narrative
+            </div>
+            <div class="pt-4">
+              <p class="text-lg italic text-[#1A365D] text-center">
+                &ldquo;Everyone thinks I&apos;ve got this sorted... but I&apos;m not sure I do.&rdquo;
+              </p>
+              <div class="text-center mt-3">
+                <span class="text-sm text-gray-600">[Image placeholder: Speech bubble representing internal thoughts]</span>
+              </div>
             </div>
           </div>
 
@@ -161,15 +166,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
           <p>This perspective speaks to what many senior leaders experience privately: carrying the quiet loneliness at the top whilst projecting confidence in public forums. The Leadership Equation offers a framework for addressing this gap between external perception and internal experience.</p>
 
-          <h2>From Theory to Practice: A Real-World Example</h2>
+          <h2>From Theory to Practice: A Hypothetical Example</h2>
 
-          <p>Let&apos;s examine how the Leadership Equation can play out in actual leadership contexts. Consider a Regional Director I worked with recently. Despite his exceptional strategic thinking and technical expertise, his team was experiencing burnout, and key projects were falling behind.</p>
+          <p>Let&apos;s examine how the Leadership Equation might play out in actual leadership contexts. Consider a leader who, despite exceptional strategic thinking and technical expertise, finds their team experiencing burnout while key projects fall behind.</p>
 
           <div class="my-6 border-l-4 border-[#F96E1E] pl-6 py-2">
-            <p class="text-lg text-[#1A365D] font-medium">Through our work together, we discovered that his fear of being seen as incompetent was driving him to micromanage his team and take on excessive work himself.</p>
+            <p class="text-lg text-[#1A365D] font-medium">Through coaching work, such a leader might discover that their fear of being seen as incompetent is driving them to micromanage their team and take on excessive work themselves.</p>
           </div>
 
-          <p>This fear—his &lsquo;interference&rsquo;—was preventing his natural leadership potential from emerging. Once he recognised this pattern and developed strategies to reduce the interference, his team&apos;s performance improved dramatically, not because he learned new skills, but because he removed what was getting in his way.</p>
+          <p>This fear—their &lsquo;interference&rsquo;—could be preventing their natural leadership potential from emerging. Once they recognise this pattern and develop strategies to reduce the interference, their team&apos;s performance might improve dramatically, not because they learned new skills, but because they removed what was getting in their way.</p>
 
           <div class="my-8 h-px bg-gradient-to-r from-transparent via-[#D4B86A] to-transparent"></div>
 
