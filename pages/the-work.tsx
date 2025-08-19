@@ -36,7 +36,7 @@ export default function TheWork() {
                     <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         Most senior leaders already have the <strong>potential</strong>.<br />
-                        What gets in their way isn&apos;t lack of capability—<br />
+                        What gets in their way isn&apos;t lack of capability;<br />
                         it&apos;s the interference that blocks<br />
                         natural leadership <strong>excellence</strong>.
                       </p>
@@ -94,7 +94,7 @@ export default function TheWork() {
           <div className="space-y-12">
             <div className="text-center">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
-                How I see it
+                How I see <span className="text-[#F96E1E]">it</span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-700">
                 I work in frameworks — but never formulas.
@@ -140,8 +140,8 @@ export default function TheWork() {
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
-            <h2 className="mb-4 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#F96E1E] md:text-4xl">
-              The internal pressure that drives excellence... and exhaustion.
+            <h2 className="mb-4 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              The internal pressure that drives <span className="text-[#F96E1E]">excellence</span>... and exhaustion.
             </h2>
             <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
               The internal conversations that create interference, and the leaders who have found their way through.
@@ -216,8 +216,8 @@ export default function TheWork() {
       <section className="w-full bg-[#F96E1E] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-white md:text-4xl">
-              What would change if you could reduce the interference?
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold leading-tight text-[#1A365D] md:text-4xl">
+              What would change if you could reduce the <span className="text-[#F96E1E]">interference</span>?
             </h2>
             
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white">
