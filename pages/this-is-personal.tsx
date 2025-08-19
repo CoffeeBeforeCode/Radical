@@ -532,51 +532,56 @@ export default function ThisIsPersonal() {
       {/* WHITE STRIPE - Learning Journey */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-12 text-center">
-              <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
-                The learning never stops
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-              <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-3">
-                <div className="space-y-6 text-gray-700">
-                  <p className="text-lg leading-relaxed">
-                    My dedication to coaching and leadership development spans over three decades. 
-                    In 1991, I attended my first Coach as Leader training programme, which fundamentally 
-                    shaped how I showed up every day, particularly during the various turnaround missions 
-                    I led throughout my career.
-                  </p>
-                  
-                  <p className="text-lg leading-relaxed">
-                    Throughout my journey, I&apos;ve sought learning from original thought leaders to continuously 
-                    enhance my approach. I&apos;ve trained directly with John Grinder, co-creator of 
-                    Neuro Linguistic Programming, and completed Seth Godin&apos;s altMBA programme.
-                  </p>
-                  
-                  <p className="text-lg leading-relaxed">
-                    My development has also included deeper exploration of Emotional Intelligence through 
-                    Reuven Bar-On&apos;s work, as well as Gestalt approaches, Clean Language, 
-                    Cognitive Behavioural Therapy, and Rational Emotive Behaviour Therapy (REBT).
-                  </p>
+          <div className="mb-12 text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              The learning never stops
+            </h2>
+          </div>
+          
+          {/* Text Box + Image Grid - Full Width Like Hero Section */}
+          <div className="w-full">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+                <div className="rounded-lg bg-[#F8F5EB] p-6 md:col-span-3">
+                  <div className="space-y-6 text-gray-700">
+                    <p className="text-lg leading-relaxed">
+                      My dedication to coaching and leadership development spans over three decades. 
+                      In 1991, I attended my first Coach as Leader training programme, which fundamentally 
+                      shaped how I showed up every day, particularly during the various turnaround missions 
+                      I led throughout my career.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      Throughout my journey, I&apos;ve sought learning from original thought leaders to continuously 
+                      enhance my approach. I&apos;ve trained directly with John Grinder, co-creator of 
+                      Neuro Linguistic Programming, and completed Seth Godin&apos;s altMBA programme.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      My development has also included deeper exploration of Emotional Intelligence through 
+                      Reuven Bar-On&apos;s work, as well as Gestalt approaches, Clean Language, 
+                      Cognitive Behavioural Therapy, and Rational Emotive Behaviour Therapy (REBT).
+                    </p>
+                  </div>
+                </div>
+                <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-1">
+                  <div className="flex h-full items-center justify-center">
+                    <img
+                      src="/images/Learning-Journey.png"
+                      alt="Learning journey timeline"
+                      className="size-full object-contain"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-1">
-                <div className="flex h-full items-center justify-center">
-                  <img
-                    src="/images/Learning-Journey.png"
-                    alt="Learning journey timeline"
-                    className="size-full object-contain"
-                  />
-                </div>
-              </div>
             </div>
-            <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
-              <p className="text-xl font-semibold leading-relaxed text-white">
-                This continuous learning enriches the perspective I bring to our coaching partnership<br />
-                whilst maintaining focus on your unique journey and objectives.
-              </p>
-            </div>
+          </div>
+          
+          <div className="mt-12 rounded-lg bg-[#F96E1E] p-8 text-center">
+            <p className="text-xl font-semibold leading-relaxed text-white">
+              This continuous learning enriches the perspective I bring to our coaching partnership<br />
+              whilst maintaining focus on your unique journey and objectives.
+            </p>
           </div>
         </PageLayout>
       </section>
