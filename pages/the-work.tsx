@@ -139,20 +139,24 @@ export default function TheWork() {
       {/* CALL & RESPONSE - Cream Section */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <PageLayout>
-          <div className="grid gap-12 md:grid-cols-2 items-center">
-            {/* The Call - Internal Struggle */}
-            <div className="space-y-6">
-              <div className="flex items-center justify-center min-h-[200px]">
-                <img
-                  src="/images/Bubble-30.png"
-                  alt="Anything less than flawless is failure"
-                  className="w-full h-auto object-contain max-w-64"
-                />
-              </div>
-              <h3 className="font-['Waiting_for_the_Sunrise'] text-xl font-semibold text-[#F96E1E]">
+          <div className="space-y-12">
+            <div className="text-center">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#F96E1E] md:text-4xl">
                 The internal pressure that drives excellence... and exhaustion.
-              </h3>
+              </h2>
             </div>
+            
+            <div className="grid gap-12 md:grid-cols-2 items-center">
+              {/* The Call - Internal Struggle */}
+              <div className="space-y-6">
+                <div className="flex items-center justify-center min-h-[200px]">
+                  <img
+                    src="/images/Bubble-30.png"
+                    alt="Anything less than flawless is failure"
+                    className="w-full h-auto object-contain max-w-64"
+                  />
+                </div>
+              </div>
             
             {/* The Response - Social Proof */}
             <div className="space-y-6">
