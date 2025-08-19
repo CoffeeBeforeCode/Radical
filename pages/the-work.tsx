@@ -57,7 +57,7 @@ export default function TheWork() {
               <div className="max-w-4xl space-y-8 mt-8">
                 <div className="flex flex-wrap gap-4">
                   <Link
-                    href="mailto:phillip@phillip-collins.com"
+                    href="mailto:phillip@phillipcollins.com"
                     className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
                   >
                     Begin here
@@ -74,7 +74,7 @@ export default function TheWork() {
           </div>
         </div>
       </section>
-
+      
       {/* EQ-i IMAGE - Navy Section */}
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -87,7 +87,7 @@ export default function TheWork() {
           </div>
         </div>
       </section>
-
+      
       {/* FRAMEWORKS - White Section */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
@@ -135,21 +135,23 @@ export default function TheWork() {
           </div>
         </PageLayout>
       </section>
-
+      
       {/* CALL & RESPONSE - Cream Section */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <PageLayout>
           <div className="grid gap-12 md:grid-cols-2 items-center">
             {/* The Call - Internal Struggle */}
             <div className="space-y-6">
-              <div className="aspect-square max-w-64 rounded-lg bg-[#F96E1E] p-8">
-                <p className="text-center text-lg font-medium leading-relaxed text-white">
-                  &ldquo;Anything less than flawless is failure&rdquo;
-                </p>
+              <div className="flex items-center justify-center min-h-[200px]">
+                <img
+                  src="/images/Bubble-30.png"
+                  alt="Anything less than flawless is failure"
+                  className="w-full h-auto object-contain max-w-64"
+                />
               </div>
-              <p className="text-base leading-relaxed text-gray-600">
+              <h3 className="font-['Waiting_for_the_Sunrise'] text-xl font-semibold text-[#F96E1E]">
                 The internal pressure that drives excellence... and exhaustion.
-              </p>
+              </h3>
             </div>
             
             {/* The Response - Social Proof */}
@@ -162,7 +164,7 @@ export default function TheWork() {
           </div>
         </PageLayout>
       </section>
-
+      
       {/* TESTIMONIAL - White Section */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
@@ -176,7 +178,7 @@ export default function TheWork() {
           </div>
         </PageLayout>
       </section>
-
+      
       {/* FINAL CTA - Tangerine Section */}
       <section className="w-full bg-[#F96E1E] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -191,10 +193,10 @@ export default function TheWork() {
             
             <div className="mt-8">
               <Link
-                href="mailto:phillip@phillip-collins.com"
+                href="mailto:phillip@phillipcollins.com"
                 className="inline-flex items-center justify-center rounded bg-white px-8 py-4 text-lg font-medium text-[#1A365D] transition-colors hover:bg-gray-100"
               >
-                phillip@phillip-collins.com
+                Let&apos;s explore together
               </Link>
             </div>
           </div>
