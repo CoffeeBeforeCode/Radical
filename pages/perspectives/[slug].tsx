@@ -136,7 +136,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">Leadership development traditionally focuses on adding: more skills, more knowledge, more techniques. Yet what if the most impactful approach isn&apos;t about adding, but removing? What if the difference between good and exceptional leadership isn&apos;t what we lack, but what gets in our way?</p>
 
           <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Key Takeaway</h3>
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Central Perspective</h3>
             <p class="text-gray-700">The Leadership Equation (PE = PO - I) suggests that most leaders already possess remarkable potential. What limits performance isn&apos;t lack of capability, but the presence of interference.</p>
           </div>
 
@@ -308,7 +308,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">When we think about leadership development, the conversation typically centres on workplace contexts: managing teams, driving results, navigating organisational politics. Yet this narrow focus misses something fundamental about how leadership actually develops and manifests in human experience.</p>
 
           <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Key Insight</h3>
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Central Perspective</h3>
             <p class="text-gray-700">True leadership isn&apos;t confined to job titles or organisational charts. It&apos;s a practice that extends across every domain of our lives—how we lead ourselves, our families, our friendship circles, and our communities.</p>
           </div>
 
@@ -438,7 +438,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles—unchanging guideposts that should remain constant throughout our careers and lives. Yet in my coaching practice, I&apos;ve observed that major transitions often catalyse profound shifts in what matters most to us.</p>
 
           <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Central Truth</h3>
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Central Perspective</h3>
             <p class="text-gray-700">Values evolution isn&apos;t a sign of inconsistency or weakness—it&apos;s a natural response to changing life circumstances and evolving self-awareness. When we fail to recognise these shifts, they can create significant interference in our Leadership Equation.</p>
           </div>
 
@@ -600,7 +600,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           <p class="text-xl leading-relaxed text-gray-800 border-l-4 border-[#F96E1E] pl-6">I&apos;m always surprised by how many leaders struggle to describe their values conflicts in clear terms. They know something feels &ldquo;off&rdquo; about a decision, but they can&apos;t quite articulate what&apos;s creating the tension. That&apos;s where Values Constellation Mapping comes in.</p>
 
           <div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#D4B86A]">
-            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">The Challenge</h3>
+            <h3 class="text-lg font-semibold text-[#1A365D] mb-3">Central Perspective</h3>
             <p class="text-gray-700">Values conflicts often remain invisible precisely because they&apos;re internal. When competing priorities swirl around in our minds, they can feel overwhelming and abstract. We sense the tension, but we can&apos;t quite grasp where it&apos;s coming from or how to work with it.</p>
           </div>
 
