@@ -72,7 +72,8 @@ export default function TheWork() {
               </div>
             </div>
           </div>
-        </div>
+                  </div>
+        </PageLayout>
       </section>
       
       {/* EQ-i IMAGE - Navy Section */}
