@@ -72,8 +72,7 @@ export default function TheWork() {
               </div>
             </div>
           </div>
-                  </div>
-        </PageLayout>
+        </div>
       </section>
       
       {/* EQ-i IMAGE - Navy Section */}
@@ -158,13 +157,14 @@ export default function TheWork() {
                   />
                 </div>
               </div>
-            
-            {/* The Response - Social Proof */}
-            <div className="space-y-6">
-              <blockquote className="rounded-lg bg-white p-8 text-lg leading-relaxed text-gray-700">
-                &ldquo;The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.&rdquo;
-              </blockquote>
-              <cite className="text-base font-medium text-[#1A365D]">C-suite Member, Technology</cite>
+              
+              {/* The Response - Social Proof */}
+              <div className="space-y-6">
+                <blockquote className="rounded-lg bg-white p-8 text-lg leading-relaxed text-gray-700">
+                  &ldquo;The feedback was that I&apos;ve made an enormous amount of progress and have proven my ability to get repeatedly great results for the company. Thank you for all your help getting me here. It&apos;s been a journey.&rdquo;
+                </blockquote>
+                <cite className="text-base font-medium text-[#1A365D]">C-suite Member, Technology</cite>
+              </div>
             </div>
           </div>
         </PageLayout>
