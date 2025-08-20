@@ -26,7 +26,7 @@ export default function AtHome() {
                 <div className="md:col-span-3 flex min-h-[200px] items-center rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:min-h-[250px]">
                   <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
                     In the kitchen. With Gracie. In the ordinary moments.<br />
-                    This is where I practice what I teach:<br />
+                    This is where I practice what I explore with clients:<br />
                     <strong>Working with what is</strong>.
                   </p>
                 </div>
@@ -59,8 +59,8 @@ export default function AtHome() {
               </h2>
               
               <p className="text-lg leading-relaxed text-gray-700">
-                In the kitchen, like in my work, I can only work with what&apos;s available. 
-                The ingredients that are there. The conditions as they are.
+                In the kitchen, like in my work, I start with what&apos;s here. 
+                The ingredients that are present. The conditions as they are.
               </p>
               
               <p className="text-lg leading-relaxed text-gray-700">
@@ -69,7 +69,7 @@ export default function AtHome() {
               </p>
               
               <p className="text-base leading-relaxed text-gray-600">
-                Cooking is a language of love. But it&apos;s also practice in presence, 
+                Cooking is a language of love. It&apos;s also practice in presence, 
                 in responding to what emerges rather than forcing what isn&apos;t there.
               </p>
             </div>
@@ -78,8 +78,8 @@ export default function AtHome() {
               <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
                 <div className="mb-4 text-6xl text-white">🍳</div>
                 <p className="text-lg italic text-white">
-                  &ldquo;The ingredients teach you<br />
-                  what they want to become.&rdquo;
+                  &ldquo;The ingredients show you<br />
+                  what wants to become.&rdquo;
                 </p>
               </div>
             </div>
@@ -118,51 +118,9 @@ export default function AtHome() {
               </p>
               
               <p className="text-base leading-relaxed text-gray-600">
-                The same principles apply to leadership development: 
+                The same principles apply when I support leaders: 
                 understanding your natural patterns, building capacity 
                 for different responses, practising new ways of being.
-              </p>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* NAVY STRIPE - Still Fascinated */}
-      <section className="w-full bg-[#1A365D] py-16 md:py-24">
-        <PageLayout>
-          <div className="mb-12 text-center">
-            <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-white md:text-4xl font-bold">
-              Still <span className="text-[#F96E1E]">fascinated</span>
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
-              By business systems. By how things connect. By the patterns 
-              that create what we see on the surface.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-lg text-[#1A365D] font-bold">Systems thinking</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                How seemingly separate elements influence each other. 
-                Whether it&apos;s diagnosing why a team isn&apos;t functioning 
-                or understanding why a leader feels stuck.
-              </p>
-            </div>
-            
-            <div className="rounded-lg bg-[#F96E1E] p-6 text-white">
-              <h3 className="mb-3 text-lg font-bold">Pattern recognition</h3>
-              <p className="text-sm leading-relaxed text-white/90">
-                The underlying dynamics that create surface symptoms. 
-                What&apos;s actually happening beneath what appears to be happening.
-              </p>
-            </div>
-            
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-lg text-[#1A365D] font-bold">Connection points</h3>
-              <p className="text-sm leading-relaxed text-gray-600">
-                How business challenges mirror personal challenges. 
-                How leadership at work reflects leadership at home.
               </p>
             </div>
           </div>
