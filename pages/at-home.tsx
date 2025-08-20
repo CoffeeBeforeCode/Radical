@@ -41,6 +41,14 @@ export default function AtHome() {
           
           {/* CTA Buttons */}
           <div className="max-w-4xl mt-8">
+            <div className="mb-8 text-center">
+              <img
+                src="/images/Bubble-36.png"
+                alt="There's got to be more to leadership than this"
+                className="mx-auto max-w-xs h-auto object-contain"
+              />
+            </div>
+            
             <div className="flex flex-wrap justify-start gap-4">
               <Link
                 href="/the-work"
@@ -149,16 +157,44 @@ export default function AtHome() {
         </PageLayout>
       </section>
 
-      {/* NAVY STRIPE - Placeholder */}
+      {/* NAVY STRIPE - Why Practice Matters More Than Perfection */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
-          <div className="text-center">
-            <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-white md:text-4xl font-bold">
-              <span className="text-[#F96E1E]">Placeholder</span> Section
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
-              This navy section will be developed with content that fits the flow of the page.
-            </p>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-white md:text-4xl font-bold">
+                Why <span className="text-[#F96E1E]">practice</span> matters more than perfection
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Perfection is a construct. It doesn&apos;t exist in reality.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Practice is about reality testing - what&apos;s actually here, 
+                what&apos;s actually happening, what&apos;s actually needed.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                When we stop chasing something that was never real, 
+                we can work with what is.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90">
+                Leadership happens in the moment. That&apos;s where our 
+                capacity to respond lives.
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+                <img
+                  src="/images/Bubble-36.png"
+                  alt="Practice over perfection"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
         </PageLayout>
       </section>
