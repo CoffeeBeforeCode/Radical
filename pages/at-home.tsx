@@ -27,7 +27,7 @@ export default function AtHome() {
                   <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
                     In the kitchen.<br />
                     With Gracie.<br />
-                    In the <span className="text-[#F96E1E]">ordinary</span> moments.<br />
+                    In the <strong>ordinary moments</strong>.<br />
                     This is where I practice what I explore with clients:<br />
                     <strong>Working with what is</strong>.
                   </p>
