@@ -13,7 +13,7 @@ export default function AtHome() {
         <PageLayout>
           {/* Headline First */}
           <div className="max-w-4xl space-y-8">
-            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl leading-tight text-[#1A365D] md:text-5xl lg:text-6xl font-bold">
               Leadership as <span className="text-[#F96E1E]">practice</span>.
             </h1>
           </div>
@@ -23,7 +23,7 @@ export default function AtHome() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
                 {/* Text Box - 3/4 width */}
-                <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                <div className="md:col-span-3 flex min-h-[200px] items-center rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:min-h-[250px]">
                   <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
                     In the kitchen. With Gracie. In the ordinary moments.<br />
                     This is where I practice what I teach:<br />
@@ -32,7 +32,7 @@ export default function AtHome() {
                 </div>
                 
                 {/* Image Box - 1/4 width */}
-                <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                <div className="md:col-span-1 flex min-h-[200px] items-center justify-center rounded-lg bg-white p-6 md:min-h-[250px]">
                   <div className="text-6xl">🏠</div>
                 </div>
               </div>
@@ -42,8 +42,8 @@ export default function AtHome() {
           {/* Additional Context */}
           <div className="max-w-4xl space-y-8 mt-8">
             <p className="text-lg leading-relaxed text-gray-600">
-              Leadership isn't something I switch on at work.<br />
-              It's who I've chosen to become.
+              Leadership isn&apos;t something I switch on at work.<br />
+              It&apos;s who I&apos;ve chosen to become.
             </p>
           </div>
         </PageLayout>
@@ -54,12 +54,12 @@ export default function AtHome() {
         <PageLayout>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
                 Working with <span className="text-[#F96E1E]">what is</span>
               </h2>
               
               <p className="text-lg leading-relaxed text-gray-700">
-                In the kitchen, like in my work, I can only work with what's available. 
+                In the kitchen, like in my work, I can only work with what&apos;s available. 
                 The ingredients that are there. The conditions as they are.
               </p>
               
@@ -69,17 +69,17 @@ export default function AtHome() {
               </p>
               
               <p className="text-base leading-relaxed text-gray-600">
-                Cooking is a language of love. But it's also practice in presence, 
-                in responding to what emerges rather than forcing what isn't there.
+                Cooking is a language of love. But it&apos;s also practice in presence, 
+                in responding to what emerges rather than forcing what isn&apos;t there.
               </p>
             </div>
             
             <div className="flex items-center justify-center">
-              <div className="rounded-lg bg-[#1A365D] p-8 text-center max-w-sm">
-                <div className="text-6xl text-white mb-4">🍳</div>
-                <p className="text-white text-lg italic">
-                  "The ingredients teach you<br />
-                  what they want to become."
+              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
+                <div className="mb-4 text-6xl text-white">🍳</div>
+                <p className="text-lg italic text-white">
+                  &ldquo;The ingredients teach you<br />
+                  what they want to become.&rdquo;
                 </p>
               </div>
             </div>
@@ -91,18 +91,18 @@ export default function AtHome() {
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="flex items-center justify-center order-2 md:order-1">
-              <div className="rounded-lg bg-[#7E2D40] p-8 text-center max-w-sm">
-                <div className="text-6xl text-white mb-4">🐾</div>
-                <p className="text-white text-lg italic">
-                  "Training never stops.<br />
-                  It's always practice."
+            <div className="order-2 flex items-center justify-center md:order-1">
+              <div className="max-w-sm rounded-lg bg-[#7E2D40] p-8 text-center">
+                <div className="mb-4 text-6xl text-white">🐾</div>
+                <p className="text-lg italic text-white">
+                  &ldquo;Training never stops.<br />
+                  It&apos;s always practice.&rdquo;
                 </p>
               </div>
             </div>
             
-            <div className="space-y-6 order-1 md:order-2">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+            <div className="order-1 space-y-6 md:order-2">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
                 Lessons with <span className="text-[#F96E1E]">Gracie</span>
               </h2>
               
@@ -113,7 +113,7 @@ export default function AtHome() {
               
               <p className="text-lg leading-relaxed text-gray-700">
                 Supporting her to work with her natural drives. Building her capacity 
-                for impulse control. In emotional intelligence terms, it's about 
+                for impulse control. In emotional intelligence terms, it&apos;s about 
                 developing self-regulation.
               </p>
               
@@ -130,8 +130,8 @@ export default function AtHome() {
       {/* NAVY STRIPE - Still Fascinated */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
-          <div className="text-center mb-12">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl mb-6">
+          <div className="mb-12 text-center">
+            <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-white md:text-4xl font-bold">
               Still <span className="text-[#F96E1E]">fascinated</span>
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
@@ -142,25 +142,25 @@ export default function AtHome() {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="rounded-lg bg-white p-6">
-              <h3 className="text-lg font-bold text-[#1A365D] mb-3">Systems thinking</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="mb-3 text-lg text-[#1A365D] font-bold">Systems thinking</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
                 How seemingly separate elements influence each other. 
-                Whether it's diagnosing why a team isn't functioning 
+                Whether it&apos;s diagnosing why a team isn&apos;t functioning 
                 or understanding why a leader feels stuck.
               </p>
             </div>
             
             <div className="rounded-lg bg-[#F96E1E] p-6 text-white">
-              <h3 className="text-lg font-bold mb-3">Pattern recognition</h3>
-              <p className="text-white/90 text-sm leading-relaxed">
+              <h3 className="mb-3 text-lg font-bold">Pattern recognition</h3>
+              <p className="text-sm leading-relaxed text-white/90">
                 The underlying dynamics that create surface symptoms. 
-                What's actually happening beneath what appears to be happening.
+                What&apos;s actually happening beneath what appears to be happening.
               </p>
             </div>
             
             <div className="rounded-lg bg-white p-6">
-              <h3 className="text-lg font-bold text-[#1A365D] mb-3">Connection points</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="mb-3 text-lg text-[#1A365D] font-bold">Connection points</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
                 How business challenges mirror personal challenges. 
                 How leadership at work reflects leadership at home.
               </p>
@@ -173,17 +173,17 @@ export default function AtHome() {
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl mb-6">
+            <div className="mb-12 text-center">
+              <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-[#1A365D] md:text-4xl font-bold">
                 What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
               </h2>
             </div>
             
-            <div className="rounded-lg bg-white p-8 shadow-sm border-l-4 border-[#F96E1E]">
-              <p className="text-lg leading-relaxed text-gray-700 mb-6 italic">
-                "Working with Phillip helped me realise that I'd been seeking external validation 
+            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-8 shadow-sm">
+              <p className="mb-6 text-lg leading-relaxed text-gray-700 italic">
+                &ldquo;Working with Phillip helped me realise that I&apos;d been seeking external validation 
                 for decisions I was perfectly capable of making myself. The question became: 
-                what if I trusted my own judgement? That shift changed everything."
+                what if I trusted my own judgement? That shift changed everything.&rdquo;
               </p>
               <div className="text-sm text-gray-600">
                 — Senior Executive, Global Technology Company
@@ -196,20 +196,20 @@ export default function AtHome() {
       {/* WHITE SECTION - Leadership Quote & CTA */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="mx-auto max-w-4xl space-y-8 text-center">
             <div className="space-y-6">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
                 Ready to <span className="text-[#F96E1E]">explore</span>?
               </h2>
               
-              <p className="text-xl leading-relaxed text-gray-700 max-w-2xl mx-auto">
+              <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
                 Leadership development that honours who you already are.
               </p>
               
-              <div className="rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#1A365D] max-w-2xl mx-auto">
+              <div className="mx-auto max-w-2xl rounded-lg border-l-4 border-[#1A365D] bg-[#F8F5EB] p-6">
                 <p className="text-lg italic text-gray-700">
-                  "Leadership isn't a thing I do at work.<br />
-                  It's the person I've chosen to become."
+                  &ldquo;Leadership isn&apos;t a thing I do at work.<br />
+                  It&apos;s the person I&apos;ve chosen to become.&rdquo;
                 </p>
               </div>
             </div>
@@ -217,13 +217,13 @@ export default function AtHome() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/the-work"
-                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg text-white transition-colors hover:bg-[#E55A1A] font-semibold"
               >
                 Explore the work
               </Link>
               <Link
                 href="/contact"
-                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white font-semibold"
               >
                 Start a conversation
               </Link>
