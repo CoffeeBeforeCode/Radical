@@ -25,7 +25,9 @@ export default function AtHome() {
                 {/* Text Box - 3/4 width */}
                 <div className="md:col-span-3 flex min-h-[200px] items-center rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 md:min-h-[250px]">
                   <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                    In the kitchen. With Gracie. In the ordinary moments.<br />
+                    In the kitchen.<br />
+                    With Gracie.<br />
+                    In the <span className="text-[#F96E1E]">ordinary</span> moments.<br />
                     This is where I practice what I explore with clients:<br />
                     <strong>Working with what is</strong>.
                   </p>
