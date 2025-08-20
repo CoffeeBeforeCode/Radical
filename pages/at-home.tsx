@@ -39,14 +39,8 @@ export default function AtHome() {
             </div>
           </div>
           
-          {/* Additional Context */}
-          <div className="max-w-4xl space-y-8 mt-8">
-            <p className="text-lg leading-relaxed text-gray-600">
-              Leadership isn&apos;t something I switch on at work.<br />
-              It&apos;s who I&apos;ve chosen to become.
-            </p>
-            
-            {/* CTA Buttons */}
+          {/* CTA Buttons */}
+          <div className="max-w-4xl mt-8">
             <div className="flex flex-wrap justify-start gap-4">
               <Link
                 href="/the-work"
@@ -60,6 +54,20 @@ export default function AtHome() {
               >
                 This is personal
               </Link>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* DARK BLUE STRIPE - Featured Leadership Quote */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <div className="mx-auto max-w-3xl rounded-lg border-l-8 border-[#F96E1E] bg-white p-8">
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-[#1A365D] md:text-3xl font-bold">
+                &ldquo;Leadership isn&apos;t a thing I do at work.<br />
+                It&apos;s the person I&apos;ve chosen to become.&rdquo;
+              </p>
             </div>
           </div>
         </PageLayout>
@@ -137,16 +145,6 @@ export default function AtHome() {
                 The same principles apply when I support leaders: 
                 understanding your natural patterns, building capacity 
                 for different responses, practising new ways of being.
-              </p>
-            </div>
-          </div>
-          
-          {/* Featured Leadership Quote */}
-          <div className="mt-16 text-center">
-            <div className="mx-auto max-w-3xl rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-8">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-[#1A365D] md:text-3xl font-bold">
-                &ldquo;Leadership isn&apos;t a thing I do at work.<br />
-                It&apos;s the person I&apos;ve chosen to become.&rdquo;
               </p>
             </div>
           </div>
