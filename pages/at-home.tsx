@@ -97,7 +97,7 @@ export default function AtHome() {
             </div>
             
             <div className="flex items-center justify-center">
-              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+              <div className="max-w-sm rounded-lg bg-[#F8F5EB] p-8 text-center">
                 <img
                   src="/images/Bubble-33.png"
                   alt="Working with what is"
@@ -167,6 +167,14 @@ export default function AtHome() {
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="max-w-4xl mx-auto">
+            <div className="mb-8 text-center">
+              <img
+                src="/images/Bubble-35.png"
+                alt="I keep second guessing myself"
+                className="mx-auto max-w-xs h-auto object-contain"
+              />
+            </div>
+            
             <div className="mb-12 text-center">
               <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-[#1A365D] md:text-4xl font-bold">
                 What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
@@ -199,13 +207,6 @@ export default function AtHome() {
               <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
                 Leadership development that honours who you already are.
               </p>
-              
-              <div className="mx-auto max-w-2xl rounded-lg border-l-4 border-[#1A365D] bg-[#F8F5EB] p-6">
-                <p className="text-lg italic text-gray-700">
-                  &ldquo;Leadership isn&apos;t a thing I do at work.<br />
-                  It&apos;s the person I&apos;ve chosen to become.&rdquo;
-                </p>
-              </div>
             </div>
             
             <div className="flex flex-wrap justify-center gap-4">
