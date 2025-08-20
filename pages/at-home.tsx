@@ -63,12 +63,10 @@ export default function AtHome() {
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
           <div className="text-center">
-            <div className="mx-auto max-w-3xl rounded-lg border-l-8 border-[#F96E1E] bg-white p-8">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-[#1A365D] md:text-3xl font-bold">
-                &ldquo;Leadership isn&apos;t a thing I do at work.<br />
-                It&apos;s the person I&apos;ve chosen to become.&rdquo;
-              </p>
-            </div>
+            <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-white md:text-3xl font-bold">
+              &ldquo;Leadership isn&apos;t a <span className="text-[#F96E1E]">thing</span> I do at work.<br />
+              It&apos;s the person I&apos;ve chosen to become.&rdquo;
+            </p>
           </div>
         </PageLayout>
       </section>
@@ -99,12 +97,12 @@ export default function AtHome() {
             </div>
             
             <div className="flex items-center justify-center">
-              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
-                <div className="mb-4 text-6xl text-white">🍳</div>
-                <p className="text-lg italic text-white">
-                  &ldquo;The ingredients show you<br />
-                  what wants to become.&rdquo;
-                </p>
+              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+                <img
+                  src="/images/Bubble-33.png"
+                  alt="Working with what is"
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
           </div>
@@ -116,12 +114,12 @@ export default function AtHome() {
         <PageLayout>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="order-2 flex items-center justify-center md:order-1">
-              <div className="max-w-sm rounded-lg bg-[#7E2D40] p-8 text-center">
-                <div className="mb-4 text-6xl text-white">🐾</div>
-                <p className="text-lg italic text-white">
-                  &ldquo;Training never stops.<br />
-                  It&apos;s always practice.&rdquo;
-                </p>
+              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+                <img
+                  src="/images/Bubble-34.png"
+                  alt="Lessons with Gracie"
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
             
