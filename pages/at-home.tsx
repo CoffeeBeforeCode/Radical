@@ -1,313 +1,85 @@
-import Layout, { Block, Grid, PageLayout } from '../components/Layout'
+import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
 
 export default function AtHome() {
   return (
-    <Layout 
+    <Layout
       title="At Home - Phillip Collins Leadership Coaching"
-      description="Where leadership lives too - in the kitchen, with Gracie, and in ordinary moments. Leadership isn't performance; it's a way of showing up everywhere."
+      description="Leadership as practice - in the kitchen, with Gracie, and in ordinary moments. Working with what is, every day."
       canonical="/at-home"
     >
-      {/* Hero Section */}
+      {/* HERO SECTION - Following This is Personal structure */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            {/* Main headline - spans 3 columns */}
-            <div className="md:col-span-3">
-              <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
-                Where leadership <span className="text-[#F96E1E]">lives too</span>
-              </h1>
-              
-              <div className="mt-8 space-y-6">
-                <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px]">
-                  <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                    Leadership isn&apos;t something we switch on and off.<br />
-                    It lives in the <strong>kitchen</strong>.<br />
-                    In <strong>conversation</strong>.<br />
-                    In the <strong>ordinary</strong>.
+          {/* Headline First */}
+          <div className="max-w-4xl space-y-8">
+            <h1 className="font-['Waiting_for_the_Sunrise'] text-4xl font-bold leading-tight text-[#1A365D] md:text-5xl lg:text-6xl">
+              Leadership as <span className="text-[#F96E1E]">practice</span>.
+            </h1>
+          </div>
+          
+          {/* Text Box + Image Grid - Following This is Personal pattern */}
+          <div className="w-full mt-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                {/* Text Box - 3/4 width */}
+                <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                  <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                    In the kitchen. With Gracie. In the ordinary moments.<br />
+                    This is where I practice what I teach:<br />
+                    <strong>Working with what is</strong>.
                   </p>
+                </div>
+                
+                {/* Image Box - 1/4 width */}
+                <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+                  <div className="text-6xl">🏠</div>
                 </div>
               </div>
             </div>
-            
-            {/* Side content placeholder - spans 1 column */}
-            <div className="md:col-span-1 flex items-end justify-center">
-              <div className="aspect-square rounded-lg bg-[#1A365D] p-6 flex items-center justify-center max-w-[200px] min-h-[200px]">
-                <div className="text-6xl text-white">🏠</div>
-              </div>
-            </div>
           </div>
           
-          {/* CTA Buttons */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4 md:justify-start">
-            <Link
-              href="/the-work"
-              className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-            >
-              Explore the work
-            </Link>
-            <Link
-              href="/this-is-personal"
-              className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
-            >
-              This is personal
-            </Link>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* Cooking as Leadership Practice */}
-      <Block background="cream" spacing="default">
-        <PageLayout>
-          <div className="text-center mb-16">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight mb-6">
-              Cooking as leadership practice
-            </h2>
-          </div>
-          
-          <Grid columns={2} className="items-center">
-            <div className="space-y-6">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Cooking is one of the ways I express care.<br />
-                Presence meets creativity.<br />
-                Flavour meets intuition.
-              </p>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                It&apos;s where nourishment becomes connection.
-              </p>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                In the kitchen, I practice the same principles I bring to coaching:
-                attention to subtle signals, respect for timing, and trust in the process.
-                Whether I&apos;m adjusting seasoning or creating space for a client&apos;s insight,
-                it&apos;s about being present to what&apos;s emerging.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="inline-flex size-32 items-center justify-center rounded-full bg-[#7E2D40] text-6xl text-white md:size-40">
-                🍳
-              </div>
-              <p className="mt-4 text-sm text-gray-600 italic">
-                &ldquo;Good food, like good coaching,<br />
-                happens when you pay attention.&rdquo;
-              </p>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
-
-      {/* Lessons from Gracie */}
-      <Block spacing="default">
-        <PageLayout>
-          <Grid columns={2} className="items-center">
-            <div className="text-center">
-              <div className="inline-flex size-32 items-center justify-center rounded-full bg-[#1A365D] text-6xl text-white md:size-40">
-                🐾
-              </div>
-              <p className="mt-4 text-sm text-gray-600 italic">
-                &ldquo;Alert, sensitive,<br />
-                and fully herself.&rdquo;
-              </p>
-            </div>
-            
-            <div className="space-y-6">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight">
-                Lessons from Gracie
-              </h2>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Our English Pointer, Gracie, is alert, sensitive, and fully herself.<br />
-                She reminds me how to pay attention &mdash; and when to rest.
-              </p>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                There&apos;s something about her presence that mirrors what I hope to bring to coaching:
-                complete attention without agenda, sensitivity without overwhelm,
-                and the wisdom to know when stillness serves better than action.
-              </p>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                She&apos;s taught me that the best leadership often looks like quiet watchfulness,
-                followed by precise, purposeful movement when it matters most.
-              </p>
-            </div>
-          </Grid>
-        </PageLayout>
-      </Block>
-
-      {/* Business Fascination */}
-      <Block background="navy" spacing="default">
-        <PageLayout>
-          <div className="text-center">
-            <div className="mx-auto max-w-4xl space-y-8">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
-                Still fascinated
-              </h2>
-              
-              <div className="mx-auto max-w-2xl space-y-6">
-                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  I&apos;ve always been drawn to the psychology of business.<br />
-                  Structure, rhythm, complexity.
-                </p>
-                
-                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  It&apos;s not separate from my coaching &mdash; it&apos;s part of what makes it work.
-                </p>
-                
-                <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                  The same curiosity that led me into turnaround leadership and fractional CEO work
-                  informs how I approach individual coaching. Systems thinking. Pattern recognition.
-                  Understanding how seemingly separate elements influence each other.
-                </p>
-                
-                <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                  Whether it&apos;s diagnosing why a team isn&apos;t functioning or why a leader feels stuck,
-                  I&apos;m always looking for the underlying dynamics that create the surface symptoms.
-                </p>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </Block>
-
-      {/* Values in Living */}
-      <Block background="cream" spacing="default">
-        <PageLayout>
-          <div className="text-center mb-16">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight mb-6">
-              Values in living
-            </h2>
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-700 md:text-xl">
-              How my core values show up in ordinary moments
+          {/* Additional Context */}
+          <div className="max-w-4xl space-y-8 mt-8">
+            <p className="text-lg leading-relaxed text-gray-600">
+              Leadership isn't something I switch on at work.<br />
+              It's who I've chosen to become.
             </p>
           </div>
-          
-          <Grid columns={5}>
-            <div className="text-center space-y-4">
-              <div className="text-3xl text-[#7E2D40]">🧭</div>
-              <h3 className="text-lg font-semibold text-[#1A365D]">Wisdom</h3>
-              <p className="text-sm text-gray-600">
-                Choosing ingredients mindfully,
-                listening to what Gracie notices,
-                learning from every business pattern.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="text-3xl text-[#7E2D40]">🪞</div>
-              <h3 className="text-lg font-semibold text-[#1A365D]">Integrity</h3>
-              <p className="text-sm text-gray-600">
-                Cooking with care even when no one&apos;s watching,
-                being honest about what I don&apos;t know.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="text-3xl text-[#7E2D40]">💝</div>
-              <h3 className="text-lg font-semibold text-[#1A365D]">Self-respect</h3>
-              <p className="text-sm text-gray-600">
-                Setting boundaries around rest,
-                honouring my sensitivity as strength.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="text-3xl text-[#7E2D40]">🌱</div>
-              <h3 className="text-lg font-semibold text-[#1A365D]">Personal Development</h3>
-              <p className="text-sm text-gray-600">
-                Every meal is practice,
-                every business challenge teaches,
-                every moment with Gracie reveals.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="text-3xl text-[#7E2D40]">🕊</div>
-              <h3 className="text-lg font-semibold text-[#1A365D]">Freedom</h3>
-              <p className="text-sm text-gray-600">
-                To cook what nourishes,
-                to rest when needed,
-                to question what others accept.
-              </p>
-            </div>
-          </Grid>
         </PageLayout>
-      </Block>
+      </section>
 
-      {/* Personal Philosophy */}
-      <Block spacing="default">
+      {/* CREAM STRIPE - Working with what is */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
-          <div className="mx-auto max-w-4xl text-center space-y-8">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight">
-              Where it all connects
-            </h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+                Working with <span className="text-[#F96E1E]">what is</span>
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                In the kitchen, like in my work, I can only work with what's available. 
+                The ingredients that are there. The conditions as they are.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                I embrace the everlasting meal principle: the notes of the last meal 
+                inform the notes of the next. Nothing wasted. Everything connected.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                Cooking is a language of love. But it's also practice in presence, 
+                in responding to what emerges rather than forcing what isn't there.
+              </p>
+            </div>
             
-            <div className="mx-auto max-w-2xl space-y-6">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The sensitivity that once made me different now helps me notice
-                what others miss in boardrooms and coaching conversations.
-              </p>
-              
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The love of business systems helps me understand the complex dynamics
-                my clients navigate every day.
-              </p>
-              
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The care I put into cooking mirrors the attention I bring to creating
-                space for someone else&apos;s growth.
-              </p>
-              
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                And Gracie? She reminds me that presence isn&apos;t about performance.
-                It&apos;s about being fully where you are, attending to what matters,
-                and trusting your instincts about when to move and when to be still.
-              </p>
-            </div>
-          </div>
-        </PageLayout>
-      </Block>
-
-      {/* Call & Response */}
-      <Block background="navy" spacing="default">
-        <PageLayout>
-          <div className="text-center">
-            <div className="mx-auto max-w-4xl space-y-12">
-              <div className="space-y-6">
-                <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
-                  &ldquo;What if I trusted my own judgment?&rdquo;
-                </h2>
-                <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-                  The question that changes everything about how we lead.
-                </p>
-              </div>
-              
-              <div className="rounded-lg bg-white/10 p-8 backdrop-blur-sm">
-                <div className="space-y-4">
-                  <p className="text-lg text-white/90 italic leading-relaxed">
-                    &ldquo;I feel I have come a long way since we started to speak and feel far more self-empowered thanks to your intervention for which I am grateful.&rdquo;
-                  </p>
-                  <div className="text-right">
-                    <p className="text-sm font-medium text-white/70">
-                      Country Head, Engineering
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </Block>
-
-      {/* Personal Quote */}
-      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
-        <PageLayout>
-          <div className="text-center">
-            <div className="mx-auto max-w-3xl space-y-8">
-              <p className="text-2xl md:text-3xl font-light text-white leading-relaxed">
-                &ldquo;Leadership isn&apos;t the thing I do at work.<br />
-                It&apos;s the person I&apos;ve chosen to become.&rdquo;
-              </p>
-              <div className="text-right">
-                <p className="text-lg font-medium text-white/90">
-                  &mdash; Phillip Collins
+            <div className="flex items-center justify-center">
+              <div className="rounded-lg bg-[#1A365D] p-8 text-center max-w-sm">
+                <div className="text-6xl text-white mb-4">🍳</div>
+                <p className="text-white text-lg italic">
+                  "The ingredients teach you<br />
+                  what they want to become."
                 </p>
               </div>
             </div>
@@ -315,35 +87,150 @@ export default function AtHome() {
         </PageLayout>
       </section>
 
-      {/* Closing CTA */}
-      <Block background="navy" spacing="default">
+      {/* WHITE SECTION - Gracie */}
+      <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="text-center">
-            <div className="mx-auto max-w-2xl space-y-8">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
-                Ready to explore?
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="flex items-center justify-center order-2 md:order-1">
+              <div className="rounded-lg bg-[#7E2D40] p-8 text-center max-w-sm">
+                <div className="text-6xl text-white mb-4">🐾</div>
+                <p className="text-white text-lg italic">
+                  "Training never stops.<br />
+                  It's always practice."
+                </p>
+              </div>
+            </div>
+            
+            <div className="space-y-6 order-1 md:order-2">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+                Lessons with <span className="text-[#F96E1E]">Gracie</span>
               </h2>
-              <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                Leadership development that honours who you already are.
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Gracie, our English Pointer, reminds me daily that training is practice. 
+                Continuing practice.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link
-                  href="/contact"
-                  className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
-                >
-                  Start a conversation
-                </Link>
-                <Link
-                  href="/the-work"
-                  className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#1A365D]"
-                >
-                  Explore frameworks
-                </Link>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Supporting her to work with her natural drives. Building her capacity 
+                for impulse control. In emotional intelligence terms, it's about 
+                developing self-regulation.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                The same principles apply to leadership development: 
+                understanding your natural patterns, building capacity 
+                for different responses, practising new ways of being.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Still Fascinated */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center mb-12">
+            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl mb-6">
+              Still <span className="text-[#F96E1E]">fascinated</span>
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
+              By business systems. By how things connect. By the patterns 
+              that create what we see on the surface.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="rounded-lg bg-white p-6">
+              <h3 className="text-lg font-bold text-[#1A365D] mb-3">Systems thinking</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                How seemingly separate elements influence each other. 
+                Whether it's diagnosing why a team isn't functioning 
+                or understanding why a leader feels stuck.
+              </p>
+            </div>
+            
+            <div className="rounded-lg bg-[#F96E1E] p-6 text-white">
+              <h3 className="text-lg font-bold mb-3">Pattern recognition</h3>
+              <p className="text-white/90 text-sm leading-relaxed">
+                The underlying dynamics that create surface symptoms. 
+                What's actually happening beneath what appears to be happening.
+              </p>
+            </div>
+            
+            <div className="rounded-lg bg-white p-6">
+              <h3 className="text-lg font-bold text-[#1A365D] mb-3">Connection points</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                How business challenges mirror personal challenges. 
+                How leadership at work reflects leadership at home.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* CREAM STRIPE - Testimonial */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl mb-6">
+                What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
+              </h2>
+            </div>
+            
+            <div className="rounded-lg bg-white p-8 shadow-sm border-l-4 border-[#F96E1E]">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6 italic">
+                "Working with Phillip helped me realise that I'd been seeking external validation 
+                for decisions I was perfectly capable of making myself. The question became: 
+                what if I trusted my own judgement? That shift changed everything."
+              </p>
+              <div className="text-sm text-gray-600">
+                — Senior Executive, Global Technology Company
               </div>
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
+
+      {/* WHITE SECTION - Leadership Quote & CTA */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
+                Ready to <span className="text-[#F96E1E]">explore</span>?
+              </h2>
+              
+              <p className="text-xl leading-relaxed text-gray-700 max-w-2xl mx-auto">
+                Leadership development that honours who you already are.
+              </p>
+              
+              <div className="rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#1A365D] max-w-2xl mx-auto">
+                <p className="text-lg italic text-gray-700">
+                  "Leadership isn't a thing I do at work.<br />
+                  It's the person I've chosen to become."
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/the-work"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-[#E55A1A]"
+              >
+                Explore the work
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg font-semibold text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white"
+              >
+                Start a conversation
+              </Link>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
     </Layout>
   )
 }
