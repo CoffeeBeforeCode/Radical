@@ -45,6 +45,22 @@ export default function AtHome() {
               Leadership isn&apos;t something I switch on at work.<br />
               It&apos;s who I&apos;ve chosen to become.
             </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap justify-start gap-4">
+              <Link
+                href="/the-work"
+                className="rounded-lg bg-[#F96E1E] px-8 py-4 text-lg text-white transition-colors hover:bg-[#E55A1A] font-semibold"
+              >
+                Explore the work
+              </Link>
+              <Link
+                href="/this-is-personal"
+                className="rounded-lg border-2 border-[#1A365D] px-8 py-4 text-lg text-[#1A365D] transition-colors hover:bg-[#1A365D] hover:text-white font-semibold"
+              >
+                This is personal
+              </Link>
+            </div>
           </div>
         </PageLayout>
       </section>
@@ -87,7 +103,7 @@ export default function AtHome() {
         </PageLayout>
       </section>
 
-      {/* WHITE SECTION - Gracie */}
+      {/* WHITE SECTION - Gracie + Featured Quote */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -123,6 +139,30 @@ export default function AtHome() {
                 for different responses, practising new ways of being.
               </p>
             </div>
+          </div>
+          
+          {/* Featured Leadership Quote */}
+          <div className="mt-16 text-center">
+            <div className="mx-auto max-w-3xl rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-8">
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-[#1A365D] md:text-3xl font-bold">
+                &ldquo;Leadership isn&apos;t a thing I do at work.<br />
+                It&apos;s the person I&apos;ve chosen to become.&rdquo;
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Placeholder */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-white md:text-4xl font-bold">
+              <span className="text-[#F96E1E]">Placeholder</span> Section
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90">
+              This navy section will be developed with content that fits the flow of the page.
+            </p>
           </div>
         </PageLayout>
       </section>
