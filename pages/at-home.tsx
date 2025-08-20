@@ -33,7 +33,11 @@ export default function AtHome() {
                 
                 {/* Image Box - 1/4 width */}
                 <div className="md:col-span-1 flex min-h-[200px] items-center justify-center rounded-lg bg-white p-6 md:min-h-[250px]">
-                  <div className="text-6xl">🏠</div>
+                  <img
+                    src="/images/Bubble-36.png"
+                    alt="I know I'm capable of more"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -41,14 +45,6 @@ export default function AtHome() {
           
           {/* CTA Buttons */}
           <div className="max-w-4xl mt-8">
-            <div className="mb-8 text-center">
-              <img
-                src="/images/Bubble-36.png"
-                alt="There's got to be more to leadership than this"
-                className="mx-auto max-w-xs h-auto object-contain"
-              />
-            </div>
-            
             <div className="flex flex-wrap justify-start gap-4">
               <Link
                 href="/the-work"
@@ -187,10 +183,10 @@ export default function AtHome() {
             </div>
             
             <div className="flex items-center justify-center">
-              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
                 <img
-                  src="/images/Bubble-36.png"
-                  alt="Practice over perfection"
+                  src="/images/Bubble-37.png"
+                  alt="What if we simply worked with what is?"
                   className="w-full h-auto object-contain"
                 />
               </div>
