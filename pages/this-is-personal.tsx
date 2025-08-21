@@ -1,5 +1,6 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
+
 export default function ThisIsPersonal() {
   return (
     <Layout
@@ -73,6 +74,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* NAVY STRIPE - The Sensitive Boy Story */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -136,6 +138,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* CREAM STRIPE - How I Coach / Philosophy */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -179,6 +182,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* WHITE STRIPE - Why I'm Here */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
@@ -221,6 +225,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* CREAM STRIPE - Values Integration */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -267,6 +272,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* NAVY STRIPE - Global Experience */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -320,6 +326,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* CREAM STRIPE - Foundational Learning */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -336,7 +343,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
-                  href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926/ref=sr_1_1?crid=29T3DSYEME41Y&dib=eyJ2IjoiMSJ9.4yVsZEd-Yp1ziHykUj3qdA3fiBvwNCM37Mod_xcNnJZ1Vi8Kp7_HHMy-BfYxlym7q2gT_Cd3LwXHJHrNPwq6r2TmZOtR9Ir8VLxuU6SiiYaSRhXz6Tcj2ZSkkMpEvwwQfzwn-QSC-OFcMvqo8n2K4IourFzrRRKau2NxK071gFpSzijb8y-0SwggS_6rS8jt-gBfSFGEU_6_RWR_Uu0TOixaiCSjUihsm_QzOsYJKos.6WLXTQi-f96NaG_znsxNdDqtdXtpVxHQ8y8elb4LU8Y&dib_tag=se&keywords=the+inner+game+of+tennis+by+timothy+gallwey&qid=1753869525&sprefix=the+inner+game+of+tennis%2Caps%2C100&sr=8-1" 
+                  href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -351,7 +358,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926/ref=sr_1_1?crid=29T3DSYEME41Y&dib=eyJ2IjoiMSJ9.4yVsZEd-Yp1ziHykUj3qdA3fiBvwNCM37Mod_xcNnJZ1Vi8Kp7_HHMy-BfYxlym7q2gT_Cd3LwXHJHrNPwq6r2TmZOtR9Ir8VLxuU6SiiYaSRhXz6Tcj2ZSkkMpEvwwQfzwn-QSC-OFcMvqo8n2K4IourFzrRRKau2NxK071gFpSzijb8y-0SwggS_6rS8jt-gBfSFGEU_6_RWR_Uu0TOixaiCSjUihsm_QzOsYJKos.6WLXTQi-f96NaG_znsxNdDqtdXtpVxHQ8y8elb4LU8Y&dib_tag=se&keywords=the+inner+game+of+tennis+by+timothy+gallwey&qid=1753869525&sprefix=the+inner+game+of+tennis%2Caps%2C100&sr=8-1" 
+                    href="https://www.amazon.co.uk/Inner-Game-Tennis-ultimate-performance/dp/1035047926" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -368,7 +375,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
-                  href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2?ref_=ast_author_dp" 
+                  href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -383,7 +390,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2?ref_=ast_author_dp" 
+                    href="https://www.amazon.co.uk/Parallax-See-Yourself-New-Understanding-ebook/dp/B07923Z8X2" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -400,7 +407,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
-                  href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=AUTHOR&dib=eyJ2IjoiMSJ9.l2aS-q5XZbyi478QHaV1OUaNyfHmEy75_f63OvA5D3nizXTLE7MfntS-tI2AuUIyBn32Zsn8EpOnJo02dx8a3XCFXYye85sNG_YXkJtirgHC25b0V553CPmLgfVuiOkuOAIWYoQxawyirEatIwHSciX444lUA2drV7mG0Lagd7jpX9_zOYxtjgHfoxmuBjxGMuh94ZEluiv1oJ4Mowh4y66cLMgvdZ3udNtWbNPRHpc.ST0J9Fp5DXsP5Ot8m2VsVRTezct2Ei9ZbPVaDn9LdQI" 
+                  href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -415,7 +422,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=AUTHOR&dib=eyJ2IjoiMSJ9.l2aS-q5XZbyi478QHaV1OUaNyfHmEy75_f63OvA5D3nizXTLE7MfntS-tI2AuUIyBn32Zsn8EpOnJo02dx8a3XCFXYye85sNG_YXkJtirgHC25b0V553CPmLgfVuiOkuOAIWYoQxawyirEatIwHSciX444lUA2drV7mG0Lagd7jpX9_zOYxtjgHfoxmuBjxGMuh94ZEluiv1oJ4Mowh4y66cLMgvdZ3udNtWbNPRHpc.ST0J9Fp5DXsP5Ot8m2VsVRTezct2Ei9ZbPVaDn9LdQI" 
+                    href="https://www.amazon.co.uk/Transitions-40th-Anniversary-Making-Changes/dp/0738285404" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -465,7 +472,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
-                  href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.0LFbdd7EX68ntjgIf8Tz4rwwqNZfgZWpV5q_9i_OrIMWrUiM-o57DADH5BHJK0GZgS9AZu_7DvCy1lrv6KWmPl0AwLZdRqm4zcpsIwJA2AQ.gAanjQLvACGEXu4v70n7kOblFZD2egKmkuBlGHX2m_U&dib_tag=AUTHOR" 
+                  href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -480,7 +487,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.0LFbdd7EX68ntjgIf8Tz4rwwqNZfgZWpV5q_9i_OrIMWrUiM-o57DADH5BHJK0GZgS9AZu_7DvCy1lrv6KWmPl0AwLZdRqm4zcpsIwJA2AQ.gAanjQLvACGEXu4v70n7kOblFZD2egKmkuBlGHX2m_U&dib_tag=AUTHOR" 
+                    href="https://www.amazon.co.uk/Best-Practice-Performance-Coaching-Professionals/dp/0749450827" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -497,7 +504,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center gap-4 rounded-lg bg-white p-6 shadow-sm">
               <div className="flex-shrink-0">
                 <a 
-                  href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/ref=sr_1_1?crid=3K96T20ROQXKI&dib=eyJ2IjoiMSJ9.0wdz-daglmSIBTXOqenSS3WIcBFIxgrm0WTgX9C2EfWAdX2XsgcalTuD9DA6HHWc4uqEX56MQf493XbYHVDh6Cc1kWspMoF4IMnirTluokHRZ-tfW9w2SeCCtsLg9-GE7SUqxH_KaO8cxd4XrViueD4IbuPGWCXWsb9pUWZzpiMC8zHjuQB7bl3OYewsx-uC8SswU_oJfW0Oxpx90TvktbBS6AUZJqqq4N_lxr3PLqk.lO3RnIYVICdvp-W4_Z0tiI0ETmT0b_QSBEmdMDpnWb4&dib_tag=se&keywords=the+four+agreements&qid=1753870748&s=books&sprefix=the+four+agreements%2Cstripbooks%2C123&sr=1-1" 
+                  href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -512,7 +519,7 @@ export default function ThisIsPersonal() {
               <div className="flex-1">
                 <h3 className="mb-3 text-lg font-bold text-[#F96E1E]">
                   <a 
-                    href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/ref=sr_1_1?crid=3K96T20ROQXKI&dib=eyJ2IjoiMSJ9.0wdz-daglmSIBTXOqenSS3WIcBFIxgrm0WTgX9C2EfWAdX2XsgcalTuD9DA6HHWc4uqEX56MQf493XbYHVDh6Cc1kWspMoF4IMnirTluokHRZ-tfW9w2SeCCtsLg9-GE7SUqxH_KaO8cxd4XrViueD4IbuPGWCXWsb9pUWZzpiMC8zHjuQB7bl3OYewsx-uC8SswU_oJfW0Oxpx90TvktbBS6AUZJqqq4N_lxr3PLqk.lO3RnIYVICdvp-W4_Z0tiI0ETmT0b_QSBEmdMDpnWb4&dib_tag=se&keywords=the+four+agreements&qid=1753870748&s=books&sprefix=the+four+agreements%2Cstripbooks%2C123&sr=1-1" 
+                    href="https://www.amazon.co.uk/Four-Agreements-Practical-Personal-Freedom/dp/1878424319" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -529,6 +536,7 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* WHITE STRIPE - Learning Journey */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
@@ -538,7 +546,6 @@ export default function ThisIsPersonal() {
             </h2>
           </div>
           
-          {/* Text Box + Image Grid - Full Width Like Hero Section */}
           <div className="w-full">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
@@ -585,14 +592,12 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
       {/* NAVY STRIPE - Personal Quote */}
       <section className="w-full bg-[#1A365D] py-12 md:py-16">
         <PageLayout>
           <div className="text-center">
             <blockquote className="mx-auto max-w-4xl">
-              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
-                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
-              </p>
               <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-light leading-relaxed text-white md:text-3xl">
                 They happen in quiet spaces, with honest questions, and just enough courage.&rdquo;
               </p>
@@ -603,6 +608,372 @@ export default function ThisIsPersonal() {
           </div>
         </PageLayout>
       </section>
+
+      {/* CREAM STRIPE - Working with what is */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
+                Working with <span className="text-[#F96E1E]">what is</span>
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                In the kitchen, like in my work, I start with what&apos;s here. 
+                The ingredients that are present. The conditions as they are.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                I embrace the everlasting meal principle: the notes of the last meal 
+                inform the notes of the next. Nothing wasted. Everything connected.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                Cooking is a language of love. It&apos;s also practice in presence, 
+                in responding to what emerges rather than forcing what isn&apos;t there.
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="max-w-sm rounded-lg bg-[#F8F5EB] p-8 text-center">
+                <img
+                  src="/images/Bubble-33.png"
+                  alt="Working with what is"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* WHITE SECTION - Gracie + Featured Quote */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="order-2 flex items-center justify-center md:order-1">
+              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+                <img
+                  src="/images/Bubble-34.png"
+                  alt="Lessons with Gracie"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+            
+            <div className="order-1 space-y-6 md:order-2">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
+                Lessons with <span className="text-[#F96E1E]">Gracie</span>
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Gracie, our English Pointer, reminds me daily that training is practice. 
+                Continuing practice.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Supporting her to work with her natural drives. Building her capacity 
+                for impulse control. In emotional intelligence terms, it&apos;s about 
+                developing self-regulation.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                The same principles apply when I support leaders: 
+                understanding your natural patterns, building capacity 
+                for different responses, practising new ways of being.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Why Practice Matters More Than Perfection */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-white md:text-4xl font-bold">
+                Why <span className="text-[#F96E1E]">practice</span> matters more than perfection
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Perfection is a construct. It doesn&apos;t exist in reality.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Practice is about reality testing - what&apos;s actually here, 
+                what&apos;s actually happening, what&apos;s actually needed.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                When we stop chasing something that was never real, 
+                we can work with what is.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90">
+                Leadership happens in the moment. That&apos;s where our 
+                capacity to respond lives.
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
+                <img
+                  src="/images/Bubble-37.png"
+                  alt="What if we simply worked with what is?"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* CREAM STRIPE - Testimonial */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8 text-center">
+              <img
+                src="/images/Bubble-35.png"
+                alt="I keep second guessing myself"
+                className="mx-auto max-w-xs h-auto object-contain"
+              />
+            </div>
+            
+            <div className="mb-12 text-center">
+              <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-[#1A365D] md:text-4xl font-bold">
+                What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
+              </h2>
+            </div>
+            
+            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-8 shadow-sm">
+              <p className="mb-6 text-lg leading-relaxed text-gray-700 italic">
+                &ldquo;Working with Phillip helped me realise that I&apos;d been seeking external validation 
+                for decisions I was perfectly capable of making myself. The question became: 
+                what if I trusted my own judgement? That shift changed everything.&rdquo;
+              </p>
+              <div className="text-sm text-gray-600">
+                — Senior Executive, Global Technology Company
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* DARK BLUE STRIPE - Featured Leadership Quote */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-white md:text-3xl font-bold">
+              &ldquo;Leadership isn&apos;t a <span className="text-[#F96E1E]">thing</span> I do at work.<br />
+              It&apos;s the person I&apos;ve chosen to become.&rdquo;
+            </p>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* TANGERINE STRIPE - Closing CTA */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <h2 className="mb-6 font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
+              Ready to begin?
+            </h2>
+            
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90">
+              This personal journey informs every coaching conversation.<br />
+              If something here resonates, let&apos;s explore what&apos;s possible for you.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-white px-8 py-4 text-lg font-semibold text-[#F96E1E] transition-colors hover:bg-gray-100"
+              >
+                Let&apos;s Talk →
+              </Link>
+              <Link
+                href="/the-work"
+                className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-[#F96E1E]"
+              >
+                The Work
+              </Link>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+    </Layout>
+  )
+}light leading-relaxed text-white md:text-3xl">
+                &ldquo;I&apos;ve learned that the most powerful shifts don&apos;t happen in the spotlight.
+              </p>
+              <p className="font-['Waiting_for_the_Sunrise'] text-2xl font-
+
+      {/* CREAM STRIPE - Working with what is */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
+                Working with <span className="text-[#F96E1E]">what is</span>
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                In the kitchen, like in my work, I start with what&apos;s here. 
+                The ingredients that are present. The conditions as they are.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                I embrace the everlasting meal principle: the notes of the last meal 
+                inform the notes of the next. Nothing wasted. Everything connected.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                Cooking is a language of love. It&apos;s also practice in presence, 
+                in responding to what emerges rather than forcing what isn&apos;t there.
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="max-w-sm rounded-lg bg-[#F8F5EB] p-8 text-center">
+                <img
+                  src="/images/Bubble-33.png"
+                  alt="Working with what is"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* WHITE SECTION - Gracie + Featured Quote */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="order-2 flex items-center justify-center md:order-1">
+              <div className="max-w-sm rounded-lg bg-white p-8 text-center">
+                <img
+                  src="/images/Bubble-34.png"
+                  alt="Lessons with Gracie"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+            
+            <div className="order-1 space-y-6 md:order-2">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl font-bold">
+                Lessons with <span className="text-[#F96E1E]">Gracie</span>
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Gracie, our English Pointer, reminds me daily that training is practice. 
+                Continuing practice.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700">
+                Supporting her to work with her natural drives. Building her capacity 
+                for impulse control. In emotional intelligence terms, it&apos;s about 
+                developing self-regulation.
+              </p>
+              
+              <p className="text-base leading-relaxed text-gray-600">
+                The same principles apply when I support leaders: 
+                understanding your natural patterns, building capacity 
+                for different responses, practising new ways of being.
+              </p>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* NAVY STRIPE - Why Practice Matters More Than Perfection */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-6">
+              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-white md:text-4xl font-bold">
+                Why <span className="text-[#F96E1E]">practice</span> matters more than perfection
+              </h2>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Perfection is a construct. It doesn&apos;t exist in reality.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                Practice is about reality testing - what&apos;s actually here, 
+                what&apos;s actually happening, what&apos;s actually needed.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-white">
+                When we stop chasing something that was never real, 
+                we can work with what is.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90">
+                Leadership happens in the moment. That&apos;s where our 
+                capacity to respond lives.
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
+                <img
+                  src="/images/Bubble-37.png"
+                  alt="What if we simply worked with what is?"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* CREAM STRIPE - Testimonial */}
+      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+        <PageLayout>
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8 text-center">
+              <img
+                src="/images/Bubble-35.png"
+                alt="I keep second guessing myself"
+                className="mx-auto max-w-xs h-auto object-contain"
+              />
+            </div>
+            
+            <div className="mb-12 text-center">
+              <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-[#1A365D] md:text-4xl font-bold">
+                What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
+              </h2>
+            </div>
+            
+            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-8 shadow-sm">
+              <p className="mb-6 text-lg leading-relaxed text-gray-700 italic">
+                &ldquo;Working with Phillip helped me realise that I&apos;d been seeking external validation 
+                for decisions I was perfectly capable of making myself. The question became: 
+                what if I trusted my own judgement? That shift changed everything.&rdquo;
+              </p>
+              <div className="text-sm text-gray-600">
+                — Senior Executive, Global Technology Company
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      {/* DARK BLUE STRIPE - Featured Leadership Quote */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
+        <PageLayout>
+          <div className="text-center">
+            <p className="font-['Waiting_for_the_Sunrise'] text-2xl leading-relaxed text-white md:text-3xl font-bold">
+              &ldquo;Leadership isn&apos;t a <span className="text-[#F96E1E]">thing</span> I do at work.<br />
+              It&apos;s the person I&apos;ve chosen to become.&rdquo;
+            </p>
+          </div>
+        </PageLayout>
+      </section>
+
       {/* TANGERINE STRIPE - Closing CTA */}
       <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
