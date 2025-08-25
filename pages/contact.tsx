@@ -33,7 +33,7 @@ export default function Contact() {
       {/* Contact Methods - Navy stripe with confidence */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <Grid columns={3} gap="large">
+          <Grid columns={3}>
             {/* Primary Contact - Main email */}
             <div className="md:col-span-2 space-y-6">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
@@ -49,10 +49,10 @@ export default function Contact() {
                 <div className="text-white">
                   <h3 className="text-xl font-medium mb-2">Email</h3>
                   <a 
-                    href="mailto:phillip@phillip-collins.com" 
+                    href="mailto:phillip@phillipcollins.com" 
                     className="text-lg text-[#F96E1E] hover:text-white transition-colors"
                   >
-                    phillip@phillip-collins.com
+                    phillip@phillipcollins.com
                   </a>
                 </div>
                 
@@ -83,7 +83,7 @@ export default function Contact() {
       {/* What to Expect - Cream background for warmth */}
       <Block background="cream" spacing="default">
         <PageLayout>
-          <Grid columns={4} gap="default">
+          <Grid columns={4}>
             {/* Main content block */}
             <div className="md:col-span-3 space-y-6">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
@@ -130,7 +130,7 @@ export default function Contact() {
       {/* Geographic Reach - White section with clean layout */}
       <Block background="white" spacing="default">
         <PageLayout>
-          <Grid columns={2} gap="large">
+          <Grid columns={2}>
             <div className="space-y-6">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
                 Global reach, local <span className="text-[#F96E1E]">presence</span>
@@ -216,7 +216,7 @@ export default function Contact() {
             
             <div className="pt-4 space-y-4">
               <a 
-                href="mailto:phillip@phillip-collins.com" 
+                href="mailto:phillip@phillipcollins.com" 
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1A365D] text-lg font-medium rounded transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5"
               >
                 Send an email
