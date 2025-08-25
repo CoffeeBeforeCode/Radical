@@ -28,7 +28,7 @@ export default function Home() {
                 {/* Text Box - 3/4 width */}
                 <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                    The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
+                    The strongest leaders I know don&apos;t arrive; they <span className="text-[#F96E1E]">return</span>.<br />
                     Again and again.<br />
                     To their <strong>values</strong>.<br />
                     Their <strong>vision</strong>.<br />
@@ -186,7 +186,7 @@ export default function Home() {
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/20">
                   <p className="font-medium text-white">
-                    When we reduce what&apos;s in the way, performance naturally rises to meet potential.
+                    When we reduce what&apos;s in the way, performance naturally rises to meet <span className="text-white">potential</span>.
                   </p>
                 </div>
               </div>
@@ -195,15 +195,15 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Call & Response */}
+      {/* CREAM STRIPE - Call & Response - KEEP 3 TESTIMONIALS ONLY */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="mb-8">
             <h2 className="mb-4 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              What gets in your <span className="text-[#F96E1E]">way</span>?
+              What gets in your way?
             </h2>
             <p className="max-w-4xl text-lg text-gray-700 leading-relaxed">
-              The internal conversations that create interference, and the leaders who have found their way through.
+              The internal conversations that create <span className="text-[#F96E1E]">interference</span>, and the leaders who have found their way through.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -271,7 +271,7 @@ export default function Home() {
         </PageLayout>
       </section>
 
-      {/* WHITE STRIPE - How I See It - REDESIGNED */}
+      {/* WHITE STRIPE - How I See It - REMOVE OBSERVATION FIRST SECTION */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
           <div className="mb-12 text-center relative">
@@ -288,35 +288,19 @@ export default function Home() {
                 </p>
             </div>
           </div>
+          
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
             <div className="md:col-span-2 relative rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="relative h-full min-h-[280px] p-8 flex flex-col justify-between"
-                     style={{
-                       background: `linear-gradient(135deg, 
-                         rgba(26, 54, 93, 0.95) 0%, 
-                         rgba(26, 54, 93, 0.85) 50%, 
-                         rgba(249, 110, 30, 0.1) 100%)`
-                     }}>
+                <div className="relative h-full min-h-[280px] p-8 flex flex-col justify-between bg-[#1A365D]">
                     
                     <div>
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
-                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
-                        </div>
+                        <h3 className="text-2xl font-bold text-white tracking-wide mb-4">Observation First</h3>
                         
                         <p className="text-white/90 text-base leading-relaxed mb-6">
                             We start by noticing patterns, dynamics, friction before we move. 
                             Sometimes the most important insights arise in the silence between words.
                         </p>
-                    </div>
-                    
-                    <div className="flex justify-end">
-                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
-                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full animate-pulse"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -356,23 +340,23 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="flex items-start mb-4">
-                    <div className="flex-shrink-0 mr-8">
+            <div class="md:col-span-2 relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+                
+                <div class="h-full flex flex-col">
+                    <div class="aspect-square rounded-lg bg-white p-3 mb-4 flex items-center justify-center shadow-sm">
                         <img
                             src="/images/Bubble-10.png"
                             alt="Sitting with tension"
-                            className="w-24 h-24 object-contain"
+                            class="w-full h-full object-contain"
                         />
                     </div>
                     
-                    <div className="flex-grow">
-                        <h3 className="text-xl font-bold mb-3">Sitting with Tension</h3>
-                        <p className="text-white/90 leading-relaxed">
-                            Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
-                            Emotional discernment over reaction.
-                        </p>
-                    </div>
+                    <h3 class="text-lg font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed flex-grow">
+                        Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
+                        Emotional discernment over reaction.
+                    </p>
                 </div>
             </div>
             <div className="md:col-span-2 relative overflow-hidden bg-[#F96E1E] rounded-lg p-8 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
@@ -452,7 +436,7 @@ export default function Home() {
                   className="size-20 object-contain"
                 />
               </div>
-              <p className="text-sm text-white/80 text-center">Argentina, Brazil, Chile</p>
+              <p className="text-sm text-white/80 text-center">South America</p>
             </div>
           </div>
           <div className="mt-12 text-center">
