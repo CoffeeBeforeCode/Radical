@@ -9,7 +9,6 @@ const Header: React.FC = () => {
   // Contrarian navigation order - Philosophy before services, humanity before business
   const navigationItems = [
     { href: '/this-is-personal', label: 'This is Personal' },
-    { href: '/at-home', label: 'At Home' },
     { href: '/the-work', label: 'The Work' },
     { href: '/social-impact', label: 'Social Impact' },
     { href: '/perspectives', label: 'Perspectives' },
