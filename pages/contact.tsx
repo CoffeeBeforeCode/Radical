@@ -83,9 +83,9 @@ export default function Contact() {
       {/* What to Expect - Cream background for warmth */}
       <Block background="cream" spacing="default">
         <PageLayout>
-          <Grid columns={4}>
+          <Grid columns={3}>
             {/* Main content block */}
-            <div className="md:col-span-3 space-y-6">
+            <div className="md:col-span-2 space-y-6">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl">
                 What happens next?
               </h2>
