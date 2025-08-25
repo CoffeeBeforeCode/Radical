@@ -28,7 +28,7 @@ export default function Home() {
                 {/* Text Box - 3/4 width */}
                 <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                   <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
-                    The strongest leaders I know don&apos;t arrive; they <span className="text-[#F96E1E]">return</span>.<br />
+                    The strongest leaders I know don&apos;t arrive; they <strong>return</strong>.<br />
                     Again and again.<br />
                     To their <strong>values</strong>.<br />
                     Their <strong>vision</strong>.<br />
@@ -56,37 +56,6 @@ export default function Home() {
               Not louder.<br />
               Just wiser.
             </p>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* CREAM STRIPE - Leadership Quote */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
-        <PageLayout>
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-[#1A365D] md:text-4xl lg:text-5xl">
-              Most leaders already have the <span className="text-[#F96E1E]">potential</span>.
-            </h2>
-            
-            <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-              What gets in their way isn&apos;t lack of capability;<br />
-              it&apos;s the <span className="text-[#F96E1E]">interference</span> that blocks<br />
-              natural leadership excellence.
-            </p>
-            
-            <div className="mx-auto max-w-2xl">
-              <div className="rounded-lg bg-white p-8 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="text-lg font-medium text-[#1A365D] mb-2">
-                  Performance Equation
-                </div>
-                <div className="font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#F96E1E] mb-4">
-                  PE = PO - I
-                </div>
-                <p className="text-gray-600">
-                  <strong>Performance</strong> equals <strong>Potential</strong> minus <strong>Interference</strong>
-                </p>
-              </div>
-            </div>
           </div>
         </PageLayout>
       </section>
@@ -133,11 +102,11 @@ export default function Home() {
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
                 <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  I have been surprised at how comfortable it has felt being stretched through this coaching process. Phillip creates an environment where growth feels natural rather than forced.
+                  Phillip provides tailor-made support and adapts to your individual needs with a very professional and flexible approach.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
-                  Chief Financial Officer<br />
-                  Global Services
+                  Country Head<br />
+                  Engineering
                 </div>
               </div>
             </div>
@@ -169,7 +138,7 @@ export default function Home() {
                 Leadership Equation
               </h3>
               <p className="text-gray-700">
-                PE = PO - I. Performance equals potential minus <span className="text-[#F96E1E]">interference</span>. 
+                PE = PO - I. Performance equals potential minus interference. 
                 What&apos;s getting in your way?
               </p>
             </div>
