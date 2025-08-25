@@ -340,20 +340,20 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div class="md:col-span-2 relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
+            <div className="md:col-span-2 relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
-                <div class="h-full flex flex-col">
-                    <div class="aspect-square rounded-lg bg-white p-3 mb-4 flex items-center justify-center shadow-sm">
+                <div className="h-full flex flex-col">
+                    <div className="aspect-square rounded-lg bg-white p-3 mb-4 flex items-center justify-center shadow-sm">
                         <img
                             src="/images/Bubble-10.png"
                             alt="Sitting with tension"
-                            class="w-full h-full object-contain"
+                            className="w-full h-full object-contain"
                         />
                     </div>
                     
-                    <h3 class="text-lg font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed flex-grow">
+                    <h3 className="text-lg font-bold text-[#1A365D] mb-3">Sitting with Tension</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">
                         Some tensions aren&apos;t meant to be solved. They&apos;re meant to be understood. 
                         Emotional discernment over reaction.
                     </p>
