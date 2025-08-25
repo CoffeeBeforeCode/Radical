@@ -47,9 +47,6 @@ const Footer: React.FC = () => {
                 <Link href="/this-is-personal" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                   This is Personal
                 </Link>
-                <Link href="/at-home" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
-                  At Home
-                </Link>
                 <Link href="/the-work" className="block text-white/70 hover:text-[#D4B86A] transition-colors duration-200">
                   The Work
                 </Link>
