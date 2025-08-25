@@ -33,9 +33,9 @@ export default function Contact() {
       {/* Contact Methods - Navy stripe with confidence */}
       <Block background="navy" spacing="default">
         <PageLayout>
-          <Grid columns={5}>
+          <Grid columns={3}>
             {/* Primary Contact - Main email */}
-            <div className="md:col-span-4 space-y-6">
+            <div className="md:col-span-2 space-y-6">
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
                 Ready to explore what&apos;s getting in your way?
               </h2>
@@ -201,8 +201,8 @@ export default function Contact() {
         </PageLayout>
       </Block>
 
-      {/* Final CTA - Tangerine stripe for impact */}
-      <Block background="burgundy" spacing="default">
+      {/* TANGERINE STRIPE - Final CTA */}
+      <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
           <div className="text-center space-y-6">
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl font-bold text-white md:text-4xl">
@@ -228,7 +228,7 @@ export default function Contact() {
             </div>
           </div>
         </PageLayout>
-      </Block>
+      </section>
     </Layout>
   )
 }
