@@ -593,79 +593,7 @@ export default function ThisIsPersonal() {
         </PageLayout>
       </section>
 
-      {/* NAVY STRIPE - Why Practice Matters More Than Perfection */}
-      <section className="w-full bg-[#1A365D] py-16 md:py-24">
-        <PageLayout>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="space-y-6">
-              <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl text-white md:text-4xl font-bold">
-                Why <span className="text-[#F96E1E]">practice</span> matters more than perfection
-              </h2>
-              
-              <p className="text-lg leading-relaxed text-white">
-                Perfection is a construct. It doesn&apos;t exist in reality.
-              </p>
-              
-              <p className="text-lg leading-relaxed text-white">
-                Practice is about reality testing - what&apos;s actually here, 
-                what&apos;s actually happening, what&apos;s actually needed.
-              </p>
-              
-              <p className="text-lg leading-relaxed text-white">
-                When we stop chasing something that was never real, 
-                we can work with what is.
-              </p>
-              
-              <p className="text-base leading-relaxed text-white/90">
-                Leadership happens in the moment. That&apos;s where our 
-                capacity to respond lives.
-              </p>
-            </div>
-            
-            <div className="flex items-center justify-center">
-              <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
-                <img
-                  src="/images/Bubble-37.png"
-                  alt="What if we simply worked with what is?"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
 
-      {/* CREAM STRIPE - Testimonial */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
-        <PageLayout>
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8 text-center">
-              <img
-                src="/images/Bubble-35.png"
-                alt="I keep second guessing myself"
-                className="mx-auto max-w-xs h-auto object-contain"
-              />
-            </div>
-            
-            <div className="mb-12 text-center">
-              <h2 className="font-['Waiting_for_the_Sunrise'] mb-6 text-3xl text-[#1A365D] md:text-4xl font-bold">
-                What if I trusted my own <span className="text-[#F96E1E]">judgement</span>?
-              </h2>
-            </div>
-            
-            <div className="rounded-lg border-l-4 border-[#F96E1E] bg-white p-8 shadow-sm">
-              <p className="mb-6 text-lg leading-relaxed text-gray-700 italic">
-                &ldquo;Working with Phillip helped me realise that I&apos;d been seeking external validation 
-                for decisions I was perfectly capable of making myself. The question became: 
-                what if I trusted my own judgement? That shift changed everything.&rdquo;
-              </p>
-              <div className="text-sm text-gray-600">
-                — Senior Executive, Global Technology Company
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
 
       {/* DARK BLUE STRIPE - Featured Leadership Quote */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
