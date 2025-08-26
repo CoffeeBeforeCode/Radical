@@ -104,13 +104,7 @@ export default function TheWork() {
             
             <div className="grid gap-8 md:grid-cols-3">
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 flex items-center justify-center">
-                  <img
-                    src="/images/Bubble-39.png"
-                    alt="The Leadership Equation"
-                    className="w-24 h-24 object-contain"
-                  />
-                </div>
+                <div className="mb-6 text-center text-3xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">PE = PO - I</div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">The Leadership Equation</h3>
                 <p className="text-gray-600">
                   Performance equals Potential minus Interference.
