@@ -104,7 +104,13 @@ export default function TheWork() {
             
             <div className="grid gap-8 md:grid-cols-3">
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 text-center text-3xl font-['Waiting_for_the_Sunrise'] text-[#7E2D40]">PE = PO - I</div>
+                <div className="mb-6 flex items-center justify-center">
+                  <img
+                    src="/images/Bubble-39.png"
+                    alt="The Leadership Equation"
+                    className="w-24 h-24 object-contain"
+                  />
+                </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">The Leadership Equation</h3>
                 <p className="text-gray-600">
                   Performance equals Potential minus Interference.
@@ -114,7 +120,13 @@ export default function TheWork() {
               </div>
               
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 text-center text-4xl text-[#7A9A7F]">◯ ◯ ◯</div>
+                <div className="mb-6 flex items-center justify-center">
+                  <img
+                    src="/images/Bubble-40.png"
+                    alt="Values in Motion"
+                    className="w-24 h-24 object-contain"
+                  />
+                </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Values in Motion</h3>
                 <p className="text-gray-600">
                   Mapping what truly matters through constellation work.
@@ -128,7 +140,7 @@ export default function TheWork() {
                   <img
                     src="/images/Bubble-38.png"
                     alt="Sitting with tension"
-                    className="w-12 h-12 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Sitting With Tension</h3>
