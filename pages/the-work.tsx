@@ -1,6 +1,5 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
-
 export default function TheWork() {
   return (
     <Layout
@@ -123,7 +122,13 @@ export default function TheWork() {
               </div>
               
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 text-center text-4xl text-[#D4B86A]">⚖</div>
+                <div className="mb-6 flex items-center justify-center">
+                  <img
+                    src="/images/Bubble-10.png"
+                    alt="Sitting With Tension"
+                    className="w-12 h-12 object-contain"
+                  />
+                </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Sitting With Tension</h3>
                 <p className="text-gray-600">
                   Some tensions aren&apos;t meant to be solved.
@@ -177,9 +182,6 @@ export default function TheWork() {
           </div>
         </PageLayout>
       </section>
-
-
-
       {/* CALL & RESPONSE - Cream Section */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
