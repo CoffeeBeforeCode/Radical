@@ -31,8 +31,9 @@ export default function TheWork() {
               {/* Quote + Executive Question - Index Page Pattern */}
               <div className="w-full mt-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <div className="rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                    {/* Text Box - 3/4 width */}
+                    <div className="md:col-span-3 rounded-lg border-l-8 border-[#F96E1E] bg-[#F8F5EB] p-6 flex items-center min-h-[200px] md:min-h-[250px]">
                       <p className="text-xl font-medium leading-relaxed text-[#1A365D] md:text-2xl">
                         Most senior leaders already have the <strong>potential</strong>.<br />
                         What gets in their way isn&apos;t lack of capability;<br />
@@ -41,7 +42,8 @@ export default function TheWork() {
                       </p>
                     </div>
                     
-                    <div className="rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px] border border-gray-200">
+                    {/* Image Box - 1/4 width - NO BORDER */}
+                    <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                       <img
                         src="/images/Bubble-9.png"
                         alt="Am I trusting my own judgement, or waiting for a green light?"
