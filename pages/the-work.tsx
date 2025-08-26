@@ -124,11 +124,11 @@ export default function TheWork() {
               </div>
               
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 flex items-center justify-center h-12">
+                <div className="mb-6 flex items-center justify-center">
                   <img
                     src="/images/Bubble-10.png"
-                    alt="Sitting With Tension"
-                    className="max-w-full max-h-full object-contain"
+                    alt="Sitting with tension"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Sitting With Tension</h3>
