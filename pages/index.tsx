@@ -292,32 +292,14 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             
             <div className="md:col-span-2 relative rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <div className="relative h-full min-h-[280px] p-8 flex flex-col justify-between"
-                     style={{
-                       background: `linear-gradient(135deg, 
-                         rgba(26, 54, 93, 0.95) 0%, 
-                         rgba(26, 54, 93, 0.85) 50%, 
-                         rgba(249, 110, 30, 0.1) 100%)`
-                     }}>
-                    
-                    <div>
-                        <div className="inline-flex items-center mb-4">
-                            <div className="w-3 h-3 rounded-full bg-[#F96E1E] mr-3 animate-pulse"></div>
-                            <h3 className="text-2xl font-bold text-white tracking-wide">Observation First</h3>
-                        </div>
+                <div className="relative h-full min-h-[280px] p-8 flex items-center justify-center bg-[#1A365D]">
+                    <div className="text-center">
+                        <h3 className="text-2xl font-bold text-white tracking-wide mb-4">Observation First</h3>
                         
-                        <p className="text-white/90 text-base leading-relaxed mb-6">
+                        <p className="text-white/90 text-base leading-relaxed">
                             We start by noticing patterns, dynamics, friction before we move. 
                             Sometimes the most important insights arise in the silence between words.
                         </p>
-                    </div>
-                    
-                    <div className="flex justify-end">
-                        <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                            <div className="w-12 h-12 border-2 border-white/40 rounded-full flex items-center justify-center">
-                                <div className="w-4 h-4 bg-[#F96E1E] rounded-full animate-pulse"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
