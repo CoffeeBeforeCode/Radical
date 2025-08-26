@@ -53,7 +53,7 @@ export default function TheWork() {
               </div>
               
               {/* CTAs - Index Page Pattern */}
-              <div className="max-w-4xl space-y-8 mt-8">
+              <div className="max-w-4xl space-y-8 mt-8 mb-8 md:mb-12">
                 <div className="flex flex-wrap gap-4">
                   <Link
                     href="mailto:phillip@phillipcollins.com"
@@ -122,11 +122,11 @@ export default function TheWork() {
               </div>
               
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
-                <div className="mb-6 flex items-center justify-center">
+                <div className="mb-6 flex items-center justify-center h-12">
                   <img
                     src="/images/Bubble-10.png"
                     alt="Sitting With Tension"
-                    className="w-12 h-12 object-contain"
+                    className="max-w-full max-h-full object-contain"
                   />
                 </div>
                 <h3 className="mb-4 text-xl font-semibold text-[#1A365D]">Sitting With Tension</h3>
