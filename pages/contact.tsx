@@ -7,21 +7,6 @@ export default function Contact() {
       description="Get in touch with Phillip Collins for professional leadership coaching"
       canonical="/contact"
     >
-      {/* STREAMLINED Hero Section */}
-      <section className="w-full bg-white py-16 md:py-24">
-        <PageLayout>
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="mb-6 font-['Waiting_for_the_Sunrise'] text-4xl font-bold text-[#1A365D] md:text-6xl">
-              So you&apos;ve arrived here.
-            </h1>
-            
-            <p className="text-lg text-gray-600">
-              Let&apos;s begin.
-            </p>
-          </div>
-        </PageLayout>
-      </section>
-
       {/* CONTACT FORM - Navy Background with All Key Information */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -33,8 +18,12 @@ export default function Contact() {
               {/* Key Message Inside Contact Box */}
               <div className="mb-8 text-center">
                 <h2 className="mb-4 font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D] md:text-3xl">
-                  Ready to explore what&apos;s getting in your way?
+                  Ready to explore what&apos;s getting in <span className="text-[#F96E1E]">your</span> way?
                 </h2>
+                
+                <h3 className="mb-4 font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D] md:text-3xl">
+                  Let&apos;s begin
+                </h3>
                 
                 <p className="mb-4 text-base leading-relaxed text-[#1A365D]">
                   The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
@@ -121,19 +110,6 @@ export default function Contact() {
                 </div>
               </form>
             </div>
-
-            {/* Additional Contact Information */}
-            <div className="mt-8 text-center">
-              <div className="text-white/80">
-                <p className="text-sm mb-2">
-                  Based in the UK • Working globally
-                </p>
-                <p className="text-xs text-white/60">
-                  Initial conversations are always exploratory, not consultative.
-                </p>
-              </div>
-            </div>
-
           </div>
         </PageLayout>
       </section>
