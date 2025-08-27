@@ -21,16 +21,11 @@ export default function Contact() {
                   Ready to explore what&apos;s getting in <span className="text-[#F96E1E]">your</span> way?
                 </h2>
                 
-                <h3 className="mb-4 font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D] md:text-3xl">
+                <h3 className="mb-6 font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D] md:text-3xl">
                   Let&apos;s begin
                 </h3>
                 
-                <p className="mb-4 text-base leading-relaxed text-[#1A365D]">
-                  The strongest leaders I know don&apos;t arrive — they <strong>return</strong>.<br />
-                  Again and again. To their values, vision, and self.
-                </p>
-                
-                <p className="text-sm text-gray-600 mb-6">
+                <p className="text-sm text-gray-600">
                   Professional coaching partnerships for senior executives navigating complex leadership challenges. 
                   Based in the UK, working globally with leaders who know there&apos;s more.
                 </p>
