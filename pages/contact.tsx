@@ -41,16 +41,14 @@ export default function Contact() {
                 <div className="relative overflow-hidden rounded-lg border border-gray-200">
                   <iframe 
                     width="100%" 
-                    height="600px" 
+                    height="600" 
                     src="https://forms.office.com/e/8PvAhj0b0g?embed=true" 
-                    frameBorder="0" 
-                    marginWidth="0" 
-                    marginHeight="0" 
+                    frameBorder={0} 
+                    marginWidth={0} 
+                    marginHeight={0} 
                     style={{border: 'none', maxWidth: '100%', maxHeight: '100vh'}} 
                     allowFullScreen 
-                    webkitallowfullscreen="true" 
-                    mozallowfullscreen="true" 
-                    msallowfullscreen="true">
+                    allow="microphone; camera">
                   </iframe>
                 </div>
               </div>
