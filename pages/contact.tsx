@@ -41,7 +41,7 @@ export default function Contact() {
       await window.emailjs.send('service_dh7i0rg', 'template_kvgtgdt', templateParams)
       
       setFormStatus('success')
-      e.target.reset()
+      ;(e.target as HTMLFormElement).reset()
     } catch (error) {
       console.error('EmailJS error:', error)
       setFormStatus('error')
