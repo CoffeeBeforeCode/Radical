@@ -10,7 +10,7 @@ export default function Contact() {
     setIsSubmitting(true)
     setFormStatus('')
 
-    const formData = new FormData(e.target)
+    const formData = new FormData(e.target as HTMLFormElement)
     const templateParams = {
       name: formData.get('name'),
       email: formData.get('email'),
