@@ -83,7 +83,7 @@ export default function Contact() {
               {/* Simple Contact Form */}
               <form onSubmit={handleSubmit} className="space-y-6" id="contactForm">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-[#1A365D] mb-2">
+                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-[#1A365D]">
                     Your name
                   </label>
                   <input
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-[#1A365D] mb-2">
+                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-[#1A365D]">
                     Email address
                   </label>
                   <input
@@ -113,7 +113,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="role" className="block text-sm font-medium text-[#1A365D] mb-2">
+                  <label htmlFor="role" className="mb-2 block text-sm font-medium text-[#1A365D]">
                     Your current role
                   </label>
                   <input
@@ -127,7 +127,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-[#1A365D] mb-2">
+                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-[#1A365D]">
                     What&apos;s on your mind?
                   </label>
                   <textarea
@@ -137,7 +137,7 @@ export default function Contact() {
                     required
                     disabled={isSubmitting}
                     className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#F96E1E] focus:outline-none focus:ring-2 focus:ring-[#F96E1E]/20 disabled:opacity-50"
-                    placeholder="What's getting in your way? What patterns are you noticing? What would exploration look like for you?"
+                    placeholder="What&apos;s getting in your way? What patterns are you noticing? What would exploration look like for you?"
                   />
                 </div>
 
@@ -145,7 +145,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-lg bg-[#F96E1E] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full rounded-lg bg-[#F96E1E] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#E55A1A] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#F96E1E] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {isSubmitting ? 'Sending...' : 'Begin the conversation'}
                   </button>
@@ -155,7 +155,7 @@ export default function Contact() {
                 {formStatus === 'success' && (
                   <div className="rounded-md bg-green-50 p-4">
                     <div className="text-sm text-green-800">
-                      <strong>Message sent successfully!</strong> I'll be in touch soon.
+                      <strong>Message sent successfully!</strong> I&apos;ll be in touch soon.
                     </div>
                   </div>
                 )}
