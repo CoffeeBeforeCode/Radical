@@ -1,6 +1,13 @@
 import Layout, { PageLayout } from '../components/Layout'
 import { useState } from 'react'
 
+// Declare EmailJS type for window object
+declare global {
+  interface Window {
+    emailjs: any
+  }
+}
+
 export default function Contact() {
   const [formStatus, setFormStatus] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
