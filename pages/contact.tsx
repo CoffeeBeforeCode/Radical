@@ -71,7 +71,7 @@ export default function Contact() {
                 </h2>
                 
                 <h3 className="mb-6 font-['Waiting_for_the_Sunrise'] text-2xl font-bold text-[#1A365D] md:text-3xl">
-                  Let&apos;s begin
+                  Let&apos;s <span className="text-[#F96E1E]">begin</span>
                 </h3>
                 
                 <p className="text-sm text-gray-600">
