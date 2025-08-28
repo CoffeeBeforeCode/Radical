@@ -2,7 +2,7 @@
 title: "The Leadership Equation: Unlocking Performance by Reducing Interference"
 excerpt: "Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn't about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference."
 category: "Leadership Equation"
-readTime: "8 min read"
+readTime: "3 min read"
 publishDate: "2025-08-19"
 featured: true
 ---
@@ -20,6 +20,8 @@ This simple equation challenges conventional thinking about leadership developme
 Yet in twenty years of coaching senior executives, I've observed that breakthrough performance rarely comes from adding complexity.
 
 Instead, it emerges when leaders identify and reduce the **interference** that prevents their natural potential from flowing freely.
+
+> **Key Insight:** Performance breakthroughs rarely come from adding more complexity - they emerge when leaders identify and reduce the interference that prevents their natural potential from flowing freely.
 
 ## What Is Interference?
 
