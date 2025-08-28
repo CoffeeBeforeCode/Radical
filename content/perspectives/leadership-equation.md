@@ -21,7 +21,10 @@ Yet in twenty years of coaching senior executives, I've observed that breakthrou
 
 Instead, it emerges when leaders identify and reduce the **interference** that prevents their natural potential from flowing freely.
 
-> **Key Insight:** Performance breakthroughs rarely come from adding more complexity - they emerge when leaders identify and reduce the interference that prevents their natural potential from flowing freely.
+<div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+  <h4 class="text-lg font-semibold text-[#1A365D] mb-3">Key Insight</h4>
+  <p class="text-gray-700 leading-relaxed">Performance breakthroughs rarely come from adding more complexity - they emerge when leaders identify and reduce the interference that prevents their natural potential from flowing freely.</p>
+</div>
 
 ## What Is Interference?
 
