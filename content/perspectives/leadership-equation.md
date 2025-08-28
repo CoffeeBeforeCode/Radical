@@ -9,17 +9,23 @@ featured: true
 
 # The Leadership Equation
 
-Leadership development traditionally focuses on adding: more skills, more knowledge, more techniques. Yet what if the most impactful approach isn't about adding, but removing?
+Leadership development traditionally focuses on adding: more skills, more knowledge, more techniques. 
+
+Yet what if the most impactful approach isn't about adding, but removing?
 
 ## Performance = Potential - Interference
 
-This simple equation challenges conventional thinking about leadership development. Most programmes assume leaders need **more**: more frameworks, more tools, more strategies. Yet in twenty years of coaching senior executives, I've observed that breakthrough performance rarely comes from adding complexity.
+This simple equation challenges conventional thinking about leadership development. Most programmes assume leaders need **more**: more frameworks, more tools, more strategies. 
+
+Yet in twenty years of coaching senior executives, I've observed that breakthrough performance rarely comes from adding complexity.
 
 Instead, it emerges when leaders identify and reduce the **interference** that prevents their natural potential from flowing freely.
 
 ## What Is Interference?
 
-Interference isn't weakness or failure—it's the accumulation of patterns, beliefs, and behaviours that once served us but now limit our effectiveness. Common forms include:
+Interference isn't weakness or failure—it's the accumulation of patterns, beliefs, and behaviours that once served us but now limit our effectiveness. 
+
+Common forms include:
 
 - **Internal narratives** that question our capabilities despite evidence to the contrary
 - **Perfectionist tendencies** that create paralysis rather than progress  
@@ -46,7 +52,9 @@ The question becomes: **What would be possible if we spent as much energy removi
 
 Start with honest observation. What patterns do you notice when you're performing at your best? What's different about those moments compared to when you feel stuck or frustrated?
 
-Often, the interference is so familiar we don't recognise it as interference. It feels like "just how things are" or "the way I am." Yet with gentle attention, most patterns reveal themselves to be choices we can make differently.
+Often, the interference is so familiar we don't recognise it as interference. It feels like "just how things are" or "the way I am." 
+
+Yet with gentle attention, most patterns reveal themselves to be choices we can make differently.
 
 ---
 
