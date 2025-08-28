@@ -76,7 +76,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
       <section className="w-full bg-white py-16">
         <PageLayout>
           <div className="mx-auto max-w-4xl">
-            <div className="prose prose-lg mx-auto max-w-none prose-headings:font-['Waiting_for_the_Sunrise'] prose-headings:text-[#1A365D] prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-gray-700 prose-strong:text-[#F96E1E] prose-a:text-[#F96E1E] hover:prose-a:text-[#E55A1A]">
+            <div className="prose prose-lg mx-auto max-w-none prose-headings:font-['Waiting_for_the_Sunrise'] prose-headings:text-[#1A365D] prose-h1:text-4xl prose-h1:mb-8 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:mb-6 prose-p:leading-relaxed prose-p:text-gray-700 prose-strong:text-[#F96E1E] prose-a:text-[#F96E1E] hover:prose-a:text-[#E55A1A] prose-ul:my-6 prose-ul:space-y-2 prose-li:text-gray-700 prose-blockquote:border-l-4 prose-blockquote:border-[#F96E1E] prose-blockquote:pl-6 prose-blockquote:italic prose-hr:my-12 prose-hr:border-gray-200">
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           </div>
