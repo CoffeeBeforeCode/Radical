@@ -1,5 +1,9 @@
 import { useState } from 'react'
+import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { promises as fs } from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import Layout, { PageLayout } from '../../components/Layout'
 
 interface BlogPost {
@@ -12,57 +16,22 @@ interface BlogPost {
   featured: boolean
 }
 
-const PerspectivesIndex: React.FC = () => {
+interface PerspectivesIndexProps {
+  posts: BlogPost[]
+}
+
+const PerspectivesIndex: React.FC<PerspectivesIndexProps> = ({ posts }) => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   
-  // Blog posts data - add new posts here when you create them
-  const blogPosts: BlogPost[] = [
-    {
-      slug: 'leadership-equation',
-      title: 'The Leadership Equation: Unlocking Performance by Reducing Interference',
-      excerpt: 'Leadership development traditionally focuses on adding more skills, more knowledge, more techniques. Yet what if the most impactful approach isn&apos;t about adding, but removing? The Leadership Equation offers a different perspective: Performance Equals Potential minus Interference.',
-      category: 'Leadership Equation',
-      readTime: '8 min read',
-      publishDate: '2025-08-19',
-      featured: true
-    },
-    {
-      slug: 'leadership-as-practice',
-      title: 'Leadership as a Lifelong Practice: Beyond the Workplace',
-      excerpt: 'Most leadership development focuses exclusively on workplace contexts. Yet the leaders I most respect demonstrate a remarkable quality: they bring the same intentionality, presence, and values to every domain of their lives.',
-      category: 'Embodied Perception',
-      readTime: '10 min read',
-      publishDate: '2025-08-18',
-      featured: true
-    },
-    {
-      slug: 'values-evolution',
-      title: 'Navigating Values Evolution Through Leadership Transitions',
-      excerpt: 'One of the most overlooked aspects of leadership development is how our core values evolve during significant life transitions. We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.',
-      category: 'Values Evolution',
-      readTime: '12 min read',
-      publishDate: '2025-08-17',
-      featured: false
-    },
-    {
-      slug: 'internal-narratives',
-      title: 'The Power of Internal Narratives in Leadership Identity',
-      excerpt: 'Every leader carries an internal narrator—a voice that provides running commentary on their experiences, interprets events, and shapes their responses to challenges. These internal narratives profoundly influence our leadership presence and effectiveness.',
-      category: 'Cross-Cultural Intelligence',
-      readTime: '9 min read',
-      publishDate: '2025-08-16',
-      featured: false
-    }
-  ]
-  
-  const categories = ['all', 'Leadership Equation', 'Embodied Perception', 'Cross-Cultural Intelligence', 'Values Evolution']
+  // Extract unique categories from posts
+  const categories = ['all', ...Array.from(new Set(posts.map(post => post.category)))]
   
   const filteredPosts = selectedCategory === 'all' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory)
+    ? posts 
+    : posts.filter(post => post.category === selectedCategory)
     
-  const featuredPosts = blogPosts.filter(post => post.featured)
-  const regularPosts = blogPosts.filter(post => !post.featured)
+  const featuredPosts = posts.filter(post => post.featured)
+  const regularPosts = posts.filter(post => !post.featured)
 
   return (
     <Layout
@@ -192,7 +161,7 @@ const PerspectivesIndex: React.FC = () => {
                         {post.title}
                       </h3>
                       
-                      <p className="mb-4 flex-grow leading-relaxed text-gray-600">
+                      <p className="mb-4 grow leading-relaxed text-gray-600">
                         {post.excerpt}
                       </p>
                       
@@ -239,6 +208,50 @@ const PerspectivesIndex: React.FC = () => {
       </section>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const contentDir = path.join(process.cwd(), 'content', 'perspectives')
+  
+  try {
+    const fileNames = await fs.readdir(contentDir)
+    const markdownFiles = fileNames.filter(name => name.endsWith('.md'))
+    
+    const posts = await Promise.all(
+      markdownFiles.map(async (fileName) => {
+        const slug = fileName.replace(/\.md$/, '')
+        const filePath = path.join(contentDir, fileName)
+        const fileContents = await fs.readFile(filePath, 'utf8')
+        const { data: frontmatter } = matter(fileContents)
+        
+        return {
+          slug,
+          title: frontmatter.title,
+          excerpt: frontmatter.excerpt,
+          category: frontmatter.category,
+          readTime: frontmatter.readTime,
+          publishDate: frontmatter.publishDate,
+          featured: frontmatter.featured || false
+        }
+      })
+    )
+    
+    // Sort posts by date (newest first)
+    posts.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+    
+    return {
+      props: {
+        posts
+      }
+    }
+  } catch (error) {
+    // If content directory doesn't exist yet, return empty array
+    return {
+      props: {
+        posts: []
+      }
+    }
+  }
 }
 
 export default PerspectivesIndex
