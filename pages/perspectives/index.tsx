@@ -142,32 +142,32 @@ const PerspectivesIndex: React.FC<PerspectivesIndexProps> = ({ posts }) => {
             {(selectedCategory === 'all' ? regularPosts : filteredPosts).map((post) => (
               <article key={post.slug} className="group">
                 <Link href={`/perspectives/${post.slug}`}>
-                  <div className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                  <div className="flex h-full flex-col overflow-hidden rounded-lg bg-[#1A365D] shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                     <div className="flex h-full flex-col p-6">
                       <div className="mb-4 flex items-center justify-between">
                         <span className="inline-block rounded-full bg-[#D4B86A] px-3 py-1 text-sm font-medium text-[#1A365D]">
                           {post.category}
                         </span>
-                        <span className="text-sm text-gray-500">{post.readTime}</span>
+                        <span className="text-sm text-white/60">{post.readTime}</span>
                       </div>
                       
-                      <h3 className="mb-3 font-['Waiting_for_the_Sunrise'] text-xl leading-tight text-[#1A365D] transition-colors duration-300 group-hover:text-[#F96E1E] md:text-2xl">
+                      <h3 className="mb-3 font-['Waiting_for_the_Sunrise'] text-xl leading-tight text-[#F96E1E] transition-colors duration-300 group-hover:text-white md:text-2xl">
                         {post.title}
                       </h3>
                       
-                      <p className="mb-4 grow leading-relaxed text-gray-600">
+                      <p className="mb-4 grow leading-relaxed text-white/80">
                         {post.excerpt}
                       </p>
                       
                       <div className="mt-auto flex items-center justify-between">
-                        <time className="text-sm text-gray-500">
+                        <time className="text-sm text-white/60">
                           {new Date(post.publishDate).toLocaleDateString('en-GB', {
                             day: 'numeric',
                             month: 'long',
                             year: 'numeric'
                           })}
                         </time>
-                        <span className="font-medium text-[#F96E1E] group-hover:underline">
+                        <span className="font-medium text-[#F96E1E] group-hover:text-white group-hover:underline">
                           Read →
                         </span>
                       </div>
