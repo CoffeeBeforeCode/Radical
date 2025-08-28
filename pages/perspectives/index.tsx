@@ -137,13 +137,7 @@ const PerspectivesIndex: React.FC<PerspectivesIndexProps> = ({ posts }) => {
 
       {/* All Posts Grid */}
       <section className={`py-16 ${selectedCategory === 'all' ? 'bg-[#F8F5EB]' : ''}`}>
-        <PageLayout>
-          {selectedCategory === 'all' && (
-            <h2 className="mb-12 text-center font-['Waiting_for_the_Sunrise'] text-3xl text-[#1A365D] md:text-4xl">
-              All Perspectives
-            </h2>
-          )}
-          
+        <PageLayout>          
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {(selectedCategory === 'all' ? regularPosts : filteredPosts).map((post) => (
               <article key={post.slug} className="group">
