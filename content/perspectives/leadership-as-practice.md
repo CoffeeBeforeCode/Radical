@@ -13,7 +13,10 @@ Most leadership development focuses exclusively on workplace contexts. Yet the l
 
 Leadership isn't a role you step into at 9am and step out of at 6pm. It's a **practice**—a way of being that extends across all contexts of life.
 
-> **Key Insight:** Authentic leadership emerges when the same values and intentionality guide us across all domains of life - not just in professional settings.
+<div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+  <h4 class="text-lg font-semibold text-[#1A365D] mb-3">Key Insight</h4>
+  <p class="text-gray-700 leading-relaxed">Authentic leadership emerges when the same values and intentionality guide us across all domains of life - not just in professional settings.</p>
+</div>
 
 ## Beyond the Office
 
