@@ -13,7 +13,10 @@ One of the most overlooked aspects of leadership development is how our core val
 
 We tend to treat values as fixed principles, yet major transitions often catalyse profound shifts in what matters most to us.
 
-> **Key Insight:** Values aren't betrayed when they evolve - they're refined through experience and conscious reflection during times of significant change.
+<div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+  <h4 class="text-lg font-semibold text-[#1A365D] mb-3">Key Insight</h4>
+  <p class="text-gray-700 leading-relaxed">Values aren't betrayed when they evolve - they're refined through experience and conscious reflection during times of significant change.</p>
+</div>
 
 ## Values in Motion
 
