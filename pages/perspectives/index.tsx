@@ -96,7 +96,7 @@ const PerspectivesIndex: React.FC<PerspectivesIndexProps> = ({ posts }) => {
               {featuredPosts.map((post) => (
                 <article key={post.slug} className="group">
                   <Link href={`/perspectives/${post.slug}`}>
-                    <div className="overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    <div className="overflow-hidden rounded-lg bg-white border-2 border-[#F96E1E] shadow-lg transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                       <div className="p-8">
                         <div className="mb-4 flex items-center justify-between">
                           <span className="inline-block rounded-full bg-[#F96E1E] px-3 py-1 text-sm font-medium text-white">
