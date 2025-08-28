@@ -13,7 +13,10 @@ Every leader carries an internal narrator—a voice that provides running commen
 
 These internal narratives profoundly influence our leadership presence and effectiveness, yet most of us rarely examine them consciously.
 
-> **Key Insight:** The stories we tell ourselves about our capabilities and circumstances shape our leadership reality more than external events or feedback.
+<div class="my-8 rounded-lg bg-[#F8F5EB] p-6 border-l-4 border-[#F96E1E]">
+  <h4 class="text-lg font-semibold text-[#1A365D] mb-3">Key Insight</h4>
+  <p class="text-gray-700 leading-relaxed">The stories we tell ourselves about our capabilities and circumstances shape our leadership reality more than external events or feedback.</p>
+</div>
 
 ## The Voice in Your Head
 
