@@ -162,7 +162,6 @@ export default function Home() {
                   <li>• Renewed sense of purpose and direction</li>
                   <li>• Flexible duration based on needs</li>
                 </ul>
-              </div>
             </div>
           </div>
         </PageLayout>
