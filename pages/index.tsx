@@ -136,7 +136,7 @@ export default function Home() {
               <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
                 <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
                 <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  This is a brilliant coach. Phillip's approach develops leaders not just functionally but personally. The impact goes way beyond the workplace.
+                  This is a brilliant coach. Phillip&apos;s approach develops leaders not just functionally but personally. The impact goes way beyond the workplace.
                 </p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Senior Leader<br />
