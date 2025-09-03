@@ -116,7 +116,7 @@ When we stop trying to fix what's wrong and start removing what's getting in the
 
 This approach requires patience, self-compassion, and the willingness to look honestly at our patterns. But for leaders ready to move beyond constant striving toward sustainable effectiveness, the Leadership Equation offers a powerful alternative path.
 
-The question isn't whether you have enough potential—the question is what's currently interfering with it, and how might you begin to create space for your natural leadership capabilities to flourish?
+The question isn't whether you have enough potential; the question is what's currently interfering with it, and how might you begin to create space for your natural leadership capabilities to flourish?
 
 ---
 
