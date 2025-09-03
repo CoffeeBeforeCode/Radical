@@ -65,7 +65,7 @@ export default function Home() {
         <PageLayout>
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              The <a href="/perspectives/the-leadership-equation-unlocking-performance" className="text-[#F96E1E] hover:underline">Leadership Equation</a>
+              The <Link href="/perspectives/the-leadership-equation-unlocking-performance" className="text-[#F96E1E] hover:underline">Leadership Equation</Link>
             </h2>
             <div className="mx-auto mb-8 max-w-2xl">
               <p className="text-xl font-['Waiting_for_the_Sunrise'] font-bold text-[#1A365D] md:text-2xl">
@@ -97,7 +97,7 @@ export default function Home() {
                 but aren&apos;t seeing the impact they want to make.
               </p>
               <p className="text-lg leading-relaxed text-blue-200">
-                Through <a href="/perspectives/embodied-perception-the-intelligence-beyond-thought" className="text-[#F96E1E] hover:underline">embodied perception</a> and <a href="/perspectives/leadership-as-a-lifelong-practice-beyond-the-workplace" className="text-[#F96E1E] hover:underline">leadership as practice</a>, I help you see what&apos;s 
+                Through <Link href="/perspectives/embodied-perception-the-intelligence-beyond-thought" className="text-[#F96E1E] hover:underline">embodied perception</Link> and <Link href="/perspectives/leadership-as-a-lifelong-practice-beyond-the-workplace" className="text-[#F96E1E] hover:underline">leadership as practice</Link>, I help you see what&apos;s 
                 been difficult to see.<br />
                 And then develop the strategies to work with it.
               </p>
