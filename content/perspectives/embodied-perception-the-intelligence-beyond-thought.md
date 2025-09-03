@@ -117,7 +117,7 @@ This capacity to **sit with complexity**—what I call sitting with tension—of
 
 Perhaps the most important application of embodied perception is recognising when to create space rather than rush to action. Our analytical culture often prioritises quick decisions and immediate solutions. But some of the most important leadership challenges require sitting with complexity long enough for deeper understanding to emerge.
 
-This doesn't mean endless processing or avoidance of decision-making. It means developing discernment about when to act quickly and when to create space for intelligence—both cognitive and embodied—to inform our choices.
+This doesn't mean endless processing or avoidance of decision-making. It means developing discernment about when to act quickly and when to create space for intelligence; both cognitive and embodied; to inform our choices.
 
 ## The Invitation to Experiment
 
