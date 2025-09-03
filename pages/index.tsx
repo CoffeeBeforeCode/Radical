@@ -56,148 +56,180 @@ export default function Home() {
               Not louder.<br />
               Just wiser.
             </p>
+            
+            <p className="text-lg leading-relaxed text-gray-600">
+              Most leaders already have the potential they need. The question is: 
+              what&apos;s the interference? Through <Link href="/perspectives/the-leadership-equation-unlocking-performance" className="text-[#F96E1E] hover:underline">Leadership Equation</Link> frameworks and <Link href="/perspectives/embodied-perception-the-intelligence-beyond-thought" className="text-[#F96E1E] hover:underline">embodied perception</Link> approaches, 
+              I help senior leaders develop <Link href="/perspectives/leadership-as-a-lifelong-practice-beyond-the-workplace" className="text-[#F96E1E] hover:underline">leadership as practice</Link> rather than performance.
+            </p>
+            
+            <p className="text-lg leading-relaxed text-gray-600">
+              Want to explore what&apos;s possible? Learn more about <Link href="/the-work" className="text-[#F96E1E] hover:underline">my coaching approach</Link> and 
+              how I work with leaders across Europe, Middle East, Americas, and Asia Pacific.
+            </p>
           </div>
         </PageLayout>
       </section>
 
-      {/* CREAM STRIPE - Performance Equation - REDESIGNED */}
+      {/* CREAM STRIPE - Who I Work With */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
-          <div className="mx-auto max-w-5xl text-center">
-            <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              The <Link href="/perspectives/the-leadership-equation-unlocking-performance" className="text-[#F96E1E] hover:underline">Leadership Equation</Link>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="mb-12 text-3xl font-bold text-[#1A365D] md:text-4xl">
+              Who I Work With
             </h2>
-            <div className="mx-auto mb-8 max-w-2xl">
-              <p className="text-xl font-['Waiting_for_the_Sunrise'] font-bold text-[#1A365D] md:text-2xl">
-                Performance = Potential - Interference
+            
+            <div className="space-y-8 text-lg leading-relaxed text-gray-700">
+              <p>
+                <strong>Senior Leaders</strong> who are committed to their own development and 
+                recognise that sustainable performance comes from addressing root causes, 
+                not just symptoms.
               </p>
-            </div>
-            <div className="mx-auto max-w-3xl">
-              <p className="text-lg leading-relaxed text-gray-700">
-                Most leaders already have the <span className="font-semibold">potential</span>.<br />
-                What&apos;s getting in their way is <span className="font-semibold">interference</span>.<br />
-                My work is seeing where that interference comes from.<br />
-                And reducing it.
+              
+              <p>
+                <strong>Country, Regional, and Global Heads</strong> navigating the complexity 
+                of leading across cultures, time zones, and organisational structures while 
+                staying true to their values and vision.
+              </p>
+              
+              <p>
+                <strong>Emerging Leaders</strong> stepping into bigger roles who want to build 
+                authentic leadership from the inside out, rather than adopting someone else&apos;s 
+                template.
+              </p>
+              
+              <p className="text-xl font-medium text-[#1A365D] pt-8">
+                Geography matters less than commitment.<br />
+                I work with leaders across four continents.
               </p>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* BLUE STRIPE - What I Do - REDESIGNED */}
+      {/* DARK BLUE STRIPE - How It Works */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
-          <div className="text-center">
-            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-              What I Do
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-12 text-center text-3xl font-bold text-white md:text-4xl">
+              How It Works
             </h2>
-            <div className="mx-auto max-w-4xl space-y-6 text-white">
-              <p className="text-xl leading-relaxed">
-                I work with leaders who have the desire and capacity for significant change,<br />
-                but aren&apos;t seeing the impact they want to make.
-              </p>
-              <p className="text-lg leading-relaxed text-blue-200">
-                Through <Link href="/perspectives/embodied-perception-the-intelligence-beyond-thought" className="text-[#F96E1E] hover:underline">embodied perception</Link> and <Link href="/perspectives/leadership-as-a-lifelong-practice-beyond-the-workplace" className="text-[#F96E1E] hover:underline">leadership as practice</Link>, I help you see what&apos;s 
-                been difficult to see.<br />
-                And then develop the strategies to work with it.
-              </p>
-              <div className="pt-4">
-                <Link
-                  href="/the-work"
-                  className="inline-block rounded-lg bg-[#F96E1E] px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
-                >
-                  Explore my coaching approach
-                </Link>
+            
+            <div className="space-y-8">
+              <div className="rounded-lg bg-white p-8">
+                <div className="mb-6 flex items-center justify-between">
+                  <h3 className="text-2xl font-bold text-[#1A365D]">Individual Leadership Coaching</h3>
+                  <div className="flex items-center rounded-full bg-[#F96E1E] px-4 py-2">
+                    <span className="text-sm font-bold text-white">CORE OFFERING</span>
+                  </div>
+                </div>
+                <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                  For <strong>Country Heads, Regional Leaders, Global Executives</strong> and other 
+                  senior leaders who want to develop their leadership capacity through practical, 
+                  evidence-based approaches that honour who you are whilst expanding what&apos;s possible.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Monthly 90-minute coaching sessions (face-to-face or online)</li>
+                  <li>• Between-session support via WhatsApp</li>
+                  <li>• Access to frameworks and tools</li>
+                  <li>• Minimum 6-month commitment</li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg bg-white p-8">
+                <h3 className="mb-4 text-2xl font-bold text-[#1A365D]">Emerging Leadership Development</h3>
+                <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                  For high-potential leaders stepping into senior roles who want to build 
+                  authentic leadership from the inside out.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Identity and values-based development</li>
+                  <li>• Cross-domain leadership practice</li>
+                  <li>• Sustainable performance frameworks</li>
+                  <li>• 12-month development programme</li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg bg-white p-8">
+                <h3 className="mb-4 text-2xl font-bold text-[#1A365D]">Leadership Restoration</h3>
+                <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                  For experienced leaders rebuilding confidence after setbacks, transitions, 
+                  or challenging periods.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Rebuilding leadership confidence</li>
+                  <li>• Processing difficult experiences</li>
+                  <li>• Renewed sense of purpose and direction</li>
+                  <li>• Flexible duration based on needs</li>
+                </ul>
               </div>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* TESTIMONIALS - CREAM STRIPE */}
-      <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
+      {/* WHITE STRIPE - Social Proof */}
+      <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
-          <div className="mb-12 text-center">
-            <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              What clients say
+          <div className="mx-auto max-w-6xl">
+            <h2 className="mb-16 text-center text-3xl font-bold text-[#1A365D] md:text-4xl">
+              What People Say
             </h2>
-          </div>
-          
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
-                  src="/images/Bubble-1.png"
-                  alt="Self-awareness and emotional intelligence"
-                  className="size-full object-contain"
-                />
-              </div>
-              
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  This is a brilliant coach. Phillip&apos;s approach develops leaders not just functionally but personally. The impact goes way beyond the workplace.
-                </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
-                  Senior Leader<br />
-                  Civil Service
+            
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {/* Left Column */}
+              <div className="space-y-8">
+                <div className="relative rounded-lg bg-[#F8F5EB] p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                  <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                  <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                    Phillip is a brilliant coach. He has a unique ability to ask the right questions at the right time and create the space for genuine insight and growth.
+                  </p>
+                  <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                    Senior Leader<br />
+                    UK Civil Service
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
+                    <img
+                      src="/images/Bubble-3.png"
+                      alt="Leadership confidence and self-belief"
+                      className="size-full object-contain"
+                    />
+                  </div>
+                  
+                  <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                    <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                    <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                      I have got my confidence back and my self-belief. The coaching has been transformational.
+                    </p>
+                    <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                      Country Head<br />
+                      Manufacturing
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative rounded-lg bg-[#F8F5EB] p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                  <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                  <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                    Working with Phillip has enabled me to see patterns in my leadership that I hadn&apos;t noticed before and make significant shifts in how I show up.
+                  </p>
+                  <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
+                    Regional Head<br />
+                    Financial Services
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
-                  src="/images/Bubble-2.png"
-                  alt="Confidence and self-belief in leadership"
-                  className="size-full object-contain"
-                />
-              </div>
               
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  I have got my confidence back and my self-belief. I am leading from a much more authentic place now.
-                </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
-                  Country Head<br />
-                  Manufacturing
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
-                  src="/images/Bubble-3.png"
-                  alt="Leadership transformation and growth"
-                  className="size-full object-contain"
-                />
-              </div>
-              
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  The past eight months have seen enormous progress. Phillip has the perfect blend of business understanding and human insight.
-                </p>
-                <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
-                  C-suite<br />
-                  Technology
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
-                  src="/images/Bubble-4.png"
-                  alt="Personal and professional development"
-                  className="size-full object-contain"
-                />
-              </div>
-              
-              <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
-                <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
-                <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
-                  I have been surprised at how comfortable it has felt being stretched through this coaching process. Phillip understands business and has deep human insight.
-                </p>
+              {/* Right Column */}
+              <div className="space-y-8">
+                <div className="relative rounded-lg bg-white p-6 shadow-sm border-l-4 border-[#F96E1E]">
+                  <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#F96E1E]">&ldquo;</div>
+                  <p className="mb-4 pl-6 text-base leading-relaxed italic text-gray-800">
+                    The progress I have made has been enormous. Phillip&apos;s approach helped me understand myself better and develop new ways of leading that feel authentic and effective.
+</p>
                 <div className="text-right text-sm font-medium text-[#1A365D] not-italic">
                   Country Head<br />
                   Telecommunications
@@ -245,122 +277,100 @@ export default function Home() {
                 </p>
             </div>
           </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {/* Left Column - Emotional Intelligence */}
-            <div className="space-y-6">
-              <div className="rounded-lg bg-[#F8F5EB] p-8 border-l-4 border-[#7E2D40]">
-                <h3 className="mb-4 text-xl font-bold text-[#1A365D]">
-                  Emotional Intelligence
-                </h3>
-                <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  Not just <em>understanding</em> your emotions, but developing the capacity to <strong>work with them</strong> as information rather than being driven by them.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>→ Self-awareness in the moment</p>
-                  <p>→ Managing reactivity</p>
-                  <p>→ Reading the emotional field of others</p>
-                </div>
+            
+          {/* Four-panel grid */}
+          <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Panel 1: Leadership Equation */}
+            <div className="bg-[#F8F5EB] rounded-lg p-6 border-l-4 border-[#F96E1E]">
+              <h3 className="text-xl font-bold text-[#1A365D] mb-4">The Leadership Equation</h3>
+              <div className="text-center mb-4">
+                <div className="text-2xl font-bold text-[#1A365D] mb-2">PE = PO - I</div>
+                <div className="text-sm text-gray-600">Performance = Potential - Interference</div>
               </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-8 border-l-4 border-[#7E2D40]">
-                <h3 className="mb-4 text-xl font-bold text-[#1A365D]">
-                  Cross-Cultural Intelligence
-                </h3>
-                <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  Leading across cultures requires more than cultural knowledge. It demands <strong>cultural humility</strong> and the ability to adapt your leadership style contextually.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>→ Recognising cultural assumptions</p>
-                  <p>→ Adaptive communication styles</p>
-                  <p>→ Building trust across difference</p>
-                </div>
-              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Most leaders already have the potential they need. The question is: what&apos;s creating interference? 
+                This simple equation shifts focus from adding more skills to removing what&apos;s getting in the way.
+              </p>
             </div>
-
-            {/* Right Column - Leadership Development */}
-            <div className="space-y-6">
-              <div className="rounded-lg bg-[#F8F5EB] p-8 border-l-4 border-[#7E2D40]">
-                <h3 className="mb-4 text-xl font-bold text-[#1A365D]">
-                  Leadership Development
-                </h3>
-                <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  Real development happens when we stop trying to <em>become</em> leaders and start <strong>returning</strong> to who we already are beneath the interference.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>→ Authentic leadership presence</p>
-                  <p>→ Values-based decision making</p>
-                  <p>→ Sustainable performance patterns</p>
-                </div>
+            
+            {/* Panel 2: Embodied Perception */}
+            <div className="bg-white rounded-lg p-6 border-l-4 border-[#F96E1E] shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A365D] mb-4">Embodied Perception</h3>
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/images/embodied-awareness.png"
+                  alt="Embodied awareness illustration"
+                  className="h-16 w-auto object-contain"
+                />
               </div>
-
-              <div className="rounded-lg bg-[#F8F5EB] p-8 border-l-4 border-[#7E2D40]">
-                <h3 className="mb-4 text-xl font-bold text-[#1A365D]">
-                  Executive Coaching
-                </h3>
-                <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  Not telling you what to do, but creating the conditions for you to see <strong>what you already know</strong> and haven&apos;t been able to access.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>→ Reducing interference to performance</p>
-                  <p>→ Developing embodied awareness</p>
-                  <p>→ Strategic thinking with emotional intelligence</p>
-                </div>
+              <p className="text-gray-700 leading-relaxed">
+                Your body knows things your mind hasn&apos;t figured out yet. Learning to read these signals - 
+                tension, energy, intuition - creates access to intelligence beyond analytical thinking.
+              </p>
+            </div>
+            
+            {/* Panel 3: Leadership as Practice */}
+            <div className="bg-white rounded-lg p-6 border-l-4 border-[#F96E1E] shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A365D] mb-4">Leadership as Practice</h3>
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/images/practice-not-destination.png"
+                  alt="Practice not destination illustration"
+                  className="h-16 w-auto object-contain"
+                />
               </div>
+              <p className="text-gray-700 leading-relaxed">
+                Leadership isn&apos;t a destination you reach; it&apos;s a practice you return to. 
+                This shifts the focus from achieving perfection to developing capacity - 
+                across all domains of life, not just work.
+              </p>
+            </div>
+            
+            {/* Panel 4: Values in Transition */}
+            <div className="bg-[#F8F5EB] rounded-lg p-6 border-l-4 border-[#F96E1E]">
+              <h3 className="text-xl font-bold text-[#1A365D] mb-4">Values in Transition</h3>
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/images/values-constellation.png"
+                  alt="Values constellation illustration"
+                  className="h-16 w-auto object-contain"
+                />
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                What matters most evolves as we grow. Rather than clinging to old values or rushing 
+                to new ones, there&apos;s wisdom in sitting with the tension and letting new priorities emerge naturally.
+              </p>
             </div>
           </div>
         </PageLayout>
       </section>
 
-      {/* BURGUNDY STRIPE - Personal Note - REDESIGNED */}
-      <section className="w-full bg-[#7E2D40] py-16 md:py-24">
+      {/* FINAL CTA SECTION */}
+      <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
           <div className="mx-auto max-w-4xl text-center text-white">
             <h2 className="mb-8 text-3xl font-bold md:text-4xl">
-              A personal note
+              Ready to explore what&apos;s possible?
             </h2>
-            <div className="space-y-6 text-lg leading-relaxed">
-              <p>
-                I started this work because I was a sensitive boy who learned to see sensitivity as a weakness.<br />
-                Until I discovered it was actually a <span className="font-semibold text-orange-300">superpower</span>.
-              </p>
-              <p className="text-xl font-['Waiting_for_the_Sunrise'] font-bold">
-                The same interference that limits us<br />
-                often holds our greatest strength.
-              </p>
-              <p className="text-pink-200">
-                My work is helping you find yours.
-              </p>
-              <div className="pt-6">
-                <Link
-                  href="/this-is-personal"
-                  className="inline-block rounded-lg border-2 border-orange-300 px-8 py-3 font-semibold text-orange-300 transition-colors hover:bg-orange-300 hover:text-[#7E2D40]"
-                >
-                  Read the full story
-                </Link>
-              </div>
-            </div>
-          </div>
-        </PageLayout>
-      </section>
-
-      {/* FINAL CTA - WHITE STRIPE */}
-      <section className="w-full bg-white py-16 md:py-24">
-        <PageLayout>
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 text-3xl font-bold text-[#1A365D] md:text-4xl">
-              Ready to begin?
-            </h2>
-            <p className="mb-8 text-lg leading-relaxed text-gray-700">
-              If you&apos;re curious about reducing the interference that&apos;s getting in the way of your leadership,<br />
-              let&apos;s have a conversation.
+            
+            <p className="mb-8 text-xl leading-relaxed">
+              Whether you&apos;re facing a specific challenge or sensing there&apos;s more available 
+              to you as a leader, let&apos;s start with a conversation.
             </p>
-            <Link
-              href="/contact"
-              className="inline-block rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-orange-600"
-            >
-              Get in touch
-            </Link>
+            
+            <div className="space-y-4">
+              <Link
+                href="/contact"
+                className="inline-block rounded-lg bg-[#F96E1E] px-8 py-4 text-lg font-semibold text-white transition-all duration-200 hover:bg-[#e55d0c] hover:shadow-lg"
+              >
+                Get in Touch
+              </Link>
+              
+              <p className="text-sm text-gray-300">
+                No lengthy forms. No pressure. Just an honest conversation about where you are 
+                and where you want to go.
+              </p>
+            </div>
           </div>
         </PageLayout>
       </section>
