@@ -106,7 +106,7 @@ export default function Home() {
                   href="/the-work"
                   className="inline-block rounded-lg bg-[#F96E1E] px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
                 >
-                  Explore <a href="/the-work" className="text-white hover:underline">my coaching approach</a>
+                  Explore my coaching approach
                 </Link>
               </div>
             </div>
