@@ -56,17 +56,6 @@ export default function Home() {
               Not louder.<br />
               Just wiser.
             </p>
-            
-            <p className="text-lg leading-relaxed text-gray-600">
-              Most leaders already have the potential they need. The question is: 
-              what&apos;s the interference? Through <Link href="/perspectives/the-leadership-equation-unlocking-performance" className="text-[#F96E1E] hover:underline">Leadership Equation</Link> frameworks and <Link href="/perspectives/embodied-perception-the-intelligence-beyond-thought" className="text-[#F96E1E] hover:underline">embodied perception</Link> approaches, 
-              I help senior leaders develop <Link href="/perspectives/leadership-as-a-lifelong-practice-beyond-the-workplace" className="text-[#F96E1E] hover:underline">leadership as practice</Link> rather than performance.
-            </p>
-            
-            <p className="text-lg leading-relaxed text-gray-600">
-              Want to explore what&apos;s possible? Learn more about <Link href="/the-work" className="text-[#F96E1E] hover:underline">my coaching approach</Link> and 
-              how I work with leaders across Europe, Middle East, Americas, and Asia Pacific.
-            </p>
           </div>
           
           {/* CTAs - Completely Outside */}
