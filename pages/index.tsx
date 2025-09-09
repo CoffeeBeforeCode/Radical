@@ -1,5 +1,6 @@
 import Layout, { PageLayout } from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -38,9 +39,11 @@ export default function Home() {
                 
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
-                  <img
+                  <Image
                     src="/images/whats-the-story.png"
                     alt="What's the story I tell myself about who I am; is it still true?"
+                    width={200}
+                    height={150}
                     className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                   />
                 </div>
@@ -106,31 +109,41 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-              <img
+              <Image
                 src="/images/Bubble-1.png"
                 alt="Self-perception reflection"
+                width={200}
+                height={200}
                 className="size-full object-contain"
               />
             </div>
             
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
+              <Image
                 src="/images/Bubble-2.png"
                 alt="Connection and relationships"
+                width={200}
+                height={200}
                 className="size-full object-contain"
               />
             </div>
+
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-              <img
+              <Image
                 src="/images/Bubble-3.png"
                 alt="Authentic self-expression"
+                width={200}
+                height={200}
                 className="size-full object-contain"
               />
             </div>
+
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
-              <img
+              <Image
                 src="/images/Bubble-4.png"
                 alt="Decision-making and judgment"
+                width={200}
+                height={200}
                 className="size-full object-contain"
               />
             </div>
@@ -176,6 +189,7 @@ export default function Home() {
                   <p className="text-sm text-white/80">The stuff getting in your way</p>
                 </div>
               </div>
+
               <div className="rounded-lg bg-[#F96E1E] p-6">
                 <h3 className="mb-3 text-lg font-bold text-white">What gets in the way?</h3>
                 <div className="space-y-2 text-sm text-white/90">
@@ -209,9 +223,11 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
+                <Image
                   src="/images/Call-self-doubt.png"
                   alt="Internal struggle with belonging"
+                  width={200}
+                  height={200}
                   className="size-full object-contain"
                 />
               </div>
@@ -227,11 +243,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
+                <Image
                   src="/images/Call-authority-burden.png"
                   alt="Leadership pressure and expectations"
+                  width={200}
+                  height={200}
                   className="size-full object-contain"
                 />
               </div>
@@ -247,11 +266,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
-                <img
+                <Image
                   src="/images/Bubble-5.png"
                   alt="Handling change and flexibility"
+                  width={200}
+                  height={200}
                   className="size-full object-contain"
                 />
               </div>
@@ -303,14 +325,17 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
             <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
                     <div className="aspect-square rounded-lg bg-[#F8F5EB] p-3 mb-4 flex items-center justify-center">
-                        <img
+                        <Image
                             src="/images/Bubble-8.png"
                             alt="Embodied perception"
+                            width={150}
+                            height={150}
                             className="w-full h-full object-contain"
                         />
                     </div>
@@ -321,14 +346,17 @@ export default function Home() {
                     </p>
                 </div>
             </div>
+
             <div className="relative overflow-hidden bg-[#F8F5EB] rounded-lg p-6 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F96E1E] to-[#1A365D]"></div>
                 
                 <div className="h-full flex flex-col">
                     <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
-                        <img
+                        <Image
                             src="/images/Bubble-9.png"
                             alt="Values in motion"
+                            width={150}
+                            height={150}
                             className="w-full h-full object-contain"
                         />
                     </div>
@@ -339,12 +367,15 @@ export default function Home() {
                     </p>
                 </div>
             </div>
+
             <div className="md:col-span-2 relative overflow-hidden bg-[#1A365D] rounded-lg p-6 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="flex items-center h-full">
                     <div className="flex-shrink-0 mr-6">
-                        <img
+                        <Image
                             src="/images/Bubble-10.png"
                             alt="Sitting with tension"
+                            width={64}
+                            height={64}
                             className="w-16 h-16 object-contain"
                         />
                     </div>
@@ -358,6 +389,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
             <div className="md:col-span-2 relative overflow-hidden bg-[#F96E1E] rounded-lg p-6 text-white transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-white to-[#1A365D] opacity-30"></div>
                 
@@ -399,39 +431,50 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
-                <img
+                <Image
                   src="/images/europe.png"
                   alt="Europe"
+                  width={80}
+                  height={80}
                   className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">UK, Ireland, France, Belgium, Switzerland, Netherlands, Sweden</p>
             </div>
+
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
-                <img
+                <Image
                   src="/images/asia.png"
                   alt="Asia"
+                  width={80}
+                  height={80}
                   className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">UAE, Saudi Arabia, Israel, India, Singapore</p>
             </div>
+
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
-                <img
+                <Image
                   src="/images/north-america.png"
                   alt="North America"
+                  width={80}
+                  height={80}
                   className="size-20 object-contain"
                 />
               </div>
               <p className="text-sm text-white/80 text-center">USA, Canada, Caribbean</p>
             </div>
+
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
-                <img
+                <Image
                   src="/images/south-america.png"
                   alt="South America"
+                  width={80}
+                  height={80}
                   className="size-20 object-contain"
                 />
               </div>
