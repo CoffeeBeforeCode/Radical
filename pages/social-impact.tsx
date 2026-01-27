@@ -33,7 +33,7 @@ export default function SocialImpact() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="/Radical/images/Social-Impact-Bubble.png"
+                    src="/Images/Social-Impact-Bubble.png"
                     alt="Where do you show up as a leader when no one's watching?"
                     className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                   />
@@ -76,7 +76,7 @@ export default function SocialImpact() {
           
           <div className="rounded-lg overflow-hidden">
             <img
-              src="/Radical/images/The-Five-Domains-of-Intentional-Leadership.png"
+              src="/Images/The-Five-Domains-of-Intentional-Leadership.png"
               alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
               className="w-full h-auto object-contain max-h-[60vh]"
             />
