@@ -1,13 +1,6 @@
 import Layout, { PageLayout } from '../components/Layout'
 import { useState } from 'react'
 
-// Declare EmailJS type for window object
-declare global {
-  interface Window {
-    emailjs: any
-  }
-}
-
 export default function Contact() {
   const [formStatus, setFormStatus] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -17,33 +10,26 @@ export default function Contact() {
     setIsSubmitting(true)
     setFormStatus('')
 
-    const formData = new FormData(e.target as HTMLFormElement)
-    const templateParams = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      role: formData.get('role'),
-      message: formData.get('message'),
-      reply_to: formData.get('email')
-    }
+    const form = e.target as HTMLFormElement
+    const formData = new FormData(form)
 
     try {
-      // Load EmailJS if not already loaded
-      if (!window.emailjs) {
-        await new Promise((resolve) => {
-          const script = document.createElement('script')
-          script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'
-          script.onload = resolve
-          document.head.appendChild(script)
-        })
-        window.emailjs.init('tG7Y3vGW0jUiMvbFU')
-      }
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
 
-      await window.emailjs.send('service_dh7i0rg', 'template_kvgtgdt', templateParams)
-      
-      setFormStatus('success')
-      ;(e.target as HTMLFormElement).reset()
+      if (response.ok) {
+        setFormStatus('success')
+        form.reset()
+      } else {
+        setFormStatus('error')
+      }
     } catch (error) {
-      console.error('EmailJS error:', error)
+      console.error('Form submission error:', error)
       setFormStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -159,11 +145,11 @@ export default function Contact() {
                     </div>
                   </div>
                 )}
-
+                
                 {formStatus === 'error' && (
                   <div className="rounded-md bg-red-50 p-4">
                     <div className="text-sm text-red-800">
-                      <strong>Something went wrong.</strong> Please try again or email me directly at hello@phillipcollins.com
+                      <strong>Something went wrong.</strong> Please try again or email me directly at phillip@phillipcollins.com
                     </div>
                   </div>
                 )}
