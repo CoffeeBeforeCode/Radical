@@ -34,7 +34,7 @@ const Header: React.FC = () => {
               {/* Circular Avatar Image */}
               <div className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-[#1A365D]/10 group-hover:ring-[#F96E1E]/50 transition-all duration-300">
                 <img
-                  src="/Images/Phillip-Collins-Global-Leadership-Coach-Avatar.png"
+                  src="/images/Phillip-Collins-Global-Leadership-Coach-Avatar.png"
                   alt="Phillip Collins - Global Leadership Coach"
                   className="h-full w-full object-cover"
                   width="40"
