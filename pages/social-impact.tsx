@@ -33,7 +33,7 @@ export default function SocialImpact() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="/images/Social-Impact-Bubble.png"
+                    src="/Radical/images/Social-Impact-Bubble.png"
                     alt="Where do you show up as a leader when no one's watching?"
                     className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                   />
@@ -76,7 +76,7 @@ export default function SocialImpact() {
           
           <div className="rounded-lg overflow-hidden">
             <img
-              src="/images/The-Five-Domains-of-Intentional-Leadership.png"
+              src="/Radical/images/The-Five-Domains-of-Intentional-Leadership.png"
               alt="The Five Domains of Intentional Leadership: Self, Work, Community, Family, Friendship"
               className="w-full h-auto object-contain max-h-[60vh]"
             />
@@ -91,18 +91,15 @@ export default function SocialImpact() {
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight">
               Authentic leadership integrates
             </h2>
-
             <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
               <p>
                 The executives I work with often discover that their greatest leadership challenges
                 aren&apos;t technical or strategic; they&apos;re about integration.
               </p>
-
               <p>
                 How do you show up with the same values and presence whether you&apos;re
                 in the boardroom, at the dinner table, or in your community?
               </p>
-
               <p className="text-[#7E2D40] font-medium">
                 Leadership that works is leadership that&apos;s lived everywhere.
               </p>
@@ -119,25 +116,21 @@ export default function SocialImpact() {
               <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
                 Demonstrating leadership in the community domain
               </h2>
-
               <p className="text-lg text-white/90 leading-relaxed">
                 As part of my belief in the five domains of intentional leadership,
                 I&apos;ve chosen to actively lead within the community domain by mentoring
                 over 1,000 unemployed individuals seeking to create their own employment
                 opportunities through entrepreneurship.
               </p>
-
               <p className="text-lg text-white/90 leading-relaxed">
                 This isn&apos;t about giving back; it&apos;s about showing up as a leader
                 where leadership is needed most.
               </p>
             </div>
-
             <div className="rounded-lg bg-white p-8">
               <h3 className="mb-6 text-xl font-semibold text-[#1A365D]">
                 Five Business Fundamentals Framework
               </h3>
-
               <div className="space-y-4">
                 <div className="border-l-4 border-[#F96E1E] pl-4">
                   <h4 className="font-medium text-[#1A365D]">Value Creation</h4>
@@ -145,28 +138,24 @@ export default function SocialImpact() {
                     Developing products or services that people genuinely want or need
                   </p>
                 </div>
-
                 <div className="border-l-4 border-[#F96E1E] pl-4">
                   <h4 className="font-medium text-[#1A365D]">Marketing</h4>
                   <p className="text-sm text-gray-600">
                     Building awareness, establishing trust and credibility, generating interest
                   </p>
                 </div>
-
                 <div className="border-l-4 border-[#F96E1E] pl-4">
                   <h4 className="font-medium text-[#1A365D]">Sales</h4>
                   <p className="text-sm text-gray-600">
                     Converting interest into purchasing decisions that benefit both parties
                   </p>
                 </div>
-
                 <div className="border-l-4 border-[#F96E1E] pl-4">
                   <h4 className="font-medium text-[#1A365D]">Value Delivery</h4>
                   <p className="text-sm text-gray-600">
                     Ensuring consistent delivery and cultivating customer satisfaction
                   </p>
                 </div>
-
                 <div className="border-l-4 border-[#F96E1E] pl-4">
                   <h4 className="font-medium text-[#1A365D]">Finance</h4>
                   <p className="text-sm text-gray-600">
@@ -174,7 +163,6 @@ export default function SocialImpact() {
                   </p>
                 </div>
               </div>
-
               <p className="mt-6 text-sm text-gray-500">
                 Adapted from Josh Kaufman&apos;s Personal MBA framework
               </p>
@@ -191,7 +179,6 @@ export default function SocialImpact() {
               Economic impact through leadership demonstration
             </h2>
           </div>
-
           <Grid columns={3} className="gap-8">
             <div className="text-center space-y-4">
               <h3 className="text-xl font-semibold text-[#1A365D]">Sustainable Employment</h3>
@@ -200,7 +187,6 @@ export default function SocialImpact() {
                 and economic independence
               </p>
             </div>
-
             <div className="text-center space-y-4">
               <h3 className="text-xl font-semibold text-[#1A365D]">Entrepreneurial Capabilities</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -208,7 +194,6 @@ export default function SocialImpact() {
                 one conversation at a time
               </p>
             </div>
-
             <div className="text-center space-y-4">
               <h3 className="text-xl font-semibold text-[#1A365D]">Economic Resilience</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -238,7 +223,6 @@ export default function SocialImpact() {
                   </p>
                 </div>
               </div>
-
               <div className="space-y-6">
                 <div className="relative rounded-lg bg-white p-8 shadow-lg border-l-4 border-[#7A9A7F]">
                   <div className="absolute -left-1 -top-2 text-4xl font-['Waiting_for_the_Sunrise'] text-[#7A9A7F]">&ldquo;</div>
@@ -257,7 +241,6 @@ export default function SocialImpact() {
                       I can&apos;t imagine my business being what it is today without his input and guidance.
                     </p>
                   </div>
-
                   <div className="text-right mt-6">
                     <p className="font-medium text-[#7A9A7F] not-italic">
                       Business Owner
@@ -280,19 +263,16 @@ export default function SocialImpact() {
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-[#1A365D] leading-tight">
               Leadership without walls
             </h2>
-
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 The leaders I most respect don&apos;t have a &lsquo;work self&rsquo; and a &lsquo;home self&rsquo;.
                 They have one self, lived with intention across every context.
               </p>
-
               <p>
                 They bring the same curiosity to a difficult conversation with their teenager
                 as they do to a challenging board meeting. The same presence to a community
                 project as they bring to a strategic planning session.
               </p>
-
               <p className="text-[#7E2D40] font-medium">
                 This integration isn&apos;t about perfection. It&apos;s about authenticity.
               </p>
@@ -308,21 +288,17 @@ export default function SocialImpact() {
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
               Where leadership really lives
             </h2>
-
             <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed">
               <p>
                 Where do you show up as a leader; when no one&apos;s watching?
               </p>
-
               <p>
                 What&apos;s one circle in your life that&apos;s asking for more intention?
               </p>
-
               <p className="text-[#D4B86A] font-medium">
                 The strongest leaders I know don&apos;t compartmentalise their integrity.
               </p>
             </div>
-
             <div className="pt-8">
               <Link
                 href="/contact"
@@ -350,7 +326,6 @@ export default function SocialImpact() {
                 What we learn in one domain strengthens leadership across all domains
               </p>
             </div>
-
             <Grid columns={2} className="gap-12">
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold text-[#1A365D]">From Community to Boardroom</h3>
@@ -373,7 +348,6 @@ export default function SocialImpact() {
                   </li>
                 </ul>
               </div>
-
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold text-[#1A365D]">From Boardroom to Community</h3>
                 <ul className="space-y-3 text-gray-700">
@@ -407,12 +381,10 @@ export default function SocialImpact() {
             <h2 className="font-['Waiting_for_the_Sunrise'] text-3xl md:text-4xl text-white leading-tight">
               Ready to explore integrated leadership?
             </h2>
-
             <p className="mx-auto max-w-2xl text-lg text-white/90 leading-relaxed">
               These five domains come alive in conversation; not as theories to understand, 
               but as contexts for authentic leadership practice.
             </p>
-
             <div className="pt-4">
               <Link
                 href="/contact"
@@ -421,7 +393,6 @@ export default function SocialImpact() {
                 Let&apos;s begin
               </Link>
             </div>
-
             <p className="text-sm text-white/60">
               No templates. No prescriptions.<br />
               Just space to see what&apos;s really there.
