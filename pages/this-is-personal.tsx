@@ -34,7 +34,7 @@ export default function ThisIsPersonal() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="/images/embodied-perception.png"
+                    src="/Radical/images/embodied-perception.png"
                     alt="Personal leadership reflection"
                     className="size-full object-contain"
                   />
@@ -297,7 +297,7 @@ export default function ThisIsPersonal() {
             </div>
             <div className="aspect-square flex items-center justify-center rounded-lg bg-[#F96E1E] p-4">
               <img
-                src="/images/global-perspective.png"
+                src="/Radical/images/global-perspective.png"
                 alt="Global leadership perspective"
                 className="size-full object-contain"
               />
@@ -349,7 +349,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/inner-game-tennis-cover.jpg"
+                    src="/Radical/images/inner-game-tennis-cover.jpg"
                     alt="The Inner Game of Tennis book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -381,7 +381,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/The-Parallax-cover.jpg"
+                    src="/Radical/images/The-Parallax-cover.jpg"
                     alt="The Parallax book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -413,7 +413,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/Transitions-cover.jpg"
+                    src="/Radical/images/Transitions-cover.jpg"
                     alt="Transitions book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -445,7 +445,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/The-Imposter-Phenomenon.jpg"
+                    src="/Radical/images/The-Imposter-Phenomenon.jpg"
                     alt="The Imposter Phenomenon book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -478,7 +478,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/performance-coaching-cover.jpg"
+                    src="/Radical/images/performance-coaching-cover.jpg"
                     alt="Best Practice in Performance Coaching book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -510,7 +510,7 @@ export default function ThisIsPersonal() {
                   className="hover:opacity-80 transition-opacity"
                 >
                   <img
-                    src="/images/four-agreements-cover.jpg"
+                    src="/Radical/images/four-agreements-cover.jpg"
                     alt="The Four Agreements book cover"
                     className="h-16 w-12 rounded object-cover shadow-sm"
                   />
@@ -574,7 +574,7 @@ export default function ThisIsPersonal() {
                 <div className="rounded-lg bg-[#1A365D] p-6 text-white md:col-span-1">
                   <div className="flex h-full items-center justify-center">
                     <img
-                      src="/images/Learning-Journey.png"
+                      src="/Radical/images/Learning-Journey.png"
                       alt="Learning journey timeline"
                       className="size-full object-contain"
                     />
@@ -593,8 +593,6 @@ export default function ThisIsPersonal() {
         </PageLayout>
       </section>
 
-
-
       {/* DARK BLUE STRIPE - Featured Leadership Quote */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -607,7 +605,7 @@ export default function ThisIsPersonal() {
         </PageLayout>
       </section>
 
- {/* CREAM STRIPE - Working with what is */}
+      {/* CREAM STRIPE - Working with what is */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -635,7 +633,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center justify-center">
               <div className="max-w-sm rounded-lg bg-[#F8F5EB] p-8 text-center">
                 <img
-                  src="/images/Bubble-33.png"
+                  src="/Radical/images/Bubble-33.png"
                   alt="Working with what is"
                   className="w-full h-auto object-contain"
                 />
@@ -652,7 +650,7 @@ export default function ThisIsPersonal() {
             <div className="order-2 flex items-center justify-center md:order-1">
               <div className="max-w-sm rounded-lg bg-white p-8 text-center">
                 <img
-                  src="/images/Bubble-34.png"
+                  src="/Radical/images/Bubble-34.png"
                   alt="Lessons with Gracie"
                   className="w-full h-auto object-contain"
                 />
@@ -717,7 +715,7 @@ export default function ThisIsPersonal() {
             <div className="flex items-center justify-center">
               <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
                 <img
-                  src="/images/Bubble-37.png"
+                  src="/Radical/images/Bubble-37.png"
                   alt="What if we simply worked with what is?"
                   className="w-full h-auto object-contain"
                 />
@@ -733,7 +731,7 @@ export default function ThisIsPersonal() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-8 text-center">
               <img
-                src="/images/Bubble-35.png"
+                src="/Radical/images/Bubble-35.png"
                 alt="I keep second guessing myself"
                 className="mx-auto max-w-xs h-auto object-contain"
               />
