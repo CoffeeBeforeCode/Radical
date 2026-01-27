@@ -20,7 +20,6 @@ export default function Home() {
               <span className="font-light italic text-[#F96E1E]">A Practice!</span>
             </h1>
           </div>
-
           {/* Text Box + Image Grid */}
           <div className="w-full mt-8">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +37,7 @@ export default function Home() {
                 {/* Image Box - 1/4 width - NO BORDER */}
                 <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                   <img
-                    src="/images/whats-the-story.png"
+                    src="/Radical/images/whats-the-story.png"
                     alt="What's the story I tell myself about who I am; is it still true?"
                     className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                   />
@@ -46,7 +45,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           {/* Additional Content */}
           <div className="max-w-4xl space-y-8 mt-8">
             <p className="text-lg leading-relaxed text-gray-600">
@@ -56,7 +54,6 @@ export default function Home() {
               Just wiser.
             </p>
           </div>
-
           {/* CTAs - Completely Outside */}
           <div className="mx-auto max-w-7xl mt-8 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-4">
@@ -76,7 +73,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* LEADERSHIP AS PRACTICE */}
       <section className="w-full bg-[#F8F5EB] py-12 md:py-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -91,7 +87,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* THE QUIET QUESTIONS */}
       <section className="w-full bg-white py-12 md:py-16">
         <PageLayout>
@@ -106,28 +101,28 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
-                src="/images/Bubble-1.png"
+                src="/Radical/images/Bubble-1.png"
                 alt="Self-perception reflection"
                 className="size-full object-contain"
               />
             </div>
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
-                src="/images/Bubble-2.png"
+                src="/Radical/images/Bubble-2.png"
                 alt="Connection and relationships"
                 className="size-full object-contain"
               />
             </div>
             <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
               <img
-                src="/images/Bubble-3.png"
+                src="/Radical/images/Bubble-3.png"
                 alt="Authentic self-expression"
                 className="size-full object-contain"
               />
             </div>
             <div className="aspect-square rounded-lg bg-[#1A365D] p-4 flex items-center justify-center">
               <img
-                src="/images/Bubble-4.png"
+                src="/Radical/images/Bubble-4.png"
                 alt="Decision-making and judgment"
                 className="size-full object-contain"
               />
@@ -135,7 +130,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* NAVY STRIPE - Leadership Equation */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -189,7 +183,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* CREAM STRIPE - Call & Response */}
       <section className="w-full bg-[#F8F5EB] py-16 md:py-24">
         <PageLayout>
@@ -205,7 +198,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/images/Call-self-doubt.png"
+                  src="/Radical/images/Call-self-doubt.png"
                   alt="Internal struggle with belonging"
                   className="size-full object-contain"
                 />
@@ -224,7 +217,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/images/Call-authority-burden.png"
+                  src="/Radical/images/Call-authority-burden.png"
                   alt="Leadership pressure and expectations"
                   className="size-full object-contain"
                 />
@@ -243,7 +236,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/images/Bubble-5.png"
+                  src="/Radical/images/Bubble-5.png"
                   alt="Handling change and flexibility"
                   className="size-full object-contain"
                 />
@@ -262,7 +255,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* WHITE STRIPE - How I See It - REDESIGNED */}
       <section className="w-full bg-white py-16 md:py-24">
         <PageLayout>
@@ -295,7 +287,7 @@ export default function Home() {
                 <div className="h-full flex flex-col">
                     <div className="aspect-square rounded-lg bg-[#F8F5EB] p-3 mb-4 flex items-center justify-center">
                         <img
-                            src="/images/Bubble-8.png"
+                            src="/Radical/images/Bubble-8.png"
                             alt="Embodied perception"
                             className="w-full h-full object-contain"
                         />
@@ -311,7 +303,7 @@ export default function Home() {
                 <div className="h-full flex flex-col">
                     <div className="aspect-square rounded-lg bg-[#1A365D] p-3 mb-4 flex items-center justify-center">
                         <img
-                            src="/images/Bubble-9.png"
+                            src="/Radical/images/Bubble-9.png"
                             alt="Values in motion"
                             className="w-full h-full object-contain"
                         />
@@ -326,7 +318,7 @@ export default function Home() {
                 <div className="flex items-center h-full">
                     <div className="flex-shrink-0 mr-6">
                         <img
-                            src="/images/Bubble-10.png"
+                            src="/Radical/images/Bubble-10.png"
                             alt="Sitting with tension"
                             className="w-16 h-16 object-contain"
                         />
@@ -363,7 +355,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* NAVY STRIPE - Global Reach */}
       <section className="w-full bg-[#1A365D] py-16 md:py-24">
         <PageLayout>
@@ -379,7 +370,7 @@ export default function Home() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
                 <img
-                  src="/images/europe.png"
+                  src="/Radical/images/europe.png"
                   alt="Europe"
                   className="size-20 object-contain"
                 />
@@ -389,7 +380,7 @@ export default function Home() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
                 <img
-                  src="/images/asia.png"
+                  src="/Radical/images/asia.png"
                   alt="Asia"
                   className="size-20 object-contain"
                 />
@@ -399,7 +390,7 @@ export default function Home() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
                 <img
-                  src="/images/north-america.png"
+                  src="/Radical/images/north-america.png"
                   alt="North America"
                   className="size-20 object-contain"
                 />
@@ -409,7 +400,7 @@ export default function Home() {
             <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
               <div className="mb-4 flex justify-center">
                 <img
-                  src="/images/south-america.png"
+                  src="/Radical/images/south-america.png"
                   alt="South America"
                   className="size-20 object-contain"
                 />
@@ -426,7 +417,6 @@ export default function Home() {
           </div>
         </PageLayout>
       </section>
-
       {/* TANGERINE STRIPE - CTA */}
       <section className="w-full bg-[#F96E1E] py-16 md:py-24">
         <PageLayout>
