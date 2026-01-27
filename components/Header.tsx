@@ -51,29 +51,6 @@ const Header: React.FC = () => {
                   Global Leadership Coach
                 </div>
               </div>
-              {/* OPTION 2: Responsive text sizing - uncomment this and comment out Option 1
-              <div className="block">
-                <div className="text-base sm:text-lg font-semibold text-[#1A365D] group-hover:text-[#F96E1E] transition-colors duration-300">
-                  Phillip Collins
-                </div>
-                <div className="text-xs sm:text-sm text-gray-600">
-                  Global Leadership Coach
-                </div>
-              </div>
-              */}
-              {/* OPTION 3: Compact mobile version - uncomment this and comment out Option 1
-              <div className="block">
-                <div className="text-base sm:text-lg font-semibold text-[#1A365D] group-hover:text-[#F96E1E] transition-colors duration-300">
-                  Phillip Collins
-                </div>
-                <div className="text-xs sm:text-sm text-gray-600 sm:block hidden">
-                  Global Leadership Coach
-                </div>
-                <div className="text-xs text-gray-600 sm:hidden block">
-                  Leadership Coach
-                </div>
-              </div>
-              */}
             </Link>
           </div>
 
