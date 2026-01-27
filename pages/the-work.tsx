@@ -46,7 +46,7 @@ export default function TheWork() {
                     {/* Image Box - 1/4 width - NO BORDER */}
                     <div className="md:col-span-1 rounded-lg bg-white p-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
                       <img
-                        src="/Radical/images/Bubble-9.png"
+                        src="/images/Bubble-9.png"
                         alt="Am I trusting my own judgement, or waiting for a green light?"
                         className="w-full h-auto object-contain max-w-full max-h-[150px] md:max-h-[200px]"
                       />
@@ -82,7 +82,7 @@ export default function TheWork() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl flex justify-center">
             <img
-              src="/Radical/images/your-eqi.png"
+              src="/images/your-eqi.png"
               alt="EQ-i Leadership Assessment"
               className="w-full h-auto object-contain max-w-4xl"
             />
@@ -119,7 +119,7 @@ export default function TheWork() {
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
                 <div className="mb-6 flex items-center justify-center">
                   <img
-                    src="/Radical/images/Bubble-40.png"
+                    src="/images/Bubble-40.png"
                     alt="Values in Motion"
                     className="w-24 h-24 object-contain"
                   />
@@ -135,7 +135,7 @@ export default function TheWork() {
               <div className="space-y-4 rounded-lg border border-[#1A365D]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#F96E1E]">
                 <div className="mb-6 flex items-center justify-center">
                   <img
-                    src="/Radical/images/Bubble-38.png"
+                    src="/images/Bubble-38.png"
                     alt="Sitting with tension"
                     className="w-24 h-24 object-contain"
                   />
@@ -184,7 +184,7 @@ export default function TheWork() {
             <div className="flex items-center justify-center">
               <div className="max-w-sm rounded-lg bg-[#1A365D] p-8 text-center">
                 <img
-                  src="/Radical/images/Bubble-37.png"
+                  src="/images/Bubble-37.png"
                   alt="What if we simply worked with what is?"
                   className="w-full h-auto object-contain"
                 />
@@ -209,7 +209,7 @@ export default function TheWork() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/Radical/images/Bubble-32.png"
+                  src="/images/Bubble-32.png"
                   alt="I can't afford to make mistakes at this level"
                   className="size-full object-contain"
                 />
@@ -229,7 +229,7 @@ export default function TheWork() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/Radical/images/Bubble-31.png"
+                  src="/images/Bubble-31.png"
                   alt="Others seem to see the big picture clearer than I do"
                   className="size-full object-contain"
                 />
@@ -249,7 +249,7 @@ export default function TheWork() {
             <div className="space-y-4">
               <div className="aspect-square rounded-lg bg-white p-4 flex items-center justify-center shadow-sm">
                 <img
-                  src="/Radical/images/Bubble-30.png"
+                  src="/images/Bubble-30.png"
                   alt="Anything less than flawless is failure"
                   className="size-full object-contain"
                 />
